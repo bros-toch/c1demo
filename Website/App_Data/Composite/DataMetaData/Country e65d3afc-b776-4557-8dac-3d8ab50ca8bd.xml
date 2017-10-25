@@ -1,0 +1,20 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<DataTypeDescriptor dataTypeId="e65d3afc-b776-4557-8dac-3d8ab50ca8bd" name="Country" namespace="Demo" title="Country" isCodeGenerated="true" cachable="false" searchable="true" labelFieldName="Name" typeManagerTypeName="Demo.Country">
+  <DataAssociations />
+  <DataScopes>
+    <DataScopeIdentifier name="public" />
+  </DataScopes>
+  <KeyPropertyNames>
+    <KeyPropertyName name="Id" />
+  </KeyPropertyNames>
+  <SuperInterfaces />
+  <Fields>
+    <DataFieldDescriptor id="94cda505-234e-4985-a140-f297590761b6" name="Id" isNullable="false" position="0" groupByPriority="0" inherited="false" instanceType="System.Guid, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" storeType="PhysicalStoreType='Guid'" isReadOnly="false">
+      <FormRenderingProfile label="Id" />
+      <DataUrlProfile Order="0" />
+    </DataFieldDescriptor>
+    <DataFieldDescriptor id="4c71465a-6fbd-45ad-89a8-5f81a214d3e5" name="Name" isNullable="false" position="0" groupByPriority="0" inherited="false" instanceType="System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" storeType="PhysicalStoreType='String'Length='128'" isReadOnly="false" defaultValue="ValueType='String'Value=''">
+      <FormRenderingProfile label="Name" helpText="" widgetFunctionMarkup="&lt;f:widgetfunction xmlns:f=&quot;http://www.composite.net/ns/function/1.0&quot; name=&quot;Composite.Widgets.String.TextBox&quot; /&gt;" />
+    </DataFieldDescriptor>
+  </Fields>
+</DataTypeDescriptor>

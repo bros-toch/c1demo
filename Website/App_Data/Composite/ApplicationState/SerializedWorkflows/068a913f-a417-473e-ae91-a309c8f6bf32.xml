@@ -1,0 +1,169 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<FormData>
+  <ContainerLabel />
+  <FormDefinition value="&lt;?xml version=&quot;1.0&quot; encoding=&quot;utf-8&quot;?&gt;&#xD;&#xA;&lt;cms:formdefinition xmlns=&quot;http://www.composite.net/ns/management/bindingforms/std.ui.controls.lib/1.0&quot; xmlns:internal=&quot;http://www.composite.net/ns/management/bindingforms/internal.ui.controls.lib/1.0&quot; xmlns:f=&quot;http://www.composite.net/ns/management/bindingforms/std.function.lib/1.0&quot; xmlns:cms=&quot;http://www.composite.net/ns/management/bindingforms/1.0&quot;&gt;&#xD;&#xA;  &lt;cms:bindings&gt;&#xD;&#xA;    &lt;cms:binding name=&quot;ViewLabel&quot; type=&quot;System.String&quot; /&gt;&#xD;&#xA;    &lt;cms:binding name=&quot;NewTypeName&quot; type=&quot;System.String&quot; /&gt;&#xD;&#xA;    &lt;cms:binding name=&quot;NewTypeNamespace&quot; type=&quot;System.String&quot; /&gt;&#xD;&#xA;    &lt;cms:binding name=&quot;NewTypeTitle&quot; type=&quot;System.String&quot; /&gt;&#xD;&#xA;    &lt;cms:binding name=&quot;DataFieldDescriptors&quot; type=&quot;System.Object&quot; /&gt;&#xD;&#xA;    &lt;cms:binding name=&quot;HasCaching&quot; type=&quot;System.Boolean&quot; /&gt;&#xD;&#xA;    &lt;cms:binding name=&quot;HasPublishing&quot; type=&quot;System.Boolean&quot; /&gt;&#xD;&#xA;&#x9;&#x9;&lt;cms:binding name=&quot;HasLocalization&quot; type=&quot;System.Boolean&quot; /&gt;&#xD;&#xA;&#x9;&#x9;&lt;cms:binding name=&quot;IsSearchable&quot; type=&quot;System.Boolean&quot; /&gt;&#xD;&#xA;    &lt;cms:binding name=&quot;KeyFieldName&quot; type=&quot;System.String&quot; /&gt;&#xD;&#xA;    &lt;cms:binding name=&quot;LabelFieldName&quot; type=&quot;System.String&quot; optional=&quot;true&quot; /&gt;&#xD;&#xA;    &lt;cms:binding name=&quot;InternalUrlPrefix&quot; type=&quot;System.String&quot; optional=&quot;true&quot; /&gt;&#xD;&#xA;    &lt;cms:binding name=&quot;KeyFieldReadOnly&quot; type=&quot;System.Boolean&quot; /&gt;&#xD;&#xA;    &lt;cms:binding name=&quot;CustomEvent01Handler&quot; type=&quot;System.EventHandler&quot; /&gt;&#xD;&#xA;  &lt;/cms:bindings&gt;&#xD;&#xA;  &lt;cms:layout iconhandle=&quot;generated-type-add&quot;&gt;&#xD;&#xA;    &lt;TabPanels&gt;&#xD;&#xA;      &lt;TabPanels.Label&gt;&#xD;&#xA;        &lt;cms:read source=&quot;ViewLabel&quot; /&gt;&#xD;&#xA;      &lt;/TabPanels.Label&gt;&#xD;&#xA;      &lt;PlaceHolder Label=&quot;${Composite.Plugins.GeneratedDataTypesElementProvider, EditorCommon.SettingsTab}&quot;&gt;&#xD;&#xA;&#xD;&#xA;        &lt;FieldGroup Label=&quot;${Composite.Plugins.GeneratedDataTypesElementProvider, EditorCommon.LabelTitleGroup}&quot;&gt;&#xD;&#xA;          &lt;TextBox Label=&quot;${Composite.Plugins.GeneratedDataTypesElementProvider, EditorCommon.LabelTitle}&quot; Help=&quot;${Composite.Plugins.GeneratedDataTypesElementProvider, EditorCommon.HelpTitle}&quot;&gt;&#xD;&#xA;            &lt;cms:bind source=&quot;NewTypeTitle&quot; /&gt;&#xD;&#xA;          &lt;/TextBox&gt;&#xD;&#xA;        &lt;/FieldGroup&gt;&#xD;&#xA;&#xD;&#xA;&#xD;&#xA;        &lt;FieldGroup Label=&quot;${Composite.Plugins.GeneratedDataTypesElementProvider, EditorCommon.LabelProgrammaticNamingAndServices}&quot;&gt;&#xD;&#xA;          &lt;TextBox Label=&quot;${Composite.Plugins.GeneratedDataTypesElementProvider, EditorCommon.LabelTypeName}&quot; Help=&quot;${Composite.Plugins.GeneratedDataTypesElementProvider, EditorCommon.HelpTypeName}&quot; Type=&quot;ProgrammingIdentifier&quot;&gt;&#xD;&#xA;            &lt;cms:bind source=&quot;NewTypeName&quot; /&gt;&#xD;&#xA;          &lt;/TextBox&gt;&#xD;&#xA;          &#xD;&#xA;          &lt;TextBox Label=&quot;${Composite.Plugins.GeneratedDataTypesElementProvider, EditorCommon.LabelTypeNamespace}&quot; Help=&quot;${Composite.Plugins.GeneratedDataTypesElementProvider, EditorCommon.HelpTypeNamespace}&quot; Type=&quot;ProgrammingNamespace&quot;&gt;&#xD;&#xA;            &lt;cms:bind source=&quot;NewTypeNamespace&quot; /&gt;&#xD;&#xA;          &lt;/TextBox&gt;&#xD;&#xA;&#xD;&#xA;          &lt;TextBox Label=&quot;${Composite.Plugins.GeneratedDataTypesElementProvider, EditorCommon.InternalUrlPrefixLabel}&quot; Help=&quot;${Composite.Plugins.GeneratedDataTypesElementProvider, EditorCommon.InternalUrlPrefixHelp}&quot; Type=&quot;programmingidentifier&quot;&gt;&#xD;&#xA;            &lt;cms:bind source=&quot;InternalUrlPrefix&quot; /&gt;&#xD;&#xA;          &lt;/TextBox&gt;&#xD;&#xA;          &#xD;&#xA;          &lt;PlaceHolder Label=&quot;${Composite.Plugins.GeneratedDataTypesElementProvider, EditorCommon.ServicesLabel}&quot;&gt;&#xD;&#xA;            &lt;CheckBox Label=&quot;${Composite.Plugins.GeneratedDataTypesElementProvider, EditorCommon.HasCaching}&quot; ItemLabel=&quot;${Composite.Plugins.GeneratedDataTypesElementProvider, EditorCommon.HasCaching}&quot;&gt;&#xD;&#xA;              &lt;CheckBox.Checked&gt;&#xD;&#xA;                &lt;cms:bind source=&quot;HasCaching&quot; /&gt;&#xD;&#xA;              &lt;/CheckBox.Checked&gt;&#xD;&#xA;            &lt;/CheckBox&gt;&#xD;&#xA;            &lt;CheckBox Label=&quot;${Composite.Plugins.GeneratedDataTypesElementProvider, EditorCommon.HasPublishing}&quot; ItemLabel=&quot;${Composite.Plugins.GeneratedDataTypesElementProvider, EditorCommon.HasPublishing}&quot;&gt;&#xD;&#xA;              &lt;CheckBox.Checked&gt;&#xD;&#xA;                &lt;cms:bind source=&quot;HasPublishing&quot; /&gt;&#xD;&#xA;              &lt;/CheckBox.Checked&gt;&#xD;&#xA;            &lt;/CheckBox&gt;&#xD;&#xA;            &lt;CheckBox Label=&quot;${Composite.Plugins.GeneratedDataTypesElementProvider, EditorCommon.HasLocalization}&quot; ItemLabel=&quot;${Composite.Plugins.GeneratedDataTypesElementProvider, EditorCommon.HasLocalization}&quot;&gt;&#xD;&#xA;              &lt;CheckBox.Checked&gt;&#xD;&#xA;                &lt;cms:bind source=&quot;HasLocalization&quot; /&gt;&#xD;&#xA;              &lt;/CheckBox.Checked&gt;&#xD;&#xA;            &lt;/CheckBox&gt;&#xD;&#xA;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&lt;CheckBox Label=&quot;${Composite.Plugins.GeneratedDataTypesElementProvider, EditorCommon.IsSearchable}&quot; ItemLabel=&quot;${Composite.Plugins.GeneratedDataTypesElementProvider, EditorCommon.IsSearchable}&quot;&gt;&#xD;&#xA;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&lt;CheckBox.Checked&gt;&#xD;&#xA;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&lt;cms:bind source=&quot;IsSearchable&quot; /&gt;&#xD;&#xA;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&lt;/CheckBox.Checked&gt;&#xD;&#xA;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&lt;CheckBox.CheckedChangedEventHandler&gt;&#xD;&#xA;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&lt;cms:read source=&quot;CustomEvent01Handler&quot; /&gt;&#xD;&#xA;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&lt;/CheckBox.CheckedChangedEventHandler&gt;&#xD;&#xA;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&lt;/CheckBox&gt;&#xD;&#xA;          &lt;/PlaceHolder&gt;&#xD;&#xA;        &lt;/FieldGroup&gt;&#xD;&#xA;      &lt;/PlaceHolder&gt;&#xD;&#xA;      &lt;internal:TypeFieldDesigner Label=&quot;${Composite.Plugins.GeneratedDataTypesElementProvider, EditorCommon.LabelFields}&quot;&gt;&#xD;&#xA;        &lt;internal:TypeFieldDesigner.Fields&gt;&#xD;&#xA;          &lt;cms:bind source=&quot;DataFieldDescriptors&quot; /&gt;&#xD;&#xA;        &lt;/internal:TypeFieldDesigner.Fields&gt;&#xD;&#xA;        &lt;internal:TypeFieldDesigner.KeyFieldName&gt;&#xD;&#xA;          &lt;cms:bind source=&quot;KeyFieldName&quot; /&gt;&#xD;&#xA;        &lt;/internal:TypeFieldDesigner.KeyFieldName&gt;&#xD;&#xA;        &lt;internal:TypeFieldDesigner.LabelFieldName&gt;&#xD;&#xA;          &lt;cms:bind source=&quot;LabelFieldName&quot; /&gt;&#xD;&#xA;        &lt;/internal:TypeFieldDesigner.LabelFieldName&gt;&#xD;&#xA;        &lt;internal:TypeFieldDesigner.KeyFieldReadOnly&gt;&#xD;&#xA;          &lt;cms:bind source=&quot;KeyFieldReadOnly&quot; /&gt;&#xD;&#xA;        &lt;/internal:TypeFieldDesigner.KeyFieldReadOnly&gt;&#xD;&#xA;&#x9;&#x9;&#x9;&#x9;&lt;internal:TypeFieldDesigner.IsSearchable&gt;&#xD;&#xA;&#x9;&#x9;&#x9;&#x9;&#x9;&lt;cms:read source=&quot;IsSearchable&quot; /&gt;&#xD;&#xA;&#x9;&#x9;&#x9;&#x9;&lt;/internal:TypeFieldDesigner.IsSearchable&gt;&#xD;&#xA;&#x9;&#x9;&#x9;&lt;/internal:TypeFieldDesigner&gt;&#xD;&#xA;    &lt;/TabPanels&gt;&#xD;&#xA;  &lt;/cms:layout&gt;&#xD;&#xA;&lt;/cms:formdefinition&gt;" />
+  <ContainerType>
+    <SerializerHandler value="SerializerHandlerType='Composite\.C1Console\.Actions\.StandardUiContainerTypesSerializerHandler,Composite'SerializedObject='Document'" />
+  </ContainerType>
+  <Bindings>
+    <Dictionary type="&lt;t n=&quot;System.Collections.Generic.Dictionary`2, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089&quot;&gt;&#xD;&#xA;  &lt;t n=&quot;System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089&quot; /&gt;&#xD;&#xA;  &lt;t n=&quot;System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089&quot; /&gt;&#xD;&#xA;&lt;/t&gt;">
+      <KeyPair>
+        <Key>
+          <Value type="System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" value="ViewLabel" />
+        </Key>
+        <Value>
+          <Value type="System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" value="Country" />
+        </Value>
+      </KeyPair>
+      <KeyPair>
+        <Key>
+          <Value type="System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" value="NewTypeName" />
+        </Key>
+        <Value>
+          <Value type="System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" value="Country" />
+        </Value>
+      </KeyPair>
+      <KeyPair>
+        <Key>
+          <Value type="System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" value="NewTypeNamespace" />
+        </Key>
+        <Value>
+          <Value type="System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" value="Demo" />
+        </Value>
+      </KeyPair>
+      <KeyPair>
+        <Key>
+          <Value type="System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" value="NewTypeTitle" />
+        </Key>
+        <Value>
+          <Value type="System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" value="Country" />
+        </Value>
+      </KeyPair>
+      <KeyPair>
+        <Key>
+          <Value type="System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" value="DataFieldDescriptors" />
+        </Key>
+        <Value>
+          <List type="&lt;t n=&quot;System.Collections.Generic.List`1, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089&quot;&gt;&#xD;&#xA;  &lt;t n=&quot;Composite.Data.DynamicTypes.DataFieldDescriptor,Composite&quot; /&gt;&#xD;&#xA;&lt;/t&gt;">
+            <DataFieldDescriptor id="94cda505-234e-4985-a140-f297590761b6" name="Id" isNullable="false" position="0" groupByPriority="0" inherited="false" instanceType="System.Guid, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" storeType="PhysicalStoreType='Guid'" isReadOnly="false">
+              <FormRenderingProfile label="Id" />
+              <DataUrlProfile Order="0" />
+            </DataFieldDescriptor>
+            <DataFieldDescriptor id="4c71465a-6fbd-45ad-89a8-5f81a214d3e5" name="Name" isNullable="false" position="0" groupByPriority="0" inherited="false" instanceType="System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" storeType="PhysicalStoreType='String'Length='128'" isReadOnly="false" defaultValue="ValueType='String'Value=''">
+              <FormRenderingProfile label="Name" helpText="" widgetFunctionMarkup="&lt;f:widgetfunction xmlns:f=&quot;http://www.composite.net/ns/function/1.0&quot; name=&quot;Composite.Widgets.String.TextBox&quot; /&gt;" />
+            </DataFieldDescriptor>
+          </List>
+        </Value>
+      </KeyPair>
+      <KeyPair>
+        <Key>
+          <Value type="System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" value="HasCaching" />
+        </Key>
+        <Value>
+          <Value type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" value="false" />
+        </Value>
+      </KeyPair>
+      <KeyPair>
+        <Key>
+          <Value type="System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" value="HasPublishing" />
+        </Key>
+        <Value>
+          <Value type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" value="false" />
+        </Value>
+      </KeyPair>
+      <KeyPair>
+        <Key>
+          <Value type="System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" value="HasLocalization" />
+        </Key>
+        <Value>
+          <Value type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" value="false" />
+        </Value>
+      </KeyPair>
+      <KeyPair>
+        <Key>
+          <Value type="System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" value="IsSearchable" />
+        </Key>
+        <Value>
+          <Value type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" value="true" />
+        </Value>
+      </KeyPair>
+      <KeyPair>
+        <Key>
+          <Value type="System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" value="KeyFieldName" />
+        </Key>
+        <Value>
+          <Value type="System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" value="Id" />
+        </Value>
+      </KeyPair>
+      <KeyPair>
+        <Key>
+          <Value type="System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" value="LabelFieldName" />
+        </Key>
+        <Value>
+          <Value type="System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" value="Name" />
+        </Value>
+      </KeyPair>
+      <KeyPair>
+        <Key>
+          <Value type="System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" value="KeyFieldReadOnly" />
+        </Key>
+        <Value>
+          <Value type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" value="true" />
+        </Value>
+      </KeyPair>
+      <KeyPair>
+        <Key>
+          <Value type="System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" value="InternalUrlPrefix" />
+        </Key>
+        <Value>
+          <Value type="System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" value="" />
+        </Value>
+      </KeyPair>
+      <KeyPair>
+        <Key>
+          <Value type="System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" value="InterfaceType" />
+        </Key>
+        <Value>
+          <Value type="System.Type, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" value="Demo.Country" />
+        </Value>
+      </KeyPair>
+    </Dictionary>
+  </Bindings>
+  <BindingsValidationRules>
+    <Dictionary type="&lt;t n=&quot;System.Collections.Generic.Dictionary`2, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089&quot;&gt;&#xD;&#xA;  &lt;t n=&quot;System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089&quot; /&gt;&#xD;&#xA;  &lt;t n=&quot;System.Collections.Generic.List`1, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089&quot;&gt;&#xD;&#xA;    &lt;t n=&quot;Composite.Data.Validation.ClientValidationRules.ClientValidationRule,Composite&quot; /&gt;&#xD;&#xA;  &lt;/t&gt;&#xD;&#xA;&lt;/t&gt;">
+      <KeyPair>
+        <Key>
+          <Value type="System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" value="NewTypeName" />
+        </Key>
+        <Value>
+          <List type="&lt;t n=&quot;System.Collections.Generic.List`1, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089&quot;&gt;&#xD;&#xA;  &lt;t n=&quot;Composite.Data.Validation.ClientValidationRules.ClientValidationRule,Composite&quot; /&gt;&#xD;&#xA;&lt;/t&gt;">
+            <SerializerHandler value="SerializerHandlerType='Composite\.Data\.Validation\.ClientValidationRuleSerializerHandler,Composite'SerializedObject='AAEAAAD/////AQAAAAAAAAAMAgAAAEdDb21wb3NpdGUsIFZlcnNpb249Ni4yLjY0MzYuMTg5NzIsIEN1bHR1cmU9bmV1dHJhbCwgUHVibGljS2V5VG9rZW49bnVsbAUBAAAAS0NvbXBvc2l0ZS5EYXRhLlZhbGlkYXRpb24uQ2xpZW50VmFsaWRhdGlvblJ1bGVzLk5vdE51bGxDbGllbnRWYWxpZGF0aW9uUnVsZQAAAAACAAAACw=='" />
+          </List>
+        </Value>
+      </KeyPair>
+      <KeyPair>
+        <Key>
+          <Value type="System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" value="NewTypeNamespace" />
+        </Key>
+        <Value>
+          <List type="&lt;t n=&quot;System.Collections.Generic.List`1, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089&quot;&gt;&#xD;&#xA;  &lt;t n=&quot;Composite.Data.Validation.ClientValidationRules.ClientValidationRule,Composite&quot; /&gt;&#xD;&#xA;&lt;/t&gt;">
+            <SerializerHandler value="SerializerHandlerType='Composite\.Data\.Validation\.ClientValidationRuleSerializerHandler,Composite'SerializedObject='AAEAAAD/////AQAAAAAAAAAMAgAAAEdDb21wb3NpdGUsIFZlcnNpb249Ni4yLjY0MzYuMTg5NzIsIEN1bHR1cmU9bmV1dHJhbCwgUHVibGljS2V5VG9rZW49bnVsbAUBAAAAS0NvbXBvc2l0ZS5EYXRhLlZhbGlkYXRpb24uQ2xpZW50VmFsaWRhdGlvblJ1bGVzLk5vdE51bGxDbGllbnRWYWxpZGF0aW9uUnVsZQAAAAACAAAACw=='" />
+          </List>
+        </Value>
+      </KeyPair>
+      <KeyPair>
+        <Key>
+          <Value type="System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" value="NewTypeTitle" />
+        </Key>
+        <Value>
+          <List type="&lt;t n=&quot;System.Collections.Generic.List`1, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089&quot;&gt;&#xD;&#xA;  &lt;t n=&quot;Composite.Data.Validation.ClientValidationRules.ClientValidationRule,Composite&quot; /&gt;&#xD;&#xA;&lt;/t&gt;">
+            <SerializerHandler value="SerializerHandlerType='Composite\.Data\.Validation\.ClientValidationRuleSerializerHandler,Composite'SerializedObject='AAEAAAD/////AQAAAAAAAAAMAgAAAEdDb21wb3NpdGUsIFZlcnNpb249Ni4yLjY0MzYuMTg5NzIsIEN1bHR1cmU9bmV1dHJhbCwgUHVibGljS2V5VG9rZW49bnVsbAUBAAAAS0NvbXBvc2l0ZS5EYXRhLlZhbGlkYXRpb24uQ2xpZW50VmFsaWRhdGlvblJ1bGVzLk5vdE51bGxDbGllbnRWYWxpZGF0aW9uUnVsZQAAAAACAAAACw=='" />
+          </List>
+        </Value>
+      </KeyPair>
+    </Dictionary>
+  </BindingsValidationRules>
+  <ExcludedEvents>
+    <List type="&lt;t n=&quot;System.Collections.Generic.List`1, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089&quot;&gt;&#xD;&#xA;  &lt;t n=&quot;System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089&quot; /&gt;&#xD;&#xA;&lt;/t&gt;" />
+  </ExcludedEvents>
+</FormData>

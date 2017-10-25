@@ -1,0 +1,43 @@
+<?xml version="1.0"?>
+<SubscribedTypesCache xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <Assemblies>
+    <AssemblyInfo>
+      <SubscribedTypes>
+        <string>Composite.Plugins.Security.LoginSessionStores.WampContextBasedLoginSessionStore.WampContextBasedLoginSessionStoreRegistrator</string>
+        <string>Composite.Plugins.Search.Endpoint.SearchApplicationStartup</string>
+        <string>Composite.Plugins.Components.FileBasedComponentProvider.FileBasedComponentProviderRegistrator</string>
+        <string>Composite.Plugins.Components.ComponentTags.TagManagerRegistrar</string>
+        <string>Composite.Plugins.Components.ComponentsEndpoint.ComponentsEndpoint</string>
+        <string>Composite.Plugins.Elements.ElementProviders.GeneratedDataTypesElementProvider.GeneratedDataTypesElementDynamicActionTokens</string>
+        <string>Composite.Plugins.Elements.ElementProviders.PageElementProvider.PageElementDynamicActionTokens</string>
+        <string>Composite.Data.ProcessControlled.ProcessControllers.GenericPublishProcessController.GenericPublishProcessDynamicActionTokens</string>
+        <string>Composite.Core.WebClient.ComponentsEndpoint</string>
+        <string>Composite.Core.WebClient.Services.WampRouter.WampRouterResolverRegistry</string>
+        <string>Composite.C1Console.Security.Compatibility.LegacySerializedEntityTokenUpgrader</string>
+        <string>Composite.C1Console.RichContent.Components.ComponentChangeNotifierRegistrator</string>
+        <string>Composite.C1Console.RichContent.Components.ComponentManagerRegistrator</string>
+      </SubscribedTypes>
+      <AssemblyName>Composite</AssemblyName>
+      <LastModified>2017-08-15T09:32:38+10:00</LastModified>
+    </AssemblyInfo>
+    <AssemblyInfo>
+      <SubscribedTypes />
+      <AssemblyName>Composite.XmlSerializers</AssemblyName>
+      <LastModified>2017-08-15T09:31:04+10:00</LastModified>
+    </AssemblyInfo>
+    <AssemblyInfo>
+      <SubscribedTypes>
+        <string>Composite.Web.BundlingAndMinification.StartupHandler+StatupHandler</string>
+      </SubscribedTypes>
+      <AssemblyName>Composite.Web.BundlingAndMinification</AssemblyName>
+      <LastModified>2017-10-25T11:15:17.0178764+11:00</LastModified>
+    </AssemblyInfo>
+    <AssemblyInfo>
+      <SubscribedTypes>
+        <string>Orckestra.Web.Css.Less.StartupHandler+StatupHandler</string>
+      </SubscribedTypes>
+      <AssemblyName>Orckestra.Web.Css.Less</AssemblyName>
+      <LastModified>2017-10-25T11:15:16.8354234+11:00</LastModified>
+    </AssemblyInfo>
+  </Assemblies>
+</SubscribedTypesCache>

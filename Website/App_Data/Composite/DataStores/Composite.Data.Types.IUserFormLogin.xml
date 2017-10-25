@@ -1,2 +1,4 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<UserFormLoginElements />
+<UserFormLoginElementsElements>
+  <UserFormLoginElements UserId="e76ffec6-46e5-4cb0-a225-43833a361ae1" Folder="Administrators" IsLocked="false" LockoutReason="0" PasswordHash="fjWFGkCEyU7PZmAzv73K7ny2akvLEU7zJm+6YzKT1DY=" PasswordHashSalt="wgsxgA6C7iFCdUo3Xvcitf2tdcTwpQzD" LastPasswordChangeDate="0001-01-01T00:00:00" />
+</UserFormLoginElementsElements>

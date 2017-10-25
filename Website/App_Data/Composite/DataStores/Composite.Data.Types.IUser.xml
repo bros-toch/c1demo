@@ -1,2 +1,4 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<UserElements />
+<UserElementsElements>
+  <UserElements Id="e76ffec6-46e5-4cb0-a225-43833a361ae1" Username="admin" Email="bros.toch.kh@gmail.com" IsLocked="false" LockoutReason="0" LastPasswordChangeDate="0001-01-01T00:00:00" />
+</UserElementsElements>

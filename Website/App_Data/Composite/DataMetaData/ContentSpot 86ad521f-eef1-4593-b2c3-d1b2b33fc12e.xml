@@ -1,0 +1,32 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<DataTypeDescriptor dataTypeId="86ad521f-eef1-4593-b2c3-d1b2b33fc12e" name="ContentSpot" namespace="Content" title="Content Spots" isCodeGenerated="true" cachable="true" searchable="false" labelFieldName="Title" typeManagerTypeName="Content.ContentSpot">
+  <DataAssociations />
+  <DataScopes>
+    <DataScopeIdentifier name="public" />
+    <DataScopeIdentifier name="administrated" />
+  </DataScopes>
+  <KeyPropertyNames>
+    <KeyPropertyName name="Id" />
+  </KeyPropertyNames>
+  <SuperInterfaces>
+    <SuperInterface type="Composite.Data.ProcessControlled.IPublishControlled,Composite" />
+    <SuperInterface type="Composite.Data.ProcessControlled.IProcessControlled,Composite" />
+  </SuperInterfaces>
+  <Fields>
+    <DataFieldDescriptor id="0529b299-b2a2-424d-8e16-065d70571ad3" name="Id" isNullable="false" position="-1" groupByPriority="0" inherited="false" instanceType="System.Guid, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" storeType="PhysicalStoreType='Guid'" isReadOnly="false">
+      <FormRenderingProfile />
+      <ValidationFunctionMarkups />
+    </DataFieldDescriptor>
+    <DataFieldDescriptor id="c68429ed-74c3-4ad6-afee-b6364f80f224" name="Title" isNullable="false" position="0" groupByPriority="0" inherited="false" instanceType="System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" storeType="PhysicalStoreType='String'Length='64'" isReadOnly="false" defaultValue="ValueType='String'Value=''">
+      <FormRenderingProfile label="Title" helpText="" widgetFunctionMarkup="&lt;f:widgetfunction xmlns:f=&quot;http://www.composite.net/ns/function/1.0&quot; name=&quot;Composite.Widgets.String.TextBox&quot; /&gt;" />
+      <ValidationFunctionMarkups />
+    </DataFieldDescriptor>
+    <DataFieldDescriptor id="c3056b59-3982-47ee-8d3a-e41436552d78" name="Content" isNullable="false" position="1" groupByPriority="0" inherited="false" instanceType="System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" storeType="PhysicalStoreType='LargeString'" isReadOnly="false" defaultValue="ValueType='String'Value=''">
+      <FormRenderingProfile label="Content" helpText="" widgetFunctionMarkup="&lt;f:widgetfunction xmlns:f=&quot;http://www.composite.net/ns/function/1.0&quot; name=&quot;Composite.Widgets.String.VisualXhtmlEditor&quot; /&gt;" />
+      <ValidationFunctionMarkups />
+    </DataFieldDescriptor>
+    <DataFieldDescriptor id="fab1cf0c-66b0-11dc-a47e-cf6356d89593" name="PublicationStatus" isNullable="false" position="50" groupByPriority="0" inherited="true" instanceType="System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" storeType="PhysicalStoreType='String'Length='64'" isReadOnly="false" defaultValue="ValueType='String'Value=''">
+      <FormRenderingProfile />
+    </DataFieldDescriptor>
+  </Fields>
+</DataTypeDescriptor>
