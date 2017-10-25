@@ -3,6 +3,7 @@
 <%@ Import Namespace="Composite.Core.Application" %>
 <%@ Import Namespace="Composite.Core.Routing" %>
 <%@ Import Namespace="Composite.Core.WebClient" %>
+<%@ Import Namespace="FluentValidation.Mvc" %>
 
 <script RunAt="server">
     void Application_Start(object sender, EventArgs e)
@@ -13,6 +14,8 @@
         ApplicationLevelEventHandlers.Application_Start(sender, e);
 
         RegisterRoutes(RouteTable.Routes);
+
+        FluentValidationModelValidatorProvider.Configure();
     }
 
 

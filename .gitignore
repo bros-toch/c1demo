@@ -288,3 +288,4 @@ __pycache__/
 *.xsd.cs
 Website/App_Data/Composite/Cache/
 Website/App_Data/Composite/ApplicationState/
+Website/App_Data/Composite/LogFiles/

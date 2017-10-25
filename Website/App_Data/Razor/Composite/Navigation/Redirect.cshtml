@@ -1,0 +1,30 @@
+﻿@using Newtonsoft.Json
+@inherits RazorFunction
+
+@functions {
+	public override string FunctionDescription
+	{
+		get { return "Redirect Page"; }
+	}
+
+	[FunctionParameter(Label = "Page", DefaultValue = null)]
+	public DataReference<IPage> RedirectToPage { get; set; }
+}
+
+@{
+    Response.Clear();
+    Response.Write(JsonConvert.SerializeObject(new
+    {
+        id = RedirectToPage.Data.Id,
+        title = RedirectToPage.Data.Title
+    }));
+    Response.Headers["Content-Type"] = "application/json";
+    Response.End();
+}
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:f="http://www.composite.net/ns/function/1.0">
+<head>
+</head>
+<body>
+    
+</body>
+</html>
