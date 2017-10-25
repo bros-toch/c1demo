@@ -3,18 +3,30 @@
   <DataAssociations />
   <DataScopes>
     <DataScopeIdentifier name="public" />
+    <DataScopeIdentifier name="administrated" />
   </DataScopes>
   <KeyPropertyNames>
     <KeyPropertyName name="Id" />
   </KeyPropertyNames>
-  <SuperInterfaces />
+  <SuperInterfaces>
+    <SuperInterface type="Composite.Data.ProcessControlled.IPublishControlled,Composite" />
+    <SuperInterface type="Composite.Data.ProcessControlled.IProcessControlled,Composite" />
+  </SuperInterfaces>
   <Fields>
     <DataFieldDescriptor id="94cda505-234e-4985-a140-f297590761b6" name="Id" isNullable="false" position="0" groupByPriority="0" inherited="false" instanceType="System.Guid, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" storeType="PhysicalStoreType='Guid'" isReadOnly="false">
       <FormRenderingProfile label="Id" />
       <DataUrlProfile Order="0" />
+      <ValidationFunctionMarkups />
     </DataFieldDescriptor>
     <DataFieldDescriptor id="4c71465a-6fbd-45ad-89a8-5f81a214d3e5" name="Name" isNullable="false" position="0" groupByPriority="0" inherited="false" instanceType="System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" storeType="PhysicalStoreType='String'Length='128'" isReadOnly="false" defaultValue="ValueType='String'Value=''">
       <FormRenderingProfile label="Name" helpText="" widgetFunctionMarkup="&lt;f:widgetfunction xmlns:f=&quot;http://www.composite.net/ns/function/1.0&quot; name=&quot;Composite.Widgets.String.TextBox&quot; /&gt;" />
+      <ValidationFunctionMarkups />
+    </DataFieldDescriptor>
+    <DataFieldDescriptor id="4dfc8c58-5eea-43f5-8241-78d583135837" name="Code" isNullable="false" position="1" groupByPriority="0" inherited="false" instanceType="System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" storeType="PhysicalStoreType='String'Length='16'" isReadOnly="false" defaultValue="ValueType='String'Value=''">
+      <FormRenderingProfile label="Code" helpText="" widgetFunctionMarkup="&lt;f:widgetfunction xmlns:f=&quot;http://www.composite.net/ns/function/1.0&quot; name=&quot;Composite.Widgets.String.TextBox&quot; /&gt;" />
+    </DataFieldDescriptor>
+    <DataFieldDescriptor id="fab1cf0c-66b0-11dc-a47e-cf6356d89593" name="PublicationStatus" isNullable="false" position="50" groupByPriority="0" inherited="true" instanceType="System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" storeType="PhysicalStoreType='String'Length='64'" isReadOnly="false" defaultValue="ValueType='String'Value=''">
+      <FormRenderingProfile />
     </DataFieldDescriptor>
   </Fields>
 </DataTypeDescriptor>

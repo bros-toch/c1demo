@@ -286,3 +286,5 @@ __pycache__/
 *.btm.cs
 *.odx.cs
 *.xsd.cs
+Website/App_Data/Composite/Cache/
+Website/App_Data/Composite/ApplicationState/
