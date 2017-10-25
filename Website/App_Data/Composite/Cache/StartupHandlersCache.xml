@@ -39,5 +39,10 @@
       <AssemblyName>Orckestra.Web.Css.Less</AssemblyName>
       <LastModified>2017-10-25T11:15:16.8354234+11:00</LastModified>
     </AssemblyInfo>
+    <AssemblyInfo>
+      <SubscribedTypes />
+      <AssemblyName>Composite.AspNet.MvcFunctions</AssemblyName>
+      <LastModified>2017-10-26T08:35:17.7440208+11:00</LastModified>
+    </AssemblyInfo>
   </Assemblies>
 </SubscribedTypesCache>

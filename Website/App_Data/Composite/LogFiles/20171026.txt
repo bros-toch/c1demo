@@ -1,0 +1,841 @@
+﻿20171026 08:05:47.9531 20 370 Error FileBasedFunctionProvider  Error instantiating function Composite.Navigation.Sitemap 
+20171026 08:05:48.0083 20 370 Error FileBasedFunctionProvider  System.Web.HttpCompileException (0x80004005): E:\_Working\Learning\CompositeC1\c1demo\Website\App_Data\Razor\Composite\Navigation\Sitemap.cshtml(82): error CS7036: There is no argument given that corresponds to the required formal parameter 'helpText' of 'HelpDefinition.HelpDefinition(string)'
+   at System.Web.Compilation.AssemblyBuilder.Compile()
+   at System.Web.Compilation.BuildProvidersCompiler.PerformBuild()
+   at System.Web.Compilation.BuildManager.CompileWebFile(VirtualPath virtualPath)
+   at System.Web.Compilation.BuildManager.GetVPathBuildResultInternal(VirtualPath virtualPath, Boolean noBuild, Boolean allowCrossApp, Boolean allowBuildInPrecompile, Boolean throwIfNotFound, Boolean ensureIsUpToDate)
+   at System.Web.Compilation.BuildManager.GetVPathBuildResultWithNoAssert(HttpContext context, VirtualPath virtualPath, Boolean noBuild, Boolean allowCrossApp, Boolean allowBuildInPrecompile, Boolean throwIfNotFound, Boolean ensureIsUpToDate)
+   at System.Web.Compilation.BuildManager.GetVirtualPathObjectFactory(VirtualPath virtualPath, HttpContext context, Boolean allowCrossApp, Boolean throwIfNotFound)
+   at System.Web.Compilation.BuildManager.CreateInstanceFromVirtualPath(VirtualPath virtualPath, Type requiredBaseType, HttpContext context, Boolean allowCrossApp)
+   at System.Web.WebPages.BuildManagerWrapper.CreateInstanceOfType[T](String virtualPath)
+   at System.Web.WebPages.VirtualPathFactoryManager.CreateInstanceOfType[T](String virtualPath)
+   at System.Web.WebPages.WebPageBase.CreateInstanceFromVirtualPath(String virtualPath, IVirtualPathFactory virtualPathFactory)
+   at Composite.Plugins.Functions.FunctionProviders.RazorFunctionProvider.RazorFunctionProvider.InstantiateFunction(String virtualPath, String namespace, String name)
+   at Composite.Plugins.Functions.FunctionProviders.FileBasedFunctionProvider.FileBasedFunctionProvider`1.get_Functions()
+20171026 08:13:47.0368 20 402 Warning ConsoleFacade  The console 'key06017940310806069' owned by the user 'admin' timed out, closing it
+20171026 08:13:47.0584 20 402 Error WorkflowFacade  Workflow aborted, Id = 8cfb0c7d-6dca-4079-97d6-f69110ea0211
+20171026 08:13:47.0710 20 402 Error WorkflowFacade  Workflow aborted, Id = 79494998-80a6-4cfe-bda4-4d0069c217a8
+20171026 08:13:47.0740 20 402 Error WorkflowFacade  Workflow aborted, Id = 7f940d65-6ae4-429f-ada2-b2c752186cfc
+20171026 08:34:34.3841 2  1 Error FileBasedFunctionProvider  Error instantiating function Composite.Navigation.Sitemap 
+20171026 08:34:34.3921 2  1 Error FileBasedFunctionProvider  System.Web.HttpCompileException (0x80004005): E:\_Working\Learning\CompositeC1\c1demo\Website\App_Data\Razor\Composite\Navigation\Sitemap.cshtml(82): error CS7036: There is no argument given that corresponds to the required formal parameter 'helpText' of 'HelpDefinition.HelpDefinition(string)'
+   at System.Web.Compilation.AssemblyBuilder.Compile()
+   at System.Web.Compilation.BuildProvidersCompiler.PerformBuild()
+   at System.Web.Compilation.BuildManager.CompileWebFile(VirtualPath virtualPath)
+   at System.Web.Compilation.BuildManager.GetVPathBuildResultInternal(VirtualPath virtualPath, Boolean noBuild, Boolean allowCrossApp, Boolean allowBuildInPrecompile, Boolean throwIfNotFound, Boolean ensureIsUpToDate)
+   at System.Web.Compilation.BuildManager.GetVPathBuildResultWithNoAssert(HttpContext context, VirtualPath virtualPath, Boolean noBuild, Boolean allowCrossApp, Boolean allowBuildInPrecompile, Boolean throwIfNotFound, Boolean ensureIsUpToDate)
+   at System.Web.Compilation.BuildManager.GetVirtualPathObjectFactory(VirtualPath virtualPath, HttpContext context, Boolean allowCrossApp, Boolean throwIfNotFound)
+   at System.Web.Compilation.BuildManager.CreateInstanceFromVirtualPath(VirtualPath virtualPath, Type requiredBaseType, HttpContext context, Boolean allowCrossApp)
+   at System.Web.WebPages.BuildManagerWrapper.CreateInstanceOfType[T](String virtualPath)
+   at System.Web.WebPages.VirtualPathFactoryManager.CreateInstanceOfType[T](String virtualPath)
+   at System.Web.WebPages.WebPageBase.CreateInstanceFromVirtualPath(String virtualPath, IVirtualPathFactory virtualPathFactory)
+   at Composite.Plugins.Functions.FunctionProviders.RazorFunctionProvider.RazorFunctionProvider.InstantiateFunction(String virtualPath, String namespace, String name)
+   at Composite.Plugins.Functions.FunctionProviders.FileBasedFunctionProvider.FileBasedFunctionProvider`1.get_Functions()
+20171026 08:34:34.6318 2  1 Warning Cache  Clearing cache 'Resource strings' as it exceeded maximum size 10 elements. Edit configuration file to increase the cache size.
+20171026 08:34:34.6468 2  1 Warning Cache  Clearing cache 'Resource strings' as it exceeded maximum size 10 elements. Edit configuration file to increase the cache size.
+20171026 08:34:40.2173 2 35 Warning Cache  Clearing cache 'Resource strings' as it exceeded maximum size 10 elements. Edit configuration file to increase the cache size.
+20171026 08:34:40.5141 2 21 Warning Cache  Clearing cache 'Resource strings' as it exceeded maximum size 10 elements. Edit configuration file to increase the cache size.
+20171026 08:34:40.6194 2 21 Warning Cache  Clearing cache 'Resource strings' as it exceeded maximum size 10 elements. Edit configuration file to increase the cache size.
+20171026 08:34:40.6806 2 22 Warning Cache  Clearing cache 'Resource strings' as it exceeded maximum size 10 elements. Edit configuration file to increase the cache size.
+20171026 08:34:40.6816 2 22 Warning Cache  Clearing cache 'Resource strings' as it exceeded maximum size 10 elements. Edit configuration file to increase the cache size.
+20171026 08:34:40.6936 2 22 Warning Cache  Clearing cache 'Resource strings' as it exceeded maximum size 10 elements. Edit configuration file to increase the cache size.
+20171026 08:34:40.7679 2 22 Warning Cache  Clearing cache 'Resource strings' as it exceeded maximum size 10 elements. Edit configuration file to increase the cache size.
+20171026 08:34:40.7769 2 22 Warning Cache  Clearing cache 'Resource strings' as it exceeded maximum size 10 elements. Edit configuration file to increase the cache size.
+20171026 08:34:40.7809 2 22 Warning Cache  Clearing cache 'Resource strings' as it exceeded maximum size 10 elements. Edit configuration file to increase the cache size.
+20171026 08:34:40.7839 2 22 Warning Cache  Clearing cache 'Resource strings' as it exceeded maximum size 10 elements. Edit configuration file to increase the cache size.
+20171026 08:34:40.7849 2 22 Warning Cache  Clearing cache 'Resource strings' as it exceeded maximum size 10 elements. Edit configuration file to increase the cache size.
+20171026 08:34:40.7879 2 22 Warning Cache  Clearing cache 'Resource strings' as it exceeded maximum size 10 elements. Edit configuration file to increase the cache size.
+20171026 08:34:40.7879 2 22 Warning Cache  Clearing cache 'Resource strings' as it exceeded maximum size 10 elements. Edit configuration file to increase the cache size.
+20171026 08:34:40.7919 2 22 Warning Cache  Clearing cache 'Resource strings' as it exceeded maximum size 10 elements. Edit configuration file to increase the cache size.
+20171026 08:34:40.7947 2 22 Warning Cache  Clearing cache 'Resource strings' as it exceeded maximum size 10 elements. Edit configuration file to increase the cache size.
+20171026 08:34:40.8129 2 22 Warning Cache  Clearing cache 'Resource strings' as it exceeded maximum size 10 elements. Edit configuration file to increase the cache size.
+20171026 08:34:40.8139 2 22 Warning Cache  Clearing cache 'Resource strings' as it exceeded maximum size 10 elements. Edit configuration file to increase the cache size.
+20171026 08:34:40.8179 2 22 Warning Cache  Clearing cache 'Resource strings' as it exceeded maximum size 10 elements. Edit configuration file to increase the cache size.
+20171026 08:34:40.8260 2 22 Warning Cache  Clearing cache 'Resource strings' as it exceeded maximum size 10 elements. Edit configuration file to increase the cache size.
+20171026 08:34:40.8313 2 22 Warning Cache  Clearing cache 'Resource strings' as it exceeded maximum size 10 elements. Edit configuration file to increase the cache size.
+20171026 08:34:40.8370 2 22 Warning Cache  Clearing cache 'Resource strings' as it exceeded maximum size 10 elements. Edit configuration file to increase the cache size.
+20171026 08:34:40.8380 2 22 Warning Cache  Clearing cache 'Resource strings' as it exceeded maximum size 10 elements. Edit configuration file to increase the cache size.
+20171026 08:34:40.8433 2 22 Warning Cache  Clearing cache 'Resource strings' as it exceeded maximum size 10 elements. Edit configuration file to increase the cache size.
+20171026 08:34:40.8513 2 22 Warning Cache  Clearing cache 'Resource strings' as it exceeded maximum size 10 elements. Edit configuration file to increase the cache size.
+20171026 08:34:40.8533 2 22 Warning Cache  Clearing cache 'Resource strings' as it exceeded maximum size 10 elements. Edit configuration file to increase the cache size.
+20171026 08:34:40.8564 2 22 Warning Cache  Clearing cache 'Resource strings' as it exceeded maximum size 10 elements. Edit configuration file to increase the cache size.
+20171026 08:34:40.8584 2 22 Warning Cache  Clearing cache 'Resource strings' as it exceeded maximum size 10 elements. Edit configuration file to increase the cache size.
+20171026 08:34:40.8584 2 22 Warning Cache  Clearing cache 'Resource strings' as it exceeded maximum size 10 elements. Edit configuration file to increase the cache size.
+20171026 08:34:40.8624 2 22 Warning Cache  Clearing cache 'Resource strings' as it exceeded maximum size 10 elements. Edit configuration file to increase the cache size.
+20171026 08:34:40.8664 2 22 Warning Cache  Clearing cache 'Resource strings' as it exceeded maximum size 10 elements. Edit configuration file to increase the cache size.
+20171026 08:34:40.8664 2 22 Warning Cache  Clearing cache 'Resource strings' as it exceeded maximum size 10 elements. Edit configuration file to increase the cache size.
+20171026 08:34:40.8734 2 22 Warning Cache  Clearing cache 'Resource strings' as it exceeded maximum size 10 elements. Edit configuration file to increase the cache size.
+20171026 08:34:40.8784 2 22 Warning Cache  Clearing cache 'Resource strings' as it exceeded maximum size 10 elements. Edit configuration file to increase the cache size.
+20171026 08:34:40.8784 2 22 Warning Cache  Clearing cache 'Resource strings' as it exceeded maximum size 10 elements. Edit configuration file to increase the cache size.
+20171026 08:34:40.8784 2 22 Warning Cache  Clearing cache 'Resource strings' as it exceeded maximum size 10 elements. Edit configuration file to increase the cache size.
+20171026 08:34:41.5576 2 35 Warning Cache  Clearing cache 'Resource strings' as it exceeded maximum size 10 elements. Edit configuration file to increase the cache size.
+20171026 08:34:41.5576 2 35 Warning Cache  Clearing cache 'Resource strings' as it exceeded maximum size 10 elements. Edit configuration file to increase the cache size.
+20171026 08:34:41.5616 2 35 Warning Cache  Clearing cache 'Resource strings' as it exceeded maximum size 10 elements. Edit configuration file to increase the cache size.
+20171026 08:34:41.9504 2 19 Warning Cache  Clearing cache 'Resource strings' as it exceeded maximum size 10 elements. Edit configuration file to increase the cache size.
+20171026 08:34:41.9514 2 19 Warning Cache  Clearing cache 'Resource strings' as it exceeded maximum size 10 elements. Edit configuration file to increase the cache size.
+20171026 08:34:41.9544 2 19 Warning Cache  Clearing cache 'Resource strings' as it exceeded maximum size 10 elements. Edit configuration file to increase the cache size.
+20171026 08:34:41.9745 2 19 Warning Cache  Clearing cache 'Resource strings' as it exceeded maximum size 10 elements. Edit configuration file to increase the cache size.
+20171026 08:34:42.0116 2 21 Warning Cache  Clearing cache 'Resource strings' as it exceeded maximum size 10 elements. Edit configuration file to increase the cache size.
+20171026 08:34:42.0166 2 19 Warning Cache  Clearing cache 'Resource strings' as it exceeded maximum size 10 elements. Edit configuration file to increase the cache size.
+20171026 08:34:42.0758 2 18 Warning Cache  Clearing cache 'Resource strings' as it exceeded maximum size 10 elements. Edit configuration file to increase the cache size.
+20171026 08:34:42.0768 2 18 Warning Cache  Clearing cache 'Resource strings' as it exceeded maximum size 10 elements. Edit configuration file to increase the cache size.
+20171026 08:34:42.0808 2 18 Warning Cache  Clearing cache 'Resource strings' as it exceeded maximum size 10 elements. Edit configuration file to increase the cache size.
+20171026 08:34:54.0002 2 21 Warning Cache  Clearing cache 'Resource strings' as it exceeded maximum size 10 elements. Edit configuration file to increase the cache size.
+20171026 08:34:54.0028 2 21 Warning Cache  Clearing cache 'Resource strings' as it exceeded maximum size 10 elements. Edit configuration file to increase the cache size.
+20171026 08:34:54.0043 2 21 Warning Cache  Clearing cache 'Resource strings' as it exceeded maximum size 10 elements. Edit configuration file to increase the cache size.
+20171026 08:34:54.0043 2 21 Warning Cache  Clearing cache 'Resource strings' as it exceeded maximum size 10 elements. Edit configuration file to increase the cache size.
+20171026 08:34:54.0113 2 21 Warning Cache  Clearing cache 'Resource strings' as it exceeded maximum size 10 elements. Edit configuration file to increase the cache size.
+20171026 08:34:54.0360 2 21 Warning Cache  Clearing cache 'Resource strings' as it exceeded maximum size 10 elements. Edit configuration file to increase the cache size.
+20171026 08:34:54.2241 2 18 Warning Cache  Clearing cache 'Resource strings' as it exceeded maximum size 10 elements. Edit configuration file to increase the cache size.
+20171026 08:34:54.2397 2 18 Warning Cache  Clearing cache 'Resource strings' as it exceeded maximum size 10 elements. Edit configuration file to increase the cache size.
+20171026 08:34:54.3128 2 49 Warning Cache  Clearing cache 'Resource strings' as it exceeded maximum size 10 elements. Edit configuration file to increase the cache size.
+20171026 08:34:54.3178 2 49 Warning Cache  Clearing cache 'Resource strings' as it exceeded maximum size 10 elements. Edit configuration file to increase the cache size.
+20171026 08:34:54.3198 2 49 Warning Cache  Clearing cache 'Resource strings' as it exceeded maximum size 10 elements. Edit configuration file to increase the cache size.
+20171026 08:34:54.3198 2 49 Warning Cache  Clearing cache 'Resource strings' as it exceeded maximum size 10 elements. Edit configuration file to increase the cache size.
+20171026 08:34:54.3238 2 49 Warning Cache  Clearing cache 'Resource strings' as it exceeded maximum size 10 elements. Edit configuration file to increase the cache size.
+20171026 08:34:54.3293 2 49 Warning Cache  Clearing cache 'Resource strings' as it exceeded maximum size 10 elements. Edit configuration file to increase the cache size.
+20171026 08:34:54.3308 2 49 Warning Cache  Clearing cache 'Resource strings' as it exceeded maximum size 10 elements. Edit configuration file to increase the cache size.
+20171026 08:34:59.6410 2 18 Warning Cache  Clearing cache 'Resource strings' as it exceeded maximum size 10 elements. Edit configuration file to increase the cache size.
+20171026 08:34:59.6816 2 48 Warning Cache  Clearing cache 'Resource strings' as it exceeded maximum size 10 elements. Edit configuration file to increase the cache size.
+20171026 08:34:59.6851 2 48 Warning Cache  Clearing cache 'Resource strings' as it exceeded maximum size 10 elements. Edit configuration file to increase the cache size.
+20171026 08:35:01.8151 2 18 Warning Cache  Clearing cache 'Resource strings' as it exceeded maximum size 10 elements. Edit configuration file to increase the cache size.
+20171026 08:35:01.8261 2 18 Warning Cache  Clearing cache 'Resource strings' as it exceeded maximum size 10 elements. Edit configuration file to increase the cache size.
+20171026 08:35:02.2849 2 18 Warning Cache  Clearing cache 'Resource strings' as it exceeded maximum size 10 elements. Edit configuration file to increase the cache size.
+20171026 08:35:02.2980 2 18 Warning Cache  Clearing cache 'Resource strings' as it exceeded maximum size 10 elements. Edit configuration file to increase the cache size.
+20171026 08:35:07.3911 2  6 Warning Cache  Clearing cache 'Resource strings' as it exceeded maximum size 10 elements. Edit configuration file to increase the cache size.
+20171026 08:35:07.3986 2  6 Warning Cache  Clearing cache 'Resource strings' as it exceeded maximum size 10 elements. Edit configuration file to increase the cache size.
+20171026 08:35:07.6503 2 49 Warning Cache  Clearing cache 'Resource strings' as it exceeded maximum size 10 elements. Edit configuration file to increase the cache size.
+20171026 08:35:12.0471 2 47 Warning Cache  Clearing cache 'Resource strings' as it exceeded maximum size 10 elements. Edit configuration file to increase the cache size.
+20171026 08:35:16.5988 2 35 Warning Cache  Clearing cache 'Resource strings' as it exceeded maximum size 10 elements. Edit configuration file to increase the cache size.
+20171026 08:35:17.6849 2 23 Information PackageManagerInstallProcess  Installing package: Composite.AspNet.MvcFunctions, Version: 1.0.14, Id = 1a8895f2-280d-4fec-b8b0-f124b4198e3d
+20171026 08:35:18.1328 2 23 Information PackageManagerInstallProcess  Package successfully installed
+20171026 08:35:24.0457 3 139 Error FileBasedFunctionProvider  Error instantiating function Composite.Navigation.Sitemap 
+20171026 08:35:24.0507 3 139 Error FileBasedFunctionProvider  System.Web.HttpCompileException (0x80004005): E:\_Working\Learning\CompositeC1\c1demo\Website\App_Data\Razor\Composite\Navigation\Sitemap.cshtml(82): error CS7036: There is no argument given that corresponds to the required formal parameter 'helpText' of 'HelpDefinition.HelpDefinition(string)'
+   at System.Web.Compilation.AssemblyBuilder.Compile()
+   at System.Web.Compilation.BuildProvidersCompiler.PerformBuild()
+   at System.Web.Compilation.BuildManager.CompileWebFile(VirtualPath virtualPath)
+   at System.Web.Compilation.BuildManager.GetVPathBuildResultInternal(VirtualPath virtualPath, Boolean noBuild, Boolean allowCrossApp, Boolean allowBuildInPrecompile, Boolean throwIfNotFound, Boolean ensureIsUpToDate)
+   at System.Web.Compilation.BuildManager.GetVPathBuildResultWithNoAssert(HttpContext context, VirtualPath virtualPath, Boolean noBuild, Boolean allowCrossApp, Boolean allowBuildInPrecompile, Boolean throwIfNotFound, Boolean ensureIsUpToDate)
+   at System.Web.Compilation.BuildManager.GetVirtualPathObjectFactory(VirtualPath virtualPath, HttpContext context, Boolean allowCrossApp, Boolean throwIfNotFound)
+   at System.Web.Compilation.BuildManager.CreateInstanceFromVirtualPath(VirtualPath virtualPath, Type requiredBaseType, HttpContext context, Boolean allowCrossApp)
+   at System.Web.WebPages.BuildManagerWrapper.CreateInstanceOfType[T](String virtualPath)
+   at System.Web.WebPages.VirtualPathFactoryManager.CreateInstanceOfType[T](String virtualPath)
+   at System.Web.WebPages.WebPageBase.CreateInstanceFromVirtualPath(String virtualPath, IVirtualPathFactory virtualPathFactory)
+   at Composite.Plugins.Functions.FunctionProviders.RazorFunctionProvider.RazorFunctionProvider.InstantiateFunction(String virtualPath, String namespace, String name)
+   at Composite.Plugins.Functions.FunctionProviders.FileBasedFunctionProvider.FileBasedFunctionProvider`1.get_Functions()
+20171026 08:35:24.2367 3 139 Warning Cache  Clearing cache 'Resource strings' as it exceeded maximum size 10 elements. Edit configuration file to increase the cache size.
+20171026 08:35:24.2523 3 139 Warning Cache  Clearing cache 'Resource strings' as it exceeded maximum size 10 elements. Edit configuration file to increase the cache size.
+20171026 08:35:25.7174 3 54 Warning Cache  Clearing cache 'Resource strings' as it exceeded maximum size 10 elements. Edit configuration file to increase the cache size.
+20171026 08:35:33.8854 3 48 Error FileBasedFunctionProvider  Error instantiating function Composite.Navigation.Sitemap 
+20171026 08:35:33.8874 3 48 Error FileBasedFunctionProvider  System.Web.HttpCompileException (0x80004005): E:\_Working\Learning\CompositeC1\c1demo\Website\App_Data\Razor\Composite\Navigation\Sitemap.cshtml(82): error CS7036: There is no argument given that corresponds to the required formal parameter 'helpText' of 'HelpDefinition.HelpDefinition(string)'
+   at System.Web.Compilation.BuildManager.PostProcessFoundBuildResult(BuildResult result, Boolean keyFromVPP, VirtualPath virtualPath)
+   at System.Web.Compilation.BuildManager.GetBuildResultFromCacheInternal(String cacheKey, Boolean keyFromVPP, VirtualPath virtualPath, Int64 hashCode, Boolean ensureIsUpToDate)
+   at System.Web.Compilation.BuildManager.GetVPathBuildResultFromCacheInternal(VirtualPath virtualPath, Boolean ensureIsUpToDate)
+   at System.Web.Compilation.BuildManager.GetVPathBuildResultInternal(VirtualPath virtualPath, Boolean noBuild, Boolean allowCrossApp, Boolean allowBuildInPrecompile, Boolean throwIfNotFound, Boolean ensureIsUpToDate)
+   at System.Web.Compilation.BuildManager.GetVPathBuildResultWithNoAssert(HttpContext context, VirtualPath virtualPath, Boolean noBuild, Boolean allowCrossApp, Boolean allowBuildInPrecompile, Boolean throwIfNotFound, Boolean ensureIsUpToDate)
+   at System.Web.Compilation.BuildManager.GetVirtualPathObjectFactory(VirtualPath virtualPath, HttpContext context, Boolean allowCrossApp, Boolean throwIfNotFound)
+   at System.Web.Compilation.BuildManager.CreateInstanceFromVirtualPath(VirtualPath virtualPath, Type requiredBaseType, HttpContext context, Boolean allowCrossApp)
+   at System.Web.WebPages.BuildManagerWrapper.CreateInstanceOfType[T](String virtualPath)
+   at System.Web.WebPages.VirtualPathFactoryManager.CreateInstanceOfType[T](String virtualPath)
+   at System.Web.WebPages.WebPageBase.CreateInstanceFromVirtualPath(String virtualPath, IVirtualPathFactory virtualPathFactory)
+   at Composite.Plugins.Functions.FunctionProviders.RazorFunctionProvider.RazorFunctionProvider.InstantiateFunction(String virtualPath, String namespace, String name)
+   at Composite.Plugins.Functions.FunctionProviders.FileBasedFunctionProvider.FileBasedFunctionProvider`1.get_Functions()
+20171026 08:35:34.1662 3 48 Warning Cache  Clearing cache 'Resource strings' as it exceeded maximum size 10 elements. Edit configuration file to increase the cache size.
+20171026 08:35:34.1672 3 48 Warning Cache  Clearing cache 'Resource strings' as it exceeded maximum size 10 elements. Edit configuration file to increase the cache size.
+20171026 08:35:34.1777 3 48 Warning Cache  Clearing cache 'Resource strings' as it exceeded maximum size 10 elements. Edit configuration file to increase the cache size.
+20171026 08:35:34.1828 3 48 Warning Cache  Clearing cache 'Resource strings' as it exceeded maximum size 10 elements. Edit configuration file to increase the cache size.
+20171026 08:35:34.1833 3 48 Warning Cache  Clearing cache 'Resource strings' as it exceeded maximum size 10 elements. Edit configuration file to increase the cache size.
+20171026 08:35:34.1863 3 48 Warning Cache  Clearing cache 'Resource strings' as it exceeded maximum size 10 elements. Edit configuration file to increase the cache size.
+20171026 08:35:34.1868 3 48 Warning Cache  Clearing cache 'Resource strings' as it exceeded maximum size 10 elements. Edit configuration file to increase the cache size.
+20171026 08:35:34.2129 3 48 Warning Cache  Clearing cache 'Resource strings' as it exceeded maximum size 10 elements. Edit configuration file to increase the cache size.
+20171026 08:35:34.2154 3 48 Warning Cache  Clearing cache 'Resource strings' as it exceeded maximum size 10 elements. Edit configuration file to increase the cache size.
+20171026 08:35:34.2299 3 48 Warning Cache  Clearing cache 'Resource strings' as it exceeded maximum size 10 elements. Edit configuration file to increase the cache size.
+20171026 08:35:34.2309 3 48 Warning Cache  Clearing cache 'Resource strings' as it exceeded maximum size 10 elements. Edit configuration file to increase the cache size.
+20171026 08:35:34.2339 3 48 Warning Cache  Clearing cache 'Resource strings' as it exceeded maximum size 10 elements. Edit configuration file to increase the cache size.
+20171026 08:35:34.2409 3 48 Warning Cache  Clearing cache 'Resource strings' as it exceeded maximum size 10 elements. Edit configuration file to increase the cache size.
+20171026 08:35:34.2449 3 48 Warning Cache  Clearing cache 'Resource strings' as it exceeded maximum size 10 elements. Edit configuration file to increase the cache size.
+20171026 08:35:34.2494 3 48 Warning Cache  Clearing cache 'Resource strings' as it exceeded maximum size 10 elements. Edit configuration file to increase the cache size.
+20171026 08:35:34.2535 3 48 Warning Cache  Clearing cache 'Resource strings' as it exceeded maximum size 10 elements. Edit configuration file to increase the cache size.
+20171026 08:35:34.2540 3 48 Warning Cache  Clearing cache 'Resource strings' as it exceeded maximum size 10 elements. Edit configuration file to increase the cache size.
+20171026 08:35:34.2625 3 48 Warning Cache  Clearing cache 'Resource strings' as it exceeded maximum size 10 elements. Edit configuration file to increase the cache size.
+20171026 08:35:34.2640 3 48 Warning Cache  Clearing cache 'Resource strings' as it exceeded maximum size 10 elements. Edit configuration file to increase the cache size.
+20171026 08:35:34.2660 3 48 Warning Cache  Clearing cache 'Resource strings' as it exceeded maximum size 10 elements. Edit configuration file to increase the cache size.
+20171026 08:35:34.2675 3 48 Warning Cache  Clearing cache 'Resource strings' as it exceeded maximum size 10 elements. Edit configuration file to increase the cache size.
+20171026 08:35:34.2680 3 48 Warning Cache  Clearing cache 'Resource strings' as it exceeded maximum size 10 elements. Edit configuration file to increase the cache size.
+20171026 08:35:34.2715 3 48 Warning Cache  Clearing cache 'Resource strings' as it exceeded maximum size 10 elements. Edit configuration file to increase the cache size.
+20171026 08:35:34.2750 3 48 Warning Cache  Clearing cache 'Resource strings' as it exceeded maximum size 10 elements. Edit configuration file to increase the cache size.
+20171026 08:35:34.2800 3 48 Warning Cache  Clearing cache 'Resource strings' as it exceeded maximum size 10 elements. Edit configuration file to increase the cache size.
+20171026 08:35:34.2805 3 48 Warning Cache  Clearing cache 'Resource strings' as it exceeded maximum size 10 elements. Edit configuration file to increase the cache size.
+20171026 08:35:39.0895 3 11 Information WorkflowFacade  New workflow detected: 5d8877b2-c9ae-4d1b-b8d2-a5fc80be8216
+20171026 08:35:40.8958 3 20 Warning Cache  Clearing cache 'Resource strings' as it exceeded maximum size 10 elements. Edit configuration file to increase the cache size.
+20171026 08:35:40.9740 3 20 Warning Cache  Clearing cache 'Resource strings' as it exceeded maximum size 10 elements. Edit configuration file to increase the cache size.
+20171026 08:35:40.9745 3 20 Warning Cache  Clearing cache 'Resource strings' as it exceeded maximum size 10 elements. Edit configuration file to increase the cache size.
+20171026 08:35:40.9805 3 20 Warning Cache  Clearing cache 'Resource strings' as it exceeded maximum size 10 elements. Edit configuration file to increase the cache size.
+20171026 08:35:41.0327 3 20 Warning Cache  Clearing cache 'Resource strings' as it exceeded maximum size 10 elements. Edit configuration file to increase the cache size.
+20171026 08:35:41.1190 3 15 Warning Cache  Clearing cache 'Resource strings' as it exceeded maximum size 10 elements. Edit configuration file to increase the cache size.
+20171026 08:35:41.1190 3 15 Warning Cache  Clearing cache 'Resource strings' as it exceeded maximum size 10 elements. Edit configuration file to increase the cache size.
+20171026 08:35:41.8791 3 35 Warning Cache  Clearing cache 'Resource strings' as it exceeded maximum size 10 elements. Edit configuration file to increase the cache size.
+20171026 08:35:41.8821 3 35 Warning Cache  Clearing cache 'Resource strings' as it exceeded maximum size 10 elements. Edit configuration file to increase the cache size.
+20171026 08:35:41.8821 3 35 Warning Cache  Clearing cache 'Resource strings' as it exceeded maximum size 10 elements. Edit configuration file to increase the cache size.
+20171026 08:35:41.8836 3 35 Warning Cache  Clearing cache 'Resource strings' as it exceeded maximum size 10 elements. Edit configuration file to increase the cache size.
+20171026 08:35:41.8911 3 35 Warning Cache  Clearing cache 'Resource strings' as it exceeded maximum size 10 elements. Edit configuration file to increase the cache size.
+20171026 08:35:41.9277 3 35 Warning Cache  Clearing cache 'Resource strings' as it exceeded maximum size 10 elements. Edit configuration file to increase the cache size.
+20171026 08:35:42.8884 3 20 Warning Cache  Clearing cache 'Resource strings' as it exceeded maximum size 10 elements. Edit configuration file to increase the cache size.
+20171026 08:35:42.8915 3 20 Warning Cache  Clearing cache 'Resource strings' as it exceeded maximum size 10 elements. Edit configuration file to increase the cache size.
+20171026 08:35:42.8930 3 20 Warning Cache  Clearing cache 'Resource strings' as it exceeded maximum size 10 elements. Edit configuration file to increase the cache size.
+20171026 08:35:42.8930 3 20 Warning Cache  Clearing cache 'Resource strings' as it exceeded maximum size 10 elements. Edit configuration file to increase the cache size.
+20171026 08:35:42.8945 3 20 Warning Cache  Clearing cache 'Resource strings' as it exceeded maximum size 10 elements. Edit configuration file to increase the cache size.
+20171026 08:35:42.8990 3 20 Warning Cache  Clearing cache 'Resource strings' as it exceeded maximum size 10 elements. Edit configuration file to increase the cache size.
+20171026 08:35:42.9000 3 20 Warning Cache  Clearing cache 'Resource strings' as it exceeded maximum size 10 elements. Edit configuration file to increase the cache size.
+20171026 08:35:42.9005 3 20 Warning Cache  Clearing cache 'Resource strings' as it exceeded maximum size 10 elements. Edit configuration file to increase the cache size.
+20171026 08:35:42.9095 3 20 Warning Cache  Clearing cache 'Resource strings' as it exceeded maximum size 10 elements. Edit configuration file to increase the cache size.
+20171026 08:35:42.9115 3 20 Warning Cache  Clearing cache 'Resource strings' as it exceeded maximum size 10 elements. Edit configuration file to increase the cache size.
+20171026 08:35:42.9120 3 20 Warning Cache  Clearing cache 'Resource strings' as it exceeded maximum size 10 elements. Edit configuration file to increase the cache size.
+20171026 08:35:42.9125 3 20 Warning Cache  Clearing cache 'Resource strings' as it exceeded maximum size 10 elements. Edit configuration file to increase the cache size.
+20171026 08:35:42.9180 3 20 Warning Cache  Clearing cache 'Resource strings' as it exceeded maximum size 10 elements. Edit configuration file to increase the cache size.
+20171026 08:35:42.9195 3 20 Warning Cache  Clearing cache 'Resource strings' as it exceeded maximum size 10 elements. Edit configuration file to increase the cache size.
+20171026 08:35:42.9301 3 20 Warning Cache  Clearing cache 'Resource strings' as it exceeded maximum size 10 elements. Edit configuration file to increase the cache size.
+20171026 08:35:51.1617 3 46 Warning Cache  Clearing cache 'Resource strings' as it exceeded maximum size 10 elements. Edit configuration file to increase the cache size.
+20171026 08:35:51.1697 3 46 Warning Cache  Clearing cache 'Resource strings' as it exceeded maximum size 10 elements. Edit configuration file to increase the cache size.
+20171026 08:35:51.1878 3 46 Warning Cache  Clearing cache 'Resource strings' as it exceeded maximum size 10 elements. Edit configuration file to increase the cache size.
+20171026 08:35:51.1968 3 46 Warning Cache  Clearing cache 'Resource strings' as it exceeded maximum size 10 elements. Edit configuration file to increase the cache size.
+20171026 08:35:51.2008 3 46 Warning Cache  Clearing cache 'Resource strings' as it exceeded maximum size 10 elements. Edit configuration file to increase the cache size.
+20171026 08:35:51.2848 3 46 Warning Cache  Clearing cache 'Resource strings' as it exceeded maximum size 10 elements. Edit configuration file to increase the cache size.
+20171026 08:35:51.2853 3 46 Warning Cache  Clearing cache 'Resource strings' as it exceeded maximum size 10 elements. Edit configuration file to increase the cache size.
+20171026 08:35:51.2884 3 46 Warning Cache  Clearing cache 'Resource strings' as it exceeded maximum size 10 elements. Edit configuration file to increase the cache size.
+20171026 08:35:51.2894 3 46 Warning Cache  Clearing cache 'Resource strings' as it exceeded maximum size 10 elements. Edit configuration file to increase the cache size.
+20171026 08:35:51.2894 3 46 Warning Cache  Clearing cache 'Resource strings' as it exceeded maximum size 10 elements. Edit configuration file to increase the cache size.
+20171026 08:35:51.2914 3 46 Warning Cache  Clearing cache 'Resource strings' as it exceeded maximum size 10 elements. Edit configuration file to increase the cache size.
+20171026 08:35:51.2964 3 46 Warning Cache  Clearing cache 'Resource strings' as it exceeded maximum size 10 elements. Edit configuration file to increase the cache size.
+20171026 08:35:51.2969 3 46 Warning Cache  Clearing cache 'Resource strings' as it exceeded maximum size 10 elements. Edit configuration file to increase the cache size.
+20171026 08:35:51.2989 3 46 Warning Cache  Clearing cache 'Resource strings' as it exceeded maximum size 10 elements. Edit configuration file to increase the cache size.
+20171026 08:35:53.9739 3 47 Warning Cache  Clearing cache 'Resource strings' as it exceeded maximum size 10 elements. Edit configuration file to increase the cache size.
+20171026 08:35:55.0826 3 11 Information WorkflowFacade  New workflow detected: 5371a663-e818-4fbc-b7e9-50493cbb95b6
+20171026 08:36:33.4158 3 21 Warning Cache  Clearing cache 'Resource strings' as it exceeded maximum size 10 elements. Edit configuration file to increase the cache size.
+20171026 08:36:40.2297 3 45 Warning Cache  Clearing cache 'Resource strings' as it exceeded maximum size 10 elements. Edit configuration file to increase the cache size.
+20171026 08:36:52.3019 3 22 Information PackageManagerInstallProcess  Installing package: Composite.AspNet.WebAPI, Version: 1.0.4, Id = d1a6a7bf-f11d-4607-a064-f69f9956a4d5
+20171026 08:36:52.7008 3 22 Information PackageManagerInstallProcess  Package successfully installed
+20171026 08:36:59.5948 4  1 Error FileBasedFunctionProvider  Error instantiating function Composite.Navigation.Sitemap 
+20171026 08:36:59.6008 4  1 Error FileBasedFunctionProvider  System.Web.HttpCompileException (0x80004005): E:\_Working\Learning\CompositeC1\c1demo\Website\App_Data\Razor\Composite\Navigation\Sitemap.cshtml(82): error CS7036: There is no argument given that corresponds to the required formal parameter 'helpText' of 'HelpDefinition.HelpDefinition(string)'
+   at System.Web.Compilation.AssemblyBuilder.Compile()
+   at System.Web.Compilation.BuildProvidersCompiler.PerformBuild()
+   at System.Web.Compilation.BuildManager.CompileWebFile(VirtualPath virtualPath)
+   at System.Web.Compilation.BuildManager.GetVPathBuildResultInternal(VirtualPath virtualPath, Boolean noBuild, Boolean allowCrossApp, Boolean allowBuildInPrecompile, Boolean throwIfNotFound, Boolean ensureIsUpToDate)
+   at System.Web.Compilation.BuildManager.GetVPathBuildResultWithNoAssert(HttpContext context, VirtualPath virtualPath, Boolean noBuild, Boolean allowCrossApp, Boolean allowBuildInPrecompile, Boolean throwIfNotFound, Boolean ensureIsUpToDate)
+   at System.Web.Compilation.BuildManager.GetVirtualPathObjectFactory(VirtualPath virtualPath, HttpContext context, Boolean allowCrossApp, Boolean throwIfNotFound)
+   at System.Web.Compilation.BuildManager.CreateInstanceFromVirtualPath(VirtualPath virtualPath, Type requiredBaseType, HttpContext context, Boolean allowCrossApp)
+   at System.Web.WebPages.BuildManagerWrapper.CreateInstanceOfType[T](String virtualPath)
+   at System.Web.WebPages.VirtualPathFactoryManager.CreateInstanceOfType[T](String virtualPath)
+   at System.Web.WebPages.WebPageBase.CreateInstanceFromVirtualPath(String virtualPath, IVirtualPathFactory virtualPathFactory)
+   at Composite.Plugins.Functions.FunctionProviders.RazorFunctionProvider.RazorFunctionProvider.InstantiateFunction(String virtualPath, String namespace, String name)
+   at Composite.Plugins.Functions.FunctionProviders.FileBasedFunctionProvider.FileBasedFunctionProvider`1.get_Functions()
+20171026 08:36:59.7772 4  1 Warning Cache  Clearing cache 'Resource strings' as it exceeded maximum size 10 elements. Edit configuration file to increase the cache size.
+20171026 08:36:59.7903 4  1 Warning Cache  Clearing cache 'Resource strings' as it exceeded maximum size 10 elements. Edit configuration file to increase the cache size.
+20171026 08:37:01.8406 4 109 Warning Cache  Clearing cache 'Resource strings' as it exceeded maximum size 10 elements. Edit configuration file to increase the cache size.
+20171026 08:37:24.9776 4 22 Warning Cache  Clearing cache 'Resource strings' as it exceeded maximum size 10 elements. Edit configuration file to increase the cache size.
+20171026 08:37:24.9781 4 22 Warning Cache  Clearing cache 'Resource strings' as it exceeded maximum size 10 elements. Edit configuration file to increase the cache size.
+20171026 08:37:24.9881 4 22 Warning Cache  Clearing cache 'Resource strings' as it exceeded maximum size 10 elements. Edit configuration file to increase the cache size.
+20171026 08:37:24.9937 4 22 Warning Cache  Clearing cache 'Resource strings' as it exceeded maximum size 10 elements. Edit configuration file to increase the cache size.
+20171026 08:37:24.9937 4 22 Warning Cache  Clearing cache 'Resource strings' as it exceeded maximum size 10 elements. Edit configuration file to increase the cache size.
+20171026 08:37:24.9967 4 22 Warning Cache  Clearing cache 'Resource strings' as it exceeded maximum size 10 elements. Edit configuration file to increase the cache size.
+20171026 08:37:24.9967 4 22 Warning Cache  Clearing cache 'Resource strings' as it exceeded maximum size 10 elements. Edit configuration file to increase the cache size.
+20171026 08:37:25.0207 4 22 Warning Cache  Clearing cache 'Resource strings' as it exceeded maximum size 10 elements. Edit configuration file to increase the cache size.
+20171026 08:37:25.0227 4 22 Warning Cache  Clearing cache 'Resource strings' as it exceeded maximum size 10 elements. Edit configuration file to increase the cache size.
+20171026 08:37:25.0368 4 22 Warning Cache  Clearing cache 'Resource strings' as it exceeded maximum size 10 elements. Edit configuration file to increase the cache size.
+20171026 08:37:25.0378 4 22 Warning Cache  Clearing cache 'Resource strings' as it exceeded maximum size 10 elements. Edit configuration file to increase the cache size.
+20171026 08:37:25.0398 4 22 Warning Cache  Clearing cache 'Resource strings' as it exceeded maximum size 10 elements. Edit configuration file to increase the cache size.
+20171026 08:37:25.0468 4 22 Warning Cache  Clearing cache 'Resource strings' as it exceeded maximum size 10 elements. Edit configuration file to increase the cache size.
+20171026 08:37:25.0503 4 22 Warning Cache  Clearing cache 'Resource strings' as it exceeded maximum size 10 elements. Edit configuration file to increase the cache size.
+20171026 08:37:25.0549 4 22 Warning Cache  Clearing cache 'Resource strings' as it exceeded maximum size 10 elements. Edit configuration file to increase the cache size.
+20171026 08:37:25.0589 4 22 Warning Cache  Clearing cache 'Resource strings' as it exceeded maximum size 10 elements. Edit configuration file to increase the cache size.
+20171026 08:37:25.0594 4 22 Warning Cache  Clearing cache 'Resource strings' as it exceeded maximum size 10 elements. Edit configuration file to increase the cache size.
+20171026 08:37:25.0669 4 22 Warning Cache  Clearing cache 'Resource strings' as it exceeded maximum size 10 elements. Edit configuration file to increase the cache size.
+20171026 08:37:25.0684 4 22 Warning Cache  Clearing cache 'Resource strings' as it exceeded maximum size 10 elements. Edit configuration file to increase the cache size.
+20171026 08:37:25.0699 4 22 Warning Cache  Clearing cache 'Resource strings' as it exceeded maximum size 10 elements. Edit configuration file to increase the cache size.
+20171026 08:37:25.0714 4 22 Warning Cache  Clearing cache 'Resource strings' as it exceeded maximum size 10 elements. Edit configuration file to increase the cache size.
+20171026 08:37:25.0724 4 22 Warning Cache  Clearing cache 'Resource strings' as it exceeded maximum size 10 elements. Edit configuration file to increase the cache size.
+20171026 08:37:25.0754 4 22 Warning Cache  Clearing cache 'Resource strings' as it exceeded maximum size 10 elements. Edit configuration file to increase the cache size.
+20171026 08:37:25.0784 4 22 Warning Cache  Clearing cache 'Resource strings' as it exceeded maximum size 10 elements. Edit configuration file to increase the cache size.
+20171026 08:37:25.0829 4 22 Warning Cache  Clearing cache 'Resource strings' as it exceeded maximum size 10 elements. Edit configuration file to increase the cache size.
+20171026 08:37:25.0834 4 22 Warning Cache  Clearing cache 'Resource strings' as it exceeded maximum size 10 elements. Edit configuration file to increase the cache size.
+20171026 08:37:29.9098 4 21 Warning Cache  Clearing cache 'Resource strings' as it exceeded maximum size 10 elements. Edit configuration file to increase the cache size.
+20171026 08:37:29.9765 4 21 Warning Cache  Clearing cache 'Resource strings' as it exceeded maximum size 10 elements. Edit configuration file to increase the cache size.
+20171026 08:37:29.9770 4 21 Warning Cache  Clearing cache 'Resource strings' as it exceeded maximum size 10 elements. Edit configuration file to increase the cache size.
+20171026 08:37:29.9830 4 21 Warning Cache  Clearing cache 'Resource strings' as it exceeded maximum size 10 elements. Edit configuration file to increase the cache size.
+20171026 08:37:30.0331 4 21 Warning Cache  Clearing cache 'Resource strings' as it exceeded maximum size 10 elements. Edit configuration file to increase the cache size.
+20171026 08:37:30.0427 4 21 Warning Cache  Clearing cache 'Resource strings' as it exceeded maximum size 10 elements. Edit configuration file to increase the cache size.
+20171026 08:37:30.1499 4 22 Warning Cache  Clearing cache 'Resource strings' as it exceeded maximum size 10 elements. Edit configuration file to increase the cache size.
+20171026 08:37:30.1505 4 22 Warning Cache  Clearing cache 'Resource strings' as it exceeded maximum size 10 elements. Edit configuration file to increase the cache size.
+20171026 08:37:30.1530 4 22 Warning Cache  Clearing cache 'Resource strings' as it exceeded maximum size 10 elements. Edit configuration file to increase the cache size.
+20171026 08:37:30.1540 4 22 Warning Cache  Clearing cache 'Resource strings' as it exceeded maximum size 10 elements. Edit configuration file to increase the cache size.
+20171026 08:37:30.1545 4 22 Warning Cache  Clearing cache 'Resource strings' as it exceeded maximum size 10 elements. Edit configuration file to increase the cache size.
+20171026 08:37:30.1760 4 22 Warning Cache  Clearing cache 'Resource strings' as it exceeded maximum size 10 elements. Edit configuration file to increase the cache size.
+20171026 08:37:30.2367 4 35 Warning Cache  Clearing cache 'Resource strings' as it exceeded maximum size 10 elements. Edit configuration file to increase the cache size.
+20171026 08:37:30.2367 4 35 Warning Cache  Clearing cache 'Resource strings' as it exceeded maximum size 10 elements. Edit configuration file to increase the cache size.
+20171026 08:37:30.2392 4 35 Warning Cache  Clearing cache 'Resource strings' as it exceeded maximum size 10 elements. Edit configuration file to increase the cache size.
+20171026 08:37:30.2402 4 35 Warning Cache  Clearing cache 'Resource strings' as it exceeded maximum size 10 elements. Edit configuration file to increase the cache size.
+20171026 08:37:30.2407 4 35 Warning Cache  Clearing cache 'Resource strings' as it exceeded maximum size 10 elements. Edit configuration file to increase the cache size.
+20171026 08:37:30.2457 4 35 Warning Cache  Clearing cache 'Resource strings' as it exceeded maximum size 10 elements. Edit configuration file to increase the cache size.
+20171026 08:37:30.2467 4 35 Warning Cache  Clearing cache 'Resource strings' as it exceeded maximum size 10 elements. Edit configuration file to increase the cache size.
+20171026 08:37:30.2472 4 35 Warning Cache  Clearing cache 'Resource strings' as it exceeded maximum size 10 elements. Edit configuration file to increase the cache size.
+20171026 08:37:30.2543 4 35 Warning Cache  Clearing cache 'Resource strings' as it exceeded maximum size 10 elements. Edit configuration file to increase the cache size.
+20171026 08:37:30.2578 4 35 Warning Cache  Clearing cache 'Resource strings' as it exceeded maximum size 10 elements. Edit configuration file to increase the cache size.
+20171026 08:37:30.2593 4 35 Warning Cache  Clearing cache 'Resource strings' as it exceeded maximum size 10 elements. Edit configuration file to increase the cache size.
+20171026 08:37:30.2593 4 35 Warning Cache  Clearing cache 'Resource strings' as it exceeded maximum size 10 elements. Edit configuration file to increase the cache size.
+20171026 08:37:30.2598 4 35 Warning Cache  Clearing cache 'Resource strings' as it exceeded maximum size 10 elements. Edit configuration file to increase the cache size.
+20171026 08:37:30.2643 4 35 Warning Cache  Clearing cache 'Resource strings' as it exceeded maximum size 10 elements. Edit configuration file to increase the cache size.
+20171026 08:37:30.2658 4 35 Warning Cache  Clearing cache 'Resource strings' as it exceeded maximum size 10 elements. Edit configuration file to increase the cache size.
+20171026 08:37:30.2753 4 35 Warning Cache  Clearing cache 'Resource strings' as it exceeded maximum size 10 elements. Edit configuration file to increase the cache size.
+20171026 08:37:30.4336 4 19 Warning Cache  Clearing cache 'Resource strings' as it exceeded maximum size 10 elements. Edit configuration file to increase the cache size.
+20171026 08:37:30.4451 4 19 Warning Cache  Clearing cache 'Resource strings' as it exceeded maximum size 10 elements. Edit configuration file to increase the cache size.
+20171026 08:38:57.6618 5 139 Warning Cache  Clearing cache 'Resource strings' as it exceeded maximum size 10 elements. Edit configuration file to increase the cache size.
+20171026 08:38:57.6824 5 139 Warning Cache  Clearing cache 'Resource strings' as it exceeded maximum size 10 elements. Edit configuration file to increase the cache size.
+20171026 08:39:10.2021 7 139 Error FileBasedFunctionProvider  Error instantiating function Composite.Navigation.Sitemap 
+20171026 08:39:10.2096 7 139 Error FileBasedFunctionProvider  System.Web.HttpCompileException (0x80004005): E:\_Working\Learning\CompositeC1\c1demo\Website\App_Data\Razor\Composite\Navigation\Sitemap.cshtml(82): error CS7036: There is no argument given that corresponds to the required formal parameter 'helpText' of 'HelpDefinition.HelpDefinition(string)'
+   at System.Web.Compilation.AssemblyBuilder.Compile()
+   at System.Web.Compilation.BuildProvidersCompiler.PerformBuild()
+   at System.Web.Compilation.BuildManager.CompileWebFile(VirtualPath virtualPath)
+   at System.Web.Compilation.BuildManager.GetVPathBuildResultInternal(VirtualPath virtualPath, Boolean noBuild, Boolean allowCrossApp, Boolean allowBuildInPrecompile, Boolean throwIfNotFound, Boolean ensureIsUpToDate)
+   at System.Web.Compilation.BuildManager.GetVPathBuildResultWithNoAssert(HttpContext context, VirtualPath virtualPath, Boolean noBuild, Boolean allowCrossApp, Boolean allowBuildInPrecompile, Boolean throwIfNotFound, Boolean ensureIsUpToDate)
+   at System.Web.Compilation.BuildManager.GetVirtualPathObjectFactory(VirtualPath virtualPath, HttpContext context, Boolean allowCrossApp, Boolean throwIfNotFound)
+   at System.Web.Compilation.BuildManager.CreateInstanceFromVirtualPath(VirtualPath virtualPath, Type requiredBaseType, HttpContext context, Boolean allowCrossApp)
+   at System.Web.WebPages.BuildManagerWrapper.CreateInstanceOfType[T](String virtualPath)
+   at System.Web.WebPages.VirtualPathFactoryManager.CreateInstanceOfType[T](String virtualPath)
+   at System.Web.WebPages.WebPageBase.CreateInstanceFromVirtualPath(String virtualPath, IVirtualPathFactory virtualPathFactory)
+   at Composite.Plugins.Functions.FunctionProviders.RazorFunctionProvider.RazorFunctionProvider.InstantiateFunction(String virtualPath, String namespace, String name)
+   at Composite.Plugins.Functions.FunctionProviders.FileBasedFunctionProvider.FileBasedFunctionProvider`1.get_Functions()
+20171026 08:39:10.4578 7 139 Warning Cache  Clearing cache 'Resource strings' as it exceeded maximum size 10 elements. Edit configuration file to increase the cache size.
+20171026 08:39:10.4709 7 139 Warning Cache  Clearing cache 'Resource strings' as it exceeded maximum size 10 elements. Edit configuration file to increase the cache size.
+20171026 08:39:57.2750 8 139 Warning Cache  Clearing cache 'Resource strings' as it exceeded maximum size 10 elements. Edit configuration file to increase the cache size.
+20171026 08:39:57.2915 8 139 Warning Cache  Clearing cache 'Resource strings' as it exceeded maximum size 10 elements. Edit configuration file to increase the cache size.
+20171026 08:40:25.4509 10 139 Error FileBasedFunctionProvider  Error instantiating function Composite.Navigation.Sitemap 
+20171026 08:40:25.4589 10 139 Error FileBasedFunctionProvider  System.Web.HttpCompileException (0x80004005): E:\_Working\Learning\CompositeC1\c1demo\Website\App_Data\Razor\Composite\Navigation\Sitemap.cshtml(82): error CS7036: There is no argument given that corresponds to the required formal parameter 'helpText' of 'HelpDefinition.HelpDefinition(string)'
+   at System.Web.Compilation.AssemblyBuilder.Compile()
+   at System.Web.Compilation.BuildProvidersCompiler.PerformBuild()
+   at System.Web.Compilation.BuildManager.CompileWebFile(VirtualPath virtualPath)
+   at System.Web.Compilation.BuildManager.GetVPathBuildResultInternal(VirtualPath virtualPath, Boolean noBuild, Boolean allowCrossApp, Boolean allowBuildInPrecompile, Boolean throwIfNotFound, Boolean ensureIsUpToDate)
+   at System.Web.Compilation.BuildManager.GetVPathBuildResultWithNoAssert(HttpContext context, VirtualPath virtualPath, Boolean noBuild, Boolean allowCrossApp, Boolean allowBuildInPrecompile, Boolean throwIfNotFound, Boolean ensureIsUpToDate)
+   at System.Web.Compilation.BuildManager.GetVirtualPathObjectFactory(VirtualPath virtualPath, HttpContext context, Boolean allowCrossApp, Boolean throwIfNotFound)
+   at System.Web.Compilation.BuildManager.CreateInstanceFromVirtualPath(VirtualPath virtualPath, Type requiredBaseType, HttpContext context, Boolean allowCrossApp)
+   at System.Web.WebPages.BuildManagerWrapper.CreateInstanceOfType[T](String virtualPath)
+   at System.Web.WebPages.VirtualPathFactoryManager.CreateInstanceOfType[T](String virtualPath)
+   at System.Web.WebPages.WebPageBase.CreateInstanceFromVirtualPath(String virtualPath, IVirtualPathFactory virtualPathFactory)
+   at Composite.Plugins.Functions.FunctionProviders.RazorFunctionProvider.RazorFunctionProvider.InstantiateFunction(String virtualPath, String namespace, String name)
+   at Composite.Plugins.Functions.FunctionProviders.FileBasedFunctionProvider.FileBasedFunctionProvider`1.get_Functions()
+20171026 08:40:25.6690 10 139 Warning Cache  Clearing cache 'Resource strings' as it exceeded maximum size 10 elements. Edit configuration file to increase the cache size.
+20171026 08:40:25.6826 10 139 Warning Cache  Clearing cache 'Resource strings' as it exceeded maximum size 10 elements. Edit configuration file to increase the cache size.
+20171026 08:42:27.3409 11 139 Error FileBasedFunctionProvider  Error instantiating function Composite.Navigation.Sitemap 
+20171026 08:42:27.3464 11 139 Error FileBasedFunctionProvider  System.Web.HttpCompileException (0x80004005): E:\_Working\Learning\CompositeC1\c1demo\Website\App_Data\Razor\Composite\Navigation\Sitemap.cshtml(82): error CS7036: There is no argument given that corresponds to the required formal parameter 'helpText' of 'HelpDefinition.HelpDefinition(string)'
+   at System.Web.Compilation.AssemblyBuilder.Compile()
+   at System.Web.Compilation.BuildProvidersCompiler.PerformBuild()
+   at System.Web.Compilation.BuildManager.CompileWebFile(VirtualPath virtualPath)
+   at System.Web.Compilation.BuildManager.GetVPathBuildResultInternal(VirtualPath virtualPath, Boolean noBuild, Boolean allowCrossApp, Boolean allowBuildInPrecompile, Boolean throwIfNotFound, Boolean ensureIsUpToDate)
+   at System.Web.Compilation.BuildManager.GetVPathBuildResultWithNoAssert(HttpContext context, VirtualPath virtualPath, Boolean noBuild, Boolean allowCrossApp, Boolean allowBuildInPrecompile, Boolean throwIfNotFound, Boolean ensureIsUpToDate)
+   at System.Web.Compilation.BuildManager.GetVirtualPathObjectFactory(VirtualPath virtualPath, HttpContext context, Boolean allowCrossApp, Boolean throwIfNotFound)
+   at System.Web.Compilation.BuildManager.CreateInstanceFromVirtualPath(VirtualPath virtualPath, Type requiredBaseType, HttpContext context, Boolean allowCrossApp)
+   at System.Web.WebPages.BuildManagerWrapper.CreateInstanceOfType[T](String virtualPath)
+   at System.Web.WebPages.VirtualPathFactoryManager.CreateInstanceOfType[T](String virtualPath)
+   at System.Web.WebPages.WebPageBase.CreateInstanceFromVirtualPath(String virtualPath, IVirtualPathFactory virtualPathFactory)
+   at Composite.Plugins.Functions.FunctionProviders.RazorFunctionProvider.RazorFunctionProvider.InstantiateFunction(String virtualPath, String namespace, String name)
+   at Composite.Plugins.Functions.FunctionProviders.FileBasedFunctionProvider.FileBasedFunctionProvider`1.get_Functions()
+20171026 08:42:27.5224 11 139 Warning Cache  Clearing cache 'Resource strings' as it exceeded maximum size 10 elements. Edit configuration file to increase the cache size.
+20171026 08:42:27.5380 11 139 Warning Cache  Clearing cache 'Resource strings' as it exceeded maximum size 10 elements. Edit configuration file to increase the cache size.
+20171026 08:44:22.0488 19 139 Error FileBasedFunctionProvider  Error instantiating function Composite.Navigation.Sitemap 
+20171026 08:44:22.0538 19 139 Error FileBasedFunctionProvider  System.Web.HttpCompileException (0x80004005): E:\_Working\Learning\CompositeC1\c1demo\Website\App_Data\Razor\Composite\Navigation\Sitemap.cshtml(82): error CS7036: There is no argument given that corresponds to the required formal parameter 'helpText' of 'HelpDefinition.HelpDefinition(string)'
+   at System.Web.Compilation.AssemblyBuilder.Compile()
+   at System.Web.Compilation.BuildProvidersCompiler.PerformBuild()
+   at System.Web.Compilation.BuildManager.CompileWebFile(VirtualPath virtualPath)
+   at System.Web.Compilation.BuildManager.GetVPathBuildResultInternal(VirtualPath virtualPath, Boolean noBuild, Boolean allowCrossApp, Boolean allowBuildInPrecompile, Boolean throwIfNotFound, Boolean ensureIsUpToDate)
+   at System.Web.Compilation.BuildManager.GetVPathBuildResultWithNoAssert(HttpContext context, VirtualPath virtualPath, Boolean noBuild, Boolean allowCrossApp, Boolean allowBuildInPrecompile, Boolean throwIfNotFound, Boolean ensureIsUpToDate)
+   at System.Web.Compilation.BuildManager.GetVirtualPathObjectFactory(VirtualPath virtualPath, HttpContext context, Boolean allowCrossApp, Boolean throwIfNotFound)
+   at System.Web.Compilation.BuildManager.CreateInstanceFromVirtualPath(VirtualPath virtualPath, Type requiredBaseType, HttpContext context, Boolean allowCrossApp)
+   at System.Web.WebPages.BuildManagerWrapper.CreateInstanceOfType[T](String virtualPath)
+   at System.Web.WebPages.VirtualPathFactoryManager.CreateInstanceOfType[T](String virtualPath)
+   at System.Web.WebPages.WebPageBase.CreateInstanceFromVirtualPath(String virtualPath, IVirtualPathFactory virtualPathFactory)
+   at Composite.Plugins.Functions.FunctionProviders.RazorFunctionProvider.RazorFunctionProvider.InstantiateFunction(String virtualPath, String namespace, String name)
+   at Composite.Plugins.Functions.FunctionProviders.FileBasedFunctionProvider.FileBasedFunctionProvider`1.get_Functions()
+20171026 08:44:22.2257 19 139 Warning Cache  Clearing cache 'Resource strings' as it exceeded maximum size 10 elements. Edit configuration file to increase the cache size.
+20171026 08:44:22.2378 19 139 Warning Cache  Clearing cache 'Resource strings' as it exceeded maximum size 10 elements. Edit configuration file to increase the cache size.
+20171026 08:45:17.8059 20 139 Error FileBasedFunctionProvider  Error instantiating function Composite.Navigation.Sitemap 
+20171026 08:45:17.8114 20 139 Error FileBasedFunctionProvider  System.Web.HttpCompileException (0x80004005): E:\_Working\Learning\CompositeC1\c1demo\Website\App_Data\Razor\Composite\Navigation\Sitemap.cshtml(82): error CS7036: There is no argument given that corresponds to the required formal parameter 'helpText' of 'HelpDefinition.HelpDefinition(string)'
+   at System.Web.Compilation.AssemblyBuilder.Compile()
+   at System.Web.Compilation.BuildProvidersCompiler.PerformBuild()
+   at System.Web.Compilation.BuildManager.CompileWebFile(VirtualPath virtualPath)
+   at System.Web.Compilation.BuildManager.GetVPathBuildResultInternal(VirtualPath virtualPath, Boolean noBuild, Boolean allowCrossApp, Boolean allowBuildInPrecompile, Boolean throwIfNotFound, Boolean ensureIsUpToDate)
+   at System.Web.Compilation.BuildManager.GetVPathBuildResultWithNoAssert(HttpContext context, VirtualPath virtualPath, Boolean noBuild, Boolean allowCrossApp, Boolean allowBuildInPrecompile, Boolean throwIfNotFound, Boolean ensureIsUpToDate)
+   at System.Web.Compilation.BuildManager.GetVirtualPathObjectFactory(VirtualPath virtualPath, HttpContext context, Boolean allowCrossApp, Boolean throwIfNotFound)
+   at System.Web.Compilation.BuildManager.CreateInstanceFromVirtualPath(VirtualPath virtualPath, Type requiredBaseType, HttpContext context, Boolean allowCrossApp)
+   at System.Web.WebPages.BuildManagerWrapper.CreateInstanceOfType[T](String virtualPath)
+   at System.Web.WebPages.VirtualPathFactoryManager.CreateInstanceOfType[T](String virtualPath)
+   at System.Web.WebPages.WebPageBase.CreateInstanceFromVirtualPath(String virtualPath, IVirtualPathFactory virtualPathFactory)
+   at Composite.Plugins.Functions.FunctionProviders.RazorFunctionProvider.RazorFunctionProvider.InstantiateFunction(String virtualPath, String namespace, String name)
+   at Composite.Plugins.Functions.FunctionProviders.FileBasedFunctionProvider.FileBasedFunctionProvider`1.get_Functions()
+20171026 08:45:18.0065 20 139 Warning Cache  Clearing cache 'Resource strings' as it exceeded maximum size 10 elements. Edit configuration file to increase the cache size.
+20171026 08:45:18.0195 20 139 Warning Cache  Clearing cache 'Resource strings' as it exceeded maximum size 10 elements. Edit configuration file to increase the cache size.
+20171026 08:45:29.4167 22 139 Warning Cache  Clearing cache 'Resource strings' as it exceeded maximum size 10 elements. Edit configuration file to increase the cache size.
+20171026 08:45:29.4388 22 139 Warning Cache  Clearing cache 'Resource strings' as it exceeded maximum size 10 elements. Edit configuration file to increase the cache size.
+20171026 08:45:39.8485 24 139 Warning Cache  Clearing cache 'Resource strings' as it exceeded maximum size 10 elements. Edit configuration file to increase the cache size.
+20171026 08:45:39.8685 24 139 Warning Cache  Clearing cache 'Resource strings' as it exceeded maximum size 10 elements. Edit configuration file to increase the cache size.
+20171026 08:45:51.3842 26 139 Warning Cache  Clearing cache 'Resource strings' as it exceeded maximum size 10 elements. Edit configuration file to increase the cache size.
+20171026 08:45:51.4007 26 139 Warning Cache  Clearing cache 'Resource strings' as it exceeded maximum size 10 elements. Edit configuration file to increase the cache size.
+20171026 08:52:50.6219 28  1 Warning Cache  Clearing cache 'Resource strings' as it exceeded maximum size 10 elements. Edit configuration file to increase the cache size.
+20171026 08:52:50.6419 28  1 Warning Cache  Clearing cache 'Resource strings' as it exceeded maximum size 10 elements. Edit configuration file to increase the cache size.
+20171026 08:55:25.7269 30 139 Warning Cache  Clearing cache 'Resource strings' as it exceeded maximum size 10 elements. Edit configuration file to increase the cache size.
+20171026 08:55:25.7435 30 139 Warning Cache  Clearing cache 'Resource strings' as it exceeded maximum size 10 elements. Edit configuration file to increase the cache size.
+20171026 08:56:10.9861 32 139 Error FileBasedFunctionProvider  Error instantiating function Composite.Navigation.Sitemap 
+20171026 08:56:10.9911 32 139 Error FileBasedFunctionProvider  System.Web.HttpCompileException (0x80004005): E:\_Working\Learning\CompositeC1\c1demo\Website\App_Data\Razor\Composite\Navigation\Sitemap.cshtml(82): error CS7036: There is no argument given that corresponds to the required formal parameter 'helpText' of 'HelpDefinition.HelpDefinition(string)'
+   at System.Web.Compilation.AssemblyBuilder.Compile()
+   at System.Web.Compilation.BuildProvidersCompiler.PerformBuild()
+   at System.Web.Compilation.BuildManager.CompileWebFile(VirtualPath virtualPath)
+   at System.Web.Compilation.BuildManager.GetVPathBuildResultInternal(VirtualPath virtualPath, Boolean noBuild, Boolean allowCrossApp, Boolean allowBuildInPrecompile, Boolean throwIfNotFound, Boolean ensureIsUpToDate)
+   at System.Web.Compilation.BuildManager.GetVPathBuildResultWithNoAssert(HttpContext context, VirtualPath virtualPath, Boolean noBuild, Boolean allowCrossApp, Boolean allowBuildInPrecompile, Boolean throwIfNotFound, Boolean ensureIsUpToDate)
+   at System.Web.Compilation.BuildManager.GetVirtualPathObjectFactory(VirtualPath virtualPath, HttpContext context, Boolean allowCrossApp, Boolean throwIfNotFound)
+   at System.Web.Compilation.BuildManager.CreateInstanceFromVirtualPath(VirtualPath virtualPath, Type requiredBaseType, HttpContext context, Boolean allowCrossApp)
+   at System.Web.WebPages.BuildManagerWrapper.CreateInstanceOfType[T](String virtualPath)
+   at System.Web.WebPages.VirtualPathFactoryManager.CreateInstanceOfType[T](String virtualPath)
+   at System.Web.WebPages.WebPageBase.CreateInstanceFromVirtualPath(String virtualPath, IVirtualPathFactory virtualPathFactory)
+   at Composite.Plugins.Functions.FunctionProviders.RazorFunctionProvider.RazorFunctionProvider.InstantiateFunction(String virtualPath, String namespace, String name)
+   at Composite.Plugins.Functions.FunctionProviders.FileBasedFunctionProvider.FileBasedFunctionProvider`1.get_Functions()
+20171026 08:56:11.1766 32 139 Warning Cache  Clearing cache 'Resource strings' as it exceeded maximum size 10 elements. Edit configuration file to increase the cache size.
+20171026 08:56:11.1912 32 139 Warning Cache  Clearing cache 'Resource strings' as it exceeded maximum size 10 elements. Edit configuration file to increase the cache size.
+20171026 08:56:13.2605 32 115 Warning Cache  Clearing cache 'Resource strings' as it exceeded maximum size 10 elements. Edit configuration file to increase the cache size.
+20171026 08:56:13.2936 32 72 Warning Cache  Clearing cache 'Resource strings' as it exceeded maximum size 10 elements. Edit configuration file to increase the cache size.
+20171026 08:56:13.2941 32 72 Warning Cache  Clearing cache 'Resource strings' as it exceeded maximum size 10 elements. Edit configuration file to increase the cache size.
+20171026 08:56:13.3413 32 72 Warning Cache  Clearing cache 'Resource strings' as it exceeded maximum size 10 elements. Edit configuration file to increase the cache size.
+20171026 08:56:13.3498 32 72 Warning Cache  Clearing cache 'Resource strings' as it exceeded maximum size 10 elements. Edit configuration file to increase the cache size.
+20171026 08:56:13.3558 32 72 Warning Cache  Clearing cache 'Resource strings' as it exceeded maximum size 10 elements. Edit configuration file to increase the cache size.
+20171026 08:56:13.3628 32 72 Warning Cache  Clearing cache 'Resource strings' as it exceeded maximum size 10 elements. Edit configuration file to increase the cache size.
+20171026 08:56:13.3643 32 72 Warning Cache  Clearing cache 'Resource strings' as it exceeded maximum size 10 elements. Edit configuration file to increase the cache size.
+20171026 08:56:13.3643 32 72 Warning Cache  Clearing cache 'Resource strings' as it exceeded maximum size 10 elements. Edit configuration file to increase the cache size.
+20171026 08:56:13.3643 32 72 Warning Cache  Clearing cache 'Resource strings' as it exceeded maximum size 10 elements. Edit configuration file to increase the cache size.
+20171026 08:56:13.4014 32 72 Warning Cache  Clearing cache 'Resource strings' as it exceeded maximum size 10 elements. Edit configuration file to increase the cache size.
+20171026 08:56:13.4054 32 72 Warning Cache  Clearing cache 'Resource strings' as it exceeded maximum size 10 elements. Edit configuration file to increase the cache size.
+20171026 08:56:13.4300 32 72 Warning Cache  Clearing cache 'Resource strings' as it exceeded maximum size 10 elements. Edit configuration file to increase the cache size.
+20171026 08:56:13.4315 32 72 Warning Cache  Clearing cache 'Resource strings' as it exceeded maximum size 10 elements. Edit configuration file to increase the cache size.
+20171026 08:56:13.4350 32 72 Warning Cache  Clearing cache 'Resource strings' as it exceeded maximum size 10 elements. Edit configuration file to increase the cache size.
+20171026 08:56:13.4425 32 72 Warning Cache  Clearing cache 'Resource strings' as it exceeded maximum size 10 elements. Edit configuration file to increase the cache size.
+20171026 08:56:13.4465 32 72 Warning Cache  Clearing cache 'Resource strings' as it exceeded maximum size 10 elements. Edit configuration file to increase the cache size.
+20171026 08:56:13.4531 32 72 Warning Cache  Clearing cache 'Resource strings' as it exceeded maximum size 10 elements. Edit configuration file to increase the cache size.
+20171026 08:56:13.4541 32 72 Warning Cache  Clearing cache 'Resource strings' as it exceeded maximum size 10 elements. Edit configuration file to increase the cache size.
+20171026 08:56:13.4601 32 72 Warning Cache  Clearing cache 'Resource strings' as it exceeded maximum size 10 elements. Edit configuration file to increase the cache size.
+20171026 08:56:13.4686 32 72 Warning Cache  Clearing cache 'Resource strings' as it exceeded maximum size 10 elements. Edit configuration file to increase the cache size.
+20171026 08:56:13.4701 32 72 Warning Cache  Clearing cache 'Resource strings' as it exceeded maximum size 10 elements. Edit configuration file to increase the cache size.
+20171026 08:56:13.4721 32 72 Warning Cache  Clearing cache 'Resource strings' as it exceeded maximum size 10 elements. Edit configuration file to increase the cache size.
+20171026 08:56:13.4741 32 72 Warning Cache  Clearing cache 'Resource strings' as it exceeded maximum size 10 elements. Edit configuration file to increase the cache size.
+20171026 08:56:13.4741 32 72 Warning Cache  Clearing cache 'Resource strings' as it exceeded maximum size 10 elements. Edit configuration file to increase the cache size.
+20171026 08:56:13.4791 32 72 Warning Cache  Clearing cache 'Resource strings' as it exceeded maximum size 10 elements. Edit configuration file to increase the cache size.
+20171026 08:56:13.4831 32 72 Warning Cache  Clearing cache 'Resource strings' as it exceeded maximum size 10 elements. Edit configuration file to increase the cache size.
+20171026 08:56:13.4841 32 72 Warning Cache  Clearing cache 'Resource strings' as it exceeded maximum size 10 elements. Edit configuration file to increase the cache size.
+20171026 08:56:13.4892 32 72 Warning Cache  Clearing cache 'Resource strings' as it exceeded maximum size 10 elements. Edit configuration file to increase the cache size.
+20171026 08:56:13.5062 32 72 Warning Cache  Clearing cache 'Resource strings' as it exceeded maximum size 10 elements. Edit configuration file to increase the cache size.
+20171026 08:56:13.5062 32 72 Warning Cache  Clearing cache 'Resource strings' as it exceeded maximum size 10 elements. Edit configuration file to increase the cache size.
+20171026 08:56:13.5117 32 72 Warning Cache  Clearing cache 'Resource strings' as it exceeded maximum size 10 elements. Edit configuration file to increase the cache size.
+20171026 08:56:13.5965 32 73 Warning Cache  Clearing cache 'Resource strings' as it exceeded maximum size 10 elements. Edit configuration file to increase the cache size.
+20171026 08:56:13.5965 32 73 Warning Cache  Clearing cache 'Resource strings' as it exceeded maximum size 10 elements. Edit configuration file to increase the cache size.
+20171026 08:56:13.6255 32 73 Warning Cache  Clearing cache 'Resource strings' as it exceeded maximum size 10 elements. Edit configuration file to increase the cache size.
+20171026 08:56:13.6431 32 73 Warning Cache  Clearing cache 'Resource strings' as it exceeded maximum size 10 elements. Edit configuration file to increase the cache size.
+20171026 08:56:13.6441 32 73 Warning Cache  Clearing cache 'Resource strings' as it exceeded maximum size 10 elements. Edit configuration file to increase the cache size.
+20171026 08:56:13.6556 32 73 Warning Cache  Clearing cache 'Resource strings' as it exceeded maximum size 10 elements. Edit configuration file to increase the cache size.
+20171026 08:56:13.6561 32 73 Warning Cache  Clearing cache 'Resource strings' as it exceeded maximum size 10 elements. Edit configuration file to increase the cache size.
+20171026 08:56:52.4480 32 77 Warning Cache  Clearing cache 'Resource strings' as it exceeded maximum size 10 elements. Edit configuration file to increase the cache size.
+20171026 08:56:52.4585 32 77 Warning Cache  Clearing cache 'Resource strings' as it exceeded maximum size 10 elements. Edit configuration file to increase the cache size.
+20171026 08:56:52.7225 32 72 Warning Cache  Clearing cache 'Resource strings' as it exceeded maximum size 10 elements. Edit configuration file to increase the cache size.
+20171026 08:56:53.5686 32 96 Warning Cache  Clearing cache 'Resource strings' as it exceeded maximum size 10 elements. Edit configuration file to increase the cache size.
+20171026 08:56:53.8509 32 80 Warning Cache  Clearing cache 'Resource strings' as it exceeded maximum size 10 elements. Edit configuration file to increase the cache size.
+20171026 08:56:54.4177 32 103 Warning Cache  Clearing cache 'Resource strings' as it exceeded maximum size 10 elements. Edit configuration file to increase the cache size.
+20171026 08:56:54.4273 32 103 Warning Cache  Clearing cache 'Resource strings' as it exceeded maximum size 10 elements. Edit configuration file to increase the cache size.
+20171026 08:56:54.6750 32 18 Warning Cache  Clearing cache 'Resource strings' as it exceeded maximum size 10 elements. Edit configuration file to increase the cache size.
+20171026 08:57:39.3473 32 67 Warning Cache  Clearing cache 'Resource strings' as it exceeded maximum size 10 elements. Edit configuration file to increase the cache size.
+20171026 08:57:45.6171 32 122 Warning Cache  Clearing cache 'Resource strings' as it exceeded maximum size 10 elements. Edit configuration file to increase the cache size.
+20171026 08:57:47.2819 32 117 Information PackageManagerInstallProcess  Installing package: Composite.Tools.SqlServerDataProvider, Version: 1.1.1, Id = c2ab3d31-d7c4-4ce2-9710-954ff6da903e
+20171026 08:57:47.6197 32 117 Information PackageManagerInstallProcess  Package successfully installed
+20171026 08:57:53.5098 33  1 Error FileBasedFunctionProvider  Error instantiating function Composite.Navigation.Sitemap 
+20171026 08:57:53.5148 33  1 Error FileBasedFunctionProvider  System.Web.HttpCompileException (0x80004005): E:\_Working\Learning\CompositeC1\c1demo\Website\App_Data\Razor\Composite\Navigation\Sitemap.cshtml(82): error CS7036: There is no argument given that corresponds to the required formal parameter 'helpText' of 'HelpDefinition.HelpDefinition(string)'
+   at System.Web.Compilation.AssemblyBuilder.Compile()
+   at System.Web.Compilation.BuildProvidersCompiler.PerformBuild()
+   at System.Web.Compilation.BuildManager.CompileWebFile(VirtualPath virtualPath)
+   at System.Web.Compilation.BuildManager.GetVPathBuildResultInternal(VirtualPath virtualPath, Boolean noBuild, Boolean allowCrossApp, Boolean allowBuildInPrecompile, Boolean throwIfNotFound, Boolean ensureIsUpToDate)
+   at System.Web.Compilation.BuildManager.GetVPathBuildResultWithNoAssert(HttpContext context, VirtualPath virtualPath, Boolean noBuild, Boolean allowCrossApp, Boolean allowBuildInPrecompile, Boolean throwIfNotFound, Boolean ensureIsUpToDate)
+   at System.Web.Compilation.BuildManager.GetVirtualPathObjectFactory(VirtualPath virtualPath, HttpContext context, Boolean allowCrossApp, Boolean throwIfNotFound)
+   at System.Web.Compilation.BuildManager.CreateInstanceFromVirtualPath(VirtualPath virtualPath, Type requiredBaseType, HttpContext context, Boolean allowCrossApp)
+   at System.Web.WebPages.BuildManagerWrapper.CreateInstanceOfType[T](String virtualPath)
+   at System.Web.WebPages.VirtualPathFactoryManager.CreateInstanceOfType[T](String virtualPath)
+   at System.Web.WebPages.WebPageBase.CreateInstanceFromVirtualPath(String virtualPath, IVirtualPathFactory virtualPathFactory)
+   at Composite.Plugins.Functions.FunctionProviders.RazorFunctionProvider.RazorFunctionProvider.InstantiateFunction(String virtualPath, String namespace, String name)
+   at Composite.Plugins.Functions.FunctionProviders.FileBasedFunctionProvider.FileBasedFunctionProvider`1.get_Functions()
+20171026 08:57:53.6913 33  1 Warning Cache  Clearing cache 'Resource strings' as it exceeded maximum size 10 elements. Edit configuration file to increase the cache size.
+20171026 08:57:53.7043 33  1 Warning Cache  Clearing cache 'Resource strings' as it exceeded maximum size 10 elements. Edit configuration file to increase the cache size.
+20171026 08:57:54.5005 33 48 Warning Cache  Clearing cache 'Resource strings' as it exceeded maximum size 10 elements. Edit configuration file to increase the cache size.
+20171026 08:58:15.9243 33 51 Warning Cache  Clearing cache 'Resource strings' as it exceeded maximum size 10 elements. Edit configuration file to increase the cache size.
+20171026 08:58:15.9248 33 51 Warning Cache  Clearing cache 'Resource strings' as it exceeded maximum size 10 elements. Edit configuration file to increase the cache size.
+20171026 08:58:16.0572 33 14 Warning Cache  Clearing cache 'Resource strings' as it exceeded maximum size 10 elements. Edit configuration file to increase the cache size.
+20171026 08:58:16.0572 33 14 Warning Cache  Clearing cache 'Resource strings' as it exceeded maximum size 10 elements. Edit configuration file to increase the cache size.
+20171026 08:58:16.0572 33 14 Warning Cache  Clearing cache 'Resource strings' as it exceeded maximum size 10 elements. Edit configuration file to increase the cache size.
+20171026 08:58:16.0778 33 14 Warning Cache  Clearing cache 'Resource strings' as it exceeded maximum size 10 elements. Edit configuration file to increase the cache size.
+20171026 08:58:16.1531 33 14 Warning Cache  Clearing cache 'Resource strings' as it exceeded maximum size 10 elements. Edit configuration file to increase the cache size.
+20171026 08:58:16.1546 33 14 Warning Cache  Clearing cache 'Resource strings' as it exceeded maximum size 10 elements. Edit configuration file to increase the cache size.
+20171026 08:58:16.1596 33 14 Warning Cache  Clearing cache 'Resource strings' as it exceeded maximum size 10 elements. Edit configuration file to increase the cache size.
+20171026 08:58:16.1651 33 14 Warning Cache  Clearing cache 'Resource strings' as it exceeded maximum size 10 elements. Edit configuration file to increase the cache size.
+20171026 08:58:16.1656 33 14 Warning Cache  Clearing cache 'Resource strings' as it exceeded maximum size 10 elements. Edit configuration file to increase the cache size.
+20171026 08:58:16.1686 33 14 Warning Cache  Clearing cache 'Resource strings' as it exceeded maximum size 10 elements. Edit configuration file to increase the cache size.
+20171026 08:58:16.1691 33 14 Warning Cache  Clearing cache 'Resource strings' as it exceeded maximum size 10 elements. Edit configuration file to increase the cache size.
+20171026 08:58:16.1982 33 14 Warning Cache  Clearing cache 'Resource strings' as it exceeded maximum size 10 elements. Edit configuration file to increase the cache size.
+20171026 08:58:16.2007 33 14 Warning Cache  Clearing cache 'Resource strings' as it exceeded maximum size 10 elements. Edit configuration file to increase the cache size.
+20171026 08:58:16.2212 33 14 Warning Cache  Clearing cache 'Resource strings' as it exceeded maximum size 10 elements. Edit configuration file to increase the cache size.
+20171026 08:58:16.2227 33 14 Warning Cache  Clearing cache 'Resource strings' as it exceeded maximum size 10 elements. Edit configuration file to increase the cache size.
+20171026 08:58:16.2257 33 14 Warning Cache  Clearing cache 'Resource strings' as it exceeded maximum size 10 elements. Edit configuration file to increase the cache size.
+20171026 08:58:16.2358 33 14 Warning Cache  Clearing cache 'Resource strings' as it exceeded maximum size 10 elements. Edit configuration file to increase the cache size.
+20171026 08:58:16.2433 33 14 Warning Cache  Clearing cache 'Resource strings' as it exceeded maximum size 10 elements. Edit configuration file to increase the cache size.
+20171026 08:58:16.2484 33 14 Warning Cache  Clearing cache 'Resource strings' as it exceeded maximum size 10 elements. Edit configuration file to increase the cache size.
+20171026 08:58:16.2535 33 14 Warning Cache  Clearing cache 'Resource strings' as it exceeded maximum size 10 elements. Edit configuration file to increase the cache size.
+20171026 08:58:16.2540 33 14 Warning Cache  Clearing cache 'Resource strings' as it exceeded maximum size 10 elements. Edit configuration file to increase the cache size.
+20171026 08:58:16.2655 33 14 Warning Cache  Clearing cache 'Resource strings' as it exceeded maximum size 10 elements. Edit configuration file to increase the cache size.
+20171026 08:58:16.2685 33 14 Warning Cache  Clearing cache 'Resource strings' as it exceeded maximum size 10 elements. Edit configuration file to increase the cache size.
+20171026 08:58:16.2730 33 14 Warning Cache  Clearing cache 'Resource strings' as it exceeded maximum size 10 elements. Edit configuration file to increase the cache size.
+20171026 08:58:16.2760 33 14 Warning Cache  Clearing cache 'Resource strings' as it exceeded maximum size 10 elements. Edit configuration file to increase the cache size.
+20171026 08:58:16.2770 33 14 Warning Cache  Clearing cache 'Resource strings' as it exceeded maximum size 10 elements. Edit configuration file to increase the cache size.
+20171026 08:58:16.2810 33 14 Warning Cache  Clearing cache 'Resource strings' as it exceeded maximum size 10 elements. Edit configuration file to increase the cache size.
+20171026 08:58:16.2845 33 14 Warning Cache  Clearing cache 'Resource strings' as it exceeded maximum size 10 elements. Edit configuration file to increase the cache size.
+20171026 08:58:16.2896 33 14 Warning Cache  Clearing cache 'Resource strings' as it exceeded maximum size 10 elements. Edit configuration file to increase the cache size.
+20171026 08:58:16.2901 33 14 Warning Cache  Clearing cache 'Resource strings' as it exceeded maximum size 10 elements. Edit configuration file to increase the cache size.
+20171026 08:58:16.2961 33 14 Warning Cache  Clearing cache 'Resource strings' as it exceeded maximum size 10 elements. Edit configuration file to increase the cache size.
+20171026 08:58:16.2961 33 14 Warning Cache  Clearing cache 'Resource strings' as it exceeded maximum size 10 elements. Edit configuration file to increase the cache size.
+20171026 08:58:16.2961 33 14 Warning Cache  Clearing cache 'Resource strings' as it exceeded maximum size 10 elements. Edit configuration file to increase the cache size.
+20171026 08:58:17.4604 33 122 Warning Cache  Clearing cache 'Resource strings' as it exceeded maximum size 10 elements. Edit configuration file to increase the cache size.
+20171026 08:58:17.4609 33 122 Warning Cache  Clearing cache 'Resource strings' as it exceeded maximum size 10 elements. Edit configuration file to increase the cache size.
+20171026 08:58:17.4639 33 122 Warning Cache  Clearing cache 'Resource strings' as it exceeded maximum size 10 elements. Edit configuration file to increase the cache size.
+20171026 08:58:17.8059 33 14 Warning Cache  Clearing cache 'Resource strings' as it exceeded maximum size 10 elements. Edit configuration file to increase the cache size.
+20171026 08:58:17.8064 33 14 Warning Cache  Clearing cache 'Resource strings' as it exceeded maximum size 10 elements. Edit configuration file to increase the cache size.
+20171026 08:58:17.8089 33 14 Warning Cache  Clearing cache 'Resource strings' as it exceeded maximum size 10 elements. Edit configuration file to increase the cache size.
+20171026 08:58:17.8240 33 14 Warning Cache  Clearing cache 'Resource strings' as it exceeded maximum size 10 elements. Edit configuration file to increase the cache size.
+20171026 08:58:17.8450 33 14 Warning Cache  Clearing cache 'Resource strings' as it exceeded maximum size 10 elements. Edit configuration file to increase the cache size.
+20171026 08:58:17.8465 33 14 Warning Cache  Clearing cache 'Resource strings' as it exceeded maximum size 10 elements. Edit configuration file to increase the cache size.
+20171026 08:58:17.8857 33 111 Warning Cache  Clearing cache 'Resource strings' as it exceeded maximum size 10 elements. Edit configuration file to increase the cache size.
+20171026 08:58:17.8857 33 111 Warning Cache  Clearing cache 'Resource strings' as it exceeded maximum size 10 elements. Edit configuration file to increase the cache size.
+20171026 08:58:17.8882 33 111 Warning Cache  Clearing cache 'Resource strings' as it exceeded maximum size 10 elements. Edit configuration file to increase the cache size.
+20171026 08:58:22.4785 33 103 Warning Cache  Clearing cache 'Resource strings' as it exceeded maximum size 10 elements. Edit configuration file to increase the cache size.
+20171026 08:58:22.4940 33 66 Warning Cache  Clearing cache 'Resource strings' as it exceeded maximum size 10 elements. Edit configuration file to increase the cache size.
+20171026 08:58:22.5131 33 103 Warning Cache  Clearing cache 'Resource strings' as it exceeded maximum size 10 elements. Edit configuration file to increase the cache size.
+20171026 08:58:22.5236 33 103 Warning Cache  Clearing cache 'Resource strings' as it exceeded maximum size 10 elements. Edit configuration file to increase the cache size.
+20171026 08:58:22.5256 33 103 Warning Cache  Clearing cache 'Resource strings' as it exceeded maximum size 10 elements. Edit configuration file to increase the cache size.
+20171026 08:58:24.5871 33 134 Warning Cache  Clearing cache 'Resource strings' as it exceeded maximum size 10 elements. Edit configuration file to increase the cache size.
+20171026 08:58:24.5876 33 134 Warning Cache  Clearing cache 'Resource strings' as it exceeded maximum size 10 elements. Edit configuration file to increase the cache size.
+20171026 08:58:28.4477 33 18 Warning Cache  Clearing cache 'Resource strings' as it exceeded maximum size 10 elements. Edit configuration file to increase the cache size.
+20171026 08:58:30.7465 33 51 Warning Cache  Clearing cache 'Resource strings' as it exceeded maximum size 10 elements. Edit configuration file to increase the cache size.
+20171026 08:58:30.7650 33 51 Warning Cache  Clearing cache 'Resource strings' as it exceeded maximum size 10 elements. Edit configuration file to increase the cache size.
+20171026 08:58:31.0071 33 72 Warning Cache  Clearing cache 'Resource strings' as it exceeded maximum size 10 elements. Edit configuration file to increase the cache size.
+20171026 08:58:31.9016 33 134 Warning Cache  Clearing cache 'Resource strings' as it exceeded maximum size 10 elements. Edit configuration file to increase the cache size.
+20171026 08:58:32.1378 33 95 Warning Cache  Clearing cache 'Resource strings' as it exceeded maximum size 10 elements. Edit configuration file to increase the cache size.
+20171026 08:58:33.2127 33 122 Warning Cache  Clearing cache 'Pages' as it exceeded maximum size 10 elements. Edit configuration file to increase the cache size.
+20171026 08:58:36.1878 33 18 Warning Cache  Clearing cache 'Resource strings' as it exceeded maximum size 10 elements. Edit configuration file to increase the cache size.
+20171026 08:58:36.1883 33 18 Warning Cache  Clearing cache 'Resource strings' as it exceeded maximum size 10 elements. Edit configuration file to increase the cache size.
+20171026 08:58:36.3191 33 18 Warning Cache  Clearing cache 'Resource strings' as it exceeded maximum size 10 elements. Edit configuration file to increase the cache size.
+20171026 08:58:36.3812 33 115 Warning Cache  Clearing cache 'Resource strings' as it exceeded maximum size 10 elements. Edit configuration file to increase the cache size.
+20171026 08:58:36.3817 33 115 Warning Cache  Clearing cache 'Resource strings' as it exceeded maximum size 10 elements. Edit configuration file to increase the cache size.
+20171026 08:58:36.3822 33 115 Warning Cache  Clearing cache 'Resource strings' as it exceeded maximum size 10 elements. Edit configuration file to increase the cache size.
+20171026 08:58:36.3872 33 115 Warning Cache  Clearing cache 'Resource strings' as it exceeded maximum size 10 elements. Edit configuration file to increase the cache size.
+20171026 08:58:36.4366 33 16 Warning Cache  Clearing cache 'Pages' as it exceeded maximum size 10 elements. Edit configuration file to increase the cache size.
+20171026 08:58:50.8908 33 18 Warning Cache  Clearing cache 'Resource strings' as it exceeded maximum size 10 elements. Edit configuration file to increase the cache size.
+20171026 08:58:50.8993 33 18 Warning Cache  Clearing cache 'Resource strings' as it exceeded maximum size 10 elements. Edit configuration file to increase the cache size.
+20171026 08:58:50.9479 33 18 Warning Cache  Clearing cache 'Pages' as it exceeded maximum size 10 elements. Edit configuration file to increase the cache size.
+20171026 09:01:24.2199 33 67 Warning Cache  Clearing cache 'Pages' as it exceeded maximum size 10 elements. Edit configuration file to increase the cache size.
+20171026 09:02:25.7812 33 134 Error Function: Demo.Account.Login  System.Xml.XmlException: The 'input' start tag on line 6 position 180 does not match the end tag of 'form'. Line 7, position 3.
+   at System.Xml.XmlTextReaderImpl.Throw(Exception e)
+   at System.Xml.XmlTextReaderImpl.ThrowTagMismatch(NodeData startTag)
+   at System.Xml.XmlTextReaderImpl.ParseEndElement()
+   at System.Xml.XmlTextReaderImpl.ParseElementContent()
+   at System.Xml.Linq.XContainer.ReadContentFrom(XmlReader r)
+   at System.Xml.Linq.XContainer.ReadContentFrom(XmlReader r, LoadOptions o)
+   at System.Xml.Linq.XElement.ReadElementFrom(XmlReader r, LoadOptions o)
+   at System.Xml.Linq.XNode.ReadFrom(XmlReader reader)
+   at Composite.Core.Xml.XhtmlDocument.ParseXhtmlFragment(String fragment)
+   at Composite.Plugins.Functions.FunctionProviders.MvcFunctions.MvcFunctionBase.ParseOutput(String xhtml)
+   at Composite.Plugins.Functions.FunctionProviders.MvcFunctions.MvcFunctionBase.ExecuteRoute(RouteData routeData, ParameterList parameters, Boolean& routeResolved)
+   at Composite.Plugins.Functions.FunctionProviders.MvcFunctions.MvcFunctionBase.Execute(ParameterList parameters, FunctionContextContainer context)
+System.InvalidOperationException: Error executing route '~/Account/Login' 
+   at Composite.Plugins.Functions.FunctionProviders.MvcFunctions.MvcFunctionBase.Execute(ParameterList parameters, FunctionContextContainer context)
+   at Composite.Functions.Foundation.PluginFacades.FunctionWrapper.Execute(ParameterList parameters, FunctionContextContainer context)
+20171026 09:05:27.1774 33 51 Error Function: Demo.Account.Login  System.Web.HttpCompileException (0x80004005): E:\_Working\Learning\CompositeC1\c1demo\Website\Views\Account\Login.cshtml(10): error CS1061: 'LoginViewModel' does not contain a definition for 'Usernamex' and no extension method 'Usernamex' accepting a first argument of type 'LoginViewModel' could be found (are you missing a using directive or an assembly reference?)
+   at System.Web.Compilation.AssemblyBuilder.Compile()
+   at System.Web.Compilation.BuildProvidersCompiler.PerformBuild()
+   at System.Web.Compilation.BuildManager.CompileWebFile(VirtualPath virtualPath)
+   at System.Web.Compilation.BuildManager.GetVPathBuildResultInternal(VirtualPath virtualPath, Boolean noBuild, Boolean allowCrossApp, Boolean allowBuildInPrecompile, Boolean throwIfNotFound, Boolean ensureIsUpToDate)
+   at System.Web.Compilation.BuildManager.GetVPathBuildResultWithNoAssert(HttpContext context, VirtualPath virtualPath, Boolean noBuild, Boolean allowCrossApp, Boolean allowBuildInPrecompile, Boolean throwIfNotFound, Boolean ensureIsUpToDate)
+   at System.Web.Compilation.BuildManager.GetVirtualPathObjectFactory(VirtualPath virtualPath, HttpContext context, Boolean allowCrossApp, Boolean throwIfNotFound)
+   at System.Web.Compilation.BuildManager.GetCompiledType(VirtualPath virtualPath)
+   at System.Web.Mvc.BuildManagerCompiledView.Render(ViewContext viewContext, TextWriter writer)
+   at System.Web.Mvc.ViewResultBase.ExecuteResult(ControllerContext context)
+   at System.Web.Mvc.ControllerActionInvoker.InvokeActionResultFilterRecursive(IList`1 filters, Int32 filterIndex, ResultExecutingContext preContext, ControllerContext controllerContext, ActionResult actionResult)
+   at System.Web.Mvc.ControllerActionInvoker.InvokeActionResultFilterRecursive(IList`1 filters, Int32 filterIndex, ResultExecutingContext preContext, ControllerContext controllerContext, ActionResult actionResult)
+   at System.Web.Mvc.ControllerActionInvoker.InvokeActionResultWithFilters(ControllerContext controllerContext, IList`1 filters, ActionResult actionResult)
+   at System.Web.Mvc.ControllerActionInvoker.InvokeAction(ControllerContext controllerContext, String actionName)
+   at System.Web.Mvc.Controller.ExecuteCore()
+   at System.Web.Mvc.ControllerBase.Execute(RequestContext requestContext)
+   at System.Web.Mvc.MvcHandler.ProcessRequest(HttpContextBase httpContext)
+   at Composite.Plugins.Functions.FunctionProviders.MvcFunctions.MvcFunctionBase.ExecuteRoute(RouteData routeData, ParameterList parameters, Boolean& routeResolved)
+   at Composite.Plugins.Functions.FunctionProviders.MvcFunctions.MvcFunctionBase.Execute(ParameterList parameters, FunctionContextContainer context)
+   at Composite.Functions.Foundation.PluginFacades.FunctionWrapper.Execute(ParameterList parameters, FunctionContextContainer context)
+20171026 09:07:40.9348 33 66 Error Function: Demo.Account.Login  System.Web.HttpCompileException (0x80004005): (30): error CS0308: The non-generic type 'CompositeC1WebPage' cannot be used with type arguments
+   at System.Web.Compilation.AssemblyBuilder.Compile()
+   at System.Web.Compilation.BuildProvidersCompiler.PerformBuild()
+   at System.Web.Compilation.BuildManager.CompileWebFile(VirtualPath virtualPath)
+   at System.Web.Compilation.BuildManager.GetVPathBuildResultInternal(VirtualPath virtualPath, Boolean noBuild, Boolean allowCrossApp, Boolean allowBuildInPrecompile, Boolean throwIfNotFound, Boolean ensureIsUpToDate)
+   at System.Web.Compilation.BuildManager.GetVPathBuildResultWithNoAssert(HttpContext context, VirtualPath virtualPath, Boolean noBuild, Boolean allowCrossApp, Boolean allowBuildInPrecompile, Boolean throwIfNotFound, Boolean ensureIsUpToDate)
+   at System.Web.Compilation.BuildManager.GetVirtualPathObjectFactory(VirtualPath virtualPath, HttpContext context, Boolean allowCrossApp, Boolean throwIfNotFound)
+   at System.Web.Compilation.BuildManager.GetCompiledType(VirtualPath virtualPath)
+   at System.Web.Mvc.BuildManagerCompiledView.Render(ViewContext viewContext, TextWriter writer)
+   at System.Web.Mvc.ViewResultBase.ExecuteResult(ControllerContext context)
+   at System.Web.Mvc.ControllerActionInvoker.InvokeActionResultFilterRecursive(IList`1 filters, Int32 filterIndex, ResultExecutingContext preContext, ControllerContext controllerContext, ActionResult actionResult)
+   at System.Web.Mvc.ControllerActionInvoker.InvokeActionResultFilterRecursive(IList`1 filters, Int32 filterIndex, ResultExecutingContext preContext, ControllerContext controllerContext, ActionResult actionResult)
+   at System.Web.Mvc.ControllerActionInvoker.InvokeActionResultWithFilters(ControllerContext controllerContext, IList`1 filters, ActionResult actionResult)
+   at System.Web.Mvc.ControllerActionInvoker.InvokeAction(ControllerContext controllerContext, String actionName)
+   at System.Web.Mvc.Controller.ExecuteCore()
+   at System.Web.Mvc.ControllerBase.Execute(RequestContext requestContext)
+   at System.Web.Mvc.MvcHandler.ProcessRequest(HttpContextBase httpContext)
+   at Composite.Plugins.Functions.FunctionProviders.MvcFunctions.MvcFunctionBase.ExecuteRoute(RouteData routeData, ParameterList parameters, Boolean& routeResolved)
+   at Composite.Plugins.Functions.FunctionProviders.MvcFunctions.MvcFunctionBase.Execute(ParameterList parameters, FunctionContextContainer context)
+   at Composite.Functions.Foundation.PluginFacades.FunctionWrapper.Execute(ParameterList parameters, FunctionContextContainer context)
+20171026 09:08:37.8202 34 148 Warning Cache  Clearing cache 'Resource strings' as it exceeded maximum size 10 elements. Edit configuration file to increase the cache size.
+20171026 09:08:37.8392 34 148 Warning Cache  Clearing cache 'Resource strings' as it exceeded maximum size 10 elements. Edit configuration file to increase the cache size.
+20171026 09:08:38.5351 34 46 Information ConsoleMessageServiceFacade  Console 'key08477498043359932' has a last known change numer of 67, but server current number is 1.
+20171026 09:13:37.7046 36 148 Error FileBasedFunctionProvider  Error instantiating function Composite.Navigation.Sitemap 
+20171026 09:13:37.7111 36 148 Error FileBasedFunctionProvider  System.Web.HttpCompileException (0x80004005): E:\_Working\Learning\CompositeC1\c1demo\Website\App_Data\Razor\Composite\Navigation\Sitemap.cshtml(82): error CS7036: There is no argument given that corresponds to the required formal parameter 'helpText' of 'HelpDefinition.HelpDefinition(string)'
+   at System.Web.Compilation.AssemblyBuilder.Compile()
+   at System.Web.Compilation.BuildProvidersCompiler.PerformBuild()
+   at System.Web.Compilation.BuildManager.CompileWebFile(VirtualPath virtualPath)
+   at System.Web.Compilation.BuildManager.GetVPathBuildResultInternal(VirtualPath virtualPath, Boolean noBuild, Boolean allowCrossApp, Boolean allowBuildInPrecompile, Boolean throwIfNotFound, Boolean ensureIsUpToDate)
+   at System.Web.Compilation.BuildManager.GetVPathBuildResultWithNoAssert(HttpContext context, VirtualPath virtualPath, Boolean noBuild, Boolean allowCrossApp, Boolean allowBuildInPrecompile, Boolean throwIfNotFound, Boolean ensureIsUpToDate)
+   at System.Web.Compilation.BuildManager.GetVirtualPathObjectFactory(VirtualPath virtualPath, HttpContext context, Boolean allowCrossApp, Boolean throwIfNotFound)
+   at System.Web.Compilation.BuildManager.CreateInstanceFromVirtualPath(VirtualPath virtualPath, Type requiredBaseType, HttpContext context, Boolean allowCrossApp)
+   at System.Web.WebPages.BuildManagerWrapper.CreateInstanceOfType[T](String virtualPath)
+   at System.Web.WebPages.VirtualPathFactoryManager.CreateInstanceOfType[T](String virtualPath)
+   at System.Web.WebPages.WebPageBase.CreateInstanceFromVirtualPath(String virtualPath, IVirtualPathFactory virtualPathFactory)
+   at Composite.Plugins.Functions.FunctionProviders.RazorFunctionProvider.RazorFunctionProvider.InstantiateFunction(String virtualPath, String namespace, String name)
+   at Composite.Plugins.Functions.FunctionProviders.FileBasedFunctionProvider.FileBasedFunctionProvider`1.get_Functions()
+20171026 09:13:37.9037 36 148 Warning Cache  Clearing cache 'Resource strings' as it exceeded maximum size 10 elements. Edit configuration file to increase the cache size.
+20171026 09:13:37.9187 36 148 Warning Cache  Clearing cache 'Resource strings' as it exceeded maximum size 10 elements. Edit configuration file to increase the cache size.
+20171026 09:15:02.3042 41 148 Error FileBasedFunctionProvider  Error instantiating function Composite.Navigation.Sitemap 
+20171026 09:15:02.3102 41 148 Error FileBasedFunctionProvider  System.Web.HttpCompileException (0x80004005): E:\_Working\Learning\CompositeC1\c1demo\Website\App_Data\Razor\Composite\Navigation\Sitemap.cshtml(82): error CS7036: There is no argument given that corresponds to the required formal parameter 'helpText' of 'HelpDefinition.HelpDefinition(string)'
+   at System.Web.Compilation.AssemblyBuilder.Compile()
+   at System.Web.Compilation.BuildProvidersCompiler.PerformBuild()
+   at System.Web.Compilation.BuildManager.CompileWebFile(VirtualPath virtualPath)
+   at System.Web.Compilation.BuildManager.GetVPathBuildResultInternal(VirtualPath virtualPath, Boolean noBuild, Boolean allowCrossApp, Boolean allowBuildInPrecompile, Boolean throwIfNotFound, Boolean ensureIsUpToDate)
+   at System.Web.Compilation.BuildManager.GetVPathBuildResultWithNoAssert(HttpContext context, VirtualPath virtualPath, Boolean noBuild, Boolean allowCrossApp, Boolean allowBuildInPrecompile, Boolean throwIfNotFound, Boolean ensureIsUpToDate)
+   at System.Web.Compilation.BuildManager.GetVirtualPathObjectFactory(VirtualPath virtualPath, HttpContext context, Boolean allowCrossApp, Boolean throwIfNotFound)
+   at System.Web.Compilation.BuildManager.CreateInstanceFromVirtualPath(VirtualPath virtualPath, Type requiredBaseType, HttpContext context, Boolean allowCrossApp)
+   at System.Web.WebPages.BuildManagerWrapper.CreateInstanceOfType[T](String virtualPath)
+   at System.Web.WebPages.VirtualPathFactoryManager.CreateInstanceOfType[T](String virtualPath)
+   at System.Web.WebPages.WebPageBase.CreateInstanceFromVirtualPath(String virtualPath, IVirtualPathFactory virtualPathFactory)
+   at Composite.Plugins.Functions.FunctionProviders.RazorFunctionProvider.RazorFunctionProvider.InstantiateFunction(String virtualPath, String namespace, String name)
+   at Composite.Plugins.Functions.FunctionProviders.FileBasedFunctionProvider.FileBasedFunctionProvider`1.get_Functions()
+20171026 09:15:02.5048 41 148 Warning Cache  Clearing cache 'Resource strings' as it exceeded maximum size 10 elements. Edit configuration file to increase the cache size.
+20171026 09:15:02.5168 41 148 Warning Cache  Clearing cache 'Resource strings' as it exceeded maximum size 10 elements. Edit configuration file to increase the cache size.
+20171026 09:15:52.5221 42 148 Error FileBasedFunctionProvider  Error instantiating function Composite.Navigation.Sitemap 
+20171026 09:15:52.5286 42 148 Error FileBasedFunctionProvider  System.Web.HttpCompileException (0x80004005): E:\_Working\Learning\CompositeC1\c1demo\Website\App_Data\Razor\Composite\Navigation\Sitemap.cshtml(82): error CS7036: There is no argument given that corresponds to the required formal parameter 'helpText' of 'HelpDefinition.HelpDefinition(string)'
+   at System.Web.Compilation.AssemblyBuilder.Compile()
+   at System.Web.Compilation.BuildProvidersCompiler.PerformBuild()
+   at System.Web.Compilation.BuildManager.CompileWebFile(VirtualPath virtualPath)
+   at System.Web.Compilation.BuildManager.GetVPathBuildResultInternal(VirtualPath virtualPath, Boolean noBuild, Boolean allowCrossApp, Boolean allowBuildInPrecompile, Boolean throwIfNotFound, Boolean ensureIsUpToDate)
+   at System.Web.Compilation.BuildManager.GetVPathBuildResultWithNoAssert(HttpContext context, VirtualPath virtualPath, Boolean noBuild, Boolean allowCrossApp, Boolean allowBuildInPrecompile, Boolean throwIfNotFound, Boolean ensureIsUpToDate)
+   at System.Web.Compilation.BuildManager.GetVirtualPathObjectFactory(VirtualPath virtualPath, HttpContext context, Boolean allowCrossApp, Boolean throwIfNotFound)
+   at System.Web.Compilation.BuildManager.CreateInstanceFromVirtualPath(VirtualPath virtualPath, Type requiredBaseType, HttpContext context, Boolean allowCrossApp)
+   at System.Web.WebPages.BuildManagerWrapper.CreateInstanceOfType[T](String virtualPath)
+   at System.Web.WebPages.VirtualPathFactoryManager.CreateInstanceOfType[T](String virtualPath)
+   at System.Web.WebPages.WebPageBase.CreateInstanceFromVirtualPath(String virtualPath, IVirtualPathFactory virtualPathFactory)
+   at Composite.Plugins.Functions.FunctionProviders.RazorFunctionProvider.RazorFunctionProvider.InstantiateFunction(String virtualPath, String namespace, String name)
+   at Composite.Plugins.Functions.FunctionProviders.FileBasedFunctionProvider.FileBasedFunctionProvider`1.get_Functions()
+20171026 09:15:52.7136 42 148 Warning Cache  Clearing cache 'Resource strings' as it exceeded maximum size 10 elements. Edit configuration file to increase the cache size.
+20171026 09:15:52.7261 42 148 Warning Cache  Clearing cache 'Resource strings' as it exceeded maximum size 10 elements. Edit configuration file to increase the cache size.
+20171026 09:16:11.3628 43 148 Error FileBasedFunctionProvider  Error instantiating function Composite.Navigation.Sitemap 
+20171026 09:16:11.3683 43 148 Error FileBasedFunctionProvider  System.Web.HttpCompileException (0x80004005): E:\_Working\Learning\CompositeC1\c1demo\Website\App_Data\Razor\Composite\Navigation\Sitemap.cshtml(82): error CS7036: There is no argument given that corresponds to the required formal parameter 'helpText' of 'HelpDefinition.HelpDefinition(string)'
+   at System.Web.Compilation.AssemblyBuilder.Compile()
+   at System.Web.Compilation.BuildProvidersCompiler.PerformBuild()
+   at System.Web.Compilation.BuildManager.CompileWebFile(VirtualPath virtualPath)
+   at System.Web.Compilation.BuildManager.GetVPathBuildResultInternal(VirtualPath virtualPath, Boolean noBuild, Boolean allowCrossApp, Boolean allowBuildInPrecompile, Boolean throwIfNotFound, Boolean ensureIsUpToDate)
+   at System.Web.Compilation.BuildManager.GetVPathBuildResultWithNoAssert(HttpContext context, VirtualPath virtualPath, Boolean noBuild, Boolean allowCrossApp, Boolean allowBuildInPrecompile, Boolean throwIfNotFound, Boolean ensureIsUpToDate)
+   at System.Web.Compilation.BuildManager.GetVirtualPathObjectFactory(VirtualPath virtualPath, HttpContext context, Boolean allowCrossApp, Boolean throwIfNotFound)
+   at System.Web.Compilation.BuildManager.CreateInstanceFromVirtualPath(VirtualPath virtualPath, Type requiredBaseType, HttpContext context, Boolean allowCrossApp)
+   at System.Web.WebPages.BuildManagerWrapper.CreateInstanceOfType[T](String virtualPath)
+   at System.Web.WebPages.VirtualPathFactoryManager.CreateInstanceOfType[T](String virtualPath)
+   at System.Web.WebPages.WebPageBase.CreateInstanceFromVirtualPath(String virtualPath, IVirtualPathFactory virtualPathFactory)
+   at Composite.Plugins.Functions.FunctionProviders.RazorFunctionProvider.RazorFunctionProvider.InstantiateFunction(String virtualPath, String namespace, String name)
+   at Composite.Plugins.Functions.FunctionProviders.FileBasedFunctionProvider.FileBasedFunctionProvider`1.get_Functions()
+20171026 09:16:11.5543 43 148 Warning Cache  Clearing cache 'Resource strings' as it exceeded maximum size 10 elements. Edit configuration file to increase the cache size.
+20171026 09:16:11.5668 43 148 Warning Cache  Clearing cache 'Resource strings' as it exceeded maximum size 10 elements. Edit configuration file to increase the cache size.
+20171026 09:17:32.6782 44 148 Error FileBasedFunctionProvider  Error instantiating function Composite.Navigation.Sitemap 
+20171026 09:17:32.6838 44 148 Error FileBasedFunctionProvider  System.Web.HttpCompileException (0x80004005): E:\_Working\Learning\CompositeC1\c1demo\Website\App_Data\Razor\Composite\Navigation\Sitemap.cshtml(82): error CS7036: There is no argument given that corresponds to the required formal parameter 'helpText' of 'HelpDefinition.HelpDefinition(string)'
+   at System.Web.Compilation.AssemblyBuilder.Compile()
+   at System.Web.Compilation.BuildProvidersCompiler.PerformBuild()
+   at System.Web.Compilation.BuildManager.CompileWebFile(VirtualPath virtualPath)
+   at System.Web.Compilation.BuildManager.GetVPathBuildResultInternal(VirtualPath virtualPath, Boolean noBuild, Boolean allowCrossApp, Boolean allowBuildInPrecompile, Boolean throwIfNotFound, Boolean ensureIsUpToDate)
+   at System.Web.Compilation.BuildManager.GetVPathBuildResultWithNoAssert(HttpContext context, VirtualPath virtualPath, Boolean noBuild, Boolean allowCrossApp, Boolean allowBuildInPrecompile, Boolean throwIfNotFound, Boolean ensureIsUpToDate)
+   at System.Web.Compilation.BuildManager.GetVirtualPathObjectFactory(VirtualPath virtualPath, HttpContext context, Boolean allowCrossApp, Boolean throwIfNotFound)
+   at System.Web.Compilation.BuildManager.CreateInstanceFromVirtualPath(VirtualPath virtualPath, Type requiredBaseType, HttpContext context, Boolean allowCrossApp)
+   at System.Web.WebPages.BuildManagerWrapper.CreateInstanceOfType[T](String virtualPath)
+   at System.Web.WebPages.VirtualPathFactoryManager.CreateInstanceOfType[T](String virtualPath)
+   at System.Web.WebPages.WebPageBase.CreateInstanceFromVirtualPath(String virtualPath, IVirtualPathFactory virtualPathFactory)
+   at Composite.Plugins.Functions.FunctionProviders.RazorFunctionProvider.RazorFunctionProvider.InstantiateFunction(String virtualPath, String namespace, String name)
+   at Composite.Plugins.Functions.FunctionProviders.FileBasedFunctionProvider.FileBasedFunctionProvider`1.get_Functions()
+20171026 09:17:32.8938 44 148 Warning Cache  Clearing cache 'Resource strings' as it exceeded maximum size 10 elements. Edit configuration file to increase the cache size.
+20171026 09:17:32.9099 44 148 Warning Cache  Clearing cache 'Resource strings' as it exceeded maximum size 10 elements. Edit configuration file to increase the cache size.
+20171026 09:18:16.2110 45 42 Error FileBasedFunctionProvider  Error instantiating function Composite.Navigation.Sitemap 
+20171026 09:18:16.2165 45 42 Error FileBasedFunctionProvider  System.Web.HttpCompileException (0x80004005): E:\_Working\Learning\CompositeC1\c1demo\Website\App_Data\Razor\Composite\Navigation\Sitemap.cshtml(82): error CS7036: There is no argument given that corresponds to the required formal parameter 'helpText' of 'HelpDefinition.HelpDefinition(string)'
+   at System.Web.Compilation.AssemblyBuilder.Compile()
+   at System.Web.Compilation.BuildProvidersCompiler.PerformBuild()
+   at System.Web.Compilation.BuildManager.CompileWebFile(VirtualPath virtualPath)
+   at System.Web.Compilation.BuildManager.GetVPathBuildResultInternal(VirtualPath virtualPath, Boolean noBuild, Boolean allowCrossApp, Boolean allowBuildInPrecompile, Boolean throwIfNotFound, Boolean ensureIsUpToDate)
+   at System.Web.Compilation.BuildManager.GetVPathBuildResultWithNoAssert(HttpContext context, VirtualPath virtualPath, Boolean noBuild, Boolean allowCrossApp, Boolean allowBuildInPrecompile, Boolean throwIfNotFound, Boolean ensureIsUpToDate)
+   at System.Web.Compilation.BuildManager.GetVirtualPathObjectFactory(VirtualPath virtualPath, HttpContext context, Boolean allowCrossApp, Boolean throwIfNotFound)
+   at System.Web.Compilation.BuildManager.CreateInstanceFromVirtualPath(VirtualPath virtualPath, Type requiredBaseType, HttpContext context, Boolean allowCrossApp)
+   at System.Web.WebPages.BuildManagerWrapper.CreateInstanceOfType[T](String virtualPath)
+   at System.Web.WebPages.VirtualPathFactoryManager.CreateInstanceOfType[T](String virtualPath)
+   at System.Web.WebPages.WebPageBase.CreateInstanceFromVirtualPath(String virtualPath, IVirtualPathFactory virtualPathFactory)
+   at Composite.Plugins.Functions.FunctionProviders.RazorFunctionProvider.RazorFunctionProvider.InstantiateFunction(String virtualPath, String namespace, String name)
+   at Composite.Plugins.Functions.FunctionProviders.FileBasedFunctionProvider.FileBasedFunctionProvider`1.get_Functions()
+20171026 09:18:16.3895 45 42 Warning Cache  Clearing cache 'Resource strings' as it exceeded maximum size 10 elements. Edit configuration file to increase the cache size.
+20171026 09:18:16.4035 45 42 Warning Cache  Clearing cache 'Resource strings' as it exceeded maximum size 10 elements. Edit configuration file to increase the cache size.
+20171026 09:22:42.9730 47 145 Error FileBasedFunctionProvider  Error instantiating function Composite.Navigation.Sitemap 
+20171026 09:22:42.9781 47 145 Error FileBasedFunctionProvider  System.Web.HttpCompileException (0x80004005): E:\_Working\Learning\CompositeC1\c1demo\Website\App_Data\Razor\Composite\Navigation\Sitemap.cshtml(82): error CS7036: There is no argument given that corresponds to the required formal parameter 'helpText' of 'HelpDefinition.HelpDefinition(string)'
+   at System.Web.Compilation.AssemblyBuilder.Compile()
+   at System.Web.Compilation.BuildProvidersCompiler.PerformBuild()
+   at System.Web.Compilation.BuildManager.CompileWebFile(VirtualPath virtualPath)
+   at System.Web.Compilation.BuildManager.GetVPathBuildResultInternal(VirtualPath virtualPath, Boolean noBuild, Boolean allowCrossApp, Boolean allowBuildInPrecompile, Boolean throwIfNotFound, Boolean ensureIsUpToDate)
+   at System.Web.Compilation.BuildManager.GetVPathBuildResultWithNoAssert(HttpContext context, VirtualPath virtualPath, Boolean noBuild, Boolean allowCrossApp, Boolean allowBuildInPrecompile, Boolean throwIfNotFound, Boolean ensureIsUpToDate)
+   at System.Web.Compilation.BuildManager.GetVirtualPathObjectFactory(VirtualPath virtualPath, HttpContext context, Boolean allowCrossApp, Boolean throwIfNotFound)
+   at System.Web.Compilation.BuildManager.CreateInstanceFromVirtualPath(VirtualPath virtualPath, Type requiredBaseType, HttpContext context, Boolean allowCrossApp)
+   at System.Web.WebPages.BuildManagerWrapper.CreateInstanceOfType[T](String virtualPath)
+   at System.Web.WebPages.VirtualPathFactoryManager.CreateInstanceOfType[T](String virtualPath)
+   at System.Web.WebPages.WebPageBase.CreateInstanceFromVirtualPath(String virtualPath, IVirtualPathFactory virtualPathFactory)
+   at Composite.Plugins.Functions.FunctionProviders.RazorFunctionProvider.RazorFunctionProvider.InstantiateFunction(String virtualPath, String namespace, String name)
+   at Composite.Plugins.Functions.FunctionProviders.FileBasedFunctionProvider.FileBasedFunctionProvider`1.get_Functions()
+20171026 09:22:43.1761 47 145 Warning Cache  Clearing cache 'Resource strings' as it exceeded maximum size 10 elements. Edit configuration file to increase the cache size.
+20171026 09:22:43.1901 47 145 Warning Cache  Clearing cache 'Resource strings' as it exceeded maximum size 10 elements. Edit configuration file to increase the cache size.
+20171026 09:26:03.5270 47 26 Warning Cache  Clearing cache 'Resource strings' as it exceeded maximum size 10 elements. Edit configuration file to increase the cache size.
+20171026 09:26:03.5776 47 26 Warning Cache  Clearing cache 'Resource strings' as it exceeded maximum size 10 elements. Edit configuration file to increase the cache size.
+20171026 09:26:03.6162 47 26 Warning Cache  Clearing cache 'Resource strings' as it exceeded maximum size 10 elements. Edit configuration file to increase the cache size.
+20171026 09:26:03.6167 47 26 Warning Cache  Clearing cache 'Resource strings' as it exceeded maximum size 10 elements. Edit configuration file to increase the cache size.
+20171026 09:26:03.6272 47 26 Warning Cache  Clearing cache 'Resource strings' as it exceeded maximum size 10 elements. Edit configuration file to increase the cache size.
+20171026 09:26:03.6312 47 26 Warning Cache  Clearing cache 'Resource strings' as it exceeded maximum size 10 elements. Edit configuration file to increase the cache size.
+20171026 09:26:03.6343 47 26 Warning Cache  Clearing cache 'Resource strings' as it exceeded maximum size 10 elements. Edit configuration file to increase the cache size.
+20171026 09:26:03.6343 47 26 Warning Cache  Clearing cache 'Resource strings' as it exceeded maximum size 10 elements. Edit configuration file to increase the cache size.
+20171026 09:26:03.6363 47 26 Warning Cache  Clearing cache 'Resource strings' as it exceeded maximum size 10 elements. Edit configuration file to increase the cache size.
+20171026 09:26:03.6383 47 26 Warning Cache  Clearing cache 'Resource strings' as it exceeded maximum size 10 elements. Edit configuration file to increase the cache size.
+20171026 09:26:03.6393 47 26 Warning Cache  Clearing cache 'Resource strings' as it exceeded maximum size 10 elements. Edit configuration file to increase the cache size.
+20171026 09:26:03.6563 47 26 Warning Cache  Clearing cache 'Resource strings' as it exceeded maximum size 10 elements. Edit configuration file to increase the cache size.
+20171026 09:26:03.6578 47 26 Warning Cache  Clearing cache 'Resource strings' as it exceeded maximum size 10 elements. Edit configuration file to increase the cache size.
+20171026 09:26:03.6598 47 26 Warning Cache  Clearing cache 'Resource strings' as it exceeded maximum size 10 elements. Edit configuration file to increase the cache size.
+20171026 09:26:03.6669 47 26 Warning Cache  Clearing cache 'Resource strings' as it exceeded maximum size 10 elements. Edit configuration file to increase the cache size.
+20171026 09:26:03.6709 47 26 Warning Cache  Clearing cache 'Resource strings' as it exceeded maximum size 10 elements. Edit configuration file to increase the cache size.
+20171026 09:26:03.6764 47 26 Warning Cache  Clearing cache 'Resource strings' as it exceeded maximum size 10 elements. Edit configuration file to increase the cache size.
+20171026 09:26:03.6809 47 26 Warning Cache  Clearing cache 'Resource strings' as it exceeded maximum size 10 elements. Edit configuration file to increase the cache size.
+20171026 09:26:03.6809 47 26 Warning Cache  Clearing cache 'Resource strings' as it exceeded maximum size 10 elements. Edit configuration file to increase the cache size.
+20171026 09:26:03.6884 47 26 Warning Cache  Clearing cache 'Resource strings' as it exceeded maximum size 10 elements. Edit configuration file to increase the cache size.
+20171026 09:26:03.6894 47 26 Warning Cache  Clearing cache 'Resource strings' as it exceeded maximum size 10 elements. Edit configuration file to increase the cache size.
+20171026 09:26:03.6899 47 26 Warning Cache  Clearing cache 'Resource strings' as it exceeded maximum size 10 elements. Edit configuration file to increase the cache size.
+20171026 09:26:03.6914 47 26 Warning Cache  Clearing cache 'Resource strings' as it exceeded maximum size 10 elements. Edit configuration file to increase the cache size.
+20171026 09:26:03.6919 47 26 Warning Cache  Clearing cache 'Resource strings' as it exceeded maximum size 10 elements. Edit configuration file to increase the cache size.
+20171026 09:26:03.6954 47 26 Warning Cache  Clearing cache 'Resource strings' as it exceeded maximum size 10 elements. Edit configuration file to increase the cache size.
+20171026 09:26:03.6985 47 26 Warning Cache  Clearing cache 'Resource strings' as it exceeded maximum size 10 elements. Edit configuration file to increase the cache size.
+20171026 09:26:03.7029 47 26 Warning Cache  Clearing cache 'Resource strings' as it exceeded maximum size 10 elements. Edit configuration file to increase the cache size.
+20171026 09:26:03.7035 47 26 Warning Cache  Clearing cache 'Resource strings' as it exceeded maximum size 10 elements. Edit configuration file to increase the cache size.
+20171026 09:26:03.7195 47 26 Warning Cache  Clearing cache 'Resource strings' as it exceeded maximum size 10 elements. Edit configuration file to increase the cache size.
+20171026 09:26:03.7195 47 26 Warning Cache  Clearing cache 'Resource strings' as it exceeded maximum size 10 elements. Edit configuration file to increase the cache size.
+20171026 09:26:03.7320 47 26 Warning Cache  Clearing cache 'Resource strings' as it exceeded maximum size 10 elements. Edit configuration file to increase the cache size.
+20171026 09:26:03.7511 47 26 Warning Cache  Clearing cache 'Resource strings' as it exceeded maximum size 10 elements. Edit configuration file to increase the cache size.
+20171026 09:26:03.7511 47 26 Warning Cache  Clearing cache 'Resource strings' as it exceeded maximum size 10 elements. Edit configuration file to increase the cache size.
+20171026 09:26:03.7526 47 26 Warning Cache  Clearing cache 'Resource strings' as it exceeded maximum size 10 elements. Edit configuration file to increase the cache size.
+20171026 09:26:03.7646 47 26 Warning Cache  Clearing cache 'Resource strings' as it exceeded maximum size 10 elements. Edit configuration file to increase the cache size.
+20171026 09:26:03.8042 47 26 Warning Cache  Clearing cache 'Resource strings' as it exceeded maximum size 10 elements. Edit configuration file to increase the cache size.
+20171026 09:26:03.9441 47 152 Warning Cache  Clearing cache 'Resource strings' as it exceeded maximum size 10 elements. Edit configuration file to increase the cache size.
+20171026 09:26:03.9552 47 152 Warning Cache  Clearing cache 'Resource strings' as it exceeded maximum size 10 elements. Edit configuration file to increase the cache size.
+20171026 09:26:04.1100 47 32 Warning Cache  Clearing cache 'Resource strings' as it exceeded maximum size 10 elements. Edit configuration file to increase the cache size.
+20171026 09:26:04.1130 47 32 Warning Cache  Clearing cache 'Resource strings' as it exceeded maximum size 10 elements. Edit configuration file to increase the cache size.
+20171026 09:26:04.1140 47 32 Warning Cache  Clearing cache 'Resource strings' as it exceeded maximum size 10 elements. Edit configuration file to increase the cache size.
+20171026 09:26:04.1145 47 32 Warning Cache  Clearing cache 'Resource strings' as it exceeded maximum size 10 elements. Edit configuration file to increase the cache size.
+20171026 09:26:04.1160 47 32 Warning Cache  Clearing cache 'Resource strings' as it exceeded maximum size 10 elements. Edit configuration file to increase the cache size.
+20171026 09:26:04.1220 47 32 Warning Cache  Clearing cache 'Resource strings' as it exceeded maximum size 10 elements. Edit configuration file to increase the cache size.
+20171026 09:26:04.1230 47 32 Warning Cache  Clearing cache 'Resource strings' as it exceeded maximum size 10 elements. Edit configuration file to increase the cache size.
+20171026 09:26:49.8336 48 276 Error FileBasedFunctionProvider  Error instantiating function Composite.Navigation.Sitemap 
+20171026 09:26:49.8395 48 276 Error FileBasedFunctionProvider  System.Web.HttpCompileException (0x80004005): E:\_Working\Learning\CompositeC1\c1demo\Website\App_Data\Razor\Composite\Navigation\Sitemap.cshtml(82): error CS7036: There is no argument given that corresponds to the required formal parameter 'helpText' of 'HelpDefinition.HelpDefinition(string)'
+   at System.Web.Compilation.AssemblyBuilder.Compile()
+   at System.Web.Compilation.BuildProvidersCompiler.PerformBuild()
+   at System.Web.Compilation.BuildManager.CompileWebFile(VirtualPath virtualPath)
+   at System.Web.Compilation.BuildManager.GetVPathBuildResultInternal(VirtualPath virtualPath, Boolean noBuild, Boolean allowCrossApp, Boolean allowBuildInPrecompile, Boolean throwIfNotFound, Boolean ensureIsUpToDate)
+   at System.Web.Compilation.BuildManager.GetVPathBuildResultWithNoAssert(HttpContext context, VirtualPath virtualPath, Boolean noBuild, Boolean allowCrossApp, Boolean allowBuildInPrecompile, Boolean throwIfNotFound, Boolean ensureIsUpToDate)
+   at System.Web.Compilation.BuildManager.GetVirtualPathObjectFactory(VirtualPath virtualPath, HttpContext context, Boolean allowCrossApp, Boolean throwIfNotFound)
+   at System.Web.Compilation.BuildManager.CreateInstanceFromVirtualPath(VirtualPath virtualPath, Type requiredBaseType, HttpContext context, Boolean allowCrossApp)
+   at System.Web.WebPages.BuildManagerWrapper.CreateInstanceOfType[T](String virtualPath)
+   at System.Web.WebPages.VirtualPathFactoryManager.CreateInstanceOfType[T](String virtualPath)
+   at System.Web.WebPages.WebPageBase.CreateInstanceFromVirtualPath(String virtualPath, IVirtualPathFactory virtualPathFactory)
+   at Composite.Plugins.Functions.FunctionProviders.RazorFunctionProvider.RazorFunctionProvider.InstantiateFunction(String virtualPath, String namespace, String name)
+   at Composite.Plugins.Functions.FunctionProviders.FileBasedFunctionProvider.FileBasedFunctionProvider`1.get_Functions()
+20171026 09:26:50.0401 48 276 Warning Cache  Clearing cache 'Resource strings' as it exceeded maximum size 10 elements. Edit configuration file to increase the cache size.
+20171026 09:26:50.0552 48 276 Warning Cache  Clearing cache 'Resource strings' as it exceeded maximum size 10 elements. Edit configuration file to increase the cache size.
+20171026 09:26:50.9897 48 188 Information SqlDataProvider  CREATE TABLE dbo.[Composite_Data_Types_ICompositionContainer]([Id]  [UniqueIdentifier]  NOT NULL ,[Label]  [NVarChar](256)  NOT NULL );ALTER TABLE [Composite_Data_Types_ICompositionContainer] ADD CONSTRAINT [PK_Composite_Data_Types_ICompositionContainer] PRIMARY KEY CLUSTERED ([Id]);
+20171026 09:26:51.0348 48 188 Information SqlDataProvider  CREATE TABLE dbo.[Composite_Data_Types_ICustomFunctionCallEditorMapping]([FunctionName]  [NVarChar](255) COLLATE Latin1_General_CS_AS NOT NULL ,[CustomEditorPath]  [NVarChar](255)  NOT NULL ,[Width]  [Int]  NULL ,[Height]  [Int]  NULL );ALTER TABLE [Composite_Data_Types_ICustomFunctionCallEditorMapping] ADD CONSTRAINT [PK_Composite_Data_Types_ICustomFunctionCallEditorMapping] PRIMARY KEY CLUSTERED ([FunctionName]);
+20171026 09:26:51.0468 48 188 Information SqlDataProvider  CREATE TABLE dbo.[Composite_Data_Types_IDataItemTreeAttachmentPoint]([Id]  [UniqueIdentifier]  NOT NULL ,[TreeId]  [NVarChar](max)  NOT NULL ,[Position]  [NVarChar](64)  NOT NULL ,[InterfaceType]  [NVarChar](max)  NOT NULL ,[KeyValue]  [NVarChar](max)  NOT NULL );ALTER TABLE [Composite_Data_Types_IDataItemTreeAttachmentPoint] ADD CONSTRAINT [PK_Composite_Data_Types_IDataItemTreeAttachmentPoint] PRIMARY KEY CLUSTERED ([Id]);
+20171026 09:26:51.0624 48 188 Information SqlDataProvider  CREATE TABLE dbo.[Composite_Data_Types_IFlowInformation]([Id]  [UniqueIdentifier]  NOT NULL ,[Username]  [NVarChar](64) COLLATE Latin1_General_CS_AS NOT NULL ,[ConsoleId]  [NVarChar](64)  NOT NULL ,[SerializedFlowToken]  [NVarChar](max)  NOT NULL ,[SerializedEntityToken]  [NVarChar](max)  NOT NULL ,[SerializedActionToken]  [NVarChar](max)  NOT NULL ,[TimeStamp]  [DateTime]  NOT NULL );ALTER TABLE [Composite_Data_Types_IFlowInformation] ADD CONSTRAINT [PK_Composite_Data_Types_IFlowInformation] PRIMARY KEY CLUSTERED ([Id]);
+20171026 09:26:51.0759 48 188 Information SqlDataProvider  CREATE TABLE dbo.[Composite_Data_Types_IFolderWhiteList_Unpublished]([KeyName]  [NVarChar](128) COLLATE Latin1_General_CS_AS NOT NULL ,[TildeBasedPath]  [NVarChar](512) COLLATE Latin1_General_CS_AS NOT NULL );ALTER TABLE [Composite_Data_Types_IFolderWhiteList_Unpublished] ADD CONSTRAINT [PK_Composite_Data_Types_IFolderWhiteList_Unpublished] PRIMARY KEY CLUSTERED ([KeyName],[TildeBasedPath]);
+20171026 09:26:51.0905 48 188 Information SqlDataProvider  CREATE TABLE dbo.[Composite_Data_Types_IGeneratedTypeWhiteList_Unpublished]([TypeManagerTypeName]  [NVarChar](256) COLLATE Latin1_General_CS_AS NOT NULL );ALTER TABLE [Composite_Data_Types_IGeneratedTypeWhiteList_Unpublished] ADD CONSTRAINT [PK_Composite_Data_Types_IGeneratedTypeWhiteList_Unpublished] PRIMARY KEY CLUSTERED ([TypeManagerTypeName]);
+20171026 09:26:51.1070 48 188 Information SqlDataProvider  CREATE TABLE dbo.[Composite_Data_Types_IHostnameBinding]([Id]  [UniqueIdentifier]  NOT NULL ,[Hostname]  [NVarChar](255)  NOT NULL ,[Culture]  [NVarChar](64)  NOT NULL ,[HomePageId]  [UniqueIdentifier]  NOT NULL CONSTRAINT [DF_Composite_Data_Types_IHostnameBinding_HomePageId] DEFAULT N'00000000-0000-0000-0000-000000000000',[PageNotFoundUrl]  [NVarChar](255)  NULL ,[Aliases]  [NVarChar](512)  NULL ,[IncludeHomePageInUrl]  [Bit]  NOT NULL ,[IncludeCultureInUrl]  [Bit]  NOT NULL ,[EnforceHttps]  [Bit]  NOT NULL CONSTRAINT [DF_Composite_Data_Types_IHostnameBinding_EnforceHttps] DEFAULT 0);ALTER TABLE [Composite_Data_Types_IHostnameBinding] ADD CONSTRAINT [PK_Composite_Data_Types_IHostnameBinding] PRIMARY KEY CLUSTERED ([Id]);
+20171026 09:26:51.1220 48 188 Information SqlDataProvider  CREATE TABLE dbo.[Composite_Data_Types_IInlineFunction]([Id]  [UniqueIdentifier]  NOT NULL ,[Name]  [NVarChar](128)  NOT NULL ,[Namespace]  [NVarChar](128)  NOT NULL ,[Description]  [NVarChar](max)  NOT NULL ,[CodePath]  [NVarChar](512)  NOT NULL );ALTER TABLE [Composite_Data_Types_IInlineFunction] ADD CONSTRAINT [PK_Composite_Data_Types_IInlineFunction] PRIMARY KEY CLUSTERED ([Id]);
+20171026 09:26:51.1341 48 188 Information SqlDataProvider  CREATE TABLE dbo.[Composite_Data_Types_IInlineFunctionAssemblyReference]([Id]  [UniqueIdentifier]  NOT NULL ,[Function]  [UniqueIdentifier]  NOT NULL ,[Name]  [NVarChar](128)  NOT NULL ,[Location]  [NVarChar](128)  NOT NULL );ALTER TABLE [Composite_Data_Types_IInlineFunctionAssemblyReference] ADD CONSTRAINT [PK_Composite_Data_Types_IInlineFunctionAssemblyReference] PRIMARY KEY CLUSTERED ([Id]);
+20171026 09:26:51.1481 48 188 Information SqlDataProvider  CREATE TABLE dbo.[Composite_Data_Types_ILockingInformation]([Id]  [UniqueIdentifier]  NOT NULL ,[SerializedEntityToken]  [NVarChar](max)  NOT NULL ,[SerializedOwnerId]  [NVarChar](max)  NOT NULL ,[Username]  [NVarChar](64)  NOT NULL );ALTER TABLE [Composite_Data_Types_ILockingInformation] ADD CONSTRAINT [PK_Composite_Data_Types_ILockingInformation] PRIMARY KEY CLUSTERED ([Id]);
+20171026 09:26:51.1837 48 188 Information SqlDataProvider  CREATE TABLE dbo.[Composite_Data_Types_IMediaFileData]([Id]  [UniqueIdentifier]  NOT NULL ,[FolderPath]  [NVarChar](2048)  NOT NULL ,[FileName]  [NVarChar](2048)  NOT NULL ,[Title]  [NVarChar](256)  NULL ,[Description]  [NVarChar](max)  NULL ,[Tags]  [NVarChar](max)  NULL ,[CultureInfo]  [NVarChar](128)  NULL ,[MimeType]  [NVarChar](256)  NULL ,[Length]  [Int]  NULL CONSTRAINT [DF_Composite_Data_Types_IMediaFileData_Length] DEFAULT -1,[CreationTime]  [DateTime]  NULL CONSTRAINT [DF_Composite_Data_Types_IMediaFileData_CreationTime] DEFAULT getdate(),[LastWriteTime]  [DateTime]  NULL CONSTRAINT [DF_Composite_Data_Types_IMediaFileData_LastWriteTime] DEFAULT getdate());ALTER TABLE [Composite_Data_Types_IMediaFileData] ADD CONSTRAINT [PK_Composite_Data_Types_IMediaFileData] PRIMARY KEY CLUSTERED ([Id]);
+20171026 09:26:51.2007 48 188 Information SqlDataProvider  CREATE TABLE dbo.[Composite_Data_Types_IMediaFolderData]([Id]  [UniqueIdentifier]  NOT NULL ,[Path]  [NVarChar](2048)  NOT NULL ,[Title]  [NVarChar](256)  NULL ,[Description]  [NVarChar](max)  NULL );ALTER TABLE [Composite_Data_Types_IMediaFolderData] ADD CONSTRAINT [PK_Composite_Data_Types_IMediaFolderData] PRIMARY KEY CLUSTERED ([Id]);
+20171026 09:26:51.2157 48 188 Information SqlDataProvider  CREATE TABLE dbo.[Composite_Data_Types_IMethodBasedFunctionInfo]([Id]  [UniqueIdentifier]  NOT NULL ,[Type]  [NVarChar](512)  NOT NULL ,[MethodName]  [NVarChar](64)  NOT NULL ,[Namespace]  [NVarChar](512)  NOT NULL ,[UserMethodName]  [NVarChar](64)  NOT NULL );ALTER TABLE [Composite_Data_Types_IMethodBasedFunctionInfo] ADD CONSTRAINT [PK_Composite_Data_Types_IMethodBasedFunctionInfo] PRIMARY KEY CLUSTERED ([Id]);
+20171026 09:26:51.2283 48 188 Information SqlDataProvider  CREATE TABLE dbo.[Composite_Data_Types_INamedFunctionCall]([XsltFunctionId]  [UniqueIdentifier]  NOT NULL ,[Name]  [NVarChar](256) COLLATE Latin1_General_CS_AS NOT NULL ,[SerializedFunction]  [NVarChar](max)  NOT NULL );ALTER TABLE [Composite_Data_Types_INamedFunctionCall] ADD CONSTRAINT [PK_Composite_Data_Types_INamedFunctionCall] PRIMARY KEY CLUSTERED ([XsltFunctionId],[Name]);
+20171026 09:26:51.2403 48 188 Information SqlDataProvider  CREATE TABLE dbo.[Composite_Data_Types_IPackageServerSource]([Id]  [UniqueIdentifier]  NOT NULL ,[Url]  [NVarChar](max)  NOT NULL );ALTER TABLE [Composite_Data_Types_IPackageServerSource] ADD CONSTRAINT [PK_Composite_Data_Types_IPackageServerSource] PRIMARY KEY CLUSTERED ([Id]);
+20171026 09:26:51.2538 48 188 Information SqlDataProvider  CREATE TABLE dbo.[Composite_Data_Types_IPage_en_AU]([PublicationStatus]  [NVarChar](64)  NOT NULL CONSTRAINT [DF_Composite_Data_Types_IPage_en_AU_PublicationStatus] DEFAULT N'',[ChangeDate]  [DateTime]  NOT NULL CONSTRAINT [DF_Composite_Data_Types_IPage_en_AU_ChangeDate] DEFAULT getdate(),[CreationDate]  [DateTime]  NOT NULL CONSTRAINT [DF_Composite_Data_Types_IPage_en_AU_CreationDate] DEFAULT getdate(),[ChangedBy]  [NVarChar](64)  NULL CONSTRAINT [DF_Composite_Data_Types_IPage_en_AU_ChangedBy] DEFAULT N'',[CreatedBy]  [NVarChar](64)  NULL CONSTRAINT [DF_Composite_Data_Types_IPage_en_AU_CreatedBy] DEFAULT N'',[Id]  [UniqueIdentifier]  NOT NULL ,[TemplateId]  [UniqueIdentifier]  NOT NULL ,[PageTypeId]  [UniqueIdentifier]  NOT NULL CONSTRAINT [DF_Composite_Data_Types_IPage_en_AU_PageTypeId] DEFAULT N'00000000-0000-0000-0000-000000000000',[Title]  [NVarChar](255)  NOT NULL ,[MenuTitle]  [NVarChar](64)  NULL ,[UrlTitle]  [NVarChar](192)  NOT NULL ,[FriendlyUrl]  [NVarChar](192)  NULL ,[Description]  [NVarChar](1024)  NULL ,[SourceCultureName]  [NVarChar](16)  NOT NULL CONSTRAINT [DF_Composite_Data_Types_IPage_en_AU_SourceCultureName] DEFAULT N'',[VersionId]  [UniqueIdentifier]  NOT NULL CONSTRAINT [DF_Composite_Data_Types_IPage_en_AU_VersionId] DEFAULT newid());ALTER TABLE [Composite_Data_Types_IPage_en_AU] ADD CONSTRAINT [PK_Composite_Data_Types_IPage_en_AU] PRIMARY KEY CLUSTERED ([Id],[VersionId]);
+20171026 09:26:51.2624 48 188 Information SqlDataProvider  CREATE TABLE dbo.[Composite_Data_Types_IPage_km_KH]([PublicationStatus]  [NVarChar](64)  NOT NULL CONSTRAINT [DF_Composite_Data_Types_IPage_km_KH_PublicationStatus] DEFAULT N'',[ChangeDate]  [DateTime]  NOT NULL CONSTRAINT [DF_Composite_Data_Types_IPage_km_KH_ChangeDate] DEFAULT getdate(),[CreationDate]  [DateTime]  NOT NULL CONSTRAINT [DF_Composite_Data_Types_IPage_km_KH_CreationDate] DEFAULT getdate(),[ChangedBy]  [NVarChar](64)  NULL CONSTRAINT [DF_Composite_Data_Types_IPage_km_KH_ChangedBy] DEFAULT N'',[CreatedBy]  [NVarChar](64)  NULL CONSTRAINT [DF_Composite_Data_Types_IPage_km_KH_CreatedBy] DEFAULT N'',[Id]  [UniqueIdentifier]  NOT NULL ,[TemplateId]  [UniqueIdentifier]  NOT NULL ,[PageTypeId]  [UniqueIdentifier]  NOT NULL CONSTRAINT [DF_Composite_Data_Types_IPage_km_KH_PageTypeId] DEFAULT N'00000000-0000-0000-0000-000000000000',[Title]  [NVarChar](255)  NOT NULL ,[MenuTitle]  [NVarChar](64)  NULL ,[UrlTitle]  [NVarChar](192)  NOT NULL ,[FriendlyUrl]  [NVarChar](192)  NULL ,[Description]  [NVarChar](1024)  NULL ,[SourceCultureName]  [NVarChar](16)  NOT NULL CONSTRAINT [DF_Composite_Data_Types_IPage_km_KH_SourceCultureName] DEFAULT N'',[VersionId]  [UniqueIdentifier]  NOT NULL CONSTRAINT [DF_Composite_Data_Types_IPage_km_KH_VersionId] DEFAULT newid());ALTER TABLE [Composite_Data_Types_IPage_km_KH] ADD CONSTRAINT [PK_Composite_Data_Types_IPage_km_KH] PRIMARY KEY CLUSTERED ([Id],[VersionId]);
+20171026 09:26:51.2679 48 188 Information SqlDataProvider  CREATE TABLE dbo.[Composite_Data_Types_IPage_Unpublished_en_AU]([PublicationStatus]  [NVarChar](64)  NOT NULL CONSTRAINT [DF_Composite_Data_Types_IPage_Unpublished_en_AU_PublicationStatus] DEFAULT N'',[ChangeDate]  [DateTime]  NOT NULL CONSTRAINT [DF_Composite_Data_Types_IPage_Unpublished_en_AU_ChangeDate] DEFAULT getdate(),[CreationDate]  [DateTime]  NOT NULL CONSTRAINT [DF_Composite_Data_Types_IPage_Unpublished_en_AU_CreationDate] DEFAULT getdate(),[ChangedBy]  [NVarChar](64)  NULL CONSTRAINT [DF_Composite_Data_Types_IPage_Unpublished_en_AU_ChangedBy] DEFAULT N'',[CreatedBy]  [NVarChar](64)  NULL CONSTRAINT [DF_Composite_Data_Types_IPage_Unpublished_en_AU_CreatedBy] DEFAULT N'',[Id]  [UniqueIdentifier]  NOT NULL ,[TemplateId]  [UniqueIdentifier]  NOT NULL ,[PageTypeId]  [UniqueIdentifier]  NOT NULL CONSTRAINT [DF_Composite_Data_Types_IPage_Unpublished_en_AU_PageTypeId] DEFAULT N'00000000-0000-0000-0000-000000000000',[Title]  [NVarChar](255)  NOT NULL ,[MenuTitle]  [NVarChar](64)  NULL ,[UrlTitle]  [NVarChar](192)  NOT NULL ,[FriendlyUrl]  [NVarChar](192)  NULL ,[Description]  [NVarChar](1024)  NULL ,[SourceCultureName]  [NVarChar](16)  NOT NULL CONSTRAINT [DF_Composite_Data_Types_IPage_Unpublished_en_AU_SourceCultureName] DEFAULT N'',[VersionId]  [UniqueIdentifier]  NOT NULL CONSTRAINT [DF_Composite_Data_Types_IPage_Unpublished_en_AU_VersionId] DEFAULT newid());ALTER TABLE [Composite_Data_Types_IPage_Unpublished_en_AU] ADD CONSTRAINT [PK_Composite_Data_Types_IPage_Unpublished_en_AU] PRIMARY KEY CLUSTERED ([Id],[VersionId]);
+20171026 09:26:51.2769 48 188 Information SqlDataProvider  CREATE TABLE dbo.[Composite_Data_Types_IPage_Unpublished_km_KH]([PublicationStatus]  [NVarChar](64)  NOT NULL CONSTRAINT [DF_Composite_Data_Types_IPage_Unpublished_km_KH_PublicationStatus] DEFAULT N'',[ChangeDate]  [DateTime]  NOT NULL CONSTRAINT [DF_Composite_Data_Types_IPage_Unpublished_km_KH_ChangeDate] DEFAULT getdate(),[CreationDate]  [DateTime]  NOT NULL CONSTRAINT [DF_Composite_Data_Types_IPage_Unpublished_km_KH_CreationDate] DEFAULT getdate(),[ChangedBy]  [NVarChar](64)  NULL CONSTRAINT [DF_Composite_Data_Types_IPage_Unpublished_km_KH_ChangedBy] DEFAULT N'',[CreatedBy]  [NVarChar](64)  NULL CONSTRAINT [DF_Composite_Data_Types_IPage_Unpublished_km_KH_CreatedBy] DEFAULT N'',[Id]  [UniqueIdentifier]  NOT NULL ,[TemplateId]  [UniqueIdentifier]  NOT NULL ,[PageTypeId]  [UniqueIdentifier]  NOT NULL CONSTRAINT [DF_Composite_Data_Types_IPage_Unpublished_km_KH_PageTypeId] DEFAULT N'00000000-0000-0000-0000-000000000000',[Title]  [NVarChar](255)  NOT NULL ,[MenuTitle]  [NVarChar](64)  NULL ,[UrlTitle]  [NVarChar](192)  NOT NULL ,[FriendlyUrl]  [NVarChar](192)  NULL ,[Description]  [NVarChar](1024)  NULL ,[SourceCultureName]  [NVarChar](16)  NOT NULL CONSTRAINT [DF_Composite_Data_Types_IPage_Unpublished_km_KH_SourceCultureName] DEFAULT N'',[VersionId]  [UniqueIdentifier]  NOT NULL CONSTRAINT [DF_Composite_Data_Types_IPage_Unpublished_km_KH_VersionId] DEFAULT newid());ALTER TABLE [Composite_Data_Types_IPage_Unpublished_km_KH] ADD CONSTRAINT [PK_Composite_Data_Types_IPage_Unpublished_km_KH] PRIMARY KEY CLUSTERED ([Id],[VersionId]);
+20171026 09:26:51.2930 48 188 Information SqlDataProvider  CREATE TABLE dbo.[Composite_Data_Types_IPageFolderDefinition]([Id]  [UniqueIdentifier]  NOT NULL CONSTRAINT [DF_Composite_Data_Types_IPageFolderDefinition_Id] DEFAULT newid(),[PageId]  [UniqueIdentifier]  NOT NULL ,[FolderTypeId]  [UniqueIdentifier]  NOT NULL );ALTER TABLE [Composite_Data_Types_IPageFolderDefinition] ADD CONSTRAINT [PK_Composite_Data_Types_IPageFolderDefinition] PRIMARY KEY CLUSTERED ([Id]);
+20171026 09:26:51.3105 48 188 Information SqlDataProvider  CREATE TABLE dbo.[Composite_Data_Types_IPageMetaDataDefinition]([Id]  [UniqueIdentifier]  NOT NULL CONSTRAINT [DF_Composite_Data_Types_IPageMetaDataDefinition_Id] DEFAULT newid(),[DefiningItemId]  [UniqueIdentifier]  NOT NULL ,[Name]  [NVarChar](128)  NOT NULL ,[Label]  [NVarChar](256)  NOT NULL ,[MetaDataContainerId]  [UniqueIdentifier]  NOT NULL ,[MetaDataTypeId]  [UniqueIdentifier]  NOT NULL ,[StartLevel]  [Int]  NOT NULL ,[Levels]  [Int]  NOT NULL );ALTER TABLE [Composite_Data_Types_IPageMetaDataDefinition] ADD CONSTRAINT [PK_Composite_Data_Types_IPageMetaDataDefinition] PRIMARY KEY CLUSTERED ([Id]);
+20171026 09:26:51.3281 48 188 Information SqlDataProvider  CREATE TABLE dbo.[Composite_Data_Types_IPagePlaceholderContent_en_AU]([PublicationStatus]  [NVarChar](64)  NOT NULL CONSTRAINT [DF_Composite_Data_Types_IPagePlaceholderContent_en_AU_PublicationStatus] DEFAULT N'',[ChangeDate]  [DateTime]  NOT NULL CONSTRAINT [DF_Composite_Data_Types_IPagePlaceholderContent_en_AU_ChangeDate] DEFAULT getdate(),[CreationDate]  [DateTime]  NOT NULL CONSTRAINT [DF_Composite_Data_Types_IPagePlaceholderContent_en_AU_CreationDate] DEFAULT getdate(),[ChangedBy]  [NVarChar](64)  NULL CONSTRAINT [DF_Composite_Data_Types_IPagePlaceholderContent_en_AU_ChangedBy] DEFAULT N'',[CreatedBy]  [NVarChar](64)  NULL CONSTRAINT [DF_Composite_Data_Types_IPagePlaceholderContent_en_AU_CreatedBy] DEFAULT N'',[PageId]  [UniqueIdentifier]  NOT NULL ,[PlaceHolderId]  [NVarChar](255) COLLATE Latin1_General_CS_AS NOT NULL ,[Content]  [NVarChar](max)  NOT NULL ,[SourceCultureName]  [NVarChar](16)  NOT NULL CONSTRAINT [DF_Composite_Data_Types_IPagePlaceholderContent_en_AU_SourceCultureName] DEFAULT N'',[VersionId]  [UniqueIdentifier]  NOT NULL CONSTRAINT [DF_Composite_Data_Types_IPagePlaceholderContent_en_AU_VersionId] DEFAULT newid());ALTER TABLE [Composite_Data_Types_IPagePlaceholderContent_en_AU] ADD CONSTRAINT [PK_Composite_Data_Types_IPagePlaceholderContent_en_AU] PRIMARY KEY CLUSTERED ([PageId],[PlaceHolderId],[VersionId]);
+20171026 09:26:51.3611 48 188 Information SqlDataProvider  CREATE TABLE dbo.[Composite_Data_Types_IPagePlaceholderContent_km_KH]([PublicationStatus]  [NVarChar](64)  NOT NULL CONSTRAINT [DF_Composite_Data_Types_IPagePlaceholderContent_km_KH_PublicationStatus] DEFAULT N'',[ChangeDate]  [DateTime]  NOT NULL CONSTRAINT [DF_Composite_Data_Types_IPagePlaceholderContent_km_KH_ChangeDate] DEFAULT getdate(),[CreationDate]  [DateTime]  NOT NULL CONSTRAINT [DF_Composite_Data_Types_IPagePlaceholderContent_km_KH_CreationDate] DEFAULT getdate(),[ChangedBy]  [NVarChar](64)  NULL CONSTRAINT [DF_Composite_Data_Types_IPagePlaceholderContent_km_KH_ChangedBy] DEFAULT N'',[CreatedBy]  [NVarChar](64)  NULL CONSTRAINT [DF_Composite_Data_Types_IPagePlaceholderContent_km_KH_CreatedBy] DEFAULT N'',[PageId]  [UniqueIdentifier]  NOT NULL ,[PlaceHolderId]  [NVarChar](255) COLLATE Latin1_General_CS_AS NOT NULL ,[Content]  [NVarChar](max)  NOT NULL ,[SourceCultureName]  [NVarChar](16)  NOT NULL CONSTRAINT [DF_Composite_Data_Types_IPagePlaceholderContent_km_KH_SourceCultureName] DEFAULT N'',[VersionId]  [UniqueIdentifier]  NOT NULL CONSTRAINT [DF_Composite_Data_Types_IPagePlaceholderContent_km_KH_VersionId] DEFAULT newid());ALTER TABLE [Composite_Data_Types_IPagePlaceholderContent_km_KH] ADD CONSTRAINT [PK_Composite_Data_Types_IPagePlaceholderContent_km_KH] PRIMARY KEY CLUSTERED ([PageId],[PlaceHolderId],[VersionId]);
+20171026 09:26:51.3667 48 188 Information SqlDataProvider  CREATE TABLE dbo.[Composite_Data_Types_IPagePlaceholderContent_Unpublished_en_AU]([PublicationStatus]  [NVarChar](64)  NOT NULL CONSTRAINT [DF_Composite_Data_Types_IPagePlaceholderContent_Unpublished_en_AU_PublicationStatus] DEFAULT N'',[ChangeDate]  [DateTime]  NOT NULL CONSTRAINT [DF_Composite_Data_Types_IPagePlaceholderContent_Unpublished_en_AU_ChangeDate] DEFAULT getdate(),[CreationDate]  [DateTime]  NOT NULL CONSTRAINT [DF_Composite_Data_Types_IPagePlaceholderContent_Unpublished_en_AU_CreationDate] DEFAULT getdate(),[ChangedBy]  [NVarChar](64)  NULL CONSTRAINT [DF_Composite_Data_Types_IPagePlaceholderContent_Unpublished_en_AU_ChangedBy] DEFAULT N'',[CreatedBy]  [NVarChar](64)  NULL CONSTRAINT [DF_Composite_Data_Types_IPagePlaceholderContent_Unpublished_en_AU_CreatedBy] DEFAULT N'',[PageId]  [UniqueIdentifier]  NOT NULL ,[PlaceHolderId]  [NVarChar](255) COLLATE Latin1_General_CS_AS NOT NULL ,[Content]  [NVarChar](max)  NOT NULL ,[SourceCultureName]  [NVarChar](16)  NOT NULL CONSTRAINT [DF_Composite_Data_Types_IPagePlaceholderContent_Unpublished_en_AU_SourceCultureName] DEFAULT N'',[VersionId]  [UniqueIdentifier]  NOT NULL CONSTRAINT [DF_Composite_Data_Types_IPagePlaceholderContent_Unpublished_en_AU_VersionId] DEFAULT newid());ALTER TABLE [Composite_Data_Types_IPagePlaceholderContent_Unpublished_en_AU] ADD CONSTRAINT [PK_Composite_Data_Types_IPagePlaceholderContent_Unpublished_en_AU] PRIMARY KEY CLUSTERED ([PageId],[PlaceHolderId],[VersionId]);
+20171026 09:26:51.3747 48 188 Information SqlDataProvider  CREATE TABLE dbo.[Composite_Data_Types_IPagePlaceholderContent_Unpublished_km_KH]([PublicationStatus]  [NVarChar](64)  NOT NULL CONSTRAINT [DF_Composite_Data_Types_IPagePlaceholderContent_Unpublished_km_KH_PublicationStatus] DEFAULT N'',[ChangeDate]  [DateTime]  NOT NULL CONSTRAINT [DF_Composite_Data_Types_IPagePlaceholderContent_Unpublished_km_KH_ChangeDate] DEFAULT getdate(),[CreationDate]  [DateTime]  NOT NULL CONSTRAINT [DF_Composite_Data_Types_IPagePlaceholderContent_Unpublished_km_KH_CreationDate] DEFAULT getdate(),[ChangedBy]  [NVarChar](64)  NULL CONSTRAINT [DF_Composite_Data_Types_IPagePlaceholderContent_Unpublished_km_KH_ChangedBy] DEFAULT N'',[CreatedBy]  [NVarChar](64)  NULL CONSTRAINT [DF_Composite_Data_Types_IPagePlaceholderContent_Unpublished_km_KH_CreatedBy] DEFAULT N'',[PageId]  [UniqueIdentifier]  NOT NULL ,[PlaceHolderId]  [NVarChar](255) COLLATE Latin1_General_CS_AS NOT NULL ,[Content]  [NVarChar](max)  NOT NULL ,[SourceCultureName]  [NVarChar](16)  NOT NULL CONSTRAINT [DF_Composite_Data_Types_IPagePlaceholderContent_Unpublished_km_KH_SourceCultureName] DEFAULT N'',[VersionId]  [UniqueIdentifier]  NOT NULL CONSTRAINT [DF_Composite_Data_Types_IPagePlaceholderContent_Unpublished_km_KH_VersionId] DEFAULT newid());ALTER TABLE [Composite_Data_Types_IPagePlaceholderContent_Unpublished_km_KH] ADD CONSTRAINT [PK_Composite_Data_Types_IPagePlaceholderContent_Unpublished_km_KH] PRIMARY KEY CLUSTERED ([PageId],[PlaceHolderId],[VersionId]);
+20171026 09:26:51.3912 48 188 Information SqlDataProvider  CREATE TABLE dbo.[Composite_Data_Types_IPageStructure]([Id]  [UniqueIdentifier]  NOT NULL ,[ParentId]  [UniqueIdentifier]  NOT NULL ,[LocalOrdering]  [Int]  NOT NULL );ALTER TABLE [Composite_Data_Types_IPageStructure] ADD CONSTRAINT [PK_Composite_Data_Types_IPageStructure] PRIMARY KEY CLUSTERED ([Id]);
+20171026 09:26:51.4273 48 188 Information SqlDataProvider  CREATE TABLE dbo.[Composite_Data_Types_IXmlPageTemplate]([Id]  [UniqueIdentifier]  NOT NULL ,[Title]  [NVarChar](249)  NOT NULL ,[PageTemplateFilePath]  [NVarChar](255)  NOT NULL );ALTER TABLE [Composite_Data_Types_IXmlPageTemplate] ADD CONSTRAINT [PK_Composite_Data_Types_IXmlPageTemplate] PRIMARY KEY CLUSTERED ([Id]);
+20171026 09:26:51.4469 48 188 Information SqlDataProvider  CREATE TABLE dbo.[Composite_Data_Types_IPageType]([Id]  [UniqueIdentifier]  NOT NULL ,[Name]  [NVarChar](256)  NOT NULL ,[Description]  [NVarChar](max)  NOT NULL ,[Available]  [Bit]  NOT NULL CONSTRAINT [DF_Composite_Data_Types_IPageType_Available] DEFAULT 1,[PresetMenuTitle]  [Bit]  NOT NULL CONSTRAINT [DF_Composite_Data_Types_IPageType_PresetMenuTitle] DEFAULT 1,[DefaultTemplateId]  [UniqueIdentifier]  NOT NULL ,[HomepageRelation]  [NVarChar](64)  NOT NULL ,[DefaultChildPageType]  [UniqueIdentifier]  NOT NULL );ALTER TABLE [Composite_Data_Types_IPageType] ADD CONSTRAINT [PK_Composite_Data_Types_IPageType] PRIMARY KEY CLUSTERED ([Id]);
+20171026 09:26:51.4649 48 188 Information SqlDataProvider  CREATE TABLE dbo.[Composite_Data_Types_IPageTypeDataFolderTypeLink]([Id]  [UniqueIdentifier]  NOT NULL ,[PageTypeId]  [UniqueIdentifier]  NOT NULL ,[DataTypeId]  [UniqueIdentifier]  NOT NULL );ALTER TABLE [Composite_Data_Types_IPageTypeDataFolderTypeLink] ADD CONSTRAINT [PK_Composite_Data_Types_IPageTypeDataFolderTypeLink] PRIMARY KEY CLUSTERED ([Id]);
+20171026 09:26:51.4805 48 188 Information SqlDataProvider  CREATE TABLE dbo.[Composite_Data_Types_IPageTypeDefaultPageContent]([Id]  [UniqueIdentifier]  NOT NULL ,[PageTypeId]  [UniqueIdentifier]  NOT NULL ,[PlaceHolderId]  [NVarChar](255)  NOT NULL ,[Content]  [NVarChar](max)  NOT NULL ,[ContainerClasses]  [NVarChar](64)  NULL );ALTER TABLE [Composite_Data_Types_IPageTypeDefaultPageContent] ADD CONSTRAINT [PK_Composite_Data_Types_IPageTypeDefaultPageContent] PRIMARY KEY CLUSTERED ([Id]);
+20171026 09:26:51.4965 48 188 Information SqlDataProvider  CREATE TABLE dbo.[Composite_Data_Types_IPageTypeMetaDataTypeLink]([Id]  [UniqueIdentifier]  NOT NULL ,[PageTypeId]  [UniqueIdentifier]  NOT NULL ,[DataTypeId]  [UniqueIdentifier]  NOT NULL ,[Name]  [NVarChar](128)  NOT NULL );ALTER TABLE [Composite_Data_Types_IPageTypeMetaDataTypeLink] ADD CONSTRAINT [PK_Composite_Data_Types_IPageTypeMetaDataTypeLink] PRIMARY KEY CLUSTERED ([Id]);
+20171026 09:26:51.5136 48 188 Information SqlDataProvider  CREATE TABLE dbo.[Composite_Data_Types_IPageTypePageTemplateRestriction]([Id]  [UniqueIdentifier]  NOT NULL ,[PageTypeId]  [UniqueIdentifier]  NOT NULL ,[PageTemplateId]  [UniqueIdentifier]  NOT NULL );ALTER TABLE [Composite_Data_Types_IPageTypePageTemplateRestriction] ADD CONSTRAINT [PK_Composite_Data_Types_IPageTypePageTemplateRestriction] PRIMARY KEY CLUSTERED ([Id]);
+20171026 09:26:51.5306 48 188 Information SqlDataProvider  CREATE TABLE dbo.[Composite_Data_Types_IPageTypeParentRestriction]([Id]  [UniqueIdentifier]  NOT NULL ,[PageTypeId]  [UniqueIdentifier]  NOT NULL ,[AllowedParentPageTypeId]  [UniqueIdentifier]  NOT NULL );ALTER TABLE [Composite_Data_Types_IPageTypeParentRestriction] ADD CONSTRAINT [PK_Composite_Data_Types_IPageTypeParentRestriction] PRIMARY KEY CLUSTERED ([Id]);
+20171026 09:26:51.5467 48 188 Information SqlDataProvider  CREATE TABLE dbo.[Composite_Data_Types_IPageTypeTreeLink]([Id]  [UniqueIdentifier]  NOT NULL ,[PageTypeId]  [UniqueIdentifier]  NOT NULL ,[TreeId]  [NVarChar](2048)  NOT NULL );ALTER TABLE [Composite_Data_Types_IPageTypeTreeLink] ADD CONSTRAINT [PK_Composite_Data_Types_IPageTypeTreeLink] PRIMARY KEY CLUSTERED ([Id]);
+20171026 09:26:51.5662 48 188 Information SqlDataProvider  CREATE TABLE dbo.[Composite_Data_Types_IPublishSchedule_Unpublished]([PublishDate]  [DateTime]  NOT NULL ,[Id]  [UniqueIdentifier]  NOT NULL ,[DataTypeId]  [UniqueIdentifier]  NOT NULL ,[DataId]  [NVarChar](512)  NOT NULL ,[WorkflowInstanceId]  [UniqueIdentifier]  NOT NULL ,[LocaleCultureName]  [NVarChar](16)  NOT NULL CONSTRAINT [DF_Composite_Data_Types_IPublishSchedule_Unpublished_LocaleCultureName] DEFAULT N'');ALTER TABLE [Composite_Data_Types_IPublishSchedule_Unpublished] ADD CONSTRAINT [PK_Composite_Data_Types_IPublishSchedule_Unpublished] PRIMARY KEY CLUSTERED ([Id]);
+20171026 09:26:51.6063 48 188 Information SqlDataProvider  CREATE TABLE dbo.[Composite_Data_Types_IUnpublishSchedule_Unpublished]([UnpublishDate]  [DateTime]  NOT NULL ,[Id]  [UniqueIdentifier]  NOT NULL ,[DataTypeId]  [UniqueIdentifier]  NOT NULL ,[DataId]  [NVarChar](512)  NOT NULL ,[WorkflowInstanceId]  [UniqueIdentifier]  NOT NULL ,[LocaleCultureName]  [NVarChar](16)  NOT NULL CONSTRAINT [DF_Composite_Data_Types_IUnpublishSchedule_Unpublished_LocaleCultureName] DEFAULT N'');ALTER TABLE [Composite_Data_Types_IUnpublishSchedule_Unpublished] ADD CONSTRAINT [PK_Composite_Data_Types_IUnpublishSchedule_Unpublished] PRIMARY KEY CLUSTERED ([Id]);
+20171026 09:26:51.6655 48 188 Information SqlDataProvider  CREATE TABLE dbo.[Composite_Data_Types_IParameter]([OwnerId]  [UniqueIdentifier]  NOT NULL ,[ParameterId]  [UniqueIdentifier]  NOT NULL ,[Name]  [NVarChar](128)  NOT NULL ,[Label]  [NVarChar](128)  NOT NULL ,[HelpText]  [NVarChar](512)  NOT NULL ,[Position]  [Int]  NOT NULL ,[TypeManagerName]  [NVarChar](512)  NOT NULL ,[WidgetFunctionMarkup]  [NVarChar](max)  NULL ,[DefaultValueFunctionMarkup]  [NVarChar](max)  NULL ,[TestValueFunctionMarkup]  [NVarChar](max)  NULL );ALTER TABLE [Composite_Data_Types_IParameter] ADD CONSTRAINT [PK_Composite_Data_Types_IParameter] PRIMARY KEY CLUSTERED ([OwnerId],[ParameterId]);
+20171026 09:26:51.6840 48 188 Information SqlDataProvider  CREATE TABLE dbo.[Composite_Data_Types_ISearchEngineOptimizationKeyword_en_AU]([Keyword]  [NVarChar](128) COLLATE Latin1_General_CS_AS NOT NULL ,[SourceCultureName]  [NVarChar](16)  NOT NULL CONSTRAINT [DF_Composite_Data_Types_ISearchEngineOptimizationKeyword_en_AU_SourceCultureName] DEFAULT N'');ALTER TABLE [Composite_Data_Types_ISearchEngineOptimizationKeyword_en_AU] ADD CONSTRAINT [PK_Composite_Data_Types_ISearchEngineOptimizationKeyword_en_AU] PRIMARY KEY CLUSTERED ([Keyword]);
+20171026 09:26:51.6905 48 188 Information SqlDataProvider  CREATE TABLE dbo.[Composite_Data_Types_ISearchEngineOptimizationKeyword_km_KH]([Keyword]  [NVarChar](128) COLLATE Latin1_General_CS_AS NOT NULL ,[SourceCultureName]  [NVarChar](16)  NOT NULL CONSTRAINT [DF_Composite_Data_Types_ISearchEngineOptimizationKeyword_km_KH_SourceCultureName] DEFAULT N'');ALTER TABLE [Composite_Data_Types_ISearchEngineOptimizationKeyword_km_KH] ADD CONSTRAINT [PK_Composite_Data_Types_ISearchEngineOptimizationKeyword_km_KH] PRIMARY KEY CLUSTERED ([Keyword]);
+20171026 09:26:51.7086 48 188 Information SqlDataProvider  CREATE TABLE dbo.[Composite_Plugins_WebClient_SessionStateProviders_DefaultSessionStateProvider_ISessionStateEntry_Unpublished]([Id]  [UniqueIdentifier]  NOT NULL ,[ExpirationDate]  [DateTime]  NOT NULL ,[SerializedValue]  [NVarChar](max)  NOT NULL );ALTER TABLE [Composite_Plugins_WebClient_SessionStateProviders_DefaultSessionStateProvider_ISessionStateEntry_Unpublished] ADD CONSTRAINT [PK_Composite_Plugins_WebClient_SessionStateProviders_DefaultSessionStateProvider_ISessionStateEntry_Unpublished] PRIMARY KEY CLUSTERED ([Id]);
+20171026 09:26:51.7266 48 188 Information SqlDataProvider  CREATE TABLE dbo.[Composite_Data_Types_ISqlConnection]([Id]  [UniqueIdentifier]  NOT NULL ,[IsMsSql]  [Bit]  NOT NULL ,[EncryptedConnectionString]  [NVarChar](1024)  NOT NULL ,[Name]  [NVarChar](255)  NOT NULL );ALTER TABLE [Composite_Data_Types_ISqlConnection] ADD CONSTRAINT [PK_Composite_Data_Types_ISqlConnection] PRIMARY KEY CLUSTERED ([Id]);
+20171026 09:26:51.7437 48 188 Information SqlDataProvider  CREATE TABLE dbo.[Composite_Data_Types_ISqlFunctionInfo]([Id]  [UniqueIdentifier]  NOT NULL ,[Name]  [NVarChar](255)  NOT NULL ,[ConnectionId]  [UniqueIdentifier]  NOT NULL ,[IsStoredProcedure]  [Bit]  NOT NULL ,[ReturnsXml]  [Bit]  NOT NULL ,[IsQuery]  [Bit]  NOT NULL ,[Command]  [NVarChar](max)  NOT NULL ,[Namespace]  [NVarChar](255)  NOT NULL ,[Description]  [NVarChar](512)  NOT NULL );ALTER TABLE [Composite_Data_Types_ISqlFunctionInfo] ADD CONSTRAINT [PK_Composite_Data_Types_ISqlFunctionInfo] PRIMARY KEY CLUSTERED ([Id]);
+20171026 09:26:51.7637 48 188 Information SqlDataProvider  CREATE TABLE dbo.[Composite_Data_Types_ISystemActiveLocale]([Id]  [UniqueIdentifier]  NOT NULL ,[CultureName]  [NVarChar](16)  NOT NULL ,[UrlMappingName]  [NVarChar](64)  NOT NULL ,[IsDefault]  [Bit]  NOT NULL );ALTER TABLE [Composite_Data_Types_ISystemActiveLocale] ADD CONSTRAINT [PK_Composite_Data_Types_ISystemActiveLocale] PRIMARY KEY CLUSTERED ([Id]);
+20171026 09:26:51.7818 48 188 Information SqlDataProvider  CREATE TABLE dbo.[Composite_Data_Types_ITaskItem]([Id]  [UniqueIdentifier]  NOT NULL ,[TaskId]  [NVarChar](255)  NOT NULL ,[TaskManagerType]  [NVarChar](2048)  NOT NULL ,[SerializedFlowToken]  [NVarChar](max)  NOT NULL ,[StartTime]  [DateTime]  NOT NULL );ALTER TABLE [Composite_Data_Types_ITaskItem] ADD CONSTRAINT [PK_Composite_Data_Types_ITaskItem] PRIMARY KEY CLUSTERED ([Id]);
+20171026 09:26:51.8013 48 188 Information SqlDataProvider  CREATE TABLE dbo.[Composite_Data_Types_IUrlConfiguration]([Id]  [UniqueIdentifier]  NOT NULL ,[PageUrlSuffix]  [NVarChar](255)  NOT NULL );ALTER TABLE [Composite_Data_Types_IUrlConfiguration] ADD CONSTRAINT [PK_Composite_Data_Types_IUrlConfiguration] PRIMARY KEY CLUSTERED ([Id]);
+20171026 09:26:51.8189 48 188 Information SqlDataProvider  CREATE TABLE dbo.[Composite_Data_Types_IUser]([Id]  [UniqueIdentifier]  NOT NULL ,[Username]  [NVarChar](64)  NOT NULL ,[Name]  [NVarChar](128)  NULL ,[Email]  [NVarChar](128)  NULL ,[Group]  [NVarChar](64)  NULL ,[IsLocked]  [Bit]  NOT NULL CONSTRAINT [DF_Composite_Data_Types_IUser_IsLocked] DEFAULT 0,[LockoutReason]  [Int]  NOT NULL CONSTRAINT [DF_Composite_Data_Types_IUser_LockoutReason] DEFAULT 0,[EncryptedPassword]  [NVarChar](256)  NULL ,[PasswordHashSalt]  [NVarChar](128)  NULL ,[LastPasswordChangeDate]  [DateTime]  NOT NULL CONSTRAINT [DF_Composite_Data_Types_IUser_LastPasswordChangeDate] DEFAULT getdate());ALTER TABLE [Composite_Data_Types_IUser] ADD CONSTRAINT [PK_Composite_Data_Types_IUser] PRIMARY KEY CLUSTERED ([Id]);
+20171026 09:26:51.8379 48 188 Information SqlDataProvider  CREATE TABLE dbo.[Composite_Data_Types_IUserPasswordHistory]([Id]  [UniqueIdentifier]  NOT NULL ,[UserId]  [UniqueIdentifier]  NOT NULL ,[PasswordHash]  [NVarChar](256)  NOT NULL ,[PasswordSalt]  [NVarChar](128)  NOT NULL ,[SetDate]  [DateTime]  NOT NULL CONSTRAINT [DF_Composite_Data_Types_IUserPasswordHistory_SetDate] DEFAULT getdate());ALTER TABLE [Composite_Data_Types_IUserPasswordHistory] ADD CONSTRAINT [PK_Composite_Data_Types_IUserPasswordHistory] PRIMARY KEY CLUSTERED ([Id]);
+20171026 09:26:51.8595 48 188 Information SqlDataProvider  CREATE TABLE dbo.[Composite_Data_Types_IUserActiveLocale]([Id]  [UniqueIdentifier]  NOT NULL ,[Username]  [NVarChar](64) COLLATE Latin1_General_CS_AS NOT NULL ,[CultureName]  [NVarChar](16)  NOT NULL );ALTER TABLE [Composite_Data_Types_IUserActiveLocale] ADD CONSTRAINT [PK_Composite_Data_Types_IUserActiveLocale] PRIMARY KEY CLUSTERED ([Id]);
+20171026 09:26:51.8836 48 188 Information SqlDataProvider  CREATE TABLE dbo.[Composite_Data_Types_IUserActivePerspective]([Id]  [UniqueIdentifier]  NOT NULL ,[Username]  [NVarChar](128) COLLATE Latin1_General_CS_AS NOT NULL ,[SerializedEntityToken]  [NVarChar](max)  NOT NULL );ALTER TABLE [Composite_Data_Types_IUserActivePerspective] ADD CONSTRAINT [PK_Composite_Data_Types_IUserActivePerspective] PRIMARY KEY CLUSTERED ([Id]);
+20171026 09:26:51.9091 48 188 Information SqlDataProvider  CREATE TABLE dbo.[Composite_Data_Types_IUserConsoleInformation]([Id]  [UniqueIdentifier]  NOT NULL ,[Username]  [NVarChar](64) COLLATE Latin1_General_CS_AS NOT NULL ,[ConsoleId]  [NVarChar](64)  NOT NULL ,[TimeStamp]  [DateTime]  NOT NULL );ALTER TABLE [Composite_Data_Types_IUserConsoleInformation] ADD CONSTRAINT [PK_Composite_Data_Types_IUserConsoleInformation] PRIMARY KEY CLUSTERED ([Id]);
+20171026 09:26:51.9287 48 188 Information SqlDataProvider  CREATE TABLE dbo.[Composite_Data_Types_IUserDeveloperSettings]([Username]  [NVarChar](64) COLLATE Latin1_General_CS_AS NOT NULL ,[LastSpecifiedNamespace]  [NVarChar](256)  NOT NULL );ALTER TABLE [Composite_Data_Types_IUserDeveloperSettings] ADD CONSTRAINT [PK_Composite_Data_Types_IUserDeveloperSettings] PRIMARY KEY CLUSTERED ([Username]);
+20171026 09:26:51.9477 48 188 Information SqlDataProvider  CREATE TABLE dbo.[Composite_Data_Types_IUserFormLogin]([UserId]  [UniqueIdentifier]  NOT NULL ,[Folder]  [NVarChar](64)  NOT NULL ,[IsLocked]  [Bit]  NOT NULL CONSTRAINT [DF_Composite_Data_Types_IUserFormLogin_IsLocked] DEFAULT 0,[LockoutReason]  [Int]  NOT NULL CONSTRAINT [DF_Composite_Data_Types_IUserFormLogin_LockoutReason] DEFAULT 0,[PasswordHash]  [NVarChar](256)  NOT NULL ,[PasswordHashSalt]  [NVarChar](128)  NOT NULL ,[LastPasswordChangeDate]  [DateTime]  NOT NULL CONSTRAINT [DF_Composite_Data_Types_IUserFormLogin_LastPasswordChangeDate] DEFAULT getdate());ALTER TABLE [Composite_Data_Types_IUserFormLogin] ADD CONSTRAINT [PK_Composite_Data_Types_IUserFormLogin] PRIMARY KEY CLUSTERED ([UserId]);
+20171026 09:26:51.9718 48 188 Information SqlDataProvider  CREATE TABLE dbo.[Composite_Data_Types_IUserGroup]([Id]  [UniqueIdentifier]  NOT NULL ,[Name]  [NVarChar](64)  NOT NULL );ALTER TABLE [Composite_Data_Types_IUserGroup] ADD CONSTRAINT [PK_Composite_Data_Types_IUserGroup] PRIMARY KEY CLUSTERED ([Id]);
+20171026 09:26:51.9934 48 188 Information SqlDataProvider  CREATE TABLE dbo.[Composite_Data_Types_IUserGroupActivePerspective]([Id]  [UniqueIdentifier]  NOT NULL ,[UserGroupId]  [UniqueIdentifier]  NOT NULL ,[SerializedEntityToken]  [NVarChar](max)  NOT NULL );ALTER TABLE [Composite_Data_Types_IUserGroupActivePerspective] ADD CONSTRAINT [PK_Composite_Data_Types_IUserGroupActivePerspective] PRIMARY KEY CLUSTERED ([Id]);
+20171026 09:26:52.0144 48 188 Information SqlDataProvider  CREATE TABLE dbo.[Composite_Data_Types_IUserGroupPermissionDefinition]([Id]  [UniqueIdentifier]  NOT NULL ,[UserGroupId]  [UniqueIdentifier]  NOT NULL ,[SerializedEntityToken]  [NVarChar](max)  NOT NULL );ALTER TABLE [Composite_Data_Types_IUserGroupPermissionDefinition] ADD CONSTRAINT [PK_Composite_Data_Types_IUserGroupPermissionDefinition] PRIMARY KEY CLUSTERED ([Id]);
+20171026 09:26:52.0350 48 188 Information SqlDataProvider  CREATE TABLE dbo.[Composite_Data_Types_IUserGroupPermissionDefinitionPermissionType]([Id]  [UniqueIdentifier]  NOT NULL ,[UserGroupPermissionDefinitionId]  [UniqueIdentifier]  NOT NULL ,[PermissionTypeName]  [NVarChar](64)  NOT NULL );ALTER TABLE [Composite_Data_Types_IUserGroupPermissionDefinitionPermissionType] ADD CONSTRAINT [PK_Composite_Data_Types_IUserGroupPermissionDefinitionPermissionType] PRIMARY KEY CLUSTERED ([Id]);
+20171026 09:26:52.0560 48 188 Information SqlDataProvider  CREATE TABLE dbo.[Composite_Data_Types_IUserPermissionDefinition]([Id]  [UniqueIdentifier]  NOT NULL ,[Username]  [NVarChar](64) COLLATE Latin1_General_CS_AS NOT NULL ,[SerializedEntityToken]  [NVarChar](max)  NOT NULL );ALTER TABLE [Composite_Data_Types_IUserPermissionDefinition] ADD CONSTRAINT [PK_Composite_Data_Types_IUserPermissionDefinition] PRIMARY KEY CLUSTERED ([Id]);
+20171026 09:26:52.0771 48 188 Information SqlDataProvider  CREATE TABLE dbo.[Composite_Data_Types_IUserPermissionDefinitionPermissionType]([Id]  [UniqueIdentifier]  NOT NULL ,[UserPermissionDefinitionId]  [UniqueIdentifier]  NOT NULL ,[PermissionTypeName]  [NVarChar](64)  NOT NULL );ALTER TABLE [Composite_Data_Types_IUserPermissionDefinitionPermissionType] ADD CONSTRAINT [PK_Composite_Data_Types_IUserPermissionDefinitionPermissionType] PRIMARY KEY CLUSTERED ([Id]);
+20171026 09:26:52.0981 48 188 Information SqlDataProvider  CREATE TABLE dbo.[Composite_Data_Types_IUserSettings]([Username]  [NVarChar](64) COLLATE Latin1_General_CS_AS NOT NULL ,[CultureName]  [NVarChar](16)  NOT NULL ,[C1ConsoleUiLanguage]  [NVarChar](16)  NOT NULL CONSTRAINT [DF_Composite_Data_Types_IUserSettings_C1ConsoleUiLanguage] DEFAULT N'en-US',[CurrentActiveLocaleCultureName]  [NVarChar](16)  NULL ,[ForeignLocaleCultureName]  [NVarChar](16)  NULL );ALTER TABLE [Composite_Data_Types_IUserSettings] ADD CONSTRAINT [PK_Composite_Data_Types_IUserSettings] PRIMARY KEY CLUSTERED ([Username]);
+20171026 09:26:52.1257 48 188 Information SqlDataProvider  CREATE TABLE dbo.[Composite_Data_Types_IUserUserGroupRelation]([UserId]  [UniqueIdentifier]  NOT NULL ,[UserGroupId]  [UniqueIdentifier]  NOT NULL );ALTER TABLE [Composite_Data_Types_IUserUserGroupRelation] ADD CONSTRAINT [PK_Composite_Data_Types_IUserUserGroupRelation] PRIMARY KEY CLUSTERED ([UserId],[UserGroupId]);
+20171026 09:26:52.2014 48 188 Information SqlDataProvider  CREATE TABLE dbo.[Composite_Data_Types_IVisualFunction]([Id]  [UniqueIdentifier]  NOT NULL ,[Name]  [NVarChar](256)  NOT NULL ,[Namespace]  [NVarChar](512)  NOT NULL ,[Description]  [NVarChar](512)  NOT NULL ,[TypeManagerName]  [NVarChar](256)  NOT NULL ,[XhtmlTemplate]  [NVarChar](max)  NOT NULL ,[MaximumItemsToList]  [Int]  NOT NULL ,[OrderbyFieldName]  [NVarChar](64)  NOT NULL ,[OrderbyAscending]  [Bit]  NOT NULL CONSTRAINT [DF_Composite_Data_Types_IVisualFunction_OrderbyAscending] DEFAULT 1);ALTER TABLE [Composite_Data_Types_IVisualFunction] ADD CONSTRAINT [PK_Composite_Data_Types_IVisualFunction] PRIMARY KEY CLUSTERED ([Id]);
+20171026 09:26:52.2270 48 188 Information SqlDataProvider  CREATE TABLE dbo.[Composite_Data_Types_IXsltFunction]([Id]  [UniqueIdentifier]  NOT NULL ,[Name]  [NVarChar](256)  NOT NULL ,[Namespace]  [NVarChar](512)  NOT NULL ,[Description]  [NVarChar](512)  NOT NULL ,[OutputXmlSubType]  [NVarChar](32)  NOT NULL ,[XslFilePath]  [NVarChar](1024)  NOT NULL );ALTER TABLE [Composite_Data_Types_IXsltFunction] ADD CONSTRAINT [PK_Composite_Data_Types_IXsltFunction] PRIMARY KEY CLUSTERED ([Id]);
+20171026 09:26:52.2486 48 188 Information SqlDataProvider  CREATE TABLE dbo.[Content_ContentSpot]([Id]  [UniqueIdentifier]  NOT NULL ,[Title]  [NVarChar](64)  NOT NULL CONSTRAINT [DF_Content_ContentSpot_Title] DEFAULT N'',[Content]  [NVarChar](max)  NOT NULL CONSTRAINT [DF_Content_ContentSpot_Content] DEFAULT N'',[PublicationStatus]  [NVarChar](64)  NOT NULL CONSTRAINT [DF_Content_ContentSpot_PublicationStatus] DEFAULT N'');ALTER TABLE [Content_ContentSpot] ADD CONSTRAINT [PK_Content_ContentSpot] PRIMARY KEY CLUSTERED ([Id]);
+20171026 09:26:52.2566 48 188 Information SqlDataProvider  CREATE TABLE dbo.[Content_ContentSpot_Unpublished]([Id]  [UniqueIdentifier]  NOT NULL ,[Title]  [NVarChar](64)  NOT NULL CONSTRAINT [DF_Content_ContentSpot_Unpublished_Title] DEFAULT N'',[Content]  [NVarChar](max)  NOT NULL CONSTRAINT [DF_Content_ContentSpot_Unpublished_Content] DEFAULT N'',[PublicationStatus]  [NVarChar](64)  NOT NULL CONSTRAINT [DF_Content_ContentSpot_Unpublished_PublicationStatus] DEFAULT N'');ALTER TABLE [Content_ContentSpot_Unpublished] ADD CONSTRAINT [PK_Content_ContentSpot_Unpublished] PRIMARY KEY CLUSTERED ([Id]);
+20171026 09:26:52.2786 48 188 Information SqlDataProvider  CREATE TABLE dbo.[Layout_Navigation_TopLink_en_AU]([Page]  [UniqueIdentifier]  NOT NULL CONSTRAINT [DF_Layout_Navigation_TopLink_en_AU_Page] DEFAULT N'00000000-0000-0000-0000-000000000000',[Position]  [Int]  NOT NULL CONSTRAINT [DF_Layout_Navigation_TopLink_en_AU_Position] DEFAULT 0,[SourceCultureName]  [NVarChar](16)  NOT NULL CONSTRAINT [DF_Layout_Navigation_TopLink_en_AU_SourceCultureName] DEFAULT N'',[PageId]  [UniqueIdentifier]  NOT NULL ,[Id]  [UniqueIdentifier]  NOT NULL );ALTER TABLE [Layout_Navigation_TopLink_en_AU] ADD CONSTRAINT [PK_Layout_Navigation_TopLink_en_AU] PRIMARY KEY CLUSTERED ([Id]);
+20171026 09:26:52.2847 48 188 Information SqlDataProvider  CREATE TABLE dbo.[Layout_Navigation_TopLink_km_KH]([Page]  [UniqueIdentifier]  NOT NULL CONSTRAINT [DF_Layout_Navigation_TopLink_km_KH_Page] DEFAULT N'00000000-0000-0000-0000-000000000000',[Position]  [Int]  NOT NULL CONSTRAINT [DF_Layout_Navigation_TopLink_km_KH_Position] DEFAULT 0,[SourceCultureName]  [NVarChar](16)  NOT NULL CONSTRAINT [DF_Layout_Navigation_TopLink_km_KH_SourceCultureName] DEFAULT N'',[PageId]  [UniqueIdentifier]  NOT NULL ,[Id]  [UniqueIdentifier]  NOT NULL );ALTER TABLE [Layout_Navigation_TopLink_km_KH] ADD CONSTRAINT [PK_Layout_Navigation_TopLink_km_KH] PRIMARY KEY CLUSTERED ([Id]);
+20171026 09:26:52.3097 48 188 Information SqlDataProvider  CREATE TABLE dbo.[Demo_Country]([Id]  [UniqueIdentifier]  NOT NULL ,[Name]  [NVarChar](128)  NOT NULL CONSTRAINT [DF_Demo_Country_Name] DEFAULT N'',[Code]  [NVarChar](16)  NOT NULL CONSTRAINT [DF_Demo_Country_Code] DEFAULT N'',[PublicationStatus]  [NVarChar](64)  NOT NULL CONSTRAINT [DF_Demo_Country_PublicationStatus] DEFAULT N'');ALTER TABLE [Demo_Country] ADD CONSTRAINT [PK_Demo_Country] PRIMARY KEY CLUSTERED ([Id]);
+20171026 09:26:52.3168 48 188 Information SqlDataProvider  CREATE TABLE dbo.[Demo_Country_Unpublished]([Id]  [UniqueIdentifier]  NOT NULL ,[Name]  [NVarChar](128)  NOT NULL CONSTRAINT [DF_Demo_Country_Unpublished_Name] DEFAULT N'',[Code]  [NVarChar](16)  NOT NULL CONSTRAINT [DF_Demo_Country_Unpublished_Code] DEFAULT N'',[PublicationStatus]  [NVarChar](64)  NOT NULL CONSTRAINT [DF_Demo_Country_Unpublished_PublicationStatus] DEFAULT N'');ALTER TABLE [Demo_Country_Unpublished] ADD CONSTRAINT [PK_Demo_Country_Unpublished] PRIMARY KEY CLUSTERED ([Id]);
+20171026 09:26:56.3214 48 111 Warning XmlDataProvider  Failed to save file 'E:\_Working\Learning\CompositeC1\c1demo\Website\App_Data\Composite\DataStores\Composite.Data.Types.IUserConsoleInformation.xml' as the underlying directory does not exist.

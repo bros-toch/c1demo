@@ -1,0 +1,22 @@
+﻿@model LoginViewModel
+@{
+    
+}
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+</head>
+<body>
+    
+@using (Html.BeginForm("Login", "Account", FormMethod.Post))
+{
+    <div >
+        @Html.LabelFor(x=> x.Username)
+        @Html.TextBoxFor(x=> x.Username)
+        @Html.ValidationMessageFor(x=> x.Username)
+    </div>
+    
+    <input type="submit" value="Sign In"/>
+}
+
+</body>
+</html>

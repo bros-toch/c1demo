@@ -79,13 +79,16 @@
 
 @helper NavigationTree(IEnumerable<PageNode> pages, int endRenderLevel)
 {
+    var k = new Composite.Functions.HelpDefinition();
+    
+
     if (!pages.Any()) { return; }
 
-    var firstPage = pages.First();
-    if (firstPage.Level > endRenderLevel) { return; }
+var firstPage = pages.First();
+if (firstPage.Level > endRenderLevel) { return; }
 
-    int levelClass = firstPage.Level - Level - 1;
-    var mainareaIndex = ShowParent ? 1 : 0;
+int levelClass = firstPage.Level - Level - 1;
+var mainareaIndex = ShowParent ? 1 : 0;
 
     <ul class ="level@(levelClass) list-unstyled">
 
