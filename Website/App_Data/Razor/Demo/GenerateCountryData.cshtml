@@ -1,4 +1,5 @@
 ﻿@using Demo
+@using Newtonsoft.Json
 @inherits RazorFunction
 
 @functions {
@@ -11,31 +12,41 @@
 	public XhtmlDocument CustomContent { get; set; }
 }
 @{
-    var csv = "AF,Afghanistan;AL,Albania;DZ,Algeria;AS,American Samoa;AD,Andorra;AO,Angola;AI,Anguilla;AG,Antigua And Barbuda;AR,Argentina;AM,Armenia;AW,Aruba;AU,Australia;AT,Austria;AZ,Azerbaijan;BS,Bahamas;BH,Bahrain;BD,Bangladesh;BB,Barbados;BY,Belarus;BE,Belgium;BZ,Belize;BJ,Benin;BM,Bermuda;BT,Bhutan;BO,Bolivia Lurinational State Of;BQ,Bonaire Sint Eustatius Saba;BA,Bosnia And Herzegovina;BW,Botswana;BR,Brazil;BN,Brunei Darussalam;BG,Bulgaria;BF,Burkina Faso;BI,Burundi;CM,Cameroon;CA,Canada;CV,Cape Verde;KY,Cayman Islands;CF,Central African Republic;TD,Chad;CL,Chile;CN,China;CX,Christmas Island;CC,Cocos  Keeling  Islands;CO,Colombia;CG,Congo;CD,Congo Democratic Rep Of The;CK,Cook Islands;CR,Costa Rica;CI,Cote D Ivoire;HR,Croatia;CW,Curacao;CY,Cyprus;CZ,Czech Republic;DK,Denmark;DJ,Djibouti;DM,Dominica;DO,Dominican Republic;EC,Ecuador;EG,Egypt;SV,El Salvador;GQ,Equatorial Guinea;ER,Eritrea;EE,Estonia;ET,Ethiopia;FO,Faroe Islands;FJ,Fiji;FI,Finland;FR,France;GF,French Guiana;PF,French Polynesia;GA,Gabon;GM,Gambia;GE,Georgia;DE,Germany;GH,Ghana;GI,Gibraltar;GR,Greece;GL,Greenland;GD,Grenada;GP,Guadeloupe;GU,Guam;GT,Guatemala;GN,Guinea;GW,Guinea-bissau;GY,Guyana;HT,Haiti;VA,Holy See  Vatican City State;HN,Honduras;HK,Hong Kong;HU,Hungary;IS,Iceland;IN,India;ID,Indonesia;IQ,Iraq;IE,Ireland;IL,Israel;IT,Italy;JM,Jamaica;JP,Japan;JO,Jordan;KZ,Kazakhstan;KE,Kenya;KI,Kiribati;KR,Korea Republic Of;YK,Kosovo;KW,Kuwait;KG,Kyrgyzstan;LA,Lao People S Dem  Republic;LB,Lebanon;LS,Lesotho;LR,Liberia;LY,Libyan Arab Jamahiriya;LI,Liechtenstein;LT,Lithuania;LU,Luxembourg;MO,Macao;MK,Macedonia The Fyr Of;MG,Madagascar;MW,Malawi;MY,Malaysia;MV,Maldives;ML,Mali;MT,Malta;MH,Marshall Islands;MQ,Martinique;MR,Mauritania;MU,Mauritius;YT,Mayotte;MX,Mexico;FM,Micronesia Federated States Of;MD,Moldova Republic Of;MC,Monaco;MN,Mongolia;ME,Montenegro;MS,Montserrat;MA,Morocco;MZ,Mozambique;MM,Myanmar;NA,Namibia;NR,Nauru;NP,Nepal;NL,Netherlands;NC,New Caledonia;NZ,New Zealand;NI,Nicaragua;NE,Niger;NG,Nigeria;NF,Norfolk Island;MP,Northern Mariana Islands;NO,Norway;OM,Oman;PK,Pakistan;PW,Palau;PS,Palestinian Territory Occupied;PA,Panama;PG,Papua New Guinea;PY,Paraguay;PE,Peru;PH,Philippines;PL,Poland;PT,Portugal;PR,Puerto Rico;QA,Qatar;RE,Reunion;RO,Romania;RU,Russian Federation;RW,Rwanda;BL,Saint Barthelemy;KN,Saint Kitts And Nevis;LC,Saint Lucia;MF,Saint Martin;PM,Saint Pierre And Miquelon;WS,Samoa;SM,San Marino;ST,Sao Tome And Principe;SA,Saudi Arabia;SN,Senegal;RS,Serbia;SC,Seychelles;SL,Sierra Leone;SG,Singapore;SX,Sint Maarten  Dutch Part;SK,Slovakia;SI,Slovenia;SB,Solomon Islands;ZA,South Africa;ES,Spain;LK,Sri Lanka;VC,St  Vincent And The Grenadines;SR,Suriname;SZ,Swaziland;SE,Sweden;CH,Switzerland;TW,Taiwan;TJ,Tajikistan;TZ,Tanzania United Republic Of;TH,Thailand;TL,Timor-leste;TG,Togo;TO,Tonga;TT,Trinidad And Tobago;TN,Tunisia;TR,Turkey;TM,Turkmenistan;TC,Turks And Caicos Islands;TV,Tuvalu;UG,Uganda;UA,Ukraine;AE,United Arab Emirates;GB,United Kingdom;US,United States;UY,Uruguay;UZ,Uzbekistan;VU,Vanuatu;VE,Venezuela Bolivarian Rep Of;VN,Viet Nam;VG,Virgin Islands  British;VI,Virgin Islands  U S;WF,Wallis And Futuna;ZM,Zambia;ZW,Zimbabwe";
-    var countries = csv.Split(';').Select(x => new {code = x.Split(',')[0], name = x.Split(',')[1] });
+//var csv = "AF,Afghanistan;AL,Albania;DZ,Algeria;AS,American Samoa;AD,Andorra;AO,Angola;AI,Anguilla;AG,Antigua And Barbuda;AR,Argentina;AM,Armenia;AW,Aruba;AU,Australia;AT,Austria;AZ,Azerbaijan;BS,Bahamas;BH,Bahrain;BD,Bangladesh;BB,Barbados;BY,Belarus;BE,Belgium;BZ,Belize;BJ,Benin;BM,Bermuda;BT,Bhutan;BO,Bolivia Lurinational State Of;BQ,Bonaire Sint Eustatius Saba;BA,Bosnia And Herzegovina;BW,Botswana;BR,Brazil;BN,Brunei Darussalam;BG,Bulgaria;BF,Burkina Faso;BI,Burundi;CM,Cameroon;CA,Canada;CV,Cape Verde;KY,Cayman Islands;CF,Central African Republic;TD,Chad;CL,Chile;CN,China;CX,Christmas Island;CC,Cocos  Keeling  Islands;CO,Colombia;CG,Congo;CD,Congo Democratic Rep Of The;CK,Cook Islands;CR,Costa Rica;CI,Cote D Ivoire;HR,Croatia;CW,Curacao;CY,Cyprus;CZ,Czech Republic;DK,Denmark;DJ,Djibouti;DM,Dominica;DO,Dominican Republic;EC,Ecuador;EG,Egypt;SV,El Salvador;GQ,Equatorial Guinea;ER,Eritrea;EE,Estonia;ET,Ethiopia;FO,Faroe Islands;FJ,Fiji;FI,Finland;FR,France;GF,French Guiana;PF,French Polynesia;GA,Gabon;GM,Gambia;GE,Georgia;DE,Germany;GH,Ghana;GI,Gibraltar;GR,Greece;GL,Greenland;GD,Grenada;GP,Guadeloupe;GU,Guam;GT,Guatemala;GN,Guinea;GW,Guinea-bissau;GY,Guyana;HT,Haiti;VA,Holy See  Vatican City State;HN,Honduras;HK,Hong Kong;HU,Hungary;IS,Iceland;IN,India;ID,Indonesia;IQ,Iraq;IE,Ireland;IL,Israel;IT,Italy;JM,Jamaica;JP,Japan;JO,Jordan;KZ,Kazakhstan;KE,Kenya;KI,Kiribati;KR,Korea Republic Of;YK,Kosovo;KW,Kuwait;KG,Kyrgyzstan;LA,Lao People S Dem  Republic;LB,Lebanon;LS,Lesotho;LR,Liberia;LY,Libyan Arab Jamahiriya;LI,Liechtenstein;LT,Lithuania;LU,Luxembourg;MO,Macao;MK,Macedonia The Fyr Of;MG,Madagascar;MW,Malawi;MY,Malaysia;MV,Maldives;ML,Mali;MT,Malta;MH,Marshall Islands;MQ,Martinique;MR,Mauritania;MU,Mauritius;YT,Mayotte;MX,Mexico;FM,Micronesia Federated States Of;MD,Moldova Republic Of;MC,Monaco;MN,Mongolia;ME,Montenegro;MS,Montserrat;MA,Morocco;MZ,Mozambique;MM,Myanmar;NA,Namibia;NR,Nauru;NP,Nepal;NL,Netherlands;NC,New Caledonia;NZ,New Zealand;NI,Nicaragua;NE,Niger;NG,Nigeria;NF,Norfolk Island;MP,Northern Mariana Islands;NO,Norway;OM,Oman;PK,Pakistan;PW,Palau;PS,Palestinian Territory Occupied;PA,Panama;PG,Papua New Guinea;PY,Paraguay;PE,Peru;PH,Philippines;PL,Poland;PT,Portugal;PR,Puerto Rico;QA,Qatar;RE,Reunion;RO,Romania;RU,Russian Federation;RW,Rwanda;BL,Saint Barthelemy;KN,Saint Kitts And Nevis;LC,Saint Lucia;MF,Saint Martin;PM,Saint Pierre And Miquelon;WS,Samoa;SM,San Marino;ST,Sao Tome And Principe;SA,Saudi Arabia;SN,Senegal;RS,Serbia;SC,Seychelles;SL,Sierra Leone;SG,Singapore;SX,Sint Maarten  Dutch Part;SK,Slovakia;SI,Slovenia;SB,Solomon Islands;ZA,South Africa;ES,Spain;LK,Sri Lanka;VC,St  Vincent And The Grenadines;SR,Suriname;SZ,Swaziland;SE,Sweden;CH,Switzerland;TW,Taiwan;TJ,Tajikistan;TZ,Tanzania United Republic Of;TH,Thailand;TL,Timor-leste;TG,Togo;TO,Tonga;TT,Trinidad And Tobago;TN,Tunisia;TR,Turkey;TM,Turkmenistan;TC,Turks And Caicos Islands;TV,Tuvalu;UG,Uganda;UA,Ukraine;AE,United Arab Emirates;GB,United Kingdom;US,United States;UY,Uruguay;UZ,Uzbekistan;VU,Vanuatu;VE,Venezuela Bolivarian Rep Of;VN,Viet Nam;VG,Virgin Islands  British;VI,Virgin Islands  U S;WF,Wallis And Futuna;ZM,Zambia;ZW,Zimbabwe";
+//var countries = csv.Split(';').Select(x => new {code = x.Split(',')[0], name = x.Split(',')[1] });
 
-    using (DataConnection connection = new DataConnection(PublicationScope.Unpublished))
-    {
-        var lst = new List<Country>();
+//using (DataConnection connection = new DataConnection(PublicationScope.Unpublished))
+//{
+//    var lst = new List<Country>();
 
-        foreach (var c in countries)
-        {
-            var country = DataConnection.New<Country>();
-            country.Code = c.code;
-            country.Name = c.name;
-            country.PublicationStatus = "published";
+//    foreach (var c in countries)
+//    {
+//        var country = DataConnection.New<Country>();
+//        country.Code = c.code;
+//        country.Name = c.name;
+//        country.PublicationStatus = "published";
 
-            lst.Add(country);
-        }
+//        lst.Add(country);
+//    }
 
-        connection.Add<Country>(lst);
-    }
+//    connection.Add<Country>(lst);
+//}
 }
 <html xmlns="http://www.w3.org/1999/xhtml" xmlns:f="http://www.composite.net/ns/function/1.0">
 	<head>
 	</head>
 <body>
-
-
+    @{
+        var meta = DataMetaDataFacade.GetDataTypeDescriptor(typeof(Country));
+    }
+<pre>
+@*@JsonConvert.SerializeObject(meta.Fields, Formatting.Indented, new JsonSerializerSettings()
+{
+    ReferenceLoopHandling = ReferenceLoopHandling.Ignore
+})*@
+@{
+    var i = 0;
+}
+</pre>
 </body>
 </html>

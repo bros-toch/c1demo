@@ -1,32 +1,42 @@
-﻿@inherits RazorFunction
+﻿@using Demo.Page
+@inherits RazorFunction
 		
 @functions {
 	override public string FunctionDescription
 	{
 		get { return "A function that displays a main menu"; }
 	}
+
+    [FunctionParameter(Label = "Link Container Pager")]
+    public DataReference<IPage> LinkContainerPage { get; set; }
 }
 @{
-	var pagenodes = Sitemap.CurrentHomePageNode.GetPageNodes(SitemapScope.Level2AndSiblings).ToList();
-	if(!pagenodes.Any()) { return; }
+    var childPages = Sitemap.GetPageNodeById(LinkContainerPage.Data.Id).ChildPages.ToList();
+	if(!childPages.Any()) { return; }
+
+    var pageIds = childPages.Select(x => DataFacade.GetData<Data>().First(xx => xx.PageId == x.Id).RedirectTo).ToArray();
+    var pages = pageIds.Select(x => Sitemap.GetPageNodeById(x));
+   //DataMetaDataFacade
 }
 <html xmlns="http://www.w3.org/1999/xhtml">
-	<head>
-	</head>
-	<body>
-		<ul class="nav navbar-nav">
-			<li>
-				<a href="@HomePageNode.Url">@HomePageNode.MenuTitle</a>
-			</li>
-			@foreach (var page in pagenodes)
-			{
-				if(!string.IsNullOrEmpty(page.MenuTitle))
-				{
-					<li>
-						<a href="@page.Url">@page.MenuTitle</a>
-					</li>
-				}
-			}
-		</ul>
-	</body>
+<head>
+</head>
+<body>
+<ul class="nav navbar-nav">
+    @*<li>
+        <a href="@HomePageNode.Url">@HomePageNode.MenuTitle</a>
+    </li>*@
+    
+    
+    @foreach (var page in pages)
+    {
+        if(!string.IsNullOrEmpty(page.MenuTitle))
+        {
+            <li>
+                <a href="@page.Url">@page.MenuTitle</a>
+            </li>
+        }
+    }
+</ul>
+</body>
 </html>
