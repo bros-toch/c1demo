@@ -1,7 +1,7 @@
-﻿using System.Web.UI.WebControls;
+﻿using System.ComponentModel.DataAnnotations;
+using System.Web.UI.WebControls;
 using FluentValidation;
 using FluentValidation.Attributes;
-using Microsoft.CodeAnalysis.CSharp.Syntax;
 
 namespace Models
 {
@@ -20,6 +20,7 @@ namespace Models
         public LoginViewModelValidator()
         {
             RuleFor(x => x.Username).NotNull();
+            RuleFor(x => x.Password).NotNull();
         }
     }
 }

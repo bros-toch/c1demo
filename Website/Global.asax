@@ -14,7 +14,7 @@
         ApplicationLevelEventHandlers.Application_Start(sender, e);
 
         RegisterRoutes(RouteTable.Routes);
-
+        FluentValidationModelValidatorProvider.Configure();
     }
 
 

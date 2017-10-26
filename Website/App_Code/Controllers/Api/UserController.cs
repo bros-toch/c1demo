@@ -3,6 +3,7 @@ using System.Web.Http;
 using Composite.Core.Extensions;
 using Composite.Data;
 using Composite.Data.Types;
+using Models;
 
 namespace Controllers.Api
 {
@@ -24,6 +25,12 @@ namespace Controllers.Api
             {
                 return c.Get<IUser>();
             }
+        }
+
+        [ActionName("Login"), HttpPost]
+        public bool Login(LoginViewModel loginViewModel)
+        {
+            return ModelState.IsValid;
         }
     }
 }

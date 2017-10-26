@@ -1,7 +1,6 @@
 ﻿using System.Web.Mvc;
 using Composite.AspNet.MvcFunctions;
 using Composite.Core.Application;
-using FluentValidation.Mvc;
 
 [ApplicationStartup]
 internal static class StartupHandler
@@ -17,9 +16,9 @@ internal static class StartupHandler
             new { action = "Index", id = UrlParameter.Optional }
         );
 
+
         functions.RegisterAction<AccountController>("Login", "Demo.Account.Login");
 
-        FluentValidationModelValidatorProvider.Configure();
 
     }
 
