@@ -15,7 +15,6 @@
 
         RegisterRoutes(RouteTable.Routes);
 
-        FluentValidationModelValidatorProvider.Configure();
     }
 
 

@@ -1,10 +1,7 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Web;
-using System.Web.Mvc;
+﻿using System.Web.Mvc;
 using Composite.AspNet.MvcFunctions;
 using Composite.Core.Application;
+using FluentValidation.Mvc;
 
 [ApplicationStartup]
 internal static class StartupHandler
@@ -21,6 +18,9 @@ internal static class StartupHandler
         );
 
         functions.RegisterAction<AccountController>("Login", "Demo.Account.Login");
+
+        FluentValidationModelValidatorProvider.Configure();
+
     }
 
     public static void OnInitialized()

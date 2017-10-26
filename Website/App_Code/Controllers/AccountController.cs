@@ -20,16 +20,18 @@ public class AccountController : Controller
 
     public ActionResult Login()
     {
-        return View(new LoginViewModel());
+        return View(new LoginViewModel() { Username = "test"});
     }
 
     [HttpPost]
     public ActionResult Login(LoginViewModel loginViewModel)
     {
+
         if (ModelState.IsValid)
         {
             
         }
+
         return View(loginViewModel);
     }
 }
