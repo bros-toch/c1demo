@@ -1,0 +1,29 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<PackageInstaller xmlns="http://www.composite.net/ns/management/packageinstaller/1.0">
+  <PackageFragmentUninstallers>
+    <Add uninstallerType="Composite.Core.PackageSystem.PackageFragmentInstallers.FilePackageFragmentUninstaller,Composite">
+      <Files xmlns="">
+        <File filename="~\App_Data/Razor/Composite/Media/BootstrapCarousel.cshtml" />
+        <File filename="~\Frontend\Composite\Media\BootstrapCarousel\bootstrap-carousel-preload.js" />
+        <File filename="~\Frontend\Composite\Media\BootstrapCarousel\bootstrap-carousel.css" />
+        <File filename="~\Frontend\Composite\Media\BootstrapCarousel\bootstrap-carousel.js" />
+        <File filename="~\Frontend\Composite\Media\BootstrapCarousel\jquery.imgpreload.min.js" />
+        <File filename="~\Frontend\Composite\Media\BootstrapCarousel\loader.gif" />
+        <File filename="~\Frontend\Composite\Media\BootstrapCarousel\themes/bar/bar.css" />
+        <File filename="~\Frontend\Composite\Media\BootstrapCarousel\themes/bar/loading.gif" />
+        <File filename="~\Frontend\Composite\Media\BootstrapCarousel\themes/dark/arrows.png" />
+        <File filename="~\Frontend\Composite\Media\BootstrapCarousel\themes/dark/bullets.png" />
+        <File filename="~\Frontend\Composite\Media\BootstrapCarousel\themes/dark/dark.css" />
+        <File filename="~\Frontend\Composite\Media\BootstrapCarousel\themes/dark/loading.gif" />
+        <File filename="~\Frontend\Composite\Media\BootstrapCarousel\themes/default/arrows.png" />
+        <File filename="~\Frontend\Composite\Media\BootstrapCarousel\themes/default/bullets.png" />
+        <File filename="~\Frontend\Composite\Media\BootstrapCarousel\themes/default/default.css" />
+        <File filename="~\Frontend\Composite\Media\BootstrapCarousel\themes/default/loading.gif" />
+        <File filename="~\Frontend\Composite\Media\BootstrapCarousel\themes/light/arrows.png" />
+        <File filename="~\Frontend\Composite\Media\BootstrapCarousel\themes/light/bullets.png" />
+        <File filename="~\Frontend\Composite\Media\BootstrapCarousel\themes/light/light.css" />
+        <File filename="~\Frontend\Composite\Media\BootstrapCarousel\themes/light/loading.gif" />
+      </Files>
+    </Add>
+  </PackageFragmentUninstallers>
+</PackageInstaller>

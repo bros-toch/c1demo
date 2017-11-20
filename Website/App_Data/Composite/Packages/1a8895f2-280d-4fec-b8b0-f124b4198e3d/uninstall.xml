@@ -1,0 +1,19 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<PackageInstaller xmlns="http://www.composite.net/ns/management/packageinstaller/1.0">
+  <PackageFragmentUninstallers>
+    <Add uninstallerType="Composite.Core.PackageSystem.PackageFragmentInstallers.DllPackageFragmentUninstaller,Composite">
+      <Files xmlns="">
+        <File filename="~\Bin\System.Web.Mvc.dll" version="5.2.30128.0" />
+      </Files>
+    </Add>
+    <Add uninstallerType="Composite.Core.PackageSystem.PackageFragmentInstallers.FilePackageFragmentUninstaller,Composite">
+      <Files xmlns="">
+        <File filename="~\Bin\Composite.AspNet.MvcFunctions.dll" />
+        <File filename="~\Views\web.config" />
+      </Files>
+    </Add>
+    <Add uninstallerType="Composite.Core.PackageSystem.PackageFragmentInstallers.ConfigurationTransformationPackageFragmentUninstaller,Composite">
+      <Uninstall xsltFilePath="~\Composite.config\Uninstall.xsl" xmlns="" />
+    </Add>
+  </PackageFragmentUninstallers>
+</PackageInstaller>

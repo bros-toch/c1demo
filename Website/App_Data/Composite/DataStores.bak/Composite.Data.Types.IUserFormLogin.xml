@@ -1,0 +1,5 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<UserFormLoginElementsElements>
+  <UserFormLoginElements UserId="242ca2f9-a106-49e9-8291-651bb8fb1467" Folder="Users" IsLocked="false" LockoutReason="0" PasswordHash="HcXjobNnweUER8q9/XxRi35+4/Ur4sV6si9W2K5JLCQ=" PasswordHashSalt="xyAvwuMuusrQjDT0QISC0hkXNaAF3i8M" LastPasswordChangeDate="0001-01-01T00:00:00" />
+  <UserFormLoginElements UserId="e76ffec6-46e5-4cb0-a225-43833a361ae1" Folder="Administrators" IsLocked="false" LockoutReason="0" PasswordHash="fjWFGkCEyU7PZmAzv73K7ny2akvLEU7zJm+6YzKT1DY=" PasswordHashSalt="wgsxgA6C7iFCdUo3Xvcitf2tdcTwpQzD" LastPasswordChangeDate="0001-01-01T00:00:00" />
+</UserFormLoginElementsElements>

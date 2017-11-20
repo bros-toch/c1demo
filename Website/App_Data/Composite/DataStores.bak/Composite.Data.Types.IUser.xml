@@ -1,0 +1,5 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<UserElementsElements>
+  <UserElements Id="242ca2f9-a106-49e9-8291-651bb8fb1467" Username="user" Name="User" Email="info@inkhmer.com" IsLocked="false" LockoutReason="0" LastPasswordChangeDate="0001-01-01T00:00:00" />
+  <UserElements Id="e76ffec6-46e5-4cb0-a225-43833a361ae1" Username="admin" Email="bros.toch.kh@gmail.com" IsLocked="false" LockoutReason="0" LastPasswordChangeDate="0001-01-01T00:00:00" />
+</UserElementsElements>
