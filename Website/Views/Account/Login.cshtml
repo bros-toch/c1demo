@@ -1,6 +1,10 @@
 ﻿@model Models.LoginViewModel
 @{
-    
+
+    Html.EnableUnobtrusiveJavaScript();
+
+     Html.EnableClientValidation(false);
+
 }
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
@@ -11,15 +15,16 @@
 {
     <div >
         @Html.LabelFor(x=> x.Username)
-        @Html.TextBoxFor(x=> x.Username)
+        @Html.EditorFor(x=> x.Username)
         @Html.ValidationMessageFor(x=> x.Username)
     </div>
 
     <div>
         @Html.LabelFor(x => x.Password)
-        @Html.TextBoxFor(x => x.Password)
+        @Html.EditorFor(x => x.Password)
         @Html.ValidationMessageFor(x => x.Password)
     </div>
+
 
     <input type="submit" value="Sign In"/>
 }

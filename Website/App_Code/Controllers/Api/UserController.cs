@@ -3,6 +3,7 @@ using System.Web.Http;
 using Composite.Core.Extensions;
 using Composite.Data;
 using Composite.Data.Types;
+using FluentValidation.WebApi;
 using Models;
 
 namespace Controllers.Api
@@ -30,6 +31,8 @@ namespace Controllers.Api
         [ActionName("Login"), HttpPost]
         public bool Login(LoginViewModel loginViewModel)
         {
+            var dal = new LoginViewModelValidator();
+            dal.Validate(loginViewModel).AddToModelState(ModelState, null);
             return ModelState.IsValid;
         }
     }

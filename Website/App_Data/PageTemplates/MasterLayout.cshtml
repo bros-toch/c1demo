@@ -8,44 +8,54 @@
 <f:function name="Composite.Web.BundlingAndMinification" xmlns:f="http://www.composite.net/ns/function/1.0">
     <f:param name="Page">
         <html xmlns="http://www.w3.org/1999/xhtml" class="no-js" lang="@Lang">
+        
         <head>
             <title>@CurrentPageNode.Title</title>
             @if (!string.IsNullOrEmpty(CurrentPageNode.Description))
             {
-                <meta name="description" content="@CurrentPageNode.Description" />
+                <meta name="description" content="@CurrentPageNode.Description"/>
             }
             @PageTemplateFeature("Descriptive HTML head elements")
+            
+            <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.2.4/jquery.min.js">
+            </script>
+
+            <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.17.0/jquery.validate.min.js">
+            </script>
+
+        <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validation-unobtrusive/3.2.6/jquery.validate.unobtrusive.min.js">
+            </script>
         </head>
         <body>
-            <header class="navbar navbar-default navbar-static-top" role="banner">
-                <div class="container">
-                    <div class="navbar-header">
-                        <button class="navbar-toggle" type="button" data-toggle="collapse" data-target=".bs-navbar-collapse">
-                            <span class="icon-bar"></span>
-                            <span class="icon-bar"></span>
-                            <span class="icon-bar"></span>
-                        </button>
-                        <a href="@HomePageNode.Url" class="navbar-brand">@websiteTitle</a>
-                    </div>
-                    <div class="collapse navbar-collapse bs-navbar-collapse" role="navigation">
-                        @PageTemplateFeature("Main Navigation")
-                        <div class="service-nav">
-                            @PageTemplateFeature("Service Menu")
-                        </div>
+        <header class="navbar navbar-default navbar-static-top" role="banner">
+            <div class="container">
+                <div class="navbar-header">
+                    <button class="navbar-toggle" type="button" data-toggle="collapse" data-target=".bs-navbar-collapse">
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                    <a href="@HomePageNode.Url" class="navbar-brand">@websiteTitle</a>
+                </div>
+                <div class="collapse navbar-collapse bs-navbar-collapse" role="navigation">
+                    @PageTemplateFeature("Main Navigation")
+                    <div class="service-nav">
+                        @PageTemplateFeature("Service Menu")
                     </div>
                 </div>
-            </header>
-            <div class="container">
-                @* renders the sub template: *@
-                @RenderBody()
-
-                @PageTemplateFeature("Content Footer")
-                <hr />
-                <footer role="contentinfo">
-                    @PageTemplateFeature("Page Footer")
-                </footer>
             </div>
+        </header>
+        <div class="container">
+            @* renders the sub template: *@
+            @RenderBody()
+
+            @PageTemplateFeature("Content Footer")
+            <hr/>
+            <footer role="contentinfo">
+                @PageTemplateFeature("Page Footer")
+            </footer>
+        </div>
         </body>
-    </html>
+        </html>
 </f:param>
 </f:function>

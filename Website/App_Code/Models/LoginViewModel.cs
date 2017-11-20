@@ -11,6 +11,7 @@ namespace Models
     [Validator(typeof(Login))]
     public class LoginViewModel
     {
+        [Required]
         public string Username { get; set; }
         public string Password { get; set; }
     }
@@ -19,8 +20,8 @@ namespace Models
     {
         public LoginViewModelValidator()
         {
-            RuleFor(x => x.Username).NotNull();
-            RuleFor(x => x.Password).NotNull();
+            RuleFor(x => x.Username).NotEmpty();
+            RuleFor(x => x.Password).NotEmpty();
         }
     }
 }
