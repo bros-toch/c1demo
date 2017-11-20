@@ -4,7 +4,7 @@ using System.IO;
 using System.Text;
 using System.Web;
 
-namespace CICMFunctions.HospitalAccreditation.Pdf
+namespace Helpers.Pdf
 {
     public class PdfConvertException : Exception
     {
