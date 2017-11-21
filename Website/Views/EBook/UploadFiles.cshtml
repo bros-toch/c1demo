@@ -1,0 +1,20 @@
+﻿@using Composite.AspNet.MvcFunctions.Views
+@model Models.FileUploadListViewModel
+
+@{
+    Layout = null;
+}
+
+Uploaded Files
+
+<ul>
+    @foreach (var item in Model.Items)
+    {
+        <li>
+            @item.Name
+            <a href="/page(5eccf967-6939-40ec-a883-50011fcb35c9)?id=@item.Id">Detail</a>
+        </li>   
+    }
+</ul>
+
+Total Files @Model.Items.Count()

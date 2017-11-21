@@ -32,4 +32,30 @@ namespace Demo.Core.C1Console.ElementProviders.EntityTokens
             return new MyRootEntityToken();
         }
     }
+
+
+    [SecurityAncestorProvider(typeof(NoAncestorSecurityAncestorProvider))]
+    public sealed class UsersRootEntityToken : EntityToken
+    {
+        public override string Type
+        {
+            get { return ""; }
+        }
+        public override string Source
+        {
+            get { return ""; }
+        }
+        public override string Id
+        {
+            get { return "UsersRootToken"; }
+        }
+        public override string Serialize()
+        {
+            return DoSerialize();
+        }
+        public static EntityToken Deserialize(string serializedEntityToken)
+        {
+            return new MyRootEntityToken();
+        }
+    }
 }

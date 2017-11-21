@@ -1,0 +1,21 @@
+﻿@model dynamic
+
+@{
+    Layout = null;
+}
+
+<p>
+    Upload
+    @Html.ValidationSummary()
+    @using (Html.BeginForm("", "", FormMethod.Post, new {enctype = "multipart/form-data"}))
+    {
+
+        <label for="file">Upload EPub:</label>
+        <input type="file" name="file" id="file"/>
+        <br />
+        <br />
+        <input type="submit" value="Upload EPub"/>
+        <br/>
+        <br/>
+    }
+</p>

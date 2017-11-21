@@ -30,8 +30,11 @@ namespace Composite.AspNet.WebAPI
             config.MapHttpAttributeRoutes();
             config.Routes.MapHttpRoute("DefaultApi", "api/{controller}/{id}", new { id = RouteParameter.Optional });
 
+            config.MessageHandlers.Add(new WrappingHandler());
+
             FluentValidationModelValidatorProvider.Configure(config);
             JsonIDataSerialization.WrapJsonContentResolver(config);
+
         }
     }
 }

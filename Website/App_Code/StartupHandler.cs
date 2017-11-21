@@ -1,6 +1,7 @@
 ﻿using System.Web.Mvc;
 using Composite.AspNet.MvcFunctions;
 using Composite.Core.Application;
+using Controllers;
 
 [ApplicationStartup]
 internal static class StartupHandler
@@ -19,7 +20,9 @@ internal static class StartupHandler
 
         functions.RegisterAction<AccountController>("Login", "Demo.Account.Login");
 
-
+        functions.RegisterAction<EBookController>("UploadFile", "Demo.Ebook.UploadFile");
+        functions.RegisterAction<EBookController>("UploadFiles", "Demo.Ebook.Upload File List");
+        functions.RegisterAction<EBookController>("Detail", "Demoo.Ebook.Detail");
     }
 
     public static void OnInitialized()

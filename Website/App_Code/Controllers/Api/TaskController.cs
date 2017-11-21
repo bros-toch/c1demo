@@ -1,4 +1,6 @@
-﻿using System.Web.Http;
+﻿
+using System.Collections.Generic;
+using System.Web.Http;
 
 namespace Controllers.Api
 {
@@ -8,20 +10,6 @@ namespace Controllers.Api
     [RoutePrefix("task")]
     public class TaskController : ApiController
     {
-        public TaskController()
-        {
-            //
-            // TODO: Add constructor logic here
-            //
-        }
-
-        [HttpGet, Route("add")]
-        public dynamic Add()
-        {
-            return new
-            {
-                success = true
-            };
-        }
+        
     }
 }
