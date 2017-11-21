@@ -1,9 +1,11 @@
-﻿using System.Collections.Generic;
+﻿using System;
+using System.Collections.Generic;
 using System.Web.Http;
 using Composite.Core.Extensions;
 using Composite.Data;
 using Composite.Data.Types;
 using FluentValidation.WebApi;
+using Hangfire;
 using Models;
 
 namespace Controllers.Api
@@ -22,10 +24,18 @@ namespace Controllers.Api
 
         public IEnumerable<IUser> Get()
         {
+            //BackgroundJob.Enqueue(() => Console.WriteLine("Hello, world!"));
+            BackgroundJob.Schedule(
+                () => Console.WriteLine("Hello, world"),
+                TimeSpan.FromDays(1));
+            //RecurringJob.AddOrUpdate(() => Console.Write("Powerful!"),);
+
             using (var c = new DataConnection())
             {
                 return c.Get<IUser>();
             }
+
+
         }
 
         [ActionName("Login"), HttpPost]

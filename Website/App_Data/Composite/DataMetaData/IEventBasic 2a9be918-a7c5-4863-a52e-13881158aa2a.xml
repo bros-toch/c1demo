@@ -1,0 +1,34 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<DataTypeDescriptor dataTypeId="2a9be918-a7c5-4863-a52e-13881158aa2a" name="IEventBasic" namespace="CompositeC1Contrib.Email.Data.Types" title="Basic log item" isCodeGenerated="false" cachable="false" searchable="false" labelFieldName="Id" typeManagerTypeName="CompositeC1Contrib.Email.Data.Types.IEventBasic,CompositeC1Contrib.Email">
+  <DataAssociations />
+  <DataScopes>
+    <DataScopeIdentifier name="public" />
+  </DataScopes>
+  <KeyPropertyNames>
+    <KeyPropertyName name="Id" />
+  </KeyPropertyNames>
+  <SuperInterfaces>
+    <SuperInterface type="CompositeC1Contrib.Email.Data.Types.IEvent,CompositeC1Contrib.Email" />
+  </SuperInterfaces>
+  <Fields>
+    <DataFieldDescriptor id="c35f6aa4-55fc-44bf-bd5d-1f51d6ddd1e4" name="Event" isNullable="false" position="1000" groupByPriority="0" inherited="false" instanceType="System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" storeType="PhysicalStoreType='String'Length='32'" isReadOnly="false">
+      <FormRenderingProfile />
+    </DataFieldDescriptor>
+    <DataFieldDescriptor id="bde8386d-1159-47a3-9126-44908506ef94" name="Id" isNullable="false" position="1000" groupByPriority="0" inherited="true" instanceType="System.Guid, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" storeType="PhysicalStoreType='Guid'" isReadOnly="false">
+      <FormRenderingProfile />
+    </DataFieldDescriptor>
+    <DataFieldDescriptor id="56ed96e1-05b5-46e5-9dbf-691dacb6ca6c" name="MailMessageId" isNullable="false" position="1000" groupByPriority="0" inherited="true" instanceType="System.Guid, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" storeType="PhysicalStoreType='Guid'" isReadOnly="false">
+      <FormRenderingProfile />
+    </DataFieldDescriptor>
+    <DataFieldDescriptor id="63cbce22-fa93-4e60-b056-da3d6392e4b9" name="Timestamp" isNullable="false" position="1000" groupByPriority="0" inherited="true" instanceType="System.DateTime, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" storeType="PhysicalStoreType='DateTime'" isReadOnly="false">
+      <FormRenderingProfile />
+    </DataFieldDescriptor>
+  </Fields>
+  <Indexes>
+    <Index clustered="true">
+      <Fields>
+        <Field name="Timestamp" direction="Ascending" />
+      </Fields>
+    </Index>
+  </Indexes>
+</DataTypeDescriptor>

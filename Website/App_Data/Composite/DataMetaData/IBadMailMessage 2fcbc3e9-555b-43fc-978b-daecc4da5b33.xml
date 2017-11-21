@@ -1,0 +1,40 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<DataTypeDescriptor dataTypeId="2fcbc3e9-555b-43fc-978b-daecc4da5b33" name="IBadMailMessage" namespace="CompositeC1Contrib.Email.Data.Types" title="Bad mail message" isCodeGenerated="false" cachable="false" searchable="false" labelFieldName="Subject" typeManagerTypeName="CompositeC1Contrib.Email.Data.Types.IBadMailMessage,CompositeC1Contrib.Email">
+  <DataAssociations />
+  <DataScopes>
+    <DataScopeIdentifier name="public" />
+  </DataScopes>
+  <KeyPropertyNames>
+    <KeyPropertyName name="Id" />
+  </KeyPropertyNames>
+  <SuperInterfaces>
+    <SuperInterface type="CompositeC1Contrib.Email.Data.Types.IMailMessage,CompositeC1Contrib.Email" />
+  </SuperInterfaces>
+  <Fields>
+    <DataFieldDescriptor id="4603c5c0-140e-4b43-be83-b366149f4f20" name="SerializedMessage" isNullable="false" position="1000" groupByPriority="0" inherited="false" instanceType="System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" storeType="PhysicalStoreType='LargeString'" isReadOnly="false">
+      <FormRenderingProfile />
+    </DataFieldDescriptor>
+    <DataFieldDescriptor id="4160a882-75ae-4043-b174-3be23717f4fc" name="Id" isNullable="false" position="1000" groupByPriority="0" inherited="true" instanceType="System.Guid, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" storeType="PhysicalStoreType='Guid'" isReadOnly="false">
+      <FormRenderingProfile />
+    </DataFieldDescriptor>
+    <DataFieldDescriptor id="dbf76bbd-94cd-4af9-88b1-7f200891b350" name="QueueId" isNullable="false" position="1000" groupByPriority="0" inherited="true" instanceType="System.Guid, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" storeType="PhysicalStoreType='Guid'" isReadOnly="false">
+      <FormRenderingProfile />
+    </DataFieldDescriptor>
+    <DataFieldDescriptor id="ab5ecc63-bd38-432c-9b86-e77b2aa380b4" name="MailTemplateKey" isNullable="true" position="1000" groupByPriority="0" inherited="true" instanceType="System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" storeType="PhysicalStoreType='String'Length='128'" isReadOnly="false" foreignKeyReferenceTypeName="CompositeC1Contrib.Email.Data.Types.IMailTemplate,CompositeC1Contrib.Email">
+      <FormRenderingProfile />
+    </DataFieldDescriptor>
+    <DataFieldDescriptor id="d5d239cd-1642-4c00-a861-5482e8ca0299" name="TimeStamp" isNullable="false" position="1000" groupByPriority="0" inherited="true" instanceType="System.DateTime, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" storeType="PhysicalStoreType='DateTime'" isReadOnly="false">
+      <FormRenderingProfile />
+    </DataFieldDescriptor>
+    <DataFieldDescriptor id="ef5f2674-33e4-4e36-9c4d-cd5db16b8e04" name="Subject" isNullable="false" position="1000" groupByPriority="0" inherited="true" instanceType="System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" storeType="PhysicalStoreType='String'Length='512'" isReadOnly="false">
+      <FormRenderingProfile />
+    </DataFieldDescriptor>
+  </Fields>
+  <Indexes>
+    <Index clustered="true">
+      <Fields>
+        <Field name="TimeStamp" direction="Ascending" />
+      </Fields>
+    </Index>
+  </Indexes>
+</DataTypeDescriptor>

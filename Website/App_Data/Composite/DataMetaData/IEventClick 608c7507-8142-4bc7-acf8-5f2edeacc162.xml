@@ -1,0 +1,37 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<DataTypeDescriptor dataTypeId="608c7507-8142-4bc7-acf8-5f2edeacc162" name="IEventClick" namespace="CompositeC1Contrib.Email.Data.Types" title="Click log item" isCodeGenerated="false" cachable="false" searchable="false" labelFieldName="Id" typeManagerTypeName="CompositeC1Contrib.Email.Data.Types.IEventClick,CompositeC1Contrib.Email">
+  <DataAssociations />
+  <DataScopes>
+    <DataScopeIdentifier name="public" />
+  </DataScopes>
+  <KeyPropertyNames>
+    <KeyPropertyName name="Id" />
+  </KeyPropertyNames>
+  <SuperInterfaces>
+    <SuperInterface type="CompositeC1Contrib.Email.Data.Types.IEvent,CompositeC1Contrib.Email" />
+  </SuperInterfaces>
+  <Fields>
+    <DataFieldDescriptor id="c4090067-1f3d-4bf1-8ac2-b4ac084d469e" name="Email" isNullable="false" position="1000" groupByPriority="0" inherited="false" instanceType="System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" storeType="PhysicalStoreType='String'Length='254'" isReadOnly="false">
+      <FormRenderingProfile />
+    </DataFieldDescriptor>
+    <DataFieldDescriptor id="c65ed7c1-5bb5-40ca-9004-55d20edc5a14" name="Url" isNullable="false" position="1000" groupByPriority="0" inherited="false" instanceType="System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" storeType="PhysicalStoreType='LargeString'" isReadOnly="false">
+      <FormRenderingProfile />
+    </DataFieldDescriptor>
+    <DataFieldDescriptor id="bde8386d-1159-47a3-9126-44908506ef94" name="Id" isNullable="false" position="1000" groupByPriority="0" inherited="true" instanceType="System.Guid, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" storeType="PhysicalStoreType='Guid'" isReadOnly="false">
+      <FormRenderingProfile />
+    </DataFieldDescriptor>
+    <DataFieldDescriptor id="56ed96e1-05b5-46e5-9dbf-691dacb6ca6c" name="MailMessageId" isNullable="false" position="1000" groupByPriority="0" inherited="true" instanceType="System.Guid, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" storeType="PhysicalStoreType='Guid'" isReadOnly="false">
+      <FormRenderingProfile />
+    </DataFieldDescriptor>
+    <DataFieldDescriptor id="63cbce22-fa93-4e60-b056-da3d6392e4b9" name="Timestamp" isNullable="false" position="1000" groupByPriority="0" inherited="true" instanceType="System.DateTime, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" storeType="PhysicalStoreType='DateTime'" isReadOnly="false">
+      <FormRenderingProfile />
+    </DataFieldDescriptor>
+  </Fields>
+  <Indexes>
+    <Index clustered="true">
+      <Fields>
+        <Field name="Timestamp" direction="Ascending" />
+      </Fields>
+    </Index>
+  </Indexes>
+</DataTypeDescriptor>

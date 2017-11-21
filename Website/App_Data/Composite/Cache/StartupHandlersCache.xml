@@ -44,5 +44,27 @@
       <AssemblyName>Composite.AspNet.MvcFunctions</AssemblyName>
       <LastModified>2017-10-26T08:35:17.7440208+11:00</LastModified>
     </AssemblyInfo>
+    <AssemblyInfo>
+      <SubscribedTypes />
+      <AssemblyName>CompositeC1Contrib.Core</AssemblyName>
+      <LastModified>2017-11-20T16:25:46.8009284+11:00</LastModified>
+    </AssemblyInfo>
+    <AssemblyInfo>
+      <SubscribedTypes />
+      <AssemblyName>CompositeC1Contrib.ScheduledTasks</AssemblyName>
+      <LastModified>2017-10-23T09:59:27.3969681+11:00</LastModified>
+    </AssemblyInfo>
+    <AssemblyInfo>
+      <SubscribedTypes />
+      <AssemblyName>CompositeC1Contrib.Email</AssemblyName>
+      <LastModified>2017-11-20T17:03:11.9818901+11:00</LastModified>
+    </AssemblyInfo>
+    <AssemblyInfo>
+      <SubscribedTypes>
+        <string>Demo.Core.StartupHandler</string>
+      </SubscribedTypes>
+      <AssemblyName>Demo.Core</AssemblyName>
+      <LastModified>2017-11-21T12:05:38.3808195+11:00</LastModified>
+    </AssemblyInfo>
   </Assemblies>
 </SubscribedTypesCache>

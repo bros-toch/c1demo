@@ -1,0 +1,6 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<queues>
+  <queue id="af5930c8-a350-4b76-945a-ca26a53f98a4" name="Newsletter" from="test@test.com" paused="true">
+    <client type="CompositeC1Contrib.Email.SystemNetMailClient, CompositeC1Contrib.Email, Version=0.9.1.0, Culture=neutral, PublicKeyToken=null" />
+  </queue>
+</queues>
