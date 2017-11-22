@@ -4,6 +4,7 @@ using System.Linq;
 using System.Web.Mvc;
 using Composite.Data;
 using Demo.Ebook;
+using eBdb.EpubReader;
 using Models;
 
 namespace Controllers
@@ -107,7 +108,14 @@ namespace Controllers
                 if (book != null)
                 {
                     var viewModel = new BookDetailViewModel();
-                    viewModel.Name = book.FileName;
+
+                    var file = Server.MapPath("~/App_Data/Uploads/" + book.FileName);
+                    Epub epub = new Epub(file);
+
+                    viewModel.Title = epub.Title[0];
+                    viewModel.Author = string.Join(", ", epub.Creator);
+                    
+                    viewModel.Epub = epub;
                     return View(viewModel);
                 }
                             }

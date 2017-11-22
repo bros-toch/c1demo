@@ -1,7 +1,77 @@
-﻿@model Models.BookDetailViewModel
+﻿@using System.Globalization
+@model Models.BookDetailViewModel
 
 @{
     Layout = null;
+    var epub = Model.Epub;
+    var json = Model.Epub.ExtendedData;
+    //ref
+    var stopwords = File.ReadAllLines(Server.MapPath("~/App_Data/EBook/Stopwords/english.txt")).Select(x=> x.ToLower()).Distinct().ToArray();
 }
 
-Book Name: @Model.Name
+<p>
+    Book Title: @Model.Title    
+</p>
+<p>
+    Authors: @Model.Author
+</p>
+<p>
+    ISBN: @Model.Epub.ExtendedData
+</p>
+<br/>
+
+
+<h2>All words</h2>
+@{
+    var allWordQuery = from x in Model.Epub.GetContentAsPlainText().Split().ToList()
+                       group x by x.Trim('“', '”', ',', '.', '?', '—', '’', '‘', '(', ')', '[', ']').Trim().ToLower()
+        into G
+                       orderby G.Key
+                       let count = G.Count()
+                       select new {Value = CultureInfo.CurrentCulture.TextInfo.ToTitleCase(G.Key), Count = count};
+
+    var allWords = allWordQuery
+        .Where(x=> !stopwords.Contains(x.Value.ToLower()))
+        .Where(x =>
+        {
+            long num;
+            if (long.TryParse(x.Value, out num))
+            {
+                return false;
+            }
+            return true;
+        })
+        .ToList();
+}
+<ul>
+    <li>Total words: @allWords.Count</li>
+    @foreach (var wor in  allWords)
+
+    {
+        <li>@wor.Value (@wor.Count)</li>
+    }
+</ul>
+
+<ul>
+    @foreach (var toc in Model.Epub.TOC)
+    {
+        <li>
+            <h2>@toc.Title</h2>
+            <p>
+                @{
+                    var words = from x in toc.ContentData.GetContentAsPlainText().Split().ToList()
+                        group x by x
+                        into G
+                        let count = G.Count()
+                        select new {Value = G.Key, Count = count};
+                }
+                <ul>
+                    @foreach (var word in words)
+                    {
+                        <li>@word.Value (@word.Count)</li>
+                    }
+                </ul>
+            </p>
+        </li>
+    }
+</ul>

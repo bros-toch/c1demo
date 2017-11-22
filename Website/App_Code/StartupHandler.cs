@@ -22,7 +22,7 @@ internal static class StartupHandler
 
         functions.RegisterAction<EBookController>("UploadFile", "Demo.Ebook.UploadFile");
         functions.RegisterAction<EBookController>("UploadFiles", "Demo.Ebook.Upload File List");
-        functions.RegisterAction<EBookController>("Detail", "Demoo.Ebook.Detail");
+        functions.RegisterAction<EBookController>("Detail", "Demo.Ebook.Detail");
     }
 
     public static void OnInitialized()

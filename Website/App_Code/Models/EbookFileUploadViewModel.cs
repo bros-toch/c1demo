@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using eBdb.EpubReader;
 
 namespace Models
 {
@@ -24,6 +25,8 @@ namespace Models
 
     public class BookDetailViewModel
     {
-        public string Name { get; set; }
+        public string Title;
+        public Epub Epub;
+        public string Author { get; set; }
     }
 }
