@@ -7,6 +7,7 @@ using System.Web.Hosting;
 using edu.stanford.nlp.ling;
 using edu.stanford.nlp.pipeline;
 using java.util;
+using Syn.WordNet;
 
 namespace Demo.EBook
 {
@@ -17,6 +18,9 @@ namespace Demo.EBook
         private static readonly string[] BAD_WORDS = new[] {"adverbs.txt", "conjunctions.txt", "others.txt"}.SelectMany(x => File.ReadAllLines(Path.Combine(HostingEnvironment.MapPath("~/App_Data/EBook/Words"), x)))
             .Select(x => x.ToLower())
             .ToArray();
+
+        private static WordNetEngine WordNet = new WordNetEngine();
+
 
         public static IEnumerable<string> FindWords(string text)
         {
@@ -79,6 +83,15 @@ namespace Demo.EBook
                 .ToList();
 
             return allWords;
+        }
+
+        public static List<SynSet> FindDefinition(string word)
+        {
+            if (!WordNet.IsLoaded)
+            {
+                WordNet.LoadFromDirectory(HostingEnvironment.MapPath("~/App_Data/EBook/Wordnet"));
+            }
+            return WordNet.GetSynSets(word);
         }
     }
 }

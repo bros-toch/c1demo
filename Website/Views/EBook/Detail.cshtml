@@ -43,7 +43,18 @@
 
                         @foreach (var word in words)
                         {
-                            <li>@word.Word (@word.OccurrenceCount)</li>
+                            <li>@word.Word (@word.OccurrenceCount)
+                                @{
+                                    var def = NPLHelper.FindDefinition(word.Word);
+                                }
+                            @if (def.Any())
+                            {
+                                <a href="#" tabindex="0" class="definition" data-word="@word.Word" data-toggle="popover" data-trigger="focus" title="@word.Word">Definition</a>
+                                @*<a href="#" data-toggle="modal" data-word="@word.Word" data-target="#ldoceonlineModal">
+                                    ldoceonline
+                                </a>*@
+                            }
+                            </li>
                         }
                     </ul>
                 </div>
@@ -69,7 +80,30 @@
 
                     @foreach (var word in allWords)
                     {
-                        <li>@word.Word (@word.OccurrenceCount)</li>
+                        <li>@word.Word (@word.OccurrenceCount)
+                            <div class="hidden" id="word-@word.Word">
+                                <p>
+                                    <ul >
+                                        @{
+                                            var def = NPLHelper.FindDefinition(word.Word);
+                                        }
+
+                                        @foreach (var d in def)
+                                        {
+                                            <li>@d.Gloss
+                                                <ul>
+                                                    @foreach (var m in  d.Words)
+                                                    {
+                                                        <li>@m</li>
+                                                    }
+                                                </ul></li>
+
+                                        }
+                                    </ul>
+                                </p>
+                            </div>
+                            
+                    </li>
                     }
                 </ul>
             </div>
@@ -91,5 +125,40 @@
         <li>@wor.Word (@wor.OccurrenceCount)</li>
     }
 </ul>*@
-
-
+<div class="modal fade" id="ldoceonlineModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                <h4 class="modal-title" id="myModalLabel"><span class="word"></span></h4>
+            </div>
+            <div class="modal-body">
+                <iframe frameBorder="0" height="400" data-src="https://www.ldoceonline.com/dictionary/" src="" style="width: 100%; padding: 0; border: 0; height: 400px"></iframe>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+            </div>
+        </div>
+    </div>
+</div>
+<script type="text/javascript">
+  
+    $(function () {
+        $('#ldoceonlineModal').on('show.bs.modal', function (e) {
+            var jq = $(e.relatedTarget);
+            var iframe = $(this).find('iframe');
+            iframe.attr('src', iframe.data('src') + jq.data('word') +'?output=embed');
+            $(this).find('.word').text(jq.data('word'));
+        });
+        $('.definition').on('click', function(e) {
+            e.preventDefault();
+        });
+        $('[data-toggle="popover"]').popover({
+            html: true,
+            content: function () {
+                var word = $(this).data('word');
+                return $('#word-' + word).html();
+            }
+        });
+    })
+</script>

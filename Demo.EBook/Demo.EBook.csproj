@@ -138,6 +138,9 @@
     <Reference Include="stanford-corenlp-3.8.0, Version=3.8.0.0, Culture=neutral, processorArchitecture=MSIL">
       <HintPath>..\packages\Stanford.NLP.CoreNLP.3.8.0.0\lib\stanford-corenlp-3.8.0.dll</HintPath>
     </Reference>
+    <Reference Include="Syn.WordNet, Version=1.0.4.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\Syn.WordNet.1.0.4\lib\net46\Syn.WordNet.dll</HintPath>
+    </Reference>
     <Reference Include="System" />
     <Reference Include="System.Core" />
     <Reference Include="System.Web" />
