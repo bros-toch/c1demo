@@ -1,12 +1,13 @@
 ﻿@using System.Globalization
+@using Demo.EBook
 @model Models.BookDetailViewModel
 
 @{
+    
     Layout = null;
     var epub = Model.Epub;
     var json = Model.Epub.ExtendedData;
-    //ref
-    var stopwords = File.ReadAllLines(Server.MapPath("~/App_Data/EBook/Stopwords/english.txt")).Select(x=> x.ToLower()).Distinct().ToArray();
+    var c = 0;
 }
 
 <p>
@@ -20,58 +21,75 @@
 </p>
 <br/>
 
+<div class="panel-group" id="accordion" role="tablist" aria-multiselectable="true">
+    @foreach (var toc in Model.Epub.TOC)
+    {
+        var id = toc.ID;
+        <div class="panel panel-default">
+            <div class="panel-heading" role="tab" id="headingTwo">
+                <h4 class="panel-title">
+                    <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#toc-@id" aria-expanded="false" aria-controls="collapseTwo">
+                        @toc.Title
+                    </a>
+                </h4>
+            </div>
+            <div id="toc-@id" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingTwo">
+                <div class="panel-body">
+                    @{
+                        var words = NPLHelper.FindVocabularies(toc.ContentData.GetContentAsPlainText()).ToArray();
+                    }
+                    <ul>
+                        <li>Word count: @words.Length</li>
 
-<h2>All words</h2>
+                        @foreach (var word in words)
+                        {
+                            <li>@word.Word (@word.OccurrenceCount)</li>
+                        }
+                    </ul>
+                </div>
+            </div>
+        </div>
+    }
+    
+    <div class="panel panel-default">
+        <div class="panel-heading" role="tab" id="headingTwo">
+            <h4 class="panel-title">
+                <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#toc-all" aria-expanded="false" aria-controls="collapseTwo">
+                    Vocabularies
+                </a>
+            </h4>
+        </div>
+        <div id="toc-all" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingTwo">
+            <div class="panel-body">
+                @{
+                    var allWords = NPLHelper.FindVocabularies(Model.Epub.GetContentAsPlainText()).ToArray();
+                }
+                <ul>
+                    <li>Word count: @allWords.Length</li>
+
+                    @foreach (var word in allWords)
+                    {
+                        <li>@word.Word (@word.OccurrenceCount)</li>
+                    }
+                </ul>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+@*<h2>All words</h2>
 @{
-    var allWordQuery = from x in Model.Epub.GetContentAsPlainText().Split().ToList()
-                       group x by x.Trim('“', '”', ',', '.', '?', '—', '’', '‘', '(', ')', '[', ']').Trim().ToLower()
-        into G
-                       orderby G.Key
-                       let count = G.Count()
-                       select new {Value = CultureInfo.CurrentCulture.TextInfo.ToTitleCase(G.Key), Count = count};
-
-    var allWords = allWordQuery
-        .Where(x=> !stopwords.Contains(x.Value.ToLower()))
-        .Where(x =>
-        {
-            long num;
-            if (long.TryParse(x.Value, out num))
-            {
-                return false;
-            }
-            return true;
-        })
-        .ToList();
+    var allWords = NPLHelper.FindVocabularies(Model.Epub.GetContentAsPlainText()).ToArray();
 }
 <ul>
-    <li>Total words: @allWords.Count</li>
+    <li>Total words: @allWords.Length</li>
     @foreach (var wor in  allWords)
 
     {
-        <li>@wor.Value (@wor.Count)</li>
+        <li>@wor.Word (@wor.OccurrenceCount)</li>
     }
-</ul>
+</ul>*@
 
-<ul>
-    @foreach (var toc in Model.Epub.TOC)
-    {
-        <li>
-            <h2>@toc.Title</h2>
-            <p>
-                @{
-                    var words = from x in toc.ContentData.GetContentAsPlainText().Split().ToList()
-                        group x by x
-                        into G
-                        let count = G.Count()
-                        select new {Value = G.Key, Count = count};
-                }
-                <ul>
-                    @foreach (var word in words)
-                    {
-                        <li>@word.Value (@word.Count)</li>
-                    }
-                </ul>
-            </p>
-        </li>
-    }
-</ul>
+

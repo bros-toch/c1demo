@@ -17,14 +17,15 @@
             }
             @PageTemplateFeature("Descriptive HTML head elements")
             
-            <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.2.4/jquery.min.js">
+            <script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/jquery/2.2.4/jquery.min.js">
             </script>
 
-            <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.17.0/jquery.validate.min.js">
+            <script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.17.0/jquery.validate.min.js">
             </script>
 
-        <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validation-unobtrusive/3.2.6/jquery.validate.unobtrusive.min.js">
+            <script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/jquery-validation-unobtrusive/3.2.6/jquery.validate.unobtrusive.min.js">
             </script>
+            <script type="text/javascript" src="//cdn.rawgit.com/Orajo/jquery-gototop-plugin/564b4e54/jquery.gototop.min.js"></script>
         </head>
         <body>
         <header class="navbar navbar-default navbar-static-top" role="banner">
@@ -48,7 +49,14 @@
         <div class="container">
             @* renders the sub template: *@
             @RenderBody()
-
+            <a id="totopicon" href="#" class="fa-stack fa-lg">
+                <i class="fa fa-circle fa-stack-2x"></i>
+                <i class="fa fa-chevron-up fa-stack-1x fa-inverse" aria-hidden="true"></i>
+                <i class="sr-only">Go to top</i>
+            </a>
+            <script type="text/javascript">
+                $('#totopicon').gototop();
+            </script>
             @PageTemplateFeature("Content Footer")
             <hr/>
             <footer role="contentinfo">

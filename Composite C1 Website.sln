@@ -6,7 +6,7 @@ MinimumVisualStudioVersion = 10.0.40219.1
 Project("{E24C65DC-7377-472B-9ABA-BC803B73C61A}") = "Website", "Website\", "{2220ECEF-A952-40FF-9431-0C1E217557D9}"
 	ProjectSection(WebsiteProperties) = preProject
 		TargetFrameworkMoniker = ".NETFramework,Version%3Dv4.5.1"
-		ProjectReferences = "{78db6b40-4f59-4599-8a1b-8661e1410dac}|Demo.Core.dll;"
+		ProjectReferences = "{78db6b40-4f59-4599-8a1b-8661e1410dac}|Demo.Core.dll;{11879930-d04d-42c8-a91f-847bfbece1c9}|Demo.EBook.dll;"
 		Debug.AspNetCompiler.VirtualPath = "/Website"
 		Debug.AspNetCompiler.PhysicalPath = "Website\"
 		Debug.AspNetCompiler.TargetPath = "PrecompiledWeb\Website\"
@@ -28,6 +28,8 @@ Project("{E24C65DC-7377-472B-9ABA-BC803B73C61A}") = "Website", "Website\", "{222
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Demo.Core", "Demo.Core\Demo.Core.csproj", "{78DB6B40-4F59-4599-8A1B-8661E1410DAC}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Demo.EBook", "Demo.EBook\Demo.EBook.csproj", "{11879930-D04D-42C8-A91F-847BFBECE1C9}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -42,6 +44,10 @@ Global
 		{78DB6B40-4F59-4599-8A1B-8661E1410DAC}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{78DB6B40-4F59-4599-8A1B-8661E1410DAC}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{78DB6B40-4F59-4599-8A1B-8661E1410DAC}.Release|Any CPU.Build.0 = Release|Any CPU
+		{11879930-D04D-42C8-A91F-847BFBECE1C9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{11879930-D04D-42C8-A91F-847BFBECE1C9}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{11879930-D04D-42C8-A91F-847BFBECE1C9}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{11879930-D04D-42C8-A91F-847BFBECE1C9}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
