@@ -80,7 +80,7 @@ namespace Controllers
                     data.Add(fileUpload);
                 }
             }
-            
+
             return View(viewModel);
         }
 
@@ -88,7 +88,7 @@ namespace Controllers
         {
             var viewModel = new FileUploadListViewModel();
 
-            viewModel.Items = DataFacade.GetData<FileUpload>().Select(x=> new FileUploadListItemViewModel()
+            viewModel.Items = DataFacade.GetData<FileUpload>().Select(x => new FileUploadListItemViewModel()
             {
                 Id = x.Id,
                 Name = x.FileName
@@ -103,22 +103,33 @@ namespace Controllers
 
             if (Guid.TryParse(detailIdStr, out id))
             {
-                
                 var book = DataFacade.GetData<FileUpload>(x => x.Id == id).FirstOrDefault();
                 if (book != null)
                 {
                     var viewModel = new BookDetailViewModel();
 
                     var file = Server.MapPath("~/App_Data/Uploads/" + book.FileName);
-                    Epub epub = new Epub(file);
+                    if (System.IO.File.Exists(file))
+                    {
+                        try
+                        {
 
-                    viewModel.Title = epub.Title[0];
-                    viewModel.Author = string.Join(", ", epub.Creator);
-                    
-                    viewModel.Epub = epub;
-                    return View(viewModel);
+                            Epub epub = new Epub(file);
+
+                            viewModel.Title = epub.Title[0];
+                            viewModel.Author = string.Join(", ", epub.Creator);
+
+                            viewModel.Epub = epub;
+                            return View(viewModel);
+                        }
+                        catch (Exception e)
+                        {
+
+                        }
+                    }
+
                 }
-                            }
+            }
 
             return View(new BookDetailViewModel());
         }

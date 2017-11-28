@@ -11,7 +11,7 @@ using Syn.WordNet;
 
 namespace Demo.EBook
 {
-    public static class NPLHelper
+    public static class NplHelper
     {
         private static readonly string[] STOPWORDS = System.IO.File.ReadAllLines(HostingEnvironment.MapPath("~/App_Data/EBook/Stopwords/english.txt")).Select(x => x.ToLower()).Distinct().ToArray();
 
@@ -93,5 +93,6 @@ namespace Demo.EBook
             }
             return WordNet.GetSynSets(word);
         }
+        
     }
 }

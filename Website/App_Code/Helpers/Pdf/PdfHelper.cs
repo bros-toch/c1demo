@@ -36,9 +36,9 @@ namespace Helpers.Pdf
 
             PdfDocument pdfDocument = new PdfDocument()
             {
-                Url = string.Format("{0}://{1}/{2}PdfTemp/{3}.html", /*HttpContext.Current.Request.Url.Scheme*/"http", 
+                Url = string.Format("{0}://{1}/{2}PdfTemp/{3}.html", /*HttpContext.Current.Request.Url.Scheme*/"http",
                     HttpContext.Current.Request.Url.Host,
-                    absoultePath == "/" ? string.Empty : absoultePath, 
+                    absoultePath == "/" ? string.Empty : absoultePath,
                     uniqueFileId)
             };
 
