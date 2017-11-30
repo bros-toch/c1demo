@@ -1,0 +1,2794 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+  <!-- EF Runtime content -->
+  <edmx:Runtime>
+    <!-- SSDL content -->
+    <edmx:StorageModels>
+      <Schema Namespace="c1demoModel.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2012" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+        <EntityType Name="Composite_Data_Types_ICompositionContainer">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="uniqueidentifier" Nullable="false" />
+          <Property Name="Label" Type="nvarchar" MaxLength="256" Nullable="false" />
+        </EntityType>
+        <EntityType Name="Composite_Data_Types_ICustomFunctionCallEditorMapping">
+          <Key>
+            <PropertyRef Name="FunctionName" />
+          </Key>
+          <Property Name="FunctionName" Type="nvarchar" MaxLength="255" Nullable="false" />
+          <Property Name="CustomEditorPath" Type="nvarchar" MaxLength="255" Nullable="false" />
+          <Property Name="Width" Type="int" />
+          <Property Name="Height" Type="int" />
+        </EntityType>
+        <EntityType Name="Composite_Data_Types_IDataItemTreeAttachmentPoint">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="uniqueidentifier" Nullable="false" />
+          <Property Name="TreeId" Type="nvarchar(max)" Nullable="false" />
+          <Property Name="Position" Type="nvarchar" MaxLength="64" Nullable="false" />
+          <Property Name="InterfaceType" Type="nvarchar(max)" Nullable="false" />
+          <Property Name="KeyValue" Type="nvarchar(max)" Nullable="false" />
+        </EntityType>
+        <EntityType Name="Composite_Data_Types_IFlowInformation">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="uniqueidentifier" Nullable="false" />
+          <Property Name="Username" Type="nvarchar" MaxLength="64" Nullable="false" />
+          <Property Name="ConsoleId" Type="nvarchar" MaxLength="64" Nullable="false" />
+          <Property Name="SerializedFlowToken" Type="nvarchar(max)" Nullable="false" />
+          <Property Name="SerializedEntityToken" Type="nvarchar(max)" Nullable="false" />
+          <Property Name="SerializedActionToken" Type="nvarchar(max)" Nullable="false" />
+          <Property Name="TimeStamp" Type="datetime" Nullable="false" />
+        </EntityType>
+        <EntityType Name="Composite_Data_Types_IFolderWhiteList_Unpublished">
+          <Key>
+            <PropertyRef Name="KeyName" />
+            <PropertyRef Name="TildeBasedPath" />
+          </Key>
+          <Property Name="KeyName" Type="nvarchar" MaxLength="128" Nullable="false" />
+          <Property Name="TildeBasedPath" Type="nvarchar" MaxLength="512" Nullable="false" />
+        </EntityType>
+        <EntityType Name="Composite_Data_Types_IGeneratedTypeWhiteList_Unpublished">
+          <Key>
+            <PropertyRef Name="TypeManagerTypeName" />
+          </Key>
+          <Property Name="TypeManagerTypeName" Type="nvarchar" MaxLength="256" Nullable="false" />
+        </EntityType>
+        <EntityType Name="Composite_Data_Types_IHostnameBinding">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="uniqueidentifier" Nullable="false" />
+          <Property Name="Hostname" Type="nvarchar" MaxLength="255" Nullable="false" />
+          <Property Name="Culture" Type="nvarchar" MaxLength="64" Nullable="false" />
+          <Property Name="HomePageId" Type="uniqueidentifier" Nullable="false" />
+          <Property Name="PageNotFoundUrl" Type="nvarchar" MaxLength="255" />
+          <Property Name="Aliases" Type="nvarchar" MaxLength="512" />
+          <Property Name="IncludeHomePageInUrl" Type="bit" Nullable="false" />
+          <Property Name="IncludeCultureInUrl" Type="bit" Nullable="false" />
+          <Property Name="EnforceHttps" Type="bit" Nullable="false" />
+        </EntityType>
+        <EntityType Name="Composite_Data_Types_IInlineFunction">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="uniqueidentifier" Nullable="false" />
+          <Property Name="Name" Type="nvarchar" MaxLength="128" Nullable="false" />
+          <Property Name="Namespace" Type="nvarchar" MaxLength="128" Nullable="false" />
+          <Property Name="Description" Type="nvarchar(max)" Nullable="false" />
+          <Property Name="CodePath" Type="nvarchar" MaxLength="512" Nullable="false" />
+        </EntityType>
+        <EntityType Name="Composite_Data_Types_IInlineFunctionAssemblyReference">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="uniqueidentifier" Nullable="false" />
+          <Property Name="Function" Type="uniqueidentifier" Nullable="false" />
+          <Property Name="Name" Type="nvarchar" MaxLength="128" Nullable="false" />
+          <Property Name="Location" Type="nvarchar" MaxLength="128" Nullable="false" />
+        </EntityType>
+        <EntityType Name="Composite_Data_Types_ILockingInformation">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="uniqueidentifier" Nullable="false" />
+          <Property Name="SerializedEntityToken" Type="nvarchar(max)" Nullable="false" />
+          <Property Name="SerializedOwnerId" Type="nvarchar(max)" Nullable="false" />
+          <Property Name="Username" Type="nvarchar" MaxLength="64" Nullable="false" />
+        </EntityType>
+        <EntityType Name="Composite_Data_Types_IMediaFileData">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="uniqueidentifier" Nullable="false" />
+          <Property Name="FolderPath" Type="nvarchar" MaxLength="2048" Nullable="false" />
+          <Property Name="FileName" Type="nvarchar" MaxLength="2048" Nullable="false" />
+          <Property Name="Title" Type="nvarchar" MaxLength="256" />
+          <Property Name="Description" Type="nvarchar(max)" />
+          <Property Name="Tags" Type="nvarchar(max)" />
+          <Property Name="CultureInfo" Type="nvarchar" MaxLength="128" />
+          <Property Name="MimeType" Type="nvarchar" MaxLength="256" />
+          <Property Name="Length" Type="int" />
+          <Property Name="CreationTime" Type="datetime" />
+          <Property Name="LastWriteTime" Type="datetime" />
+        </EntityType>
+        <EntityType Name="Composite_Data_Types_IMediaFolderData">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="uniqueidentifier" Nullable="false" />
+          <Property Name="Path" Type="nvarchar" MaxLength="2048" Nullable="false" />
+          <Property Name="Title" Type="nvarchar" MaxLength="256" />
+          <Property Name="Description" Type="nvarchar(max)" />
+        </EntityType>
+        <EntityType Name="Composite_Data_Types_IMethodBasedFunctionInfo">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="uniqueidentifier" Nullable="false" />
+          <Property Name="Type" Type="nvarchar" MaxLength="512" Nullable="false" />
+          <Property Name="MethodName" Type="nvarchar" MaxLength="64" Nullable="false" />
+          <Property Name="Namespace" Type="nvarchar" MaxLength="512" Nullable="false" />
+          <Property Name="UserMethodName" Type="nvarchar" MaxLength="64" Nullable="false" />
+        </EntityType>
+        <EntityType Name="Composite_Data_Types_INamedFunctionCall">
+          <Key>
+            <PropertyRef Name="XsltFunctionId" />
+            <PropertyRef Name="Name" />
+          </Key>
+          <Property Name="XsltFunctionId" Type="uniqueidentifier" Nullable="false" />
+          <Property Name="Name" Type="nvarchar" MaxLength="256" Nullable="false" />
+          <Property Name="SerializedFunction" Type="nvarchar(max)" Nullable="false" />
+        </EntityType>
+        <EntityType Name="Composite_Data_Types_IPackageServerSource">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="uniqueidentifier" Nullable="false" />
+          <Property Name="Url" Type="nvarchar(max)" Nullable="false" />
+        </EntityType>
+        <EntityType Name="Composite_Data_Types_IPage_en_AU">
+          <Key>
+            <PropertyRef Name="Id" />
+            <PropertyRef Name="VersionId" />
+          </Key>
+          <Property Name="PublicationStatus" Type="nvarchar" MaxLength="64" Nullable="false" />
+          <Property Name="ChangeDate" Type="datetime" Nullable="false" />
+          <Property Name="CreationDate" Type="datetime" Nullable="false" />
+          <Property Name="ChangedBy" Type="nvarchar" MaxLength="64" />
+          <Property Name="CreatedBy" Type="nvarchar" MaxLength="64" />
+          <Property Name="Id" Type="uniqueidentifier" Nullable="false" />
+          <Property Name="TemplateId" Type="uniqueidentifier" Nullable="false" />
+          <Property Name="PageTypeId" Type="uniqueidentifier" Nullable="false" />
+          <Property Name="Title" Type="nvarchar" MaxLength="255" Nullable="false" />
+          <Property Name="MenuTitle" Type="nvarchar" MaxLength="64" />
+          <Property Name="UrlTitle" Type="nvarchar" MaxLength="192" Nullable="false" />
+          <Property Name="FriendlyUrl" Type="nvarchar" MaxLength="192" />
+          <Property Name="Description" Type="nvarchar" MaxLength="1024" />
+          <Property Name="SourceCultureName" Type="nvarchar" MaxLength="16" Nullable="false" />
+          <Property Name="VersionId" Type="uniqueidentifier" Nullable="false" />
+        </EntityType>
+        <EntityType Name="Composite_Data_Types_IPage_km_KH">
+          <Key>
+            <PropertyRef Name="Id" />
+            <PropertyRef Name="VersionId" />
+          </Key>
+          <Property Name="PublicationStatus" Type="nvarchar" MaxLength="64" Nullable="false" />
+          <Property Name="ChangeDate" Type="datetime" Nullable="false" />
+          <Property Name="CreationDate" Type="datetime" Nullable="false" />
+          <Property Name="ChangedBy" Type="nvarchar" MaxLength="64" />
+          <Property Name="CreatedBy" Type="nvarchar" MaxLength="64" />
+          <Property Name="Id" Type="uniqueidentifier" Nullable="false" />
+          <Property Name="TemplateId" Type="uniqueidentifier" Nullable="false" />
+          <Property Name="PageTypeId" Type="uniqueidentifier" Nullable="false" />
+          <Property Name="Title" Type="nvarchar" MaxLength="255" Nullable="false" />
+          <Property Name="MenuTitle" Type="nvarchar" MaxLength="64" />
+          <Property Name="UrlTitle" Type="nvarchar" MaxLength="192" Nullable="false" />
+          <Property Name="FriendlyUrl" Type="nvarchar" MaxLength="192" />
+          <Property Name="Description" Type="nvarchar" MaxLength="1024" />
+          <Property Name="SourceCultureName" Type="nvarchar" MaxLength="16" Nullable="false" />
+          <Property Name="VersionId" Type="uniqueidentifier" Nullable="false" />
+        </EntityType>
+        <EntityType Name="Composite_Data_Types_IPage_Unpublished_en_AU">
+          <Key>
+            <PropertyRef Name="Id" />
+            <PropertyRef Name="VersionId" />
+          </Key>
+          <Property Name="PublicationStatus" Type="nvarchar" MaxLength="64" Nullable="false" />
+          <Property Name="ChangeDate" Type="datetime" Nullable="false" />
+          <Property Name="CreationDate" Type="datetime" Nullable="false" />
+          <Property Name="ChangedBy" Type="nvarchar" MaxLength="64" />
+          <Property Name="CreatedBy" Type="nvarchar" MaxLength="64" />
+          <Property Name="Id" Type="uniqueidentifier" Nullable="false" />
+          <Property Name="TemplateId" Type="uniqueidentifier" Nullable="false" />
+          <Property Name="PageTypeId" Type="uniqueidentifier" Nullable="false" />
+          <Property Name="Title" Type="nvarchar" MaxLength="255" Nullable="false" />
+          <Property Name="MenuTitle" Type="nvarchar" MaxLength="64" />
+          <Property Name="UrlTitle" Type="nvarchar" MaxLength="192" Nullable="false" />
+          <Property Name="FriendlyUrl" Type="nvarchar" MaxLength="192" />
+          <Property Name="Description" Type="nvarchar" MaxLength="1024" />
+          <Property Name="SourceCultureName" Type="nvarchar" MaxLength="16" Nullable="false" />
+          <Property Name="VersionId" Type="uniqueidentifier" Nullable="false" />
+        </EntityType>
+        <EntityType Name="Composite_Data_Types_IPage_Unpublished_km_KH">
+          <Key>
+            <PropertyRef Name="Id" />
+            <PropertyRef Name="VersionId" />
+          </Key>
+          <Property Name="PublicationStatus" Type="nvarchar" MaxLength="64" Nullable="false" />
+          <Property Name="ChangeDate" Type="datetime" Nullable="false" />
+          <Property Name="CreationDate" Type="datetime" Nullable="false" />
+          <Property Name="ChangedBy" Type="nvarchar" MaxLength="64" />
+          <Property Name="CreatedBy" Type="nvarchar" MaxLength="64" />
+          <Property Name="Id" Type="uniqueidentifier" Nullable="false" />
+          <Property Name="TemplateId" Type="uniqueidentifier" Nullable="false" />
+          <Property Name="PageTypeId" Type="uniqueidentifier" Nullable="false" />
+          <Property Name="Title" Type="nvarchar" MaxLength="255" Nullable="false" />
+          <Property Name="MenuTitle" Type="nvarchar" MaxLength="64" />
+          <Property Name="UrlTitle" Type="nvarchar" MaxLength="192" Nullable="false" />
+          <Property Name="FriendlyUrl" Type="nvarchar" MaxLength="192" />
+          <Property Name="Description" Type="nvarchar" MaxLength="1024" />
+          <Property Name="SourceCultureName" Type="nvarchar" MaxLength="16" Nullable="false" />
+          <Property Name="VersionId" Type="uniqueidentifier" Nullable="false" />
+        </EntityType>
+        <EntityType Name="Composite_Data_Types_IPageFolderDefinition">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="uniqueidentifier" Nullable="false" />
+          <Property Name="PageId" Type="uniqueidentifier" Nullable="false" />
+          <Property Name="FolderTypeId" Type="uniqueidentifier" Nullable="false" />
+        </EntityType>
+        <EntityType Name="Composite_Data_Types_IPageMetaDataDefinition">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="uniqueidentifier" Nullable="false" />
+          <Property Name="DefiningItemId" Type="uniqueidentifier" Nullable="false" />
+          <Property Name="Name" Type="nvarchar" MaxLength="128" Nullable="false" />
+          <Property Name="Label" Type="nvarchar" MaxLength="256" Nullable="false" />
+          <Property Name="MetaDataContainerId" Type="uniqueidentifier" Nullable="false" />
+          <Property Name="MetaDataTypeId" Type="uniqueidentifier" Nullable="false" />
+          <Property Name="StartLevel" Type="int" Nullable="false" />
+          <Property Name="Levels" Type="int" Nullable="false" />
+        </EntityType>
+        <EntityType Name="Composite_Data_Types_IPagePlaceholderContent_en_AU">
+          <Key>
+            <PropertyRef Name="PageId" />
+            <PropertyRef Name="PlaceHolderId" />
+            <PropertyRef Name="VersionId" />
+          </Key>
+          <Property Name="PublicationStatus" Type="nvarchar" MaxLength="64" Nullable="false" />
+          <Property Name="ChangeDate" Type="datetime" Nullable="false" />
+          <Property Name="CreationDate" Type="datetime" Nullable="false" />
+          <Property Name="ChangedBy" Type="nvarchar" MaxLength="64" />
+          <Property Name="CreatedBy" Type="nvarchar" MaxLength="64" />
+          <Property Name="PageId" Type="uniqueidentifier" Nullable="false" />
+          <Property Name="PlaceHolderId" Type="nvarchar" MaxLength="255" Nullable="false" />
+          <Property Name="Content" Type="nvarchar(max)" Nullable="false" />
+          <Property Name="SourceCultureName" Type="nvarchar" MaxLength="16" Nullable="false" />
+          <Property Name="VersionId" Type="uniqueidentifier" Nullable="false" />
+        </EntityType>
+        <EntityType Name="Composite_Data_Types_IPagePlaceholderContent_km_KH">
+          <Key>
+            <PropertyRef Name="PageId" />
+            <PropertyRef Name="PlaceHolderId" />
+            <PropertyRef Name="VersionId" />
+          </Key>
+          <Property Name="PublicationStatus" Type="nvarchar" MaxLength="64" Nullable="false" />
+          <Property Name="ChangeDate" Type="datetime" Nullable="false" />
+          <Property Name="CreationDate" Type="datetime" Nullable="false" />
+          <Property Name="ChangedBy" Type="nvarchar" MaxLength="64" />
+          <Property Name="CreatedBy" Type="nvarchar" MaxLength="64" />
+          <Property Name="PageId" Type="uniqueidentifier" Nullable="false" />
+          <Property Name="PlaceHolderId" Type="nvarchar" MaxLength="255" Nullable="false" />
+          <Property Name="Content" Type="nvarchar(max)" Nullable="false" />
+          <Property Name="SourceCultureName" Type="nvarchar" MaxLength="16" Nullable="false" />
+          <Property Name="VersionId" Type="uniqueidentifier" Nullable="false" />
+        </EntityType>
+        <EntityType Name="Composite_Data_Types_IPagePlaceholderContent_Unpublished_en_AU">
+          <Key>
+            <PropertyRef Name="PageId" />
+            <PropertyRef Name="PlaceHolderId" />
+            <PropertyRef Name="VersionId" />
+          </Key>
+          <Property Name="PublicationStatus" Type="nvarchar" MaxLength="64" Nullable="false" />
+          <Property Name="ChangeDate" Type="datetime" Nullable="false" />
+          <Property Name="CreationDate" Type="datetime" Nullable="false" />
+          <Property Name="ChangedBy" Type="nvarchar" MaxLength="64" />
+          <Property Name="CreatedBy" Type="nvarchar" MaxLength="64" />
+          <Property Name="PageId" Type="uniqueidentifier" Nullable="false" />
+          <Property Name="PlaceHolderId" Type="nvarchar" MaxLength="255" Nullable="false" />
+          <Property Name="Content" Type="nvarchar(max)" Nullable="false" />
+          <Property Name="SourceCultureName" Type="nvarchar" MaxLength="16" Nullable="false" />
+          <Property Name="VersionId" Type="uniqueidentifier" Nullable="false" />
+        </EntityType>
+        <EntityType Name="Composite_Data_Types_IPagePlaceholderContent_Unpublished_km_KH">
+          <Key>
+            <PropertyRef Name="PageId" />
+            <PropertyRef Name="PlaceHolderId" />
+            <PropertyRef Name="VersionId" />
+          </Key>
+          <Property Name="PublicationStatus" Type="nvarchar" MaxLength="64" Nullable="false" />
+          <Property Name="ChangeDate" Type="datetime" Nullable="false" />
+          <Property Name="CreationDate" Type="datetime" Nullable="false" />
+          <Property Name="ChangedBy" Type="nvarchar" MaxLength="64" />
+          <Property Name="CreatedBy" Type="nvarchar" MaxLength="64" />
+          <Property Name="PageId" Type="uniqueidentifier" Nullable="false" />
+          <Property Name="PlaceHolderId" Type="nvarchar" MaxLength="255" Nullable="false" />
+          <Property Name="Content" Type="nvarchar(max)" Nullable="false" />
+          <Property Name="SourceCultureName" Type="nvarchar" MaxLength="16" Nullable="false" />
+          <Property Name="VersionId" Type="uniqueidentifier" Nullable="false" />
+        </EntityType>
+        <EntityType Name="Composite_Data_Types_IPageStructure">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="uniqueidentifier" Nullable="false" />
+          <Property Name="ParentId" Type="uniqueidentifier" Nullable="false" />
+          <Property Name="LocalOrdering" Type="int" Nullable="false" />
+        </EntityType>
+        <EntityType Name="Composite_Data_Types_IPageType">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="uniqueidentifier" Nullable="false" />
+          <Property Name="Name" Type="nvarchar" MaxLength="256" Nullable="false" />
+          <Property Name="Description" Type="nvarchar(max)" Nullable="false" />
+          <Property Name="Available" Type="bit" Nullable="false" />
+          <Property Name="PresetMenuTitle" Type="bit" Nullable="false" />
+          <Property Name="DefaultTemplateId" Type="uniqueidentifier" Nullable="false" />
+          <Property Name="HomepageRelation" Type="nvarchar" MaxLength="64" Nullable="false" />
+          <Property Name="DefaultChildPageType" Type="uniqueidentifier" Nullable="false" />
+        </EntityType>
+        <EntityType Name="Composite_Data_Types_IPageTypeDataFolderTypeLink">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="uniqueidentifier" Nullable="false" />
+          <Property Name="PageTypeId" Type="uniqueidentifier" Nullable="false" />
+          <Property Name="DataTypeId" Type="uniqueidentifier" Nullable="false" />
+        </EntityType>
+        <EntityType Name="Composite_Data_Types_IPageTypeDefaultPageContent">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="uniqueidentifier" Nullable="false" />
+          <Property Name="PageTypeId" Type="uniqueidentifier" Nullable="false" />
+          <Property Name="PlaceHolderId" Type="nvarchar" MaxLength="255" Nullable="false" />
+          <Property Name="Content" Type="nvarchar(max)" Nullable="false" />
+          <Property Name="ContainerClasses" Type="nvarchar" MaxLength="64" />
+        </EntityType>
+        <EntityType Name="Composite_Data_Types_IPageTypeMetaDataTypeLink">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="uniqueidentifier" Nullable="false" />
+          <Property Name="PageTypeId" Type="uniqueidentifier" Nullable="false" />
+          <Property Name="DataTypeId" Type="uniqueidentifier" Nullable="false" />
+          <Property Name="Name" Type="nvarchar" MaxLength="128" Nullable="false" />
+        </EntityType>
+        <EntityType Name="Composite_Data_Types_IPageTypePageTemplateRestriction">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="uniqueidentifier" Nullable="false" />
+          <Property Name="PageTypeId" Type="uniqueidentifier" Nullable="false" />
+          <Property Name="PageTemplateId" Type="uniqueidentifier" Nullable="false" />
+        </EntityType>
+        <EntityType Name="Composite_Data_Types_IPageTypeParentRestriction">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="uniqueidentifier" Nullable="false" />
+          <Property Name="PageTypeId" Type="uniqueidentifier" Nullable="false" />
+          <Property Name="AllowedParentPageTypeId" Type="uniqueidentifier" Nullable="false" />
+        </EntityType>
+        <EntityType Name="Composite_Data_Types_IPageTypeTreeLink">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="uniqueidentifier" Nullable="false" />
+          <Property Name="PageTypeId" Type="uniqueidentifier" Nullable="false" />
+          <Property Name="TreeId" Type="nvarchar" MaxLength="2048" Nullable="false" />
+        </EntityType>
+        <EntityType Name="Composite_Data_Types_IParameter">
+          <Key>
+            <PropertyRef Name="OwnerId" />
+            <PropertyRef Name="ParameterId" />
+          </Key>
+          <Property Name="OwnerId" Type="uniqueidentifier" Nullable="false" />
+          <Property Name="ParameterId" Type="uniqueidentifier" Nullable="false" />
+          <Property Name="Name" Type="nvarchar" MaxLength="128" Nullable="false" />
+          <Property Name="Label" Type="nvarchar" MaxLength="128" Nullable="false" />
+          <Property Name="HelpText" Type="nvarchar" MaxLength="512" Nullable="false" />
+          <Property Name="Position" Type="int" Nullable="false" />
+          <Property Name="TypeManagerName" Type="nvarchar" MaxLength="512" Nullable="false" />
+          <Property Name="WidgetFunctionMarkup" Type="nvarchar(max)" />
+          <Property Name="DefaultValueFunctionMarkup" Type="nvarchar(max)" />
+          <Property Name="TestValueFunctionMarkup" Type="nvarchar(max)" />
+        </EntityType>
+        <EntityType Name="Composite_Data_Types_IPublishSchedule_Unpublished">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="PublishDate" Type="datetime" Nullable="false" />
+          <Property Name="Id" Type="uniqueidentifier" Nullable="false" />
+          <Property Name="DataTypeId" Type="uniqueidentifier" Nullable="false" />
+          <Property Name="DataId" Type="nvarchar" MaxLength="512" Nullable="false" />
+          <Property Name="WorkflowInstanceId" Type="uniqueidentifier" Nullable="false" />
+          <Property Name="LocaleCultureName" Type="nvarchar" MaxLength="16" Nullable="false" />
+        </EntityType>
+        <EntityType Name="Composite_Data_Types_ISearchEngineOptimizationKeyword_en_AU">
+          <Key>
+            <PropertyRef Name="Keyword" />
+          </Key>
+          <Property Name="Keyword" Type="nvarchar" MaxLength="128" Nullable="false" />
+          <Property Name="SourceCultureName" Type="nvarchar" MaxLength="16" Nullable="false" />
+        </EntityType>
+        <EntityType Name="Composite_Data_Types_ISearchEngineOptimizationKeyword_km_KH">
+          <Key>
+            <PropertyRef Name="Keyword" />
+          </Key>
+          <Property Name="Keyword" Type="nvarchar" MaxLength="128" Nullable="false" />
+          <Property Name="SourceCultureName" Type="nvarchar" MaxLength="16" Nullable="false" />
+        </EntityType>
+        <EntityType Name="Composite_Data_Types_ISqlConnection">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="uniqueidentifier" Nullable="false" />
+          <Property Name="IsMsSql" Type="bit" Nullable="false" />
+          <Property Name="EncryptedConnectionString" Type="nvarchar" MaxLength="1024" Nullable="false" />
+          <Property Name="Name" Type="nvarchar" MaxLength="255" Nullable="false" />
+        </EntityType>
+        <EntityType Name="Composite_Data_Types_ISqlFunctionInfo">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="uniqueidentifier" Nullable="false" />
+          <Property Name="Name" Type="nvarchar" MaxLength="255" Nullable="false" />
+          <Property Name="ConnectionId" Type="uniqueidentifier" Nullable="false" />
+          <Property Name="IsStoredProcedure" Type="bit" Nullable="false" />
+          <Property Name="ReturnsXml" Type="bit" Nullable="false" />
+          <Property Name="IsQuery" Type="bit" Nullable="false" />
+          <Property Name="Command" Type="nvarchar(max)" Nullable="false" />
+          <Property Name="Namespace" Type="nvarchar" MaxLength="255" Nullable="false" />
+          <Property Name="Description" Type="nvarchar" MaxLength="512" Nullable="false" />
+        </EntityType>
+        <EntityType Name="Composite_Data_Types_ISystemActiveLocale">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="uniqueidentifier" Nullable="false" />
+          <Property Name="CultureName" Type="nvarchar" MaxLength="16" Nullable="false" />
+          <Property Name="UrlMappingName" Type="nvarchar" MaxLength="64" Nullable="false" />
+          <Property Name="IsDefault" Type="bit" Nullable="false" />
+        </EntityType>
+        <EntityType Name="Composite_Data_Types_ITaskItem">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="uniqueidentifier" Nullable="false" />
+          <Property Name="TaskId" Type="nvarchar" MaxLength="255" Nullable="false" />
+          <Property Name="TaskManagerType" Type="nvarchar" MaxLength="2048" Nullable="false" />
+          <Property Name="SerializedFlowToken" Type="nvarchar(max)" Nullable="false" />
+          <Property Name="StartTime" Type="datetime" Nullable="false" />
+        </EntityType>
+        <EntityType Name="Composite_Data_Types_IUnpublishSchedule_Unpublished">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="UnpublishDate" Type="datetime" Nullable="false" />
+          <Property Name="Id" Type="uniqueidentifier" Nullable="false" />
+          <Property Name="DataTypeId" Type="uniqueidentifier" Nullable="false" />
+          <Property Name="DataId" Type="nvarchar" MaxLength="512" Nullable="false" />
+          <Property Name="WorkflowInstanceId" Type="uniqueidentifier" Nullable="false" />
+          <Property Name="LocaleCultureName" Type="nvarchar" MaxLength="16" Nullable="false" />
+        </EntityType>
+        <EntityType Name="Composite_Data_Types_IUrlConfiguration">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="uniqueidentifier" Nullable="false" />
+          <Property Name="PageUrlSuffix" Type="nvarchar" MaxLength="255" Nullable="false" />
+        </EntityType>
+        <EntityType Name="Composite_Data_Types_IUser">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="uniqueidentifier" Nullable="false" />
+          <Property Name="Username" Type="nvarchar" MaxLength="64" Nullable="false" />
+          <Property Name="Name" Type="nvarchar" MaxLength="128" />
+          <Property Name="Email" Type="nvarchar" MaxLength="128" />
+          <Property Name="Group" Type="nvarchar" MaxLength="64" />
+          <Property Name="IsLocked" Type="bit" Nullable="false" />
+          <Property Name="LockoutReason" Type="int" Nullable="false" />
+          <Property Name="EncryptedPassword" Type="nvarchar" MaxLength="256" />
+          <Property Name="PasswordHashSalt" Type="nvarchar" MaxLength="128" />
+          <Property Name="LastPasswordChangeDate" Type="datetime" Nullable="false" />
+        </EntityType>
+        <EntityType Name="Composite_Data_Types_IUserActiveLocale">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="uniqueidentifier" Nullable="false" />
+          <Property Name="Username" Type="nvarchar" MaxLength="64" Nullable="false" />
+          <Property Name="CultureName" Type="nvarchar" MaxLength="16" Nullable="false" />
+        </EntityType>
+        <EntityType Name="Composite_Data_Types_IUserActivePerspective">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="uniqueidentifier" Nullable="false" />
+          <Property Name="Username" Type="nvarchar" MaxLength="128" Nullable="false" />
+          <Property Name="SerializedEntityToken" Type="nvarchar(max)" Nullable="false" />
+        </EntityType>
+        <EntityType Name="Composite_Data_Types_IUserConsoleInformation">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="uniqueidentifier" Nullable="false" />
+          <Property Name="Username" Type="nvarchar" MaxLength="64" Nullable="false" />
+          <Property Name="ConsoleId" Type="nvarchar" MaxLength="64" Nullable="false" />
+          <Property Name="TimeStamp" Type="datetime" Nullable="false" />
+        </EntityType>
+        <EntityType Name="Composite_Data_Types_IUserDeveloperSettings">
+          <Key>
+            <PropertyRef Name="Username" />
+          </Key>
+          <Property Name="Username" Type="nvarchar" MaxLength="64" Nullable="false" />
+          <Property Name="LastSpecifiedNamespace" Type="nvarchar" MaxLength="256" Nullable="false" />
+        </EntityType>
+        <EntityType Name="Composite_Data_Types_IUserFormLogin">
+          <Key>
+            <PropertyRef Name="UserId" />
+          </Key>
+          <Property Name="UserId" Type="uniqueidentifier" Nullable="false" />
+          <Property Name="Folder" Type="nvarchar" MaxLength="64" Nullable="false" />
+          <Property Name="IsLocked" Type="bit" Nullable="false" />
+          <Property Name="LockoutReason" Type="int" Nullable="false" />
+          <Property Name="PasswordHash" Type="nvarchar" MaxLength="256" Nullable="false" />
+          <Property Name="PasswordHashSalt" Type="nvarchar" MaxLength="128" Nullable="false" />
+          <Property Name="LastPasswordChangeDate" Type="datetime" Nullable="false" />
+        </EntityType>
+        <EntityType Name="Composite_Data_Types_IUserGroup">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="uniqueidentifier" Nullable="false" />
+          <Property Name="Name" Type="nvarchar" MaxLength="64" Nullable="false" />
+        </EntityType>
+        <EntityType Name="Composite_Data_Types_IUserGroupActivePerspective">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="uniqueidentifier" Nullable="false" />
+          <Property Name="UserGroupId" Type="uniqueidentifier" Nullable="false" />
+          <Property Name="SerializedEntityToken" Type="nvarchar(max)" Nullable="false" />
+        </EntityType>
+        <EntityType Name="Composite_Data_Types_IUserGroupPermissionDefinition">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="uniqueidentifier" Nullable="false" />
+          <Property Name="UserGroupId" Type="uniqueidentifier" Nullable="false" />
+          <Property Name="SerializedEntityToken" Type="nvarchar(max)" Nullable="false" />
+        </EntityType>
+        <EntityType Name="Composite_Data_Types_IUserGroupPermissionDefinitionPermissionType">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="uniqueidentifier" Nullable="false" />
+          <Property Name="UserGroupPermissionDefinitionId" Type="uniqueidentifier" Nullable="false" />
+          <Property Name="PermissionTypeName" Type="nvarchar" MaxLength="64" Nullable="false" />
+        </EntityType>
+        <EntityType Name="Composite_Data_Types_IUserPasswordHistory">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="uniqueidentifier" Nullable="false" />
+          <Property Name="UserId" Type="uniqueidentifier" Nullable="false" />
+          <Property Name="PasswordHash" Type="nvarchar" MaxLength="256" Nullable="false" />
+          <Property Name="PasswordSalt" Type="nvarchar" MaxLength="128" Nullable="false" />
+          <Property Name="SetDate" Type="datetime" Nullable="false" />
+        </EntityType>
+        <EntityType Name="Composite_Data_Types_IUserPermissionDefinition">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="uniqueidentifier" Nullable="false" />
+          <Property Name="Username" Type="nvarchar" MaxLength="64" Nullable="false" />
+          <Property Name="SerializedEntityToken" Type="nvarchar(max)" Nullable="false" />
+        </EntityType>
+        <EntityType Name="Composite_Data_Types_IUserPermissionDefinitionPermissionType">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="uniqueidentifier" Nullable="false" />
+          <Property Name="UserPermissionDefinitionId" Type="uniqueidentifier" Nullable="false" />
+          <Property Name="PermissionTypeName" Type="nvarchar" MaxLength="64" Nullable="false" />
+        </EntityType>
+        <EntityType Name="Composite_Data_Types_IUserSettings">
+          <Key>
+            <PropertyRef Name="Username" />
+          </Key>
+          <Property Name="Username" Type="nvarchar" MaxLength="64" Nullable="false" />
+          <Property Name="CultureName" Type="nvarchar" MaxLength="16" Nullable="false" />
+          <Property Name="C1ConsoleUiLanguage" Type="nvarchar" MaxLength="16" Nullable="false" />
+          <Property Name="CurrentActiveLocaleCultureName" Type="nvarchar" MaxLength="16" />
+          <Property Name="ForeignLocaleCultureName" Type="nvarchar" MaxLength="16" />
+        </EntityType>
+        <EntityType Name="Composite_Data_Types_IUserUserGroupRelation">
+          <Key>
+            <PropertyRef Name="UserId" />
+            <PropertyRef Name="UserGroupId" />
+          </Key>
+          <Property Name="UserId" Type="uniqueidentifier" Nullable="false" />
+          <Property Name="UserGroupId" Type="uniqueidentifier" Nullable="false" />
+        </EntityType>
+        <EntityType Name="Composite_Data_Types_IVisualFunction">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="uniqueidentifier" Nullable="false" />
+          <Property Name="Name" Type="nvarchar" MaxLength="256" Nullable="false" />
+          <Property Name="Namespace" Type="nvarchar" MaxLength="512" Nullable="false" />
+          <Property Name="Description" Type="nvarchar" MaxLength="512" Nullable="false" />
+          <Property Name="TypeManagerName" Type="nvarchar" MaxLength="256" Nullable="false" />
+          <Property Name="XhtmlTemplate" Type="nvarchar(max)" Nullable="false" />
+          <Property Name="MaximumItemsToList" Type="int" Nullable="false" />
+          <Property Name="OrderbyFieldName" Type="nvarchar" MaxLength="64" Nullable="false" />
+          <Property Name="OrderbyAscending" Type="bit" Nullable="false" />
+        </EntityType>
+        <EntityType Name="Composite_Data_Types_IXmlPageTemplate">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="uniqueidentifier" Nullable="false" />
+          <Property Name="Title" Type="nvarchar" MaxLength="249" Nullable="false" />
+          <Property Name="PageTemplateFilePath" Type="nvarchar" MaxLength="255" Nullable="false" />
+        </EntityType>
+        <EntityType Name="Composite_Data_Types_IXsltFunction">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="uniqueidentifier" Nullable="false" />
+          <Property Name="Name" Type="nvarchar" MaxLength="256" Nullable="false" />
+          <Property Name="Namespace" Type="nvarchar" MaxLength="512" Nullable="false" />
+          <Property Name="Description" Type="nvarchar" MaxLength="512" Nullable="false" />
+          <Property Name="OutputXmlSubType" Type="nvarchar" MaxLength="32" Nullable="false" />
+          <Property Name="XslFilePath" Type="nvarchar" MaxLength="1024" Nullable="false" />
+        </EntityType>
+        <EntityType Name="Composite_Plugins_WebClient_SessionStateProviders_DefaultSessionStateProvider_ISessionStateEntry_Unpublished">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="uniqueidentifier" Nullable="false" />
+          <Property Name="ExpirationDate" Type="datetime" Nullable="false" />
+          <Property Name="SerializedValue" Type="nvarchar(max)" Nullable="false" />
+        </EntityType>
+        <EntityType Name="CompositeC1Contrib_Email_Data_Types_IBadMailMessage">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="SerializedMessage" Type="nvarchar(max)" Nullable="false" />
+          <Property Name="Id" Type="uniqueidentifier" Nullable="false" />
+          <Property Name="QueueId" Type="uniqueidentifier" Nullable="false" />
+          <Property Name="MailTemplateKey" Type="nvarchar" MaxLength="128" />
+          <Property Name="TimeStamp" Type="datetime" Nullable="false" />
+          <Property Name="Subject" Type="nvarchar" MaxLength="512" Nullable="false" />
+        </EntityType>
+        <EntityType Name="CompositeC1Contrib_Email_Data_Types_IEventBasic">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Event" Type="nvarchar" MaxLength="32" Nullable="false" />
+          <Property Name="Id" Type="uniqueidentifier" Nullable="false" />
+          <Property Name="MailMessageId" Type="uniqueidentifier" Nullable="false" />
+          <Property Name="Timestamp" Type="datetime" Nullable="false" />
+        </EntityType>
+        <EntityType Name="CompositeC1Contrib_Email_Data_Types_IEventClick">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Email" Type="nvarchar" MaxLength="254" Nullable="false" />
+          <Property Name="Url" Type="nvarchar(max)" Nullable="false" />
+          <Property Name="Id" Type="uniqueidentifier" Nullable="false" />
+          <Property Name="MailMessageId" Type="uniqueidentifier" Nullable="false" />
+          <Property Name="Timestamp" Type="datetime" Nullable="false" />
+        </EntityType>
+        <EntityType Name="CompositeC1Contrib_Email_Data_Types_IEventError">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Error" Type="nvarchar(max)" Nullable="false" />
+          <Property Name="Id" Type="uniqueidentifier" Nullable="false" />
+          <Property Name="MailMessageId" Type="uniqueidentifier" Nullable="false" />
+          <Property Name="Timestamp" Type="datetime" Nullable="false" />
+        </EntityType>
+        <EntityType Name="CompositeC1Contrib_Email_Data_Types_IEventOpen">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Email" Type="nvarchar" MaxLength="254" Nullable="false" />
+          <Property Name="Id" Type="uniqueidentifier" Nullable="false" />
+          <Property Name="MailMessageId" Type="uniqueidentifier" Nullable="false" />
+          <Property Name="Timestamp" Type="datetime" Nullable="false" />
+        </EntityType>
+        <EntityType Name="CompositeC1Contrib_Email_Data_Types_IMailTemplate">
+          <Key>
+            <PropertyRef Name="Key" />
+          </Key>
+          <Property Name="Key" Type="nvarchar" MaxLength="128" Nullable="false" />
+          <Property Name="ModelType" Type="nvarchar" MaxLength="512" />
+          <Property Name="EncryptMessage" Type="bit" Nullable="false" />
+          <Property Name="EncryptPassword" Type="nvarchar" MaxLength="256" />
+          <Property Name="From" Type="nvarchar" MaxLength="256" />
+          <Property Name="To" Type="nvarchar" MaxLength="256" />
+          <Property Name="Cc" Type="nvarchar" MaxLength="256" />
+          <Property Name="Bcc" Type="nvarchar" MaxLength="256" />
+        </EntityType>
+        <EntityType Name="CompositeC1Contrib_Email_Data_Types_IMailTemplateContent_en_AU">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="uniqueidentifier" Nullable="false" />
+          <Property Name="TemplateKey" Type="nvarchar" MaxLength="128" Nullable="false" />
+          <Property Name="Subject" Type="nvarchar" MaxLength="256" Nullable="false" />
+          <Property Name="Body" Type="nvarchar(max)" Nullable="false" />
+          <Property Name="SourceCultureName" Type="nvarchar" MaxLength="16" Nullable="false" />
+          <Property Name="From" Type="nvarchar" MaxLength="256" />
+          <Property Name="To" Type="nvarchar" MaxLength="256" />
+          <Property Name="Cc" Type="nvarchar" MaxLength="256" />
+          <Property Name="Bcc" Type="nvarchar" MaxLength="256" />
+        </EntityType>
+        <EntityType Name="CompositeC1Contrib_Email_Data_Types_IMailTemplateContent_km_KH">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="uniqueidentifier" Nullable="false" />
+          <Property Name="TemplateKey" Type="nvarchar" MaxLength="128" Nullable="false" />
+          <Property Name="Subject" Type="nvarchar" MaxLength="256" Nullable="false" />
+          <Property Name="Body" Type="nvarchar(max)" Nullable="false" />
+          <Property Name="SourceCultureName" Type="nvarchar" MaxLength="16" Nullable="false" />
+          <Property Name="From" Type="nvarchar" MaxLength="256" />
+          <Property Name="To" Type="nvarchar" MaxLength="256" />
+          <Property Name="Cc" Type="nvarchar" MaxLength="256" />
+          <Property Name="Bcc" Type="nvarchar" MaxLength="256" />
+        </EntityType>
+        <EntityType Name="CompositeC1Contrib_Email_Data_Types_IQueuedMailMessage">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="SerializedMessage" Type="nvarchar(max)" Nullable="false" />
+          <Property Name="Id" Type="uniqueidentifier" Nullable="false" />
+          <Property Name="QueueId" Type="uniqueidentifier" Nullable="false" />
+          <Property Name="MailTemplateKey" Type="nvarchar" MaxLength="128" />
+          <Property Name="TimeStamp" Type="datetime" Nullable="false" />
+          <Property Name="Subject" Type="nvarchar" MaxLength="512" Nullable="false" />
+        </EntityType>
+        <EntityType Name="CompositeC1Contrib_Email_Data_Types_ISentMailMessage">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="uniqueidentifier" Nullable="false" />
+          <Property Name="QueueId" Type="uniqueidentifier" Nullable="false" />
+          <Property Name="MailTemplateKey" Type="nvarchar" MaxLength="128" />
+          <Property Name="TimeStamp" Type="datetime" Nullable="false" />
+          <Property Name="Subject" Type="nvarchar" MaxLength="512" Nullable="false" />
+        </EntityType>
+        <EntityType Name="Content_ContentSpot">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="uniqueidentifier" Nullable="false" />
+          <Property Name="Title" Type="nvarchar" MaxLength="64" Nullable="false" />
+          <Property Name="Content" Type="nvarchar(max)" Nullable="false" />
+          <Property Name="PublicationStatus" Type="nvarchar" MaxLength="64" Nullable="false" />
+        </EntityType>
+        <EntityType Name="Content_ContentSpot_Unpublished">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="uniqueidentifier" Nullable="false" />
+          <Property Name="Title" Type="nvarchar" MaxLength="64" Nullable="false" />
+          <Property Name="Content" Type="nvarchar(max)" Nullable="false" />
+          <Property Name="PublicationStatus" Type="nvarchar" MaxLength="64" Nullable="false" />
+        </EntityType>
+        <EntityType Name="Demo_Country">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="uniqueidentifier" Nullable="false" />
+          <Property Name="Name" Type="nvarchar" MaxLength="128" Nullable="false" />
+          <Property Name="Code" Type="nvarchar" MaxLength="16" Nullable="false" />
+          <Property Name="PublicationStatus" Type="nvarchar" MaxLength="64" Nullable="false" />
+        </EntityType>
+        <EntityType Name="Demo_Country_Unpublished">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="uniqueidentifier" Nullable="false" />
+          <Property Name="Name" Type="nvarchar" MaxLength="128" Nullable="false" />
+          <Property Name="Code" Type="nvarchar" MaxLength="16" Nullable="false" />
+          <Property Name="PublicationStatus" Type="nvarchar" MaxLength="64" Nullable="false" />
+        </EntityType>
+        <EntityType Name="Demo_Ebook_FileUpload">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="uniqueidentifier" Nullable="false" />
+          <Property Name="FileName" Type="nvarchar" MaxLength="512" Nullable="false" />
+        </EntityType>
+        <EntityType Name="Demo_Page_Data">
+          <Key>
+            <PropertyRef Name="Id" />
+            <PropertyRef Name="VersionId" />
+          </Key>
+          <Property Name="RedirectTo" Type="uniqueidentifier" Nullable="false" />
+          <Property Name="PublicationStatus" Type="nvarchar" MaxLength="64" Nullable="false" />
+          <Property Name="Id" Type="uniqueidentifier" Nullable="false" />
+          <Property Name="PageId" Type="uniqueidentifier" Nullable="false" />
+          <Property Name="FieldName" Type="nvarchar" MaxLength="128" Nullable="false" />
+          <Property Name="VersionId" Type="uniqueidentifier" Nullable="false" />
+        </EntityType>
+        <EntityType Name="Demo_Page_Data_Unpublished">
+          <Key>
+            <PropertyRef Name="Id" />
+            <PropertyRef Name="VersionId" />
+          </Key>
+          <Property Name="RedirectTo" Type="uniqueidentifier" Nullable="false" />
+          <Property Name="PublicationStatus" Type="nvarchar" MaxLength="64" Nullable="false" />
+          <Property Name="Id" Type="uniqueidentifier" Nullable="false" />
+          <Property Name="PageId" Type="uniqueidentifier" Nullable="false" />
+          <Property Name="FieldName" Type="nvarchar" MaxLength="128" Nullable="false" />
+          <Property Name="VersionId" Type="uniqueidentifier" Nullable="false" />
+        </EntityType>
+        <EntityContainer Name="c1demoModelStoreContainer">
+          <EntitySet Name="Composite_Data_Types_ICompositionContainer" EntityType="Self.Composite_Data_Types_ICompositionContainer" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="Composite_Data_Types_ICustomFunctionCallEditorMapping" EntityType="Self.Composite_Data_Types_ICustomFunctionCallEditorMapping" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="Composite_Data_Types_IDataItemTreeAttachmentPoint" EntityType="Self.Composite_Data_Types_IDataItemTreeAttachmentPoint" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="Composite_Data_Types_IFlowInformation" EntityType="Self.Composite_Data_Types_IFlowInformation" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="Composite_Data_Types_IFolderWhiteList_Unpublished" EntityType="Self.Composite_Data_Types_IFolderWhiteList_Unpublished" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="Composite_Data_Types_IGeneratedTypeWhiteList_Unpublished" EntityType="Self.Composite_Data_Types_IGeneratedTypeWhiteList_Unpublished" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="Composite_Data_Types_IHostnameBinding" EntityType="Self.Composite_Data_Types_IHostnameBinding" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="Composite_Data_Types_IInlineFunction" EntityType="Self.Composite_Data_Types_IInlineFunction" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="Composite_Data_Types_IInlineFunctionAssemblyReference" EntityType="Self.Composite_Data_Types_IInlineFunctionAssemblyReference" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="Composite_Data_Types_ILockingInformation" EntityType="Self.Composite_Data_Types_ILockingInformation" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="Composite_Data_Types_IMediaFileData" EntityType="Self.Composite_Data_Types_IMediaFileData" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="Composite_Data_Types_IMediaFolderData" EntityType="Self.Composite_Data_Types_IMediaFolderData" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="Composite_Data_Types_IMethodBasedFunctionInfo" EntityType="Self.Composite_Data_Types_IMethodBasedFunctionInfo" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="Composite_Data_Types_INamedFunctionCall" EntityType="Self.Composite_Data_Types_INamedFunctionCall" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="Composite_Data_Types_IPackageServerSource" EntityType="Self.Composite_Data_Types_IPackageServerSource" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="Composite_Data_Types_IPage_en_AU" EntityType="Self.Composite_Data_Types_IPage_en_AU" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="Composite_Data_Types_IPage_km_KH" EntityType="Self.Composite_Data_Types_IPage_km_KH" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="Composite_Data_Types_IPage_Unpublished_en_AU" EntityType="Self.Composite_Data_Types_IPage_Unpublished_en_AU" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="Composite_Data_Types_IPage_Unpublished_km_KH" EntityType="Self.Composite_Data_Types_IPage_Unpublished_km_KH" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="Composite_Data_Types_IPageFolderDefinition" EntityType="Self.Composite_Data_Types_IPageFolderDefinition" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="Composite_Data_Types_IPageMetaDataDefinition" EntityType="Self.Composite_Data_Types_IPageMetaDataDefinition" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="Composite_Data_Types_IPagePlaceholderContent_en_AU" EntityType="Self.Composite_Data_Types_IPagePlaceholderContent_en_AU" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="Composite_Data_Types_IPagePlaceholderContent_km_KH" EntityType="Self.Composite_Data_Types_IPagePlaceholderContent_km_KH" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="Composite_Data_Types_IPagePlaceholderContent_Unpublished_en_AU" EntityType="Self.Composite_Data_Types_IPagePlaceholderContent_Unpublished_en_AU" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="Composite_Data_Types_IPagePlaceholderContent_Unpublished_km_KH" EntityType="Self.Composite_Data_Types_IPagePlaceholderContent_Unpublished_km_KH" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="Composite_Data_Types_IPageStructure" EntityType="Self.Composite_Data_Types_IPageStructure" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="Composite_Data_Types_IPageType" EntityType="Self.Composite_Data_Types_IPageType" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="Composite_Data_Types_IPageTypeDataFolderTypeLink" EntityType="Self.Composite_Data_Types_IPageTypeDataFolderTypeLink" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="Composite_Data_Types_IPageTypeDefaultPageContent" EntityType="Self.Composite_Data_Types_IPageTypeDefaultPageContent" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="Composite_Data_Types_IPageTypeMetaDataTypeLink" EntityType="Self.Composite_Data_Types_IPageTypeMetaDataTypeLink" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="Composite_Data_Types_IPageTypePageTemplateRestriction" EntityType="Self.Composite_Data_Types_IPageTypePageTemplateRestriction" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="Composite_Data_Types_IPageTypeParentRestriction" EntityType="Self.Composite_Data_Types_IPageTypeParentRestriction" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="Composite_Data_Types_IPageTypeTreeLink" EntityType="Self.Composite_Data_Types_IPageTypeTreeLink" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="Composite_Data_Types_IParameter" EntityType="Self.Composite_Data_Types_IParameter" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="Composite_Data_Types_IPublishSchedule_Unpublished" EntityType="Self.Composite_Data_Types_IPublishSchedule_Unpublished" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="Composite_Data_Types_ISearchEngineOptimizationKeyword_en_AU" EntityType="Self.Composite_Data_Types_ISearchEngineOptimizationKeyword_en_AU" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="Composite_Data_Types_ISearchEngineOptimizationKeyword_km_KH" EntityType="Self.Composite_Data_Types_ISearchEngineOptimizationKeyword_km_KH" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="Composite_Data_Types_ISqlConnection" EntityType="Self.Composite_Data_Types_ISqlConnection" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="Composite_Data_Types_ISqlFunctionInfo" EntityType="Self.Composite_Data_Types_ISqlFunctionInfo" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="Composite_Data_Types_ISystemActiveLocale" EntityType="Self.Composite_Data_Types_ISystemActiveLocale" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="Composite_Data_Types_ITaskItem" EntityType="Self.Composite_Data_Types_ITaskItem" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="Composite_Data_Types_IUnpublishSchedule_Unpublished" EntityType="Self.Composite_Data_Types_IUnpublishSchedule_Unpublished" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="Composite_Data_Types_IUrlConfiguration" EntityType="Self.Composite_Data_Types_IUrlConfiguration" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="Composite_Data_Types_IUser" EntityType="Self.Composite_Data_Types_IUser" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="Composite_Data_Types_IUserActiveLocale" EntityType="Self.Composite_Data_Types_IUserActiveLocale" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="Composite_Data_Types_IUserActivePerspective" EntityType="Self.Composite_Data_Types_IUserActivePerspective" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="Composite_Data_Types_IUserConsoleInformation" EntityType="Self.Composite_Data_Types_IUserConsoleInformation" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="Composite_Data_Types_IUserDeveloperSettings" EntityType="Self.Composite_Data_Types_IUserDeveloperSettings" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="Composite_Data_Types_IUserFormLogin" EntityType="Self.Composite_Data_Types_IUserFormLogin" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="Composite_Data_Types_IUserGroup" EntityType="Self.Composite_Data_Types_IUserGroup" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="Composite_Data_Types_IUserGroupActivePerspective" EntityType="Self.Composite_Data_Types_IUserGroupActivePerspective" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="Composite_Data_Types_IUserGroupPermissionDefinition" EntityType="Self.Composite_Data_Types_IUserGroupPermissionDefinition" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="Composite_Data_Types_IUserGroupPermissionDefinitionPermissionType" EntityType="Self.Composite_Data_Types_IUserGroupPermissionDefinitionPermissionType" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="Composite_Data_Types_IUserPasswordHistory" EntityType="Self.Composite_Data_Types_IUserPasswordHistory" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="Composite_Data_Types_IUserPermissionDefinition" EntityType="Self.Composite_Data_Types_IUserPermissionDefinition" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="Composite_Data_Types_IUserPermissionDefinitionPermissionType" EntityType="Self.Composite_Data_Types_IUserPermissionDefinitionPermissionType" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="Composite_Data_Types_IUserSettings" EntityType="Self.Composite_Data_Types_IUserSettings" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="Composite_Data_Types_IUserUserGroupRelation" EntityType="Self.Composite_Data_Types_IUserUserGroupRelation" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="Composite_Data_Types_IVisualFunction" EntityType="Self.Composite_Data_Types_IVisualFunction" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="Composite_Data_Types_IXmlPageTemplate" EntityType="Self.Composite_Data_Types_IXmlPageTemplate" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="Composite_Data_Types_IXsltFunction" EntityType="Self.Composite_Data_Types_IXsltFunction" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="Composite_Plugins_WebClient_SessionStateProviders_DefaultSessionStateProvider_ISessionStateEntry_Unpublished" EntityType="Self.Composite_Plugins_WebClient_SessionStateProviders_DefaultSessionStateProvider_ISessionStateEntry_Unpublished" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="CompositeC1Contrib_Email_Data_Types_IBadMailMessage" EntityType="Self.CompositeC1Contrib_Email_Data_Types_IBadMailMessage" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="CompositeC1Contrib_Email_Data_Types_IEventBasic" EntityType="Self.CompositeC1Contrib_Email_Data_Types_IEventBasic" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="CompositeC1Contrib_Email_Data_Types_IEventClick" EntityType="Self.CompositeC1Contrib_Email_Data_Types_IEventClick" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="CompositeC1Contrib_Email_Data_Types_IEventError" EntityType="Self.CompositeC1Contrib_Email_Data_Types_IEventError" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="CompositeC1Contrib_Email_Data_Types_IEventOpen" EntityType="Self.CompositeC1Contrib_Email_Data_Types_IEventOpen" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="CompositeC1Contrib_Email_Data_Types_IMailTemplate" EntityType="Self.CompositeC1Contrib_Email_Data_Types_IMailTemplate" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="CompositeC1Contrib_Email_Data_Types_IMailTemplateContent_en_AU" EntityType="Self.CompositeC1Contrib_Email_Data_Types_IMailTemplateContent_en_AU" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="CompositeC1Contrib_Email_Data_Types_IMailTemplateContent_km_KH" EntityType="Self.CompositeC1Contrib_Email_Data_Types_IMailTemplateContent_km_KH" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="CompositeC1Contrib_Email_Data_Types_IQueuedMailMessage" EntityType="Self.CompositeC1Contrib_Email_Data_Types_IQueuedMailMessage" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="CompositeC1Contrib_Email_Data_Types_ISentMailMessage" EntityType="Self.CompositeC1Contrib_Email_Data_Types_ISentMailMessage" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="Content_ContentSpot" EntityType="Self.Content_ContentSpot" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="Content_ContentSpot_Unpublished" EntityType="Self.Content_ContentSpot_Unpublished" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="Demo_Country" EntityType="Self.Demo_Country" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="Demo_Country_Unpublished" EntityType="Self.Demo_Country_Unpublished" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="Demo_Ebook_FileUpload" EntityType="Self.Demo_Ebook_FileUpload" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="Demo_Page_Data" EntityType="Self.Demo_Page_Data" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="Demo_Page_Data_Unpublished" EntityType="Self.Demo_Page_Data_Unpublished" Schema="dbo" store:Type="Tables" />
+        </EntityContainer>
+      </Schema>
+    </edmx:StorageModels>
+    <!-- CSDL content -->
+    <edmx:ConceptualModels>
+      <Schema Namespace="c1demoModel" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+        <EntityType Name="Composite_Data_Types_ICompositionContainer">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="Guid" Nullable="false" />
+          <Property Name="Label" Type="String" MaxLength="256" FixedLength="false" Unicode="true" Nullable="false" />
+        </EntityType>
+        <EntityType Name="Composite_Data_Types_ICustomFunctionCallEditorMapping">
+          <Key>
+            <PropertyRef Name="FunctionName" />
+          </Key>
+          <Property Name="FunctionName" Type="String" MaxLength="255" FixedLength="false" Unicode="true" Nullable="false" />
+          <Property Name="CustomEditorPath" Type="String" MaxLength="255" FixedLength="false" Unicode="true" Nullable="false" />
+          <Property Name="Width" Type="Int32" />
+          <Property Name="Height" Type="Int32" />
+        </EntityType>
+        <EntityType Name="Composite_Data_Types_IDataItemTreeAttachmentPoint">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="Guid" Nullable="false" />
+          <Property Name="TreeId" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" Nullable="false" />
+          <Property Name="Position" Type="String" MaxLength="64" FixedLength="false" Unicode="true" Nullable="false" />
+          <Property Name="InterfaceType" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" Nullable="false" />
+          <Property Name="KeyValue" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" Nullable="false" />
+        </EntityType>
+        <EntityType Name="Composite_Data_Types_IFlowInformation">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="Guid" Nullable="false" />
+          <Property Name="Username" Type="String" MaxLength="64" FixedLength="false" Unicode="true" Nullable="false" />
+          <Property Name="ConsoleId" Type="String" MaxLength="64" FixedLength="false" Unicode="true" Nullable="false" />
+          <Property Name="SerializedFlowToken" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" Nullable="false" />
+          <Property Name="SerializedEntityToken" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" Nullable="false" />
+          <Property Name="SerializedActionToken" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" Nullable="false" />
+          <Property Name="TimeStamp" Type="DateTime" Nullable="false" Precision="3" />
+        </EntityType>
+        <EntityType Name="Composite_Data_Types_IFolderWhiteList_Unpublished">
+          <Key>
+            <PropertyRef Name="KeyName" />
+            <PropertyRef Name="TildeBasedPath" />
+          </Key>
+          <Property Name="KeyName" Type="String" MaxLength="128" FixedLength="false" Unicode="true" Nullable="false" />
+          <Property Name="TildeBasedPath" Type="String" MaxLength="512" FixedLength="false" Unicode="true" Nullable="false" />
+        </EntityType>
+        <EntityType Name="Composite_Data_Types_IGeneratedTypeWhiteList_Unpublished">
+          <Key>
+            <PropertyRef Name="TypeManagerTypeName" />
+          </Key>
+          <Property Name="TypeManagerTypeName" Type="String" MaxLength="256" FixedLength="false" Unicode="true" Nullable="false" />
+        </EntityType>
+        <EntityType Name="Composite_Data_Types_IHostnameBinding">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="Guid" Nullable="false" />
+          <Property Name="Hostname" Type="String" MaxLength="255" FixedLength="false" Unicode="true" Nullable="false" />
+          <Property Name="Culture" Type="String" MaxLength="64" FixedLength="false" Unicode="true" Nullable="false" />
+          <Property Name="HomePageId" Type="Guid" Nullable="false" />
+          <Property Name="PageNotFoundUrl" Type="String" MaxLength="255" FixedLength="false" Unicode="true" />
+          <Property Name="Aliases" Type="String" MaxLength="512" FixedLength="false" Unicode="true" />
+          <Property Name="IncludeHomePageInUrl" Type="Boolean" Nullable="false" />
+          <Property Name="IncludeCultureInUrl" Type="Boolean" Nullable="false" />
+          <Property Name="EnforceHttps" Type="Boolean" Nullable="false" />
+        </EntityType>
+        <EntityType Name="Composite_Data_Types_IInlineFunction">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="Guid" Nullable="false" />
+          <Property Name="Name" Type="String" MaxLength="128" FixedLength="false" Unicode="true" Nullable="false" />
+          <Property Name="Namespace" Type="String" MaxLength="128" FixedLength="false" Unicode="true" Nullable="false" />
+          <Property Name="Description" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" Nullable="false" />
+          <Property Name="CodePath" Type="String" MaxLength="512" FixedLength="false" Unicode="true" Nullable="false" />
+        </EntityType>
+        <EntityType Name="Composite_Data_Types_IInlineFunctionAssemblyReference">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="Guid" Nullable="false" />
+          <Property Name="Function" Type="Guid" Nullable="false" />
+          <Property Name="Name" Type="String" MaxLength="128" FixedLength="false" Unicode="true" Nullable="false" />
+          <Property Name="Location" Type="String" MaxLength="128" FixedLength="false" Unicode="true" Nullable="false" />
+        </EntityType>
+        <EntityType Name="Composite_Data_Types_ILockingInformation">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="Guid" Nullable="false" />
+          <Property Name="SerializedEntityToken" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" Nullable="false" />
+          <Property Name="SerializedOwnerId" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" Nullable="false" />
+          <Property Name="Username" Type="String" MaxLength="64" FixedLength="false" Unicode="true" Nullable="false" />
+        </EntityType>
+        <EntityType Name="Composite_Data_Types_IMediaFileData">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="Guid" Nullable="false" />
+          <Property Name="FolderPath" Type="String" MaxLength="2048" FixedLength="false" Unicode="true" Nullable="false" />
+          <Property Name="FileName" Type="String" MaxLength="2048" FixedLength="false" Unicode="true" Nullable="false" />
+          <Property Name="Title" Type="String" MaxLength="256" FixedLength="false" Unicode="true" />
+          <Property Name="Description" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+          <Property Name="Tags" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+          <Property Name="CultureInfo" Type="String" MaxLength="128" FixedLength="false" Unicode="true" />
+          <Property Name="MimeType" Type="String" MaxLength="256" FixedLength="false" Unicode="true" />
+          <Property Name="Length" Type="Int32" />
+          <Property Name="CreationTime" Type="DateTime" Precision="3" />
+          <Property Name="LastWriteTime" Type="DateTime" Precision="3" />
+        </EntityType>
+        <EntityType Name="Composite_Data_Types_IMediaFolderData">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="Guid" Nullable="false" />
+          <Property Name="Path" Type="String" MaxLength="2048" FixedLength="false" Unicode="true" Nullable="false" />
+          <Property Name="Title" Type="String" MaxLength="256" FixedLength="false" Unicode="true" />
+          <Property Name="Description" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+        </EntityType>
+        <EntityType Name="Composite_Data_Types_IMethodBasedFunctionInfo">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="Guid" Nullable="false" />
+          <Property Name="Type" Type="String" MaxLength="512" FixedLength="false" Unicode="true" Nullable="false" />
+          <Property Name="MethodName" Type="String" MaxLength="64" FixedLength="false" Unicode="true" Nullable="false" />
+          <Property Name="Namespace" Type="String" MaxLength="512" FixedLength="false" Unicode="true" Nullable="false" />
+          <Property Name="UserMethodName" Type="String" MaxLength="64" FixedLength="false" Unicode="true" Nullable="false" />
+        </EntityType>
+        <EntityType Name="Composite_Data_Types_INamedFunctionCall">
+          <Key>
+            <PropertyRef Name="XsltFunctionId" />
+            <PropertyRef Name="Name" />
+          </Key>
+          <Property Name="XsltFunctionId" Type="Guid" Nullable="false" />
+          <Property Name="Name" Type="String" MaxLength="256" FixedLength="false" Unicode="true" Nullable="false" />
+          <Property Name="SerializedFunction" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" Nullable="false" />
+        </EntityType>
+        <EntityType Name="Composite_Data_Types_IPackageServerSource">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="Guid" Nullable="false" />
+          <Property Name="Url" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" Nullable="false" />
+        </EntityType>
+        <EntityType Name="Composite_Data_Types_IPage_en_AU">
+          <Key>
+            <PropertyRef Name="Id" />
+            <PropertyRef Name="VersionId" />
+          </Key>
+          <Property Name="PublicationStatus" Type="String" MaxLength="64" FixedLength="false" Unicode="true" Nullable="false" />
+          <Property Name="ChangeDate" Type="DateTime" Nullable="false" Precision="3" />
+          <Property Name="CreationDate" Type="DateTime" Nullable="false" Precision="3" />
+          <Property Name="ChangedBy" Type="String" MaxLength="64" FixedLength="false" Unicode="true" />
+          <Property Name="CreatedBy" Type="String" MaxLength="64" FixedLength="false" Unicode="true" />
+          <Property Name="Id" Type="Guid" Nullable="false" />
+          <Property Name="TemplateId" Type="Guid" Nullable="false" />
+          <Property Name="PageTypeId" Type="Guid" Nullable="false" />
+          <Property Name="Title" Type="String" MaxLength="255" FixedLength="false" Unicode="true" Nullable="false" />
+          <Property Name="MenuTitle" Type="String" MaxLength="64" FixedLength="false" Unicode="true" />
+          <Property Name="UrlTitle" Type="String" MaxLength="192" FixedLength="false" Unicode="true" Nullable="false" />
+          <Property Name="FriendlyUrl" Type="String" MaxLength="192" FixedLength="false" Unicode="true" />
+          <Property Name="Description" Type="String" MaxLength="1024" FixedLength="false" Unicode="true" />
+          <Property Name="SourceCultureName" Type="String" MaxLength="16" FixedLength="false" Unicode="true" Nullable="false" />
+          <Property Name="VersionId" Type="Guid" Nullable="false" />
+        </EntityType>
+        <EntityType Name="Composite_Data_Types_IPage_km_KH">
+          <Key>
+            <PropertyRef Name="Id" />
+            <PropertyRef Name="VersionId" />
+          </Key>
+          <Property Name="PublicationStatus" Type="String" MaxLength="64" FixedLength="false" Unicode="true" Nullable="false" />
+          <Property Name="ChangeDate" Type="DateTime" Nullable="false" Precision="3" />
+          <Property Name="CreationDate" Type="DateTime" Nullable="false" Precision="3" />
+          <Property Name="ChangedBy" Type="String" MaxLength="64" FixedLength="false" Unicode="true" />
+          <Property Name="CreatedBy" Type="String" MaxLength="64" FixedLength="false" Unicode="true" />
+          <Property Name="Id" Type="Guid" Nullable="false" />
+          <Property Name="TemplateId" Type="Guid" Nullable="false" />
+          <Property Name="PageTypeId" Type="Guid" Nullable="false" />
+          <Property Name="Title" Type="String" MaxLength="255" FixedLength="false" Unicode="true" Nullable="false" />
+          <Property Name="MenuTitle" Type="String" MaxLength="64" FixedLength="false" Unicode="true" />
+          <Property Name="UrlTitle" Type="String" MaxLength="192" FixedLength="false" Unicode="true" Nullable="false" />
+          <Property Name="FriendlyUrl" Type="String" MaxLength="192" FixedLength="false" Unicode="true" />
+          <Property Name="Description" Type="String" MaxLength="1024" FixedLength="false" Unicode="true" />
+          <Property Name="SourceCultureName" Type="String" MaxLength="16" FixedLength="false" Unicode="true" Nullable="false" />
+          <Property Name="VersionId" Type="Guid" Nullable="false" />
+        </EntityType>
+        <EntityType Name="Composite_Data_Types_IPage_Unpublished_en_AU">
+          <Key>
+            <PropertyRef Name="Id" />
+            <PropertyRef Name="VersionId" />
+          </Key>
+          <Property Name="PublicationStatus" Type="String" MaxLength="64" FixedLength="false" Unicode="true" Nullable="false" />
+          <Property Name="ChangeDate" Type="DateTime" Nullable="false" Precision="3" />
+          <Property Name="CreationDate" Type="DateTime" Nullable="false" Precision="3" />
+          <Property Name="ChangedBy" Type="String" MaxLength="64" FixedLength="false" Unicode="true" />
+          <Property Name="CreatedBy" Type="String" MaxLength="64" FixedLength="false" Unicode="true" />
+          <Property Name="Id" Type="Guid" Nullable="false" />
+          <Property Name="TemplateId" Type="Guid" Nullable="false" />
+          <Property Name="PageTypeId" Type="Guid" Nullable="false" />
+          <Property Name="Title" Type="String" MaxLength="255" FixedLength="false" Unicode="true" Nullable="false" />
+          <Property Name="MenuTitle" Type="String" MaxLength="64" FixedLength="false" Unicode="true" />
+          <Property Name="UrlTitle" Type="String" MaxLength="192" FixedLength="false" Unicode="true" Nullable="false" />
+          <Property Name="FriendlyUrl" Type="String" MaxLength="192" FixedLength="false" Unicode="true" />
+          <Property Name="Description" Type="String" MaxLength="1024" FixedLength="false" Unicode="true" />
+          <Property Name="SourceCultureName" Type="String" MaxLength="16" FixedLength="false" Unicode="true" Nullable="false" />
+          <Property Name="VersionId" Type="Guid" Nullable="false" />
+        </EntityType>
+        <EntityType Name="Composite_Data_Types_IPage_Unpublished_km_KH">
+          <Key>
+            <PropertyRef Name="Id" />
+            <PropertyRef Name="VersionId" />
+          </Key>
+          <Property Name="PublicationStatus" Type="String" MaxLength="64" FixedLength="false" Unicode="true" Nullable="false" />
+          <Property Name="ChangeDate" Type="DateTime" Nullable="false" Precision="3" />
+          <Property Name="CreationDate" Type="DateTime" Nullable="false" Precision="3" />
+          <Property Name="ChangedBy" Type="String" MaxLength="64" FixedLength="false" Unicode="true" />
+          <Property Name="CreatedBy" Type="String" MaxLength="64" FixedLength="false" Unicode="true" />
+          <Property Name="Id" Type="Guid" Nullable="false" />
+          <Property Name="TemplateId" Type="Guid" Nullable="false" />
+          <Property Name="PageTypeId" Type="Guid" Nullable="false" />
+          <Property Name="Title" Type="String" MaxLength="255" FixedLength="false" Unicode="true" Nullable="false" />
+          <Property Name="MenuTitle" Type="String" MaxLength="64" FixedLength="false" Unicode="true" />
+          <Property Name="UrlTitle" Type="String" MaxLength="192" FixedLength="false" Unicode="true" Nullable="false" />
+          <Property Name="FriendlyUrl" Type="String" MaxLength="192" FixedLength="false" Unicode="true" />
+          <Property Name="Description" Type="String" MaxLength="1024" FixedLength="false" Unicode="true" />
+          <Property Name="SourceCultureName" Type="String" MaxLength="16" FixedLength="false" Unicode="true" Nullable="false" />
+          <Property Name="VersionId" Type="Guid" Nullable="false" />
+        </EntityType>
+        <EntityType Name="Composite_Data_Types_IPageFolderDefinition">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="Guid" Nullable="false" />
+          <Property Name="PageId" Type="Guid" Nullable="false" />
+          <Property Name="FolderTypeId" Type="Guid" Nullable="false" />
+        </EntityType>
+        <EntityType Name="Composite_Data_Types_IPageMetaDataDefinition">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="Guid" Nullable="false" />
+          <Property Name="DefiningItemId" Type="Guid" Nullable="false" />
+          <Property Name="Name" Type="String" MaxLength="128" FixedLength="false" Unicode="true" Nullable="false" />
+          <Property Name="Label" Type="String" MaxLength="256" FixedLength="false" Unicode="true" Nullable="false" />
+          <Property Name="MetaDataContainerId" Type="Guid" Nullable="false" />
+          <Property Name="MetaDataTypeId" Type="Guid" Nullable="false" />
+          <Property Name="StartLevel" Type="Int32" Nullable="false" />
+          <Property Name="Levels" Type="Int32" Nullable="false" />
+        </EntityType>
+        <EntityType Name="Composite_Data_Types_IPagePlaceholderContent_en_AU">
+          <Key>
+            <PropertyRef Name="PageId" />
+            <PropertyRef Name="PlaceHolderId" />
+            <PropertyRef Name="VersionId" />
+          </Key>
+          <Property Name="PublicationStatus" Type="String" MaxLength="64" FixedLength="false" Unicode="true" Nullable="false" />
+          <Property Name="ChangeDate" Type="DateTime" Nullable="false" Precision="3" />
+          <Property Name="CreationDate" Type="DateTime" Nullable="false" Precision="3" />
+          <Property Name="ChangedBy" Type="String" MaxLength="64" FixedLength="false" Unicode="true" />
+          <Property Name="CreatedBy" Type="String" MaxLength="64" FixedLength="false" Unicode="true" />
+          <Property Name="PageId" Type="Guid" Nullable="false" />
+          <Property Name="PlaceHolderId" Type="String" MaxLength="255" FixedLength="false" Unicode="true" Nullable="false" />
+          <Property Name="Content" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" Nullable="false" />
+          <Property Name="SourceCultureName" Type="String" MaxLength="16" FixedLength="false" Unicode="true" Nullable="false" />
+          <Property Name="VersionId" Type="Guid" Nullable="false" />
+        </EntityType>
+        <EntityType Name="Composite_Data_Types_IPagePlaceholderContent_km_KH">
+          <Key>
+            <PropertyRef Name="PageId" />
+            <PropertyRef Name="PlaceHolderId" />
+            <PropertyRef Name="VersionId" />
+          </Key>
+          <Property Name="PublicationStatus" Type="String" MaxLength="64" FixedLength="false" Unicode="true" Nullable="false" />
+          <Property Name="ChangeDate" Type="DateTime" Nullable="false" Precision="3" />
+          <Property Name="CreationDate" Type="DateTime" Nullable="false" Precision="3" />
+          <Property Name="ChangedBy" Type="String" MaxLength="64" FixedLength="false" Unicode="true" />
+          <Property Name="CreatedBy" Type="String" MaxLength="64" FixedLength="false" Unicode="true" />
+          <Property Name="PageId" Type="Guid" Nullable="false" />
+          <Property Name="PlaceHolderId" Type="String" MaxLength="255" FixedLength="false" Unicode="true" Nullable="false" />
+          <Property Name="Content" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" Nullable="false" />
+          <Property Name="SourceCultureName" Type="String" MaxLength="16" FixedLength="false" Unicode="true" Nullable="false" />
+          <Property Name="VersionId" Type="Guid" Nullable="false" />
+        </EntityType>
+        <EntityType Name="Composite_Data_Types_IPagePlaceholderContent_Unpublished_en_AU">
+          <Key>
+            <PropertyRef Name="PageId" />
+            <PropertyRef Name="PlaceHolderId" />
+            <PropertyRef Name="VersionId" />
+          </Key>
+          <Property Name="PublicationStatus" Type="String" MaxLength="64" FixedLength="false" Unicode="true" Nullable="false" />
+          <Property Name="ChangeDate" Type="DateTime" Nullable="false" Precision="3" />
+          <Property Name="CreationDate" Type="DateTime" Nullable="false" Precision="3" />
+          <Property Name="ChangedBy" Type="String" MaxLength="64" FixedLength="false" Unicode="true" />
+          <Property Name="CreatedBy" Type="String" MaxLength="64" FixedLength="false" Unicode="true" />
+          <Property Name="PageId" Type="Guid" Nullable="false" />
+          <Property Name="PlaceHolderId" Type="String" MaxLength="255" FixedLength="false" Unicode="true" Nullable="false" />
+          <Property Name="Content" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" Nullable="false" />
+          <Property Name="SourceCultureName" Type="String" MaxLength="16" FixedLength="false" Unicode="true" Nullable="false" />
+          <Property Name="VersionId" Type="Guid" Nullable="false" />
+        </EntityType>
+        <EntityType Name="Composite_Data_Types_IPagePlaceholderContent_Unpublished_km_KH">
+          <Key>
+            <PropertyRef Name="PageId" />
+            <PropertyRef Name="PlaceHolderId" />
+            <PropertyRef Name="VersionId" />
+          </Key>
+          <Property Name="PublicationStatus" Type="String" MaxLength="64" FixedLength="false" Unicode="true" Nullable="false" />
+          <Property Name="ChangeDate" Type="DateTime" Nullable="false" Precision="3" />
+          <Property Name="CreationDate" Type="DateTime" Nullable="false" Precision="3" />
+          <Property Name="ChangedBy" Type="String" MaxLength="64" FixedLength="false" Unicode="true" />
+          <Property Name="CreatedBy" Type="String" MaxLength="64" FixedLength="false" Unicode="true" />
+          <Property Name="PageId" Type="Guid" Nullable="false" />
+          <Property Name="PlaceHolderId" Type="String" MaxLength="255" FixedLength="false" Unicode="true" Nullable="false" />
+          <Property Name="Content" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" Nullable="false" />
+          <Property Name="SourceCultureName" Type="String" MaxLength="16" FixedLength="false" Unicode="true" Nullable="false" />
+          <Property Name="VersionId" Type="Guid" Nullable="false" />
+        </EntityType>
+        <EntityType Name="Composite_Data_Types_IPageStructure">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="Guid" Nullable="false" />
+          <Property Name="ParentId" Type="Guid" Nullable="false" />
+          <Property Name="LocalOrdering" Type="Int32" Nullable="false" />
+        </EntityType>
+        <EntityType Name="Composite_Data_Types_IPageType">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="Guid" Nullable="false" />
+          <Property Name="Name" Type="String" MaxLength="256" FixedLength="false" Unicode="true" Nullable="false" />
+          <Property Name="Description" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" Nullable="false" />
+          <Property Name="Available" Type="Boolean" Nullable="false" />
+          <Property Name="PresetMenuTitle" Type="Boolean" Nullable="false" />
+          <Property Name="DefaultTemplateId" Type="Guid" Nullable="false" />
+          <Property Name="HomepageRelation" Type="String" MaxLength="64" FixedLength="false" Unicode="true" Nullable="false" />
+          <Property Name="DefaultChildPageType" Type="Guid" Nullable="false" />
+        </EntityType>
+        <EntityType Name="Composite_Data_Types_IPageTypeDataFolderTypeLink">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="Guid" Nullable="false" />
+          <Property Name="PageTypeId" Type="Guid" Nullable="false" />
+          <Property Name="DataTypeId" Type="Guid" Nullable="false" />
+        </EntityType>
+        <EntityType Name="Composite_Data_Types_IPageTypeDefaultPageContent">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="Guid" Nullable="false" />
+          <Property Name="PageTypeId" Type="Guid" Nullable="false" />
+          <Property Name="PlaceHolderId" Type="String" MaxLength="255" FixedLength="false" Unicode="true" Nullable="false" />
+          <Property Name="Content" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" Nullable="false" />
+          <Property Name="ContainerClasses" Type="String" MaxLength="64" FixedLength="false" Unicode="true" />
+        </EntityType>
+        <EntityType Name="Composite_Data_Types_IPageTypeMetaDataTypeLink">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="Guid" Nullable="false" />
+          <Property Name="PageTypeId" Type="Guid" Nullable="false" />
+          <Property Name="DataTypeId" Type="Guid" Nullable="false" />
+          <Property Name="Name" Type="String" MaxLength="128" FixedLength="false" Unicode="true" Nullable="false" />
+        </EntityType>
+        <EntityType Name="Composite_Data_Types_IPageTypePageTemplateRestriction">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="Guid" Nullable="false" />
+          <Property Name="PageTypeId" Type="Guid" Nullable="false" />
+          <Property Name="PageTemplateId" Type="Guid" Nullable="false" />
+        </EntityType>
+        <EntityType Name="Composite_Data_Types_IPageTypeParentRestriction">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="Guid" Nullable="false" />
+          <Property Name="PageTypeId" Type="Guid" Nullable="false" />
+          <Property Name="AllowedParentPageTypeId" Type="Guid" Nullable="false" />
+        </EntityType>
+        <EntityType Name="Composite_Data_Types_IPageTypeTreeLink">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="Guid" Nullable="false" />
+          <Property Name="PageTypeId" Type="Guid" Nullable="false" />
+          <Property Name="TreeId" Type="String" MaxLength="2048" FixedLength="false" Unicode="true" Nullable="false" />
+        </EntityType>
+        <EntityType Name="Composite_Data_Types_IParameter">
+          <Key>
+            <PropertyRef Name="OwnerId" />
+            <PropertyRef Name="ParameterId" />
+          </Key>
+          <Property Name="OwnerId" Type="Guid" Nullable="false" />
+          <Property Name="ParameterId" Type="Guid" Nullable="false" />
+          <Property Name="Name" Type="String" MaxLength="128" FixedLength="false" Unicode="true" Nullable="false" />
+          <Property Name="Label" Type="String" MaxLength="128" FixedLength="false" Unicode="true" Nullable="false" />
+          <Property Name="HelpText" Type="String" MaxLength="512" FixedLength="false" Unicode="true" Nullable="false" />
+          <Property Name="Position" Type="Int32" Nullable="false" />
+          <Property Name="TypeManagerName" Type="String" MaxLength="512" FixedLength="false" Unicode="true" Nullable="false" />
+          <Property Name="WidgetFunctionMarkup" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+          <Property Name="DefaultValueFunctionMarkup" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+          <Property Name="TestValueFunctionMarkup" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+        </EntityType>
+        <EntityType Name="Composite_Data_Types_IPublishSchedule_Unpublished">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="PublishDate" Type="DateTime" Nullable="false" Precision="3" />
+          <Property Name="Id" Type="Guid" Nullable="false" />
+          <Property Name="DataTypeId" Type="Guid" Nullable="false" />
+          <Property Name="DataId" Type="String" MaxLength="512" FixedLength="false" Unicode="true" Nullable="false" />
+          <Property Name="WorkflowInstanceId" Type="Guid" Nullable="false" />
+          <Property Name="LocaleCultureName" Type="String" MaxLength="16" FixedLength="false" Unicode="true" Nullable="false" />
+        </EntityType>
+        <EntityType Name="Composite_Data_Types_ISearchEngineOptimizationKeyword_en_AU">
+          <Key>
+            <PropertyRef Name="Keyword" />
+          </Key>
+          <Property Name="Keyword" Type="String" MaxLength="128" FixedLength="false" Unicode="true" Nullable="false" />
+          <Property Name="SourceCultureName" Type="String" MaxLength="16" FixedLength="false" Unicode="true" Nullable="false" />
+        </EntityType>
+        <EntityType Name="Composite_Data_Types_ISearchEngineOptimizationKeyword_km_KH">
+          <Key>
+            <PropertyRef Name="Keyword" />
+          </Key>
+          <Property Name="Keyword" Type="String" MaxLength="128" FixedLength="false" Unicode="true" Nullable="false" />
+          <Property Name="SourceCultureName" Type="String" MaxLength="16" FixedLength="false" Unicode="true" Nullable="false" />
+        </EntityType>
+        <EntityType Name="Composite_Data_Types_ISqlConnection">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="Guid" Nullable="false" />
+          <Property Name="IsMsSql" Type="Boolean" Nullable="false" />
+          <Property Name="EncryptedConnectionString" Type="String" MaxLength="1024" FixedLength="false" Unicode="true" Nullable="false" />
+          <Property Name="Name" Type="String" MaxLength="255" FixedLength="false" Unicode="true" Nullable="false" />
+        </EntityType>
+        <EntityType Name="Composite_Data_Types_ISqlFunctionInfo">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="Guid" Nullable="false" />
+          <Property Name="Name" Type="String" MaxLength="255" FixedLength="false" Unicode="true" Nullable="false" />
+          <Property Name="ConnectionId" Type="Guid" Nullable="false" />
+          <Property Name="IsStoredProcedure" Type="Boolean" Nullable="false" />
+          <Property Name="ReturnsXml" Type="Boolean" Nullable="false" />
+          <Property Name="IsQuery" Type="Boolean" Nullable="false" />
+          <Property Name="Command" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" Nullable="false" />
+          <Property Name="Namespace" Type="String" MaxLength="255" FixedLength="false" Unicode="true" Nullable="false" />
+          <Property Name="Description" Type="String" MaxLength="512" FixedLength="false" Unicode="true" Nullable="false" />
+        </EntityType>
+        <EntityType Name="Composite_Data_Types_ISystemActiveLocale">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="Guid" Nullable="false" />
+          <Property Name="CultureName" Type="String" MaxLength="16" FixedLength="false" Unicode="true" Nullable="false" />
+          <Property Name="UrlMappingName" Type="String" MaxLength="64" FixedLength="false" Unicode="true" Nullable="false" />
+          <Property Name="IsDefault" Type="Boolean" Nullable="false" />
+        </EntityType>
+        <EntityType Name="Composite_Data_Types_ITaskItem">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="Guid" Nullable="false" />
+          <Property Name="TaskId" Type="String" MaxLength="255" FixedLength="false" Unicode="true" Nullable="false" />
+          <Property Name="TaskManagerType" Type="String" MaxLength="2048" FixedLength="false" Unicode="true" Nullable="false" />
+          <Property Name="SerializedFlowToken" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" Nullable="false" />
+          <Property Name="StartTime" Type="DateTime" Nullable="false" Precision="3" />
+        </EntityType>
+        <EntityType Name="Composite_Data_Types_IUnpublishSchedule_Unpublished">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="UnpublishDate" Type="DateTime" Nullable="false" Precision="3" />
+          <Property Name="Id" Type="Guid" Nullable="false" />
+          <Property Name="DataTypeId" Type="Guid" Nullable="false" />
+          <Property Name="DataId" Type="String" MaxLength="512" FixedLength="false" Unicode="true" Nullable="false" />
+          <Property Name="WorkflowInstanceId" Type="Guid" Nullable="false" />
+          <Property Name="LocaleCultureName" Type="String" MaxLength="16" FixedLength="false" Unicode="true" Nullable="false" />
+        </EntityType>
+        <EntityType Name="Composite_Data_Types_IUrlConfiguration">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="Guid" Nullable="false" />
+          <Property Name="PageUrlSuffix" Type="String" MaxLength="255" FixedLength="false" Unicode="true" Nullable="false" />
+        </EntityType>
+        <EntityType Name="Composite_Data_Types_IUser">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="Guid" Nullable="false" />
+          <Property Name="Username" Type="String" MaxLength="64" FixedLength="false" Unicode="true" Nullable="false" />
+          <Property Name="Name" Type="String" MaxLength="128" FixedLength="false" Unicode="true" />
+          <Property Name="Email" Type="String" MaxLength="128" FixedLength="false" Unicode="true" />
+          <Property Name="Group" Type="String" MaxLength="64" FixedLength="false" Unicode="true" />
+          <Property Name="IsLocked" Type="Boolean" Nullable="false" />
+          <Property Name="LockoutReason" Type="Int32" Nullable="false" />
+          <Property Name="EncryptedPassword" Type="String" MaxLength="256" FixedLength="false" Unicode="true" />
+          <Property Name="PasswordHashSalt" Type="String" MaxLength="128" FixedLength="false" Unicode="true" />
+          <Property Name="LastPasswordChangeDate" Type="DateTime" Nullable="false" Precision="3" />
+        </EntityType>
+        <EntityType Name="Composite_Data_Types_IUserActiveLocale">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="Guid" Nullable="false" />
+          <Property Name="Username" Type="String" MaxLength="64" FixedLength="false" Unicode="true" Nullable="false" />
+          <Property Name="CultureName" Type="String" MaxLength="16" FixedLength="false" Unicode="true" Nullable="false" />
+        </EntityType>
+        <EntityType Name="Composite_Data_Types_IUserActivePerspective">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="Guid" Nullable="false" />
+          <Property Name="Username" Type="String" MaxLength="128" FixedLength="false" Unicode="true" Nullable="false" />
+          <Property Name="SerializedEntityToken" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" Nullable="false" />
+        </EntityType>
+        <EntityType Name="Composite_Data_Types_IUserConsoleInformation">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="Guid" Nullable="false" />
+          <Property Name="Username" Type="String" MaxLength="64" FixedLength="false" Unicode="true" Nullable="false" />
+          <Property Name="ConsoleId" Type="String" MaxLength="64" FixedLength="false" Unicode="true" Nullable="false" />
+          <Property Name="TimeStamp" Type="DateTime" Nullable="false" Precision="3" />
+        </EntityType>
+        <EntityType Name="Composite_Data_Types_IUserDeveloperSettings">
+          <Key>
+            <PropertyRef Name="Username" />
+          </Key>
+          <Property Name="Username" Type="String" MaxLength="64" FixedLength="false" Unicode="true" Nullable="false" />
+          <Property Name="LastSpecifiedNamespace" Type="String" MaxLength="256" FixedLength="false" Unicode="true" Nullable="false" />
+        </EntityType>
+        <EntityType Name="Composite_Data_Types_IUserFormLogin">
+          <Key>
+            <PropertyRef Name="UserId" />
+          </Key>
+          <Property Name="UserId" Type="Guid" Nullable="false" />
+          <Property Name="Folder" Type="String" MaxLength="64" FixedLength="false" Unicode="true" Nullable="false" />
+          <Property Name="IsLocked" Type="Boolean" Nullable="false" />
+          <Property Name="LockoutReason" Type="Int32" Nullable="false" />
+          <Property Name="PasswordHash" Type="String" MaxLength="256" FixedLength="false" Unicode="true" Nullable="false" />
+          <Property Name="PasswordHashSalt" Type="String" MaxLength="128" FixedLength="false" Unicode="true" Nullable="false" />
+          <Property Name="LastPasswordChangeDate" Type="DateTime" Nullable="false" Precision="3" />
+        </EntityType>
+        <EntityType Name="Composite_Data_Types_IUserGroup">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="Guid" Nullable="false" />
+          <Property Name="Name" Type="String" MaxLength="64" FixedLength="false" Unicode="true" Nullable="false" />
+        </EntityType>
+        <EntityType Name="Composite_Data_Types_IUserGroupActivePerspective">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="Guid" Nullable="false" />
+          <Property Name="UserGroupId" Type="Guid" Nullable="false" />
+          <Property Name="SerializedEntityToken" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" Nullable="false" />
+        </EntityType>
+        <EntityType Name="Composite_Data_Types_IUserGroupPermissionDefinition">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="Guid" Nullable="false" />
+          <Property Name="UserGroupId" Type="Guid" Nullable="false" />
+          <Property Name="SerializedEntityToken" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" Nullable="false" />
+        </EntityType>
+        <EntityType Name="Composite_Data_Types_IUserGroupPermissionDefinitionPermissionType">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="Guid" Nullable="false" />
+          <Property Name="UserGroupPermissionDefinitionId" Type="Guid" Nullable="false" />
+          <Property Name="PermissionTypeName" Type="String" MaxLength="64" FixedLength="false" Unicode="true" Nullable="false" />
+        </EntityType>
+        <EntityType Name="Composite_Data_Types_IUserPasswordHistory">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="Guid" Nullable="false" />
+          <Property Name="UserId" Type="Guid" Nullable="false" />
+          <Property Name="PasswordHash" Type="String" MaxLength="256" FixedLength="false" Unicode="true" Nullable="false" />
+          <Property Name="PasswordSalt" Type="String" MaxLength="128" FixedLength="false" Unicode="true" Nullable="false" />
+          <Property Name="SetDate" Type="DateTime" Nullable="false" Precision="3" />
+        </EntityType>
+        <EntityType Name="Composite_Data_Types_IUserPermissionDefinition">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="Guid" Nullable="false" />
+          <Property Name="Username" Type="String" MaxLength="64" FixedLength="false" Unicode="true" Nullable="false" />
+          <Property Name="SerializedEntityToken" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" Nullable="false" />
+        </EntityType>
+        <EntityType Name="Composite_Data_Types_IUserPermissionDefinitionPermissionType">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="Guid" Nullable="false" />
+          <Property Name="UserPermissionDefinitionId" Type="Guid" Nullable="false" />
+          <Property Name="PermissionTypeName" Type="String" MaxLength="64" FixedLength="false" Unicode="true" Nullable="false" />
+        </EntityType>
+        <EntityType Name="Composite_Data_Types_IUserSettings">
+          <Key>
+            <PropertyRef Name="Username" />
+          </Key>
+          <Property Name="Username" Type="String" MaxLength="64" FixedLength="false" Unicode="true" Nullable="false" />
+          <Property Name="CultureName" Type="String" MaxLength="16" FixedLength="false" Unicode="true" Nullable="false" />
+          <Property Name="C1ConsoleUiLanguage" Type="String" MaxLength="16" FixedLength="false" Unicode="true" Nullable="false" />
+          <Property Name="CurrentActiveLocaleCultureName" Type="String" MaxLength="16" FixedLength="false" Unicode="true" />
+          <Property Name="ForeignLocaleCultureName" Type="String" MaxLength="16" FixedLength="false" Unicode="true" />
+        </EntityType>
+        <EntityType Name="Composite_Data_Types_IUserUserGroupRelation">
+          <Key>
+            <PropertyRef Name="UserId" />
+            <PropertyRef Name="UserGroupId" />
+          </Key>
+          <Property Name="UserId" Type="Guid" Nullable="false" />
+          <Property Name="UserGroupId" Type="Guid" Nullable="false" />
+        </EntityType>
+        <EntityType Name="Composite_Data_Types_IVisualFunction">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="Guid" Nullable="false" />
+          <Property Name="Name" Type="String" MaxLength="256" FixedLength="false" Unicode="true" Nullable="false" />
+          <Property Name="Namespace" Type="String" MaxLength="512" FixedLength="false" Unicode="true" Nullable="false" />
+          <Property Name="Description" Type="String" MaxLength="512" FixedLength="false" Unicode="true" Nullable="false" />
+          <Property Name="TypeManagerName" Type="String" MaxLength="256" FixedLength="false" Unicode="true" Nullable="false" />
+          <Property Name="XhtmlTemplate" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" Nullable="false" />
+          <Property Name="MaximumItemsToList" Type="Int32" Nullable="false" />
+          <Property Name="OrderbyFieldName" Type="String" MaxLength="64" FixedLength="false" Unicode="true" Nullable="false" />
+          <Property Name="OrderbyAscending" Type="Boolean" Nullable="false" />
+        </EntityType>
+        <EntityType Name="Composite_Data_Types_IXmlPageTemplate">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="Guid" Nullable="false" />
+          <Property Name="Title" Type="String" MaxLength="249" FixedLength="false" Unicode="true" Nullable="false" />
+          <Property Name="PageTemplateFilePath" Type="String" MaxLength="255" FixedLength="false" Unicode="true" Nullable="false" />
+        </EntityType>
+        <EntityType Name="Composite_Data_Types_IXsltFunction">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="Guid" Nullable="false" />
+          <Property Name="Name" Type="String" MaxLength="256" FixedLength="false" Unicode="true" Nullable="false" />
+          <Property Name="Namespace" Type="String" MaxLength="512" FixedLength="false" Unicode="true" Nullable="false" />
+          <Property Name="Description" Type="String" MaxLength="512" FixedLength="false" Unicode="true" Nullable="false" />
+          <Property Name="OutputXmlSubType" Type="String" MaxLength="32" FixedLength="false" Unicode="true" Nullable="false" />
+          <Property Name="XslFilePath" Type="String" MaxLength="1024" FixedLength="false" Unicode="true" Nullable="false" />
+        </EntityType>
+        <EntityType Name="Composite_Plugins_WebClient_SessionStateProviders_DefaultSessionStateProvider_ISessionStateEntry_Unpublished">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="Guid" Nullable="false" />
+          <Property Name="ExpirationDate" Type="DateTime" Nullable="false" Precision="3" />
+          <Property Name="SerializedValue" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" Nullable="false" />
+        </EntityType>
+        <EntityType Name="CompositeC1Contrib_Email_Data_Types_IBadMailMessage">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="SerializedMessage" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" Nullable="false" />
+          <Property Name="Id" Type="Guid" Nullable="false" />
+          <Property Name="QueueId" Type="Guid" Nullable="false" />
+          <Property Name="MailTemplateKey" Type="String" MaxLength="128" FixedLength="false" Unicode="true" />
+          <Property Name="TimeStamp" Type="DateTime" Nullable="false" Precision="3" />
+          <Property Name="Subject" Type="String" MaxLength="512" FixedLength="false" Unicode="true" Nullable="false" />
+        </EntityType>
+        <EntityType Name="CompositeC1Contrib_Email_Data_Types_IEventBasic">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Event" Type="String" MaxLength="32" FixedLength="false" Unicode="true" Nullable="false" />
+          <Property Name="Id" Type="Guid" Nullable="false" />
+          <Property Name="MailMessageId" Type="Guid" Nullable="false" />
+          <Property Name="Timestamp" Type="DateTime" Nullable="false" Precision="3" />
+        </EntityType>
+        <EntityType Name="CompositeC1Contrib_Email_Data_Types_IEventClick">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Email" Type="String" MaxLength="254" FixedLength="false" Unicode="true" Nullable="false" />
+          <Property Name="Url" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" Nullable="false" />
+          <Property Name="Id" Type="Guid" Nullable="false" />
+          <Property Name="MailMessageId" Type="Guid" Nullable="false" />
+          <Property Name="Timestamp" Type="DateTime" Nullable="false" Precision="3" />
+        </EntityType>
+        <EntityType Name="CompositeC1Contrib_Email_Data_Types_IEventError">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Error" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" Nullable="false" />
+          <Property Name="Id" Type="Guid" Nullable="false" />
+          <Property Name="MailMessageId" Type="Guid" Nullable="false" />
+          <Property Name="Timestamp" Type="DateTime" Nullable="false" Precision="3" />
+        </EntityType>
+        <EntityType Name="CompositeC1Contrib_Email_Data_Types_IEventOpen">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Email" Type="String" MaxLength="254" FixedLength="false" Unicode="true" Nullable="false" />
+          <Property Name="Id" Type="Guid" Nullable="false" />
+          <Property Name="MailMessageId" Type="Guid" Nullable="false" />
+          <Property Name="Timestamp" Type="DateTime" Nullable="false" Precision="3" />
+        </EntityType>
+        <EntityType Name="CompositeC1Contrib_Email_Data_Types_IMailTemplate">
+          <Key>
+            <PropertyRef Name="Key" />
+          </Key>
+          <Property Name="Key" Type="String" MaxLength="128" FixedLength="false" Unicode="true" Nullable="false" />
+          <Property Name="ModelType" Type="String" MaxLength="512" FixedLength="false" Unicode="true" />
+          <Property Name="EncryptMessage" Type="Boolean" Nullable="false" />
+          <Property Name="EncryptPassword" Type="String" MaxLength="256" FixedLength="false" Unicode="true" />
+          <Property Name="From" Type="String" MaxLength="256" FixedLength="false" Unicode="true" />
+          <Property Name="To" Type="String" MaxLength="256" FixedLength="false" Unicode="true" />
+          <Property Name="Cc" Type="String" MaxLength="256" FixedLength="false" Unicode="true" />
+          <Property Name="Bcc" Type="String" MaxLength="256" FixedLength="false" Unicode="true" />
+        </EntityType>
+        <EntityType Name="CompositeC1Contrib_Email_Data_Types_IMailTemplateContent_en_AU">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="Guid" Nullable="false" />
+          <Property Name="TemplateKey" Type="String" MaxLength="128" FixedLength="false" Unicode="true" Nullable="false" />
+          <Property Name="Subject" Type="String" MaxLength="256" FixedLength="false" Unicode="true" Nullable="false" />
+          <Property Name="Body" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" Nullable="false" />
+          <Property Name="SourceCultureName" Type="String" MaxLength="16" FixedLength="false" Unicode="true" Nullable="false" />
+          <Property Name="From" Type="String" MaxLength="256" FixedLength="false" Unicode="true" />
+          <Property Name="To" Type="String" MaxLength="256" FixedLength="false" Unicode="true" />
+          <Property Name="Cc" Type="String" MaxLength="256" FixedLength="false" Unicode="true" />
+          <Property Name="Bcc" Type="String" MaxLength="256" FixedLength="false" Unicode="true" />
+        </EntityType>
+        <EntityType Name="CompositeC1Contrib_Email_Data_Types_IMailTemplateContent_km_KH">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="Guid" Nullable="false" />
+          <Property Name="TemplateKey" Type="String" MaxLength="128" FixedLength="false" Unicode="true" Nullable="false" />
+          <Property Name="Subject" Type="String" MaxLength="256" FixedLength="false" Unicode="true" Nullable="false" />
+          <Property Name="Body" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" Nullable="false" />
+          <Property Name="SourceCultureName" Type="String" MaxLength="16" FixedLength="false" Unicode="true" Nullable="false" />
+          <Property Name="From" Type="String" MaxLength="256" FixedLength="false" Unicode="true" />
+          <Property Name="To" Type="String" MaxLength="256" FixedLength="false" Unicode="true" />
+          <Property Name="Cc" Type="String" MaxLength="256" FixedLength="false" Unicode="true" />
+          <Property Name="Bcc" Type="String" MaxLength="256" FixedLength="false" Unicode="true" />
+        </EntityType>
+        <EntityType Name="CompositeC1Contrib_Email_Data_Types_IQueuedMailMessage">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="SerializedMessage" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" Nullable="false" />
+          <Property Name="Id" Type="Guid" Nullable="false" />
+          <Property Name="QueueId" Type="Guid" Nullable="false" />
+          <Property Name="MailTemplateKey" Type="String" MaxLength="128" FixedLength="false" Unicode="true" />
+          <Property Name="TimeStamp" Type="DateTime" Nullable="false" Precision="3" />
+          <Property Name="Subject" Type="String" MaxLength="512" FixedLength="false" Unicode="true" Nullable="false" />
+        </EntityType>
+        <EntityType Name="CompositeC1Contrib_Email_Data_Types_ISentMailMessage">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="Guid" Nullable="false" />
+          <Property Name="QueueId" Type="Guid" Nullable="false" />
+          <Property Name="MailTemplateKey" Type="String" MaxLength="128" FixedLength="false" Unicode="true" />
+          <Property Name="TimeStamp" Type="DateTime" Nullable="false" Precision="3" />
+          <Property Name="Subject" Type="String" MaxLength="512" FixedLength="false" Unicode="true" Nullable="false" />
+        </EntityType>
+        <EntityType Name="Content_ContentSpot">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="Guid" Nullable="false" />
+          <Property Name="Title" Type="String" MaxLength="64" FixedLength="false" Unicode="true" Nullable="false" />
+          <Property Name="Content" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" Nullable="false" />
+          <Property Name="PublicationStatus" Type="String" MaxLength="64" FixedLength="false" Unicode="true" Nullable="false" />
+        </EntityType>
+        <EntityType Name="Content_ContentSpot_Unpublished">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="Guid" Nullable="false" />
+          <Property Name="Title" Type="String" MaxLength="64" FixedLength="false" Unicode="true" Nullable="false" />
+          <Property Name="Content" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" Nullable="false" />
+          <Property Name="PublicationStatus" Type="String" MaxLength="64" FixedLength="false" Unicode="true" Nullable="false" />
+        </EntityType>
+        <EntityType Name="Demo_Country">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="Guid" Nullable="false" />
+          <Property Name="Name" Type="String" MaxLength="128" FixedLength="false" Unicode="true" Nullable="false" />
+          <Property Name="Code" Type="String" MaxLength="16" FixedLength="false" Unicode="true" Nullable="false" />
+          <Property Name="PublicationStatus" Type="String" MaxLength="64" FixedLength="false" Unicode="true" Nullable="false" />
+        </EntityType>
+        <EntityType Name="Demo_Country_Unpublished">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="Guid" Nullable="false" />
+          <Property Name="Name" Type="String" MaxLength="128" FixedLength="false" Unicode="true" Nullable="false" />
+          <Property Name="Code" Type="String" MaxLength="16" FixedLength="false" Unicode="true" Nullable="false" />
+          <Property Name="PublicationStatus" Type="String" MaxLength="64" FixedLength="false" Unicode="true" Nullable="false" />
+        </EntityType>
+        <EntityType Name="Demo_Ebook_FileUpload">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="Guid" Nullable="false" />
+          <Property Name="FileName" Type="String" MaxLength="512" FixedLength="false" Unicode="true" Nullable="false" />
+        </EntityType>
+        <EntityType Name="Demo_Page_Data">
+          <Key>
+            <PropertyRef Name="Id" />
+            <PropertyRef Name="VersionId" />
+          </Key>
+          <Property Name="RedirectTo" Type="Guid" Nullable="false" />
+          <Property Name="PublicationStatus" Type="String" MaxLength="64" FixedLength="false" Unicode="true" Nullable="false" />
+          <Property Name="Id" Type="Guid" Nullable="false" />
+          <Property Name="PageId" Type="Guid" Nullable="false" />
+          <Property Name="FieldName" Type="String" MaxLength="128" FixedLength="false" Unicode="true" Nullable="false" />
+          <Property Name="VersionId" Type="Guid" Nullable="false" />
+        </EntityType>
+        <EntityType Name="Demo_Page_Data_Unpublished">
+          <Key>
+            <PropertyRef Name="Id" />
+            <PropertyRef Name="VersionId" />
+          </Key>
+          <Property Name="RedirectTo" Type="Guid" Nullable="false" />
+          <Property Name="PublicationStatus" Type="String" MaxLength="64" FixedLength="false" Unicode="true" Nullable="false" />
+          <Property Name="Id" Type="Guid" Nullable="false" />
+          <Property Name="PageId" Type="Guid" Nullable="false" />
+          <Property Name="FieldName" Type="String" MaxLength="128" FixedLength="false" Unicode="true" Nullable="false" />
+          <Property Name="VersionId" Type="Guid" Nullable="false" />
+        </EntityType>
+        <EntityContainer Name="c1demoEntities" annotation:LazyLoadingEnabled="true">
+          <EntitySet Name="Composite_Data_Types_ICompositionContainer" EntityType="Self.Composite_Data_Types_ICompositionContainer" />
+          <EntitySet Name="Composite_Data_Types_ICustomFunctionCallEditorMapping" EntityType="Self.Composite_Data_Types_ICustomFunctionCallEditorMapping" />
+          <EntitySet Name="Composite_Data_Types_IDataItemTreeAttachmentPoint" EntityType="Self.Composite_Data_Types_IDataItemTreeAttachmentPoint" />
+          <EntitySet Name="Composite_Data_Types_IFlowInformation" EntityType="Self.Composite_Data_Types_IFlowInformation" />
+          <EntitySet Name="Composite_Data_Types_IFolderWhiteList_Unpublished" EntityType="Self.Composite_Data_Types_IFolderWhiteList_Unpublished" />
+          <EntitySet Name="Composite_Data_Types_IGeneratedTypeWhiteList_Unpublished" EntityType="Self.Composite_Data_Types_IGeneratedTypeWhiteList_Unpublished" />
+          <EntitySet Name="Composite_Data_Types_IHostnameBinding" EntityType="Self.Composite_Data_Types_IHostnameBinding" />
+          <EntitySet Name="Composite_Data_Types_IInlineFunction" EntityType="Self.Composite_Data_Types_IInlineFunction" />
+          <EntitySet Name="Composite_Data_Types_IInlineFunctionAssemblyReference" EntityType="Self.Composite_Data_Types_IInlineFunctionAssemblyReference" />
+          <EntitySet Name="Composite_Data_Types_ILockingInformation" EntityType="Self.Composite_Data_Types_ILockingInformation" />
+          <EntitySet Name="Composite_Data_Types_IMediaFileData" EntityType="Self.Composite_Data_Types_IMediaFileData" />
+          <EntitySet Name="Composite_Data_Types_IMediaFolderData" EntityType="Self.Composite_Data_Types_IMediaFolderData" />
+          <EntitySet Name="Composite_Data_Types_IMethodBasedFunctionInfo" EntityType="Self.Composite_Data_Types_IMethodBasedFunctionInfo" />
+          <EntitySet Name="Composite_Data_Types_INamedFunctionCall" EntityType="Self.Composite_Data_Types_INamedFunctionCall" />
+          <EntitySet Name="Composite_Data_Types_IPackageServerSource" EntityType="Self.Composite_Data_Types_IPackageServerSource" />
+          <EntitySet Name="Composite_Data_Types_IPage_en_AU" EntityType="Self.Composite_Data_Types_IPage_en_AU" />
+          <EntitySet Name="Composite_Data_Types_IPage_km_KH" EntityType="Self.Composite_Data_Types_IPage_km_KH" />
+          <EntitySet Name="Composite_Data_Types_IPage_Unpublished_en_AU" EntityType="Self.Composite_Data_Types_IPage_Unpublished_en_AU" />
+          <EntitySet Name="Composite_Data_Types_IPage_Unpublished_km_KH" EntityType="Self.Composite_Data_Types_IPage_Unpublished_km_KH" />
+          <EntitySet Name="Composite_Data_Types_IPageFolderDefinition" EntityType="Self.Composite_Data_Types_IPageFolderDefinition" />
+          <EntitySet Name="Composite_Data_Types_IPageMetaDataDefinition" EntityType="Self.Composite_Data_Types_IPageMetaDataDefinition" />
+          <EntitySet Name="Composite_Data_Types_IPagePlaceholderContent_en_AU" EntityType="Self.Composite_Data_Types_IPagePlaceholderContent_en_AU" />
+          <EntitySet Name="Composite_Data_Types_IPagePlaceholderContent_km_KH" EntityType="Self.Composite_Data_Types_IPagePlaceholderContent_km_KH" />
+          <EntitySet Name="Composite_Data_Types_IPagePlaceholderContent_Unpublished_en_AU" EntityType="Self.Composite_Data_Types_IPagePlaceholderContent_Unpublished_en_AU" />
+          <EntitySet Name="Composite_Data_Types_IPagePlaceholderContent_Unpublished_km_KH" EntityType="Self.Composite_Data_Types_IPagePlaceholderContent_Unpublished_km_KH" />
+          <EntitySet Name="Composite_Data_Types_IPageStructure" EntityType="Self.Composite_Data_Types_IPageStructure" />
+          <EntitySet Name="Composite_Data_Types_IPageType" EntityType="Self.Composite_Data_Types_IPageType" />
+          <EntitySet Name="Composite_Data_Types_IPageTypeDataFolderTypeLink" EntityType="Self.Composite_Data_Types_IPageTypeDataFolderTypeLink" />
+          <EntitySet Name="Composite_Data_Types_IPageTypeDefaultPageContent" EntityType="Self.Composite_Data_Types_IPageTypeDefaultPageContent" />
+          <EntitySet Name="Composite_Data_Types_IPageTypeMetaDataTypeLink" EntityType="Self.Composite_Data_Types_IPageTypeMetaDataTypeLink" />
+          <EntitySet Name="Composite_Data_Types_IPageTypePageTemplateRestriction" EntityType="Self.Composite_Data_Types_IPageTypePageTemplateRestriction" />
+          <EntitySet Name="Composite_Data_Types_IPageTypeParentRestriction" EntityType="Self.Composite_Data_Types_IPageTypeParentRestriction" />
+          <EntitySet Name="Composite_Data_Types_IPageTypeTreeLink" EntityType="Self.Composite_Data_Types_IPageTypeTreeLink" />
+          <EntitySet Name="Composite_Data_Types_IParameter" EntityType="Self.Composite_Data_Types_IParameter" />
+          <EntitySet Name="Composite_Data_Types_IPublishSchedule_Unpublished" EntityType="Self.Composite_Data_Types_IPublishSchedule_Unpublished" />
+          <EntitySet Name="Composite_Data_Types_ISearchEngineOptimizationKeyword_en_AU" EntityType="Self.Composite_Data_Types_ISearchEngineOptimizationKeyword_en_AU" />
+          <EntitySet Name="Composite_Data_Types_ISearchEngineOptimizationKeyword_km_KH" EntityType="Self.Composite_Data_Types_ISearchEngineOptimizationKeyword_km_KH" />
+          <EntitySet Name="Composite_Data_Types_ISqlConnection" EntityType="Self.Composite_Data_Types_ISqlConnection" />
+          <EntitySet Name="Composite_Data_Types_ISqlFunctionInfo" EntityType="Self.Composite_Data_Types_ISqlFunctionInfo" />
+          <EntitySet Name="Composite_Data_Types_ISystemActiveLocale" EntityType="Self.Composite_Data_Types_ISystemActiveLocale" />
+          <EntitySet Name="Composite_Data_Types_ITaskItem" EntityType="Self.Composite_Data_Types_ITaskItem" />
+          <EntitySet Name="Composite_Data_Types_IUnpublishSchedule_Unpublished" EntityType="Self.Composite_Data_Types_IUnpublishSchedule_Unpublished" />
+          <EntitySet Name="Composite_Data_Types_IUrlConfiguration" EntityType="Self.Composite_Data_Types_IUrlConfiguration" />
+          <EntitySet Name="Composite_Data_Types_IUser" EntityType="Self.Composite_Data_Types_IUser" />
+          <EntitySet Name="Composite_Data_Types_IUserActiveLocale" EntityType="Self.Composite_Data_Types_IUserActiveLocale" />
+          <EntitySet Name="Composite_Data_Types_IUserActivePerspective" EntityType="Self.Composite_Data_Types_IUserActivePerspective" />
+          <EntitySet Name="Composite_Data_Types_IUserConsoleInformation" EntityType="Self.Composite_Data_Types_IUserConsoleInformation" />
+          <EntitySet Name="Composite_Data_Types_IUserDeveloperSettings" EntityType="Self.Composite_Data_Types_IUserDeveloperSettings" />
+          <EntitySet Name="Composite_Data_Types_IUserFormLogin" EntityType="Self.Composite_Data_Types_IUserFormLogin" />
+          <EntitySet Name="Composite_Data_Types_IUserGroup" EntityType="Self.Composite_Data_Types_IUserGroup" />
+          <EntitySet Name="Composite_Data_Types_IUserGroupActivePerspective" EntityType="Self.Composite_Data_Types_IUserGroupActivePerspective" />
+          <EntitySet Name="Composite_Data_Types_IUserGroupPermissionDefinition" EntityType="Self.Composite_Data_Types_IUserGroupPermissionDefinition" />
+          <EntitySet Name="Composite_Data_Types_IUserGroupPermissionDefinitionPermissionType" EntityType="Self.Composite_Data_Types_IUserGroupPermissionDefinitionPermissionType" />
+          <EntitySet Name="Composite_Data_Types_IUserPasswordHistory" EntityType="Self.Composite_Data_Types_IUserPasswordHistory" />
+          <EntitySet Name="Composite_Data_Types_IUserPermissionDefinition" EntityType="Self.Composite_Data_Types_IUserPermissionDefinition" />
+          <EntitySet Name="Composite_Data_Types_IUserPermissionDefinitionPermissionType" EntityType="Self.Composite_Data_Types_IUserPermissionDefinitionPermissionType" />
+          <EntitySet Name="Composite_Data_Types_IUserSettings" EntityType="Self.Composite_Data_Types_IUserSettings" />
+          <EntitySet Name="Composite_Data_Types_IUserUserGroupRelation" EntityType="Self.Composite_Data_Types_IUserUserGroupRelation" />
+          <EntitySet Name="Composite_Data_Types_IVisualFunction" EntityType="Self.Composite_Data_Types_IVisualFunction" />
+          <EntitySet Name="Composite_Data_Types_IXmlPageTemplate" EntityType="Self.Composite_Data_Types_IXmlPageTemplate" />
+          <EntitySet Name="Composite_Data_Types_IXsltFunction" EntityType="Self.Composite_Data_Types_IXsltFunction" />
+          <EntitySet Name="Composite_Plugins_WebClient_SessionStateProviders_DefaultSessionStateProvider_ISessionStateEntry_Unpublished" EntityType="Self.Composite_Plugins_WebClient_SessionStateProviders_DefaultSessionStateProvider_ISessionStateEntry_Unpublished" />
+          <EntitySet Name="CompositeC1Contrib_Email_Data_Types_IBadMailMessage" EntityType="Self.CompositeC1Contrib_Email_Data_Types_IBadMailMessage" />
+          <EntitySet Name="CompositeC1Contrib_Email_Data_Types_IEventBasic" EntityType="Self.CompositeC1Contrib_Email_Data_Types_IEventBasic" />
+          <EntitySet Name="CompositeC1Contrib_Email_Data_Types_IEventClick" EntityType="Self.CompositeC1Contrib_Email_Data_Types_IEventClick" />
+          <EntitySet Name="CompositeC1Contrib_Email_Data_Types_IEventError" EntityType="Self.CompositeC1Contrib_Email_Data_Types_IEventError" />
+          <EntitySet Name="CompositeC1Contrib_Email_Data_Types_IEventOpen" EntityType="Self.CompositeC1Contrib_Email_Data_Types_IEventOpen" />
+          <EntitySet Name="CompositeC1Contrib_Email_Data_Types_IMailTemplate" EntityType="Self.CompositeC1Contrib_Email_Data_Types_IMailTemplate" />
+          <EntitySet Name="CompositeC1Contrib_Email_Data_Types_IMailTemplateContent_en_AU" EntityType="Self.CompositeC1Contrib_Email_Data_Types_IMailTemplateContent_en_AU" />
+          <EntitySet Name="CompositeC1Contrib_Email_Data_Types_IMailTemplateContent_km_KH" EntityType="Self.CompositeC1Contrib_Email_Data_Types_IMailTemplateContent_km_KH" />
+          <EntitySet Name="CompositeC1Contrib_Email_Data_Types_IQueuedMailMessage" EntityType="Self.CompositeC1Contrib_Email_Data_Types_IQueuedMailMessage" />
+          <EntitySet Name="CompositeC1Contrib_Email_Data_Types_ISentMailMessage" EntityType="Self.CompositeC1Contrib_Email_Data_Types_ISentMailMessage" />
+          <EntitySet Name="Content_ContentSpot" EntityType="Self.Content_ContentSpot" />
+          <EntitySet Name="Content_ContentSpot_Unpublished" EntityType="Self.Content_ContentSpot_Unpublished" />
+          <EntitySet Name="Demo_Country" EntityType="Self.Demo_Country" />
+          <EntitySet Name="Demo_Country_Unpublished" EntityType="Self.Demo_Country_Unpublished" />
+          <EntitySet Name="Demo_Ebook_FileUpload" EntityType="Self.Demo_Ebook_FileUpload" />
+          <EntitySet Name="Demo_Page_Data" EntityType="Self.Demo_Page_Data" />
+          <EntitySet Name="Demo_Page_Data_Unpublished" EntityType="Self.Demo_Page_Data_Unpublished" />
+        </EntityContainer>
+      </Schema>
+    </edmx:ConceptualModels>
+    <!-- C-S mapping content -->
+    <edmx:Mappings>
+      <Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+        <EntityContainerMapping StorageEntityContainer="c1demoModelStoreContainer" CdmEntityContainer="c1demoEntities">
+          <EntitySetMapping Name="Composite_Data_Types_ICompositionContainer">
+            <EntityTypeMapping TypeName="c1demoModel.Composite_Data_Types_ICompositionContainer">
+              <MappingFragment StoreEntitySet="Composite_Data_Types_ICompositionContainer">
+                <ScalarProperty Name="Id" ColumnName="Id" />
+                <ScalarProperty Name="Label" ColumnName="Label" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="Composite_Data_Types_ICustomFunctionCallEditorMapping">
+            <EntityTypeMapping TypeName="c1demoModel.Composite_Data_Types_ICustomFunctionCallEditorMapping">
+              <MappingFragment StoreEntitySet="Composite_Data_Types_ICustomFunctionCallEditorMapping">
+                <ScalarProperty Name="FunctionName" ColumnName="FunctionName" />
+                <ScalarProperty Name="CustomEditorPath" ColumnName="CustomEditorPath" />
+                <ScalarProperty Name="Width" ColumnName="Width" />
+                <ScalarProperty Name="Height" ColumnName="Height" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="Composite_Data_Types_IDataItemTreeAttachmentPoint">
+            <EntityTypeMapping TypeName="c1demoModel.Composite_Data_Types_IDataItemTreeAttachmentPoint">
+              <MappingFragment StoreEntitySet="Composite_Data_Types_IDataItemTreeAttachmentPoint">
+                <ScalarProperty Name="Id" ColumnName="Id" />
+                <ScalarProperty Name="TreeId" ColumnName="TreeId" />
+                <ScalarProperty Name="Position" ColumnName="Position" />
+                <ScalarProperty Name="InterfaceType" ColumnName="InterfaceType" />
+                <ScalarProperty Name="KeyValue" ColumnName="KeyValue" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="Composite_Data_Types_IFlowInformation">
+            <EntityTypeMapping TypeName="c1demoModel.Composite_Data_Types_IFlowInformation">
+              <MappingFragment StoreEntitySet="Composite_Data_Types_IFlowInformation">
+                <ScalarProperty Name="Id" ColumnName="Id" />
+                <ScalarProperty Name="Username" ColumnName="Username" />
+                <ScalarProperty Name="ConsoleId" ColumnName="ConsoleId" />
+                <ScalarProperty Name="SerializedFlowToken" ColumnName="SerializedFlowToken" />
+                <ScalarProperty Name="SerializedEntityToken" ColumnName="SerializedEntityToken" />
+                <ScalarProperty Name="SerializedActionToken" ColumnName="SerializedActionToken" />
+                <ScalarProperty Name="TimeStamp" ColumnName="TimeStamp" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="Composite_Data_Types_IFolderWhiteList_Unpublished">
+            <EntityTypeMapping TypeName="c1demoModel.Composite_Data_Types_IFolderWhiteList_Unpublished">
+              <MappingFragment StoreEntitySet="Composite_Data_Types_IFolderWhiteList_Unpublished">
+                <ScalarProperty Name="KeyName" ColumnName="KeyName" />
+                <ScalarProperty Name="TildeBasedPath" ColumnName="TildeBasedPath" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="Composite_Data_Types_IGeneratedTypeWhiteList_Unpublished">
+            <EntityTypeMapping TypeName="c1demoModel.Composite_Data_Types_IGeneratedTypeWhiteList_Unpublished">
+              <MappingFragment StoreEntitySet="Composite_Data_Types_IGeneratedTypeWhiteList_Unpublished">
+                <ScalarProperty Name="TypeManagerTypeName" ColumnName="TypeManagerTypeName" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="Composite_Data_Types_IHostnameBinding">
+            <EntityTypeMapping TypeName="c1demoModel.Composite_Data_Types_IHostnameBinding">
+              <MappingFragment StoreEntitySet="Composite_Data_Types_IHostnameBinding">
+                <ScalarProperty Name="Id" ColumnName="Id" />
+                <ScalarProperty Name="Hostname" ColumnName="Hostname" />
+                <ScalarProperty Name="Culture" ColumnName="Culture" />
+                <ScalarProperty Name="HomePageId" ColumnName="HomePageId" />
+                <ScalarProperty Name="PageNotFoundUrl" ColumnName="PageNotFoundUrl" />
+                <ScalarProperty Name="Aliases" ColumnName="Aliases" />
+                <ScalarProperty Name="IncludeHomePageInUrl" ColumnName="IncludeHomePageInUrl" />
+                <ScalarProperty Name="IncludeCultureInUrl" ColumnName="IncludeCultureInUrl" />
+                <ScalarProperty Name="EnforceHttps" ColumnName="EnforceHttps" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="Composite_Data_Types_IInlineFunction">
+            <EntityTypeMapping TypeName="c1demoModel.Composite_Data_Types_IInlineFunction">
+              <MappingFragment StoreEntitySet="Composite_Data_Types_IInlineFunction">
+                <ScalarProperty Name="Id" ColumnName="Id" />
+                <ScalarProperty Name="Name" ColumnName="Name" />
+                <ScalarProperty Name="Namespace" ColumnName="Namespace" />
+                <ScalarProperty Name="Description" ColumnName="Description" />
+                <ScalarProperty Name="CodePath" ColumnName="CodePath" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="Composite_Data_Types_IInlineFunctionAssemblyReference">
+            <EntityTypeMapping TypeName="c1demoModel.Composite_Data_Types_IInlineFunctionAssemblyReference">
+              <MappingFragment StoreEntitySet="Composite_Data_Types_IInlineFunctionAssemblyReference">
+                <ScalarProperty Name="Id" ColumnName="Id" />
+                <ScalarProperty Name="Function" ColumnName="Function" />
+                <ScalarProperty Name="Name" ColumnName="Name" />
+                <ScalarProperty Name="Location" ColumnName="Location" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="Composite_Data_Types_ILockingInformation">
+            <EntityTypeMapping TypeName="c1demoModel.Composite_Data_Types_ILockingInformation">
+              <MappingFragment StoreEntitySet="Composite_Data_Types_ILockingInformation">
+                <ScalarProperty Name="Id" ColumnName="Id" />
+                <ScalarProperty Name="SerializedEntityToken" ColumnName="SerializedEntityToken" />
+                <ScalarProperty Name="SerializedOwnerId" ColumnName="SerializedOwnerId" />
+                <ScalarProperty Name="Username" ColumnName="Username" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="Composite_Data_Types_IMediaFileData">
+            <EntityTypeMapping TypeName="c1demoModel.Composite_Data_Types_IMediaFileData">
+              <MappingFragment StoreEntitySet="Composite_Data_Types_IMediaFileData">
+                <ScalarProperty Name="Id" ColumnName="Id" />
+                <ScalarProperty Name="FolderPath" ColumnName="FolderPath" />
+                <ScalarProperty Name="FileName" ColumnName="FileName" />
+                <ScalarProperty Name="Title" ColumnName="Title" />
+                <ScalarProperty Name="Description" ColumnName="Description" />
+                <ScalarProperty Name="Tags" ColumnName="Tags" />
+                <ScalarProperty Name="CultureInfo" ColumnName="CultureInfo" />
+                <ScalarProperty Name="MimeType" ColumnName="MimeType" />
+                <ScalarProperty Name="Length" ColumnName="Length" />
+                <ScalarProperty Name="CreationTime" ColumnName="CreationTime" />
+                <ScalarProperty Name="LastWriteTime" ColumnName="LastWriteTime" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="Composite_Data_Types_IMediaFolderData">
+            <EntityTypeMapping TypeName="c1demoModel.Composite_Data_Types_IMediaFolderData">
+              <MappingFragment StoreEntitySet="Composite_Data_Types_IMediaFolderData">
+                <ScalarProperty Name="Id" ColumnName="Id" />
+                <ScalarProperty Name="Path" ColumnName="Path" />
+                <ScalarProperty Name="Title" ColumnName="Title" />
+                <ScalarProperty Name="Description" ColumnName="Description" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="Composite_Data_Types_IMethodBasedFunctionInfo">
+            <EntityTypeMapping TypeName="c1demoModel.Composite_Data_Types_IMethodBasedFunctionInfo">
+              <MappingFragment StoreEntitySet="Composite_Data_Types_IMethodBasedFunctionInfo">
+                <ScalarProperty Name="Id" ColumnName="Id" />
+                <ScalarProperty Name="Type" ColumnName="Type" />
+                <ScalarProperty Name="MethodName" ColumnName="MethodName" />
+                <ScalarProperty Name="Namespace" ColumnName="Namespace" />
+                <ScalarProperty Name="UserMethodName" ColumnName="UserMethodName" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="Composite_Data_Types_INamedFunctionCall">
+            <EntityTypeMapping TypeName="c1demoModel.Composite_Data_Types_INamedFunctionCall">
+              <MappingFragment StoreEntitySet="Composite_Data_Types_INamedFunctionCall">
+                <ScalarProperty Name="XsltFunctionId" ColumnName="XsltFunctionId" />
+                <ScalarProperty Name="Name" ColumnName="Name" />
+                <ScalarProperty Name="SerializedFunction" ColumnName="SerializedFunction" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="Composite_Data_Types_IPackageServerSource">
+            <EntityTypeMapping TypeName="c1demoModel.Composite_Data_Types_IPackageServerSource">
+              <MappingFragment StoreEntitySet="Composite_Data_Types_IPackageServerSource">
+                <ScalarProperty Name="Id" ColumnName="Id" />
+                <ScalarProperty Name="Url" ColumnName="Url" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="Composite_Data_Types_IPage_en_AU">
+            <EntityTypeMapping TypeName="c1demoModel.Composite_Data_Types_IPage_en_AU">
+              <MappingFragment StoreEntitySet="Composite_Data_Types_IPage_en_AU">
+                <ScalarProperty Name="PublicationStatus" ColumnName="PublicationStatus" />
+                <ScalarProperty Name="ChangeDate" ColumnName="ChangeDate" />
+                <ScalarProperty Name="CreationDate" ColumnName="CreationDate" />
+                <ScalarProperty Name="ChangedBy" ColumnName="ChangedBy" />
+                <ScalarProperty Name="CreatedBy" ColumnName="CreatedBy" />
+                <ScalarProperty Name="Id" ColumnName="Id" />
+                <ScalarProperty Name="TemplateId" ColumnName="TemplateId" />
+                <ScalarProperty Name="PageTypeId" ColumnName="PageTypeId" />
+                <ScalarProperty Name="Title" ColumnName="Title" />
+                <ScalarProperty Name="MenuTitle" ColumnName="MenuTitle" />
+                <ScalarProperty Name="UrlTitle" ColumnName="UrlTitle" />
+                <ScalarProperty Name="FriendlyUrl" ColumnName="FriendlyUrl" />
+                <ScalarProperty Name="Description" ColumnName="Description" />
+                <ScalarProperty Name="SourceCultureName" ColumnName="SourceCultureName" />
+                <ScalarProperty Name="VersionId" ColumnName="VersionId" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="Composite_Data_Types_IPage_km_KH">
+            <EntityTypeMapping TypeName="c1demoModel.Composite_Data_Types_IPage_km_KH">
+              <MappingFragment StoreEntitySet="Composite_Data_Types_IPage_km_KH">
+                <ScalarProperty Name="PublicationStatus" ColumnName="PublicationStatus" />
+                <ScalarProperty Name="ChangeDate" ColumnName="ChangeDate" />
+                <ScalarProperty Name="CreationDate" ColumnName="CreationDate" />
+                <ScalarProperty Name="ChangedBy" ColumnName="ChangedBy" />
+                <ScalarProperty Name="CreatedBy" ColumnName="CreatedBy" />
+                <ScalarProperty Name="Id" ColumnName="Id" />
+                <ScalarProperty Name="TemplateId" ColumnName="TemplateId" />
+                <ScalarProperty Name="PageTypeId" ColumnName="PageTypeId" />
+                <ScalarProperty Name="Title" ColumnName="Title" />
+                <ScalarProperty Name="MenuTitle" ColumnName="MenuTitle" />
+                <ScalarProperty Name="UrlTitle" ColumnName="UrlTitle" />
+                <ScalarProperty Name="FriendlyUrl" ColumnName="FriendlyUrl" />
+                <ScalarProperty Name="Description" ColumnName="Description" />
+                <ScalarProperty Name="SourceCultureName" ColumnName="SourceCultureName" />
+                <ScalarProperty Name="VersionId" ColumnName="VersionId" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="Composite_Data_Types_IPage_Unpublished_en_AU">
+            <EntityTypeMapping TypeName="c1demoModel.Composite_Data_Types_IPage_Unpublished_en_AU">
+              <MappingFragment StoreEntitySet="Composite_Data_Types_IPage_Unpublished_en_AU">
+                <ScalarProperty Name="PublicationStatus" ColumnName="PublicationStatus" />
+                <ScalarProperty Name="ChangeDate" ColumnName="ChangeDate" />
+                <ScalarProperty Name="CreationDate" ColumnName="CreationDate" />
+                <ScalarProperty Name="ChangedBy" ColumnName="ChangedBy" />
+                <ScalarProperty Name="CreatedBy" ColumnName="CreatedBy" />
+                <ScalarProperty Name="Id" ColumnName="Id" />
+                <ScalarProperty Name="TemplateId" ColumnName="TemplateId" />
+                <ScalarProperty Name="PageTypeId" ColumnName="PageTypeId" />
+                <ScalarProperty Name="Title" ColumnName="Title" />
+                <ScalarProperty Name="MenuTitle" ColumnName="MenuTitle" />
+                <ScalarProperty Name="UrlTitle" ColumnName="UrlTitle" />
+                <ScalarProperty Name="FriendlyUrl" ColumnName="FriendlyUrl" />
+                <ScalarProperty Name="Description" ColumnName="Description" />
+                <ScalarProperty Name="SourceCultureName" ColumnName="SourceCultureName" />
+                <ScalarProperty Name="VersionId" ColumnName="VersionId" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="Composite_Data_Types_IPage_Unpublished_km_KH">
+            <EntityTypeMapping TypeName="c1demoModel.Composite_Data_Types_IPage_Unpublished_km_KH">
+              <MappingFragment StoreEntitySet="Composite_Data_Types_IPage_Unpublished_km_KH">
+                <ScalarProperty Name="PublicationStatus" ColumnName="PublicationStatus" />
+                <ScalarProperty Name="ChangeDate" ColumnName="ChangeDate" />
+                <ScalarProperty Name="CreationDate" ColumnName="CreationDate" />
+                <ScalarProperty Name="ChangedBy" ColumnName="ChangedBy" />
+                <ScalarProperty Name="CreatedBy" ColumnName="CreatedBy" />
+                <ScalarProperty Name="Id" ColumnName="Id" />
+                <ScalarProperty Name="TemplateId" ColumnName="TemplateId" />
+                <ScalarProperty Name="PageTypeId" ColumnName="PageTypeId" />
+                <ScalarProperty Name="Title" ColumnName="Title" />
+                <ScalarProperty Name="MenuTitle" ColumnName="MenuTitle" />
+                <ScalarProperty Name="UrlTitle" ColumnName="UrlTitle" />
+                <ScalarProperty Name="FriendlyUrl" ColumnName="FriendlyUrl" />
+                <ScalarProperty Name="Description" ColumnName="Description" />
+                <ScalarProperty Name="SourceCultureName" ColumnName="SourceCultureName" />
+                <ScalarProperty Name="VersionId" ColumnName="VersionId" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="Composite_Data_Types_IPageFolderDefinition">
+            <EntityTypeMapping TypeName="c1demoModel.Composite_Data_Types_IPageFolderDefinition">
+              <MappingFragment StoreEntitySet="Composite_Data_Types_IPageFolderDefinition">
+                <ScalarProperty Name="Id" ColumnName="Id" />
+                <ScalarProperty Name="PageId" ColumnName="PageId" />
+                <ScalarProperty Name="FolderTypeId" ColumnName="FolderTypeId" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="Composite_Data_Types_IPageMetaDataDefinition">
+            <EntityTypeMapping TypeName="c1demoModel.Composite_Data_Types_IPageMetaDataDefinition">
+              <MappingFragment StoreEntitySet="Composite_Data_Types_IPageMetaDataDefinition">
+                <ScalarProperty Name="Id" ColumnName="Id" />
+                <ScalarProperty Name="DefiningItemId" ColumnName="DefiningItemId" />
+                <ScalarProperty Name="Name" ColumnName="Name" />
+                <ScalarProperty Name="Label" ColumnName="Label" />
+                <ScalarProperty Name="MetaDataContainerId" ColumnName="MetaDataContainerId" />
+                <ScalarProperty Name="MetaDataTypeId" ColumnName="MetaDataTypeId" />
+                <ScalarProperty Name="StartLevel" ColumnName="StartLevel" />
+                <ScalarProperty Name="Levels" ColumnName="Levels" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="Composite_Data_Types_IPagePlaceholderContent_en_AU">
+            <EntityTypeMapping TypeName="c1demoModel.Composite_Data_Types_IPagePlaceholderContent_en_AU">
+              <MappingFragment StoreEntitySet="Composite_Data_Types_IPagePlaceholderContent_en_AU">
+                <ScalarProperty Name="PublicationStatus" ColumnName="PublicationStatus" />
+                <ScalarProperty Name="ChangeDate" ColumnName="ChangeDate" />
+                <ScalarProperty Name="CreationDate" ColumnName="CreationDate" />
+                <ScalarProperty Name="ChangedBy" ColumnName="ChangedBy" />
+                <ScalarProperty Name="CreatedBy" ColumnName="CreatedBy" />
+                <ScalarProperty Name="PageId" ColumnName="PageId" />
+                <ScalarProperty Name="PlaceHolderId" ColumnName="PlaceHolderId" />
+                <ScalarProperty Name="Content" ColumnName="Content" />
+                <ScalarProperty Name="SourceCultureName" ColumnName="SourceCultureName" />
+                <ScalarProperty Name="VersionId" ColumnName="VersionId" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="Composite_Data_Types_IPagePlaceholderContent_km_KH">
+            <EntityTypeMapping TypeName="c1demoModel.Composite_Data_Types_IPagePlaceholderContent_km_KH">
+              <MappingFragment StoreEntitySet="Composite_Data_Types_IPagePlaceholderContent_km_KH">
+                <ScalarProperty Name="PublicationStatus" ColumnName="PublicationStatus" />
+                <ScalarProperty Name="ChangeDate" ColumnName="ChangeDate" />
+                <ScalarProperty Name="CreationDate" ColumnName="CreationDate" />
+                <ScalarProperty Name="ChangedBy" ColumnName="ChangedBy" />
+                <ScalarProperty Name="CreatedBy" ColumnName="CreatedBy" />
+                <ScalarProperty Name="PageId" ColumnName="PageId" />
+                <ScalarProperty Name="PlaceHolderId" ColumnName="PlaceHolderId" />
+                <ScalarProperty Name="Content" ColumnName="Content" />
+                <ScalarProperty Name="SourceCultureName" ColumnName="SourceCultureName" />
+                <ScalarProperty Name="VersionId" ColumnName="VersionId" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="Composite_Data_Types_IPagePlaceholderContent_Unpublished_en_AU">
+            <EntityTypeMapping TypeName="c1demoModel.Composite_Data_Types_IPagePlaceholderContent_Unpublished_en_AU">
+              <MappingFragment StoreEntitySet="Composite_Data_Types_IPagePlaceholderContent_Unpublished_en_AU">
+                <ScalarProperty Name="PublicationStatus" ColumnName="PublicationStatus" />
+                <ScalarProperty Name="ChangeDate" ColumnName="ChangeDate" />
+                <ScalarProperty Name="CreationDate" ColumnName="CreationDate" />
+                <ScalarProperty Name="ChangedBy" ColumnName="ChangedBy" />
+                <ScalarProperty Name="CreatedBy" ColumnName="CreatedBy" />
+                <ScalarProperty Name="PageId" ColumnName="PageId" />
+                <ScalarProperty Name="PlaceHolderId" ColumnName="PlaceHolderId" />
+                <ScalarProperty Name="Content" ColumnName="Content" />
+                <ScalarProperty Name="SourceCultureName" ColumnName="SourceCultureName" />
+                <ScalarProperty Name="VersionId" ColumnName="VersionId" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="Composite_Data_Types_IPagePlaceholderContent_Unpublished_km_KH">
+            <EntityTypeMapping TypeName="c1demoModel.Composite_Data_Types_IPagePlaceholderContent_Unpublished_km_KH">
+              <MappingFragment StoreEntitySet="Composite_Data_Types_IPagePlaceholderContent_Unpublished_km_KH">
+                <ScalarProperty Name="PublicationStatus" ColumnName="PublicationStatus" />
+                <ScalarProperty Name="ChangeDate" ColumnName="ChangeDate" />
+                <ScalarProperty Name="CreationDate" ColumnName="CreationDate" />
+                <ScalarProperty Name="ChangedBy" ColumnName="ChangedBy" />
+                <ScalarProperty Name="CreatedBy" ColumnName="CreatedBy" />
+                <ScalarProperty Name="PageId" ColumnName="PageId" />
+                <ScalarProperty Name="PlaceHolderId" ColumnName="PlaceHolderId" />
+                <ScalarProperty Name="Content" ColumnName="Content" />
+                <ScalarProperty Name="SourceCultureName" ColumnName="SourceCultureName" />
+                <ScalarProperty Name="VersionId" ColumnName="VersionId" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="Composite_Data_Types_IPageStructure">
+            <EntityTypeMapping TypeName="c1demoModel.Composite_Data_Types_IPageStructure">
+              <MappingFragment StoreEntitySet="Composite_Data_Types_IPageStructure">
+                <ScalarProperty Name="Id" ColumnName="Id" />
+                <ScalarProperty Name="ParentId" ColumnName="ParentId" />
+                <ScalarProperty Name="LocalOrdering" ColumnName="LocalOrdering" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="Composite_Data_Types_IPageType">
+            <EntityTypeMapping TypeName="c1demoModel.Composite_Data_Types_IPageType">
+              <MappingFragment StoreEntitySet="Composite_Data_Types_IPageType">
+                <ScalarProperty Name="Id" ColumnName="Id" />
+                <ScalarProperty Name="Name" ColumnName="Name" />
+                <ScalarProperty Name="Description" ColumnName="Description" />
+                <ScalarProperty Name="Available" ColumnName="Available" />
+                <ScalarProperty Name="PresetMenuTitle" ColumnName="PresetMenuTitle" />
+                <ScalarProperty Name="DefaultTemplateId" ColumnName="DefaultTemplateId" />
+                <ScalarProperty Name="HomepageRelation" ColumnName="HomepageRelation" />
+                <ScalarProperty Name="DefaultChildPageType" ColumnName="DefaultChildPageType" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="Composite_Data_Types_IPageTypeDataFolderTypeLink">
+            <EntityTypeMapping TypeName="c1demoModel.Composite_Data_Types_IPageTypeDataFolderTypeLink">
+              <MappingFragment StoreEntitySet="Composite_Data_Types_IPageTypeDataFolderTypeLink">
+                <ScalarProperty Name="Id" ColumnName="Id" />
+                <ScalarProperty Name="PageTypeId" ColumnName="PageTypeId" />
+                <ScalarProperty Name="DataTypeId" ColumnName="DataTypeId" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="Composite_Data_Types_IPageTypeDefaultPageContent">
+            <EntityTypeMapping TypeName="c1demoModel.Composite_Data_Types_IPageTypeDefaultPageContent">
+              <MappingFragment StoreEntitySet="Composite_Data_Types_IPageTypeDefaultPageContent">
+                <ScalarProperty Name="Id" ColumnName="Id" />
+                <ScalarProperty Name="PageTypeId" ColumnName="PageTypeId" />
+                <ScalarProperty Name="PlaceHolderId" ColumnName="PlaceHolderId" />
+                <ScalarProperty Name="Content" ColumnName="Content" />
+                <ScalarProperty Name="ContainerClasses" ColumnName="ContainerClasses" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="Composite_Data_Types_IPageTypeMetaDataTypeLink">
+            <EntityTypeMapping TypeName="c1demoModel.Composite_Data_Types_IPageTypeMetaDataTypeLink">
+              <MappingFragment StoreEntitySet="Composite_Data_Types_IPageTypeMetaDataTypeLink">
+                <ScalarProperty Name="Id" ColumnName="Id" />
+                <ScalarProperty Name="PageTypeId" ColumnName="PageTypeId" />
+                <ScalarProperty Name="DataTypeId" ColumnName="DataTypeId" />
+                <ScalarProperty Name="Name" ColumnName="Name" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="Composite_Data_Types_IPageTypePageTemplateRestriction">
+            <EntityTypeMapping TypeName="c1demoModel.Composite_Data_Types_IPageTypePageTemplateRestriction">
+              <MappingFragment StoreEntitySet="Composite_Data_Types_IPageTypePageTemplateRestriction">
+                <ScalarProperty Name="Id" ColumnName="Id" />
+                <ScalarProperty Name="PageTypeId" ColumnName="PageTypeId" />
+                <ScalarProperty Name="PageTemplateId" ColumnName="PageTemplateId" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="Composite_Data_Types_IPageTypeParentRestriction">
+            <EntityTypeMapping TypeName="c1demoModel.Composite_Data_Types_IPageTypeParentRestriction">
+              <MappingFragment StoreEntitySet="Composite_Data_Types_IPageTypeParentRestriction">
+                <ScalarProperty Name="Id" ColumnName="Id" />
+                <ScalarProperty Name="PageTypeId" ColumnName="PageTypeId" />
+                <ScalarProperty Name="AllowedParentPageTypeId" ColumnName="AllowedParentPageTypeId" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="Composite_Data_Types_IPageTypeTreeLink">
+            <EntityTypeMapping TypeName="c1demoModel.Composite_Data_Types_IPageTypeTreeLink">
+              <MappingFragment StoreEntitySet="Composite_Data_Types_IPageTypeTreeLink">
+                <ScalarProperty Name="Id" ColumnName="Id" />
+                <ScalarProperty Name="PageTypeId" ColumnName="PageTypeId" />
+                <ScalarProperty Name="TreeId" ColumnName="TreeId" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="Composite_Data_Types_IParameter">
+            <EntityTypeMapping TypeName="c1demoModel.Composite_Data_Types_IParameter">
+              <MappingFragment StoreEntitySet="Composite_Data_Types_IParameter">
+                <ScalarProperty Name="OwnerId" ColumnName="OwnerId" />
+                <ScalarProperty Name="ParameterId" ColumnName="ParameterId" />
+                <ScalarProperty Name="Name" ColumnName="Name" />
+                <ScalarProperty Name="Label" ColumnName="Label" />
+                <ScalarProperty Name="HelpText" ColumnName="HelpText" />
+                <ScalarProperty Name="Position" ColumnName="Position" />
+                <ScalarProperty Name="TypeManagerName" ColumnName="TypeManagerName" />
+                <ScalarProperty Name="WidgetFunctionMarkup" ColumnName="WidgetFunctionMarkup" />
+                <ScalarProperty Name="DefaultValueFunctionMarkup" ColumnName="DefaultValueFunctionMarkup" />
+                <ScalarProperty Name="TestValueFunctionMarkup" ColumnName="TestValueFunctionMarkup" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="Composite_Data_Types_IPublishSchedule_Unpublished">
+            <EntityTypeMapping TypeName="c1demoModel.Composite_Data_Types_IPublishSchedule_Unpublished">
+              <MappingFragment StoreEntitySet="Composite_Data_Types_IPublishSchedule_Unpublished">
+                <ScalarProperty Name="PublishDate" ColumnName="PublishDate" />
+                <ScalarProperty Name="Id" ColumnName="Id" />
+                <ScalarProperty Name="DataTypeId" ColumnName="DataTypeId" />
+                <ScalarProperty Name="DataId" ColumnName="DataId" />
+                <ScalarProperty Name="WorkflowInstanceId" ColumnName="WorkflowInstanceId" />
+                <ScalarProperty Name="LocaleCultureName" ColumnName="LocaleCultureName" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="Composite_Data_Types_ISearchEngineOptimizationKeyword_en_AU">
+            <EntityTypeMapping TypeName="c1demoModel.Composite_Data_Types_ISearchEngineOptimizationKeyword_en_AU">
+              <MappingFragment StoreEntitySet="Composite_Data_Types_ISearchEngineOptimizationKeyword_en_AU">
+                <ScalarProperty Name="Keyword" ColumnName="Keyword" />
+                <ScalarProperty Name="SourceCultureName" ColumnName="SourceCultureName" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="Composite_Data_Types_ISearchEngineOptimizationKeyword_km_KH">
+            <EntityTypeMapping TypeName="c1demoModel.Composite_Data_Types_ISearchEngineOptimizationKeyword_km_KH">
+              <MappingFragment StoreEntitySet="Composite_Data_Types_ISearchEngineOptimizationKeyword_km_KH">
+                <ScalarProperty Name="Keyword" ColumnName="Keyword" />
+                <ScalarProperty Name="SourceCultureName" ColumnName="SourceCultureName" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="Composite_Data_Types_ISqlConnection">
+            <EntityTypeMapping TypeName="c1demoModel.Composite_Data_Types_ISqlConnection">
+              <MappingFragment StoreEntitySet="Composite_Data_Types_ISqlConnection">
+                <ScalarProperty Name="Id" ColumnName="Id" />
+                <ScalarProperty Name="IsMsSql" ColumnName="IsMsSql" />
+                <ScalarProperty Name="EncryptedConnectionString" ColumnName="EncryptedConnectionString" />
+                <ScalarProperty Name="Name" ColumnName="Name" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="Composite_Data_Types_ISqlFunctionInfo">
+            <EntityTypeMapping TypeName="c1demoModel.Composite_Data_Types_ISqlFunctionInfo">
+              <MappingFragment StoreEntitySet="Composite_Data_Types_ISqlFunctionInfo">
+                <ScalarProperty Name="Id" ColumnName="Id" />
+                <ScalarProperty Name="Name" ColumnName="Name" />
+                <ScalarProperty Name="ConnectionId" ColumnName="ConnectionId" />
+                <ScalarProperty Name="IsStoredProcedure" ColumnName="IsStoredProcedure" />
+                <ScalarProperty Name="ReturnsXml" ColumnName="ReturnsXml" />
+                <ScalarProperty Name="IsQuery" ColumnName="IsQuery" />
+                <ScalarProperty Name="Command" ColumnName="Command" />
+                <ScalarProperty Name="Namespace" ColumnName="Namespace" />
+                <ScalarProperty Name="Description" ColumnName="Description" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="Composite_Data_Types_ISystemActiveLocale">
+            <EntityTypeMapping TypeName="c1demoModel.Composite_Data_Types_ISystemActiveLocale">
+              <MappingFragment StoreEntitySet="Composite_Data_Types_ISystemActiveLocale">
+                <ScalarProperty Name="Id" ColumnName="Id" />
+                <ScalarProperty Name="CultureName" ColumnName="CultureName" />
+                <ScalarProperty Name="UrlMappingName" ColumnName="UrlMappingName" />
+                <ScalarProperty Name="IsDefault" ColumnName="IsDefault" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="Composite_Data_Types_ITaskItem">
+            <EntityTypeMapping TypeName="c1demoModel.Composite_Data_Types_ITaskItem">
+              <MappingFragment StoreEntitySet="Composite_Data_Types_ITaskItem">
+                <ScalarProperty Name="Id" ColumnName="Id" />
+                <ScalarProperty Name="TaskId" ColumnName="TaskId" />
+                <ScalarProperty Name="TaskManagerType" ColumnName="TaskManagerType" />
+                <ScalarProperty Name="SerializedFlowToken" ColumnName="SerializedFlowToken" />
+                <ScalarProperty Name="StartTime" ColumnName="StartTime" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="Composite_Data_Types_IUnpublishSchedule_Unpublished">
+            <EntityTypeMapping TypeName="c1demoModel.Composite_Data_Types_IUnpublishSchedule_Unpublished">
+              <MappingFragment StoreEntitySet="Composite_Data_Types_IUnpublishSchedule_Unpublished">
+                <ScalarProperty Name="UnpublishDate" ColumnName="UnpublishDate" />
+                <ScalarProperty Name="Id" ColumnName="Id" />
+                <ScalarProperty Name="DataTypeId" ColumnName="DataTypeId" />
+                <ScalarProperty Name="DataId" ColumnName="DataId" />
+                <ScalarProperty Name="WorkflowInstanceId" ColumnName="WorkflowInstanceId" />
+                <ScalarProperty Name="LocaleCultureName" ColumnName="LocaleCultureName" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="Composite_Data_Types_IUrlConfiguration">
+            <EntityTypeMapping TypeName="c1demoModel.Composite_Data_Types_IUrlConfiguration">
+              <MappingFragment StoreEntitySet="Composite_Data_Types_IUrlConfiguration">
+                <ScalarProperty Name="Id" ColumnName="Id" />
+                <ScalarProperty Name="PageUrlSuffix" ColumnName="PageUrlSuffix" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="Composite_Data_Types_IUser">
+            <EntityTypeMapping TypeName="c1demoModel.Composite_Data_Types_IUser">
+              <MappingFragment StoreEntitySet="Composite_Data_Types_IUser">
+                <ScalarProperty Name="Id" ColumnName="Id" />
+                <ScalarProperty Name="Username" ColumnName="Username" />
+                <ScalarProperty Name="Name" ColumnName="Name" />
+                <ScalarProperty Name="Email" ColumnName="Email" />
+                <ScalarProperty Name="Group" ColumnName="Group" />
+                <ScalarProperty Name="IsLocked" ColumnName="IsLocked" />
+                <ScalarProperty Name="LockoutReason" ColumnName="LockoutReason" />
+                <ScalarProperty Name="EncryptedPassword" ColumnName="EncryptedPassword" />
+                <ScalarProperty Name="PasswordHashSalt" ColumnName="PasswordHashSalt" />
+                <ScalarProperty Name="LastPasswordChangeDate" ColumnName="LastPasswordChangeDate" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="Composite_Data_Types_IUserActiveLocale">
+            <EntityTypeMapping TypeName="c1demoModel.Composite_Data_Types_IUserActiveLocale">
+              <MappingFragment StoreEntitySet="Composite_Data_Types_IUserActiveLocale">
+                <ScalarProperty Name="Id" ColumnName="Id" />
+                <ScalarProperty Name="Username" ColumnName="Username" />
+                <ScalarProperty Name="CultureName" ColumnName="CultureName" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="Composite_Data_Types_IUserActivePerspective">
+            <EntityTypeMapping TypeName="c1demoModel.Composite_Data_Types_IUserActivePerspective">
+              <MappingFragment StoreEntitySet="Composite_Data_Types_IUserActivePerspective">
+                <ScalarProperty Name="Id" ColumnName="Id" />
+                <ScalarProperty Name="Username" ColumnName="Username" />
+                <ScalarProperty Name="SerializedEntityToken" ColumnName="SerializedEntityToken" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="Composite_Data_Types_IUserConsoleInformation">
+            <EntityTypeMapping TypeName="c1demoModel.Composite_Data_Types_IUserConsoleInformation">
+              <MappingFragment StoreEntitySet="Composite_Data_Types_IUserConsoleInformation">
+                <ScalarProperty Name="Id" ColumnName="Id" />
+                <ScalarProperty Name="Username" ColumnName="Username" />
+                <ScalarProperty Name="ConsoleId" ColumnName="ConsoleId" />
+                <ScalarProperty Name="TimeStamp" ColumnName="TimeStamp" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="Composite_Data_Types_IUserDeveloperSettings">
+            <EntityTypeMapping TypeName="c1demoModel.Composite_Data_Types_IUserDeveloperSettings">
+              <MappingFragment StoreEntitySet="Composite_Data_Types_IUserDeveloperSettings">
+                <ScalarProperty Name="Username" ColumnName="Username" />
+                <ScalarProperty Name="LastSpecifiedNamespace" ColumnName="LastSpecifiedNamespace" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="Composite_Data_Types_IUserFormLogin">
+            <EntityTypeMapping TypeName="c1demoModel.Composite_Data_Types_IUserFormLogin">
+              <MappingFragment StoreEntitySet="Composite_Data_Types_IUserFormLogin">
+                <ScalarProperty Name="UserId" ColumnName="UserId" />
+                <ScalarProperty Name="Folder" ColumnName="Folder" />
+                <ScalarProperty Name="IsLocked" ColumnName="IsLocked" />
+                <ScalarProperty Name="LockoutReason" ColumnName="LockoutReason" />
+                <ScalarProperty Name="PasswordHash" ColumnName="PasswordHash" />
+                <ScalarProperty Name="PasswordHashSalt" ColumnName="PasswordHashSalt" />
+                <ScalarProperty Name="LastPasswordChangeDate" ColumnName="LastPasswordChangeDate" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="Composite_Data_Types_IUserGroup">
+            <EntityTypeMapping TypeName="c1demoModel.Composite_Data_Types_IUserGroup">
+              <MappingFragment StoreEntitySet="Composite_Data_Types_IUserGroup">
+                <ScalarProperty Name="Id" ColumnName="Id" />
+                <ScalarProperty Name="Name" ColumnName="Name" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="Composite_Data_Types_IUserGroupActivePerspective">
+            <EntityTypeMapping TypeName="c1demoModel.Composite_Data_Types_IUserGroupActivePerspective">
+              <MappingFragment StoreEntitySet="Composite_Data_Types_IUserGroupActivePerspective">
+                <ScalarProperty Name="Id" ColumnName="Id" />
+                <ScalarProperty Name="UserGroupId" ColumnName="UserGroupId" />
+                <ScalarProperty Name="SerializedEntityToken" ColumnName="SerializedEntityToken" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="Composite_Data_Types_IUserGroupPermissionDefinition">
+            <EntityTypeMapping TypeName="c1demoModel.Composite_Data_Types_IUserGroupPermissionDefinition">
+              <MappingFragment StoreEntitySet="Composite_Data_Types_IUserGroupPermissionDefinition">
+                <ScalarProperty Name="Id" ColumnName="Id" />
+                <ScalarProperty Name="UserGroupId" ColumnName="UserGroupId" />
+                <ScalarProperty Name="SerializedEntityToken" ColumnName="SerializedEntityToken" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="Composite_Data_Types_IUserGroupPermissionDefinitionPermissionType">
+            <EntityTypeMapping TypeName="c1demoModel.Composite_Data_Types_IUserGroupPermissionDefinitionPermissionType">
+              <MappingFragment StoreEntitySet="Composite_Data_Types_IUserGroupPermissionDefinitionPermissionType">
+                <ScalarProperty Name="Id" ColumnName="Id" />
+                <ScalarProperty Name="UserGroupPermissionDefinitionId" ColumnName="UserGroupPermissionDefinitionId" />
+                <ScalarProperty Name="PermissionTypeName" ColumnName="PermissionTypeName" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="Composite_Data_Types_IUserPasswordHistory">
+            <EntityTypeMapping TypeName="c1demoModel.Composite_Data_Types_IUserPasswordHistory">
+              <MappingFragment StoreEntitySet="Composite_Data_Types_IUserPasswordHistory">
+                <ScalarProperty Name="Id" ColumnName="Id" />
+                <ScalarProperty Name="UserId" ColumnName="UserId" />
+                <ScalarProperty Name="PasswordHash" ColumnName="PasswordHash" />
+                <ScalarProperty Name="PasswordSalt" ColumnName="PasswordSalt" />
+                <ScalarProperty Name="SetDate" ColumnName="SetDate" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="Composite_Data_Types_IUserPermissionDefinition">
+            <EntityTypeMapping TypeName="c1demoModel.Composite_Data_Types_IUserPermissionDefinition">
+              <MappingFragment StoreEntitySet="Composite_Data_Types_IUserPermissionDefinition">
+                <ScalarProperty Name="Id" ColumnName="Id" />
+                <ScalarProperty Name="Username" ColumnName="Username" />
+                <ScalarProperty Name="SerializedEntityToken" ColumnName="SerializedEntityToken" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="Composite_Data_Types_IUserPermissionDefinitionPermissionType">
+            <EntityTypeMapping TypeName="c1demoModel.Composite_Data_Types_IUserPermissionDefinitionPermissionType">
+              <MappingFragment StoreEntitySet="Composite_Data_Types_IUserPermissionDefinitionPermissionType">
+                <ScalarProperty Name="Id" ColumnName="Id" />
+                <ScalarProperty Name="UserPermissionDefinitionId" ColumnName="UserPermissionDefinitionId" />
+                <ScalarProperty Name="PermissionTypeName" ColumnName="PermissionTypeName" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="Composite_Data_Types_IUserSettings">
+            <EntityTypeMapping TypeName="c1demoModel.Composite_Data_Types_IUserSettings">
+              <MappingFragment StoreEntitySet="Composite_Data_Types_IUserSettings">
+                <ScalarProperty Name="Username" ColumnName="Username" />
+                <ScalarProperty Name="CultureName" ColumnName="CultureName" />
+                <ScalarProperty Name="C1ConsoleUiLanguage" ColumnName="C1ConsoleUiLanguage" />
+                <ScalarProperty Name="CurrentActiveLocaleCultureName" ColumnName="CurrentActiveLocaleCultureName" />
+                <ScalarProperty Name="ForeignLocaleCultureName" ColumnName="ForeignLocaleCultureName" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="Composite_Data_Types_IUserUserGroupRelation">
+            <EntityTypeMapping TypeName="c1demoModel.Composite_Data_Types_IUserUserGroupRelation">
+              <MappingFragment StoreEntitySet="Composite_Data_Types_IUserUserGroupRelation">
+                <ScalarProperty Name="UserId" ColumnName="UserId" />
+                <ScalarProperty Name="UserGroupId" ColumnName="UserGroupId" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="Composite_Data_Types_IVisualFunction">
+            <EntityTypeMapping TypeName="c1demoModel.Composite_Data_Types_IVisualFunction">
+              <MappingFragment StoreEntitySet="Composite_Data_Types_IVisualFunction">
+                <ScalarProperty Name="Id" ColumnName="Id" />
+                <ScalarProperty Name="Name" ColumnName="Name" />
+                <ScalarProperty Name="Namespace" ColumnName="Namespace" />
+                <ScalarProperty Name="Description" ColumnName="Description" />
+                <ScalarProperty Name="TypeManagerName" ColumnName="TypeManagerName" />
+                <ScalarProperty Name="XhtmlTemplate" ColumnName="XhtmlTemplate" />
+                <ScalarProperty Name="MaximumItemsToList" ColumnName="MaximumItemsToList" />
+                <ScalarProperty Name="OrderbyFieldName" ColumnName="OrderbyFieldName" />
+                <ScalarProperty Name="OrderbyAscending" ColumnName="OrderbyAscending" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="Composite_Data_Types_IXmlPageTemplate">
+            <EntityTypeMapping TypeName="c1demoModel.Composite_Data_Types_IXmlPageTemplate">
+              <MappingFragment StoreEntitySet="Composite_Data_Types_IXmlPageTemplate">
+                <ScalarProperty Name="Id" ColumnName="Id" />
+                <ScalarProperty Name="Title" ColumnName="Title" />
+                <ScalarProperty Name="PageTemplateFilePath" ColumnName="PageTemplateFilePath" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="Composite_Data_Types_IXsltFunction">
+            <EntityTypeMapping TypeName="c1demoModel.Composite_Data_Types_IXsltFunction">
+              <MappingFragment StoreEntitySet="Composite_Data_Types_IXsltFunction">
+                <ScalarProperty Name="Id" ColumnName="Id" />
+                <ScalarProperty Name="Name" ColumnName="Name" />
+                <ScalarProperty Name="Namespace" ColumnName="Namespace" />
+                <ScalarProperty Name="Description" ColumnName="Description" />
+                <ScalarProperty Name="OutputXmlSubType" ColumnName="OutputXmlSubType" />
+                <ScalarProperty Name="XslFilePath" ColumnName="XslFilePath" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="Composite_Plugins_WebClient_SessionStateProviders_DefaultSessionStateProvider_ISessionStateEntry_Unpublished">
+            <EntityTypeMapping TypeName="c1demoModel.Composite_Plugins_WebClient_SessionStateProviders_DefaultSessionStateProvider_ISessionStateEntry_Unpublished">
+              <MappingFragment StoreEntitySet="Composite_Plugins_WebClient_SessionStateProviders_DefaultSessionStateProvider_ISessionStateEntry_Unpublished">
+                <ScalarProperty Name="Id" ColumnName="Id" />
+                <ScalarProperty Name="ExpirationDate" ColumnName="ExpirationDate" />
+                <ScalarProperty Name="SerializedValue" ColumnName="SerializedValue" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="CompositeC1Contrib_Email_Data_Types_IBadMailMessage">
+            <EntityTypeMapping TypeName="c1demoModel.CompositeC1Contrib_Email_Data_Types_IBadMailMessage">
+              <MappingFragment StoreEntitySet="CompositeC1Contrib_Email_Data_Types_IBadMailMessage">
+                <ScalarProperty Name="SerializedMessage" ColumnName="SerializedMessage" />
+                <ScalarProperty Name="Id" ColumnName="Id" />
+                <ScalarProperty Name="QueueId" ColumnName="QueueId" />
+                <ScalarProperty Name="MailTemplateKey" ColumnName="MailTemplateKey" />
+                <ScalarProperty Name="TimeStamp" ColumnName="TimeStamp" />
+                <ScalarProperty Name="Subject" ColumnName="Subject" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="CompositeC1Contrib_Email_Data_Types_IEventBasic">
+            <EntityTypeMapping TypeName="c1demoModel.CompositeC1Contrib_Email_Data_Types_IEventBasic">
+              <MappingFragment StoreEntitySet="CompositeC1Contrib_Email_Data_Types_IEventBasic">
+                <ScalarProperty Name="Event" ColumnName="Event" />
+                <ScalarProperty Name="Id" ColumnName="Id" />
+                <ScalarProperty Name="MailMessageId" ColumnName="MailMessageId" />
+                <ScalarProperty Name="Timestamp" ColumnName="Timestamp" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="CompositeC1Contrib_Email_Data_Types_IEventClick">
+            <EntityTypeMapping TypeName="c1demoModel.CompositeC1Contrib_Email_Data_Types_IEventClick">
+              <MappingFragment StoreEntitySet="CompositeC1Contrib_Email_Data_Types_IEventClick">
+                <ScalarProperty Name="Email" ColumnName="Email" />
+                <ScalarProperty Name="Url" ColumnName="Url" />
+                <ScalarProperty Name="Id" ColumnName="Id" />
+                <ScalarProperty Name="MailMessageId" ColumnName="MailMessageId" />
+                <ScalarProperty Name="Timestamp" ColumnName="Timestamp" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="CompositeC1Contrib_Email_Data_Types_IEventError">
+            <EntityTypeMapping TypeName="c1demoModel.CompositeC1Contrib_Email_Data_Types_IEventError">
+              <MappingFragment StoreEntitySet="CompositeC1Contrib_Email_Data_Types_IEventError">
+                <ScalarProperty Name="Error" ColumnName="Error" />
+                <ScalarProperty Name="Id" ColumnName="Id" />
+                <ScalarProperty Name="MailMessageId" ColumnName="MailMessageId" />
+                <ScalarProperty Name="Timestamp" ColumnName="Timestamp" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="CompositeC1Contrib_Email_Data_Types_IEventOpen">
+            <EntityTypeMapping TypeName="c1demoModel.CompositeC1Contrib_Email_Data_Types_IEventOpen">
+              <MappingFragment StoreEntitySet="CompositeC1Contrib_Email_Data_Types_IEventOpen">
+                <ScalarProperty Name="Email" ColumnName="Email" />
+                <ScalarProperty Name="Id" ColumnName="Id" />
+                <ScalarProperty Name="MailMessageId" ColumnName="MailMessageId" />
+                <ScalarProperty Name="Timestamp" ColumnName="Timestamp" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="CompositeC1Contrib_Email_Data_Types_IMailTemplate">
+            <EntityTypeMapping TypeName="c1demoModel.CompositeC1Contrib_Email_Data_Types_IMailTemplate">
+              <MappingFragment StoreEntitySet="CompositeC1Contrib_Email_Data_Types_IMailTemplate">
+                <ScalarProperty Name="Key" ColumnName="Key" />
+                <ScalarProperty Name="ModelType" ColumnName="ModelType" />
+                <ScalarProperty Name="EncryptMessage" ColumnName="EncryptMessage" />
+                <ScalarProperty Name="EncryptPassword" ColumnName="EncryptPassword" />
+                <ScalarProperty Name="From" ColumnName="From" />
+                <ScalarProperty Name="To" ColumnName="To" />
+                <ScalarProperty Name="Cc" ColumnName="Cc" />
+                <ScalarProperty Name="Bcc" ColumnName="Bcc" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="CompositeC1Contrib_Email_Data_Types_IMailTemplateContent_en_AU">
+            <EntityTypeMapping TypeName="c1demoModel.CompositeC1Contrib_Email_Data_Types_IMailTemplateContent_en_AU">
+              <MappingFragment StoreEntitySet="CompositeC1Contrib_Email_Data_Types_IMailTemplateContent_en_AU">
+                <ScalarProperty Name="Id" ColumnName="Id" />
+                <ScalarProperty Name="TemplateKey" ColumnName="TemplateKey" />
+                <ScalarProperty Name="Subject" ColumnName="Subject" />
+                <ScalarProperty Name="Body" ColumnName="Body" />
+                <ScalarProperty Name="SourceCultureName" ColumnName="SourceCultureName" />
+                <ScalarProperty Name="From" ColumnName="From" />
+                <ScalarProperty Name="To" ColumnName="To" />
+                <ScalarProperty Name="Cc" ColumnName="Cc" />
+                <ScalarProperty Name="Bcc" ColumnName="Bcc" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="CompositeC1Contrib_Email_Data_Types_IMailTemplateContent_km_KH">
+            <EntityTypeMapping TypeName="c1demoModel.CompositeC1Contrib_Email_Data_Types_IMailTemplateContent_km_KH">
+              <MappingFragment StoreEntitySet="CompositeC1Contrib_Email_Data_Types_IMailTemplateContent_km_KH">
+                <ScalarProperty Name="Id" ColumnName="Id" />
+                <ScalarProperty Name="TemplateKey" ColumnName="TemplateKey" />
+                <ScalarProperty Name="Subject" ColumnName="Subject" />
+                <ScalarProperty Name="Body" ColumnName="Body" />
+                <ScalarProperty Name="SourceCultureName" ColumnName="SourceCultureName" />
+                <ScalarProperty Name="From" ColumnName="From" />
+                <ScalarProperty Name="To" ColumnName="To" />
+                <ScalarProperty Name="Cc" ColumnName="Cc" />
+                <ScalarProperty Name="Bcc" ColumnName="Bcc" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="CompositeC1Contrib_Email_Data_Types_IQueuedMailMessage">
+            <EntityTypeMapping TypeName="c1demoModel.CompositeC1Contrib_Email_Data_Types_IQueuedMailMessage">
+              <MappingFragment StoreEntitySet="CompositeC1Contrib_Email_Data_Types_IQueuedMailMessage">
+                <ScalarProperty Name="SerializedMessage" ColumnName="SerializedMessage" />
+                <ScalarProperty Name="Id" ColumnName="Id" />
+                <ScalarProperty Name="QueueId" ColumnName="QueueId" />
+                <ScalarProperty Name="MailTemplateKey" ColumnName="MailTemplateKey" />
+                <ScalarProperty Name="TimeStamp" ColumnName="TimeStamp" />
+                <ScalarProperty Name="Subject" ColumnName="Subject" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="CompositeC1Contrib_Email_Data_Types_ISentMailMessage">
+            <EntityTypeMapping TypeName="c1demoModel.CompositeC1Contrib_Email_Data_Types_ISentMailMessage">
+              <MappingFragment StoreEntitySet="CompositeC1Contrib_Email_Data_Types_ISentMailMessage">
+                <ScalarProperty Name="Id" ColumnName="Id" />
+                <ScalarProperty Name="QueueId" ColumnName="QueueId" />
+                <ScalarProperty Name="MailTemplateKey" ColumnName="MailTemplateKey" />
+                <ScalarProperty Name="TimeStamp" ColumnName="TimeStamp" />
+                <ScalarProperty Name="Subject" ColumnName="Subject" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="Content_ContentSpot">
+            <EntityTypeMapping TypeName="c1demoModel.Content_ContentSpot">
+              <MappingFragment StoreEntitySet="Content_ContentSpot">
+                <ScalarProperty Name="Id" ColumnName="Id" />
+                <ScalarProperty Name="Title" ColumnName="Title" />
+                <ScalarProperty Name="Content" ColumnName="Content" />
+                <ScalarProperty Name="PublicationStatus" ColumnName="PublicationStatus" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="Content_ContentSpot_Unpublished">
+            <EntityTypeMapping TypeName="c1demoModel.Content_ContentSpot_Unpublished">
+              <MappingFragment StoreEntitySet="Content_ContentSpot_Unpublished">
+                <ScalarProperty Name="Id" ColumnName="Id" />
+                <ScalarProperty Name="Title" ColumnName="Title" />
+                <ScalarProperty Name="Content" ColumnName="Content" />
+                <ScalarProperty Name="PublicationStatus" ColumnName="PublicationStatus" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="Demo_Country">
+            <EntityTypeMapping TypeName="c1demoModel.Demo_Country">
+              <MappingFragment StoreEntitySet="Demo_Country">
+                <ScalarProperty Name="Id" ColumnName="Id" />
+                <ScalarProperty Name="Name" ColumnName="Name" />
+                <ScalarProperty Name="Code" ColumnName="Code" />
+                <ScalarProperty Name="PublicationStatus" ColumnName="PublicationStatus" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="Demo_Country_Unpublished">
+            <EntityTypeMapping TypeName="c1demoModel.Demo_Country_Unpublished">
+              <MappingFragment StoreEntitySet="Demo_Country_Unpublished">
+                <ScalarProperty Name="Id" ColumnName="Id" />
+                <ScalarProperty Name="Name" ColumnName="Name" />
+                <ScalarProperty Name="Code" ColumnName="Code" />
+                <ScalarProperty Name="PublicationStatus" ColumnName="PublicationStatus" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="Demo_Ebook_FileUpload">
+            <EntityTypeMapping TypeName="c1demoModel.Demo_Ebook_FileUpload">
+              <MappingFragment StoreEntitySet="Demo_Ebook_FileUpload">
+                <ScalarProperty Name="Id" ColumnName="Id" />
+                <ScalarProperty Name="FileName" ColumnName="FileName" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="Demo_Page_Data">
+            <EntityTypeMapping TypeName="c1demoModel.Demo_Page_Data">
+              <MappingFragment StoreEntitySet="Demo_Page_Data">
+                <ScalarProperty Name="RedirectTo" ColumnName="RedirectTo" />
+                <ScalarProperty Name="PublicationStatus" ColumnName="PublicationStatus" />
+                <ScalarProperty Name="Id" ColumnName="Id" />
+                <ScalarProperty Name="PageId" ColumnName="PageId" />
+                <ScalarProperty Name="FieldName" ColumnName="FieldName" />
+                <ScalarProperty Name="VersionId" ColumnName="VersionId" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="Demo_Page_Data_Unpublished">
+            <EntityTypeMapping TypeName="c1demoModel.Demo_Page_Data_Unpublished">
+              <MappingFragment StoreEntitySet="Demo_Page_Data_Unpublished">
+                <ScalarProperty Name="RedirectTo" ColumnName="RedirectTo" />
+                <ScalarProperty Name="PublicationStatus" ColumnName="PublicationStatus" />
+                <ScalarProperty Name="Id" ColumnName="Id" />
+                <ScalarProperty Name="PageId" ColumnName="PageId" />
+                <ScalarProperty Name="FieldName" ColumnName="FieldName" />
+                <ScalarProperty Name="VersionId" ColumnName="VersionId" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+        </EntityContainerMapping>
+      </Mapping>
+    </edmx:Mappings>
+  </edmx:Runtime>
+  <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <Connection>
+      <DesignerInfoPropertySet>
+        <DesignerProperty Name="MetadataArtifactProcessing" Value="EmbedInOutputAssembly" />
+      </DesignerInfoPropertySet>
+    </Connection>
+    <Options>
+      <DesignerInfoPropertySet>
+        <DesignerProperty Name="ValidateOnBuild" Value="true" />
+        <DesignerProperty Name="EnablePluralization" Value="true" />
+        <DesignerProperty Name="IncludeForeignKeysInModel" Value="true" />
+        <DesignerProperty Name="UseLegacyProvider" Value="false" />
+        <DesignerProperty Name="CodeGenerationStrategy" Value="None" />
+      </DesignerInfoPropertySet>
+    </Options>
+    <!-- Diagram content (shape and connector positions) -->
+    <Diagrams></Diagrams>
+  </Designer>
+</edmx:Edmx>

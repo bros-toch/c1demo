@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+ <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <!-- Diagram content (shape and connector positions) -->
+    <edmx:Diagrams>
+      <Diagram DiagramId="2481124fb637481991470d09a3839f07" Name="Diagram1">
+        <EntityTypeShape EntityType="c1demoModel.Composite_Data_Types_ICompositionContainer" Width="1.5" PointX="0.75" PointY="0.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="c1demoModel.Composite_Data_Types_ICustomFunctionCallEditorMapping" Width="1.5" PointX="2.75" PointY="0.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="c1demoModel.Composite_Data_Types_IDataItemTreeAttachmentPoint" Width="1.5" PointX="0.75" PointY="3.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="c1demoModel.Composite_Data_Types_IFlowInformation" Width="1.5" PointX="2.75" PointY="3.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="c1demoModel.Composite_Data_Types_IFolderWhiteList_Unpublished" Width="1.5" PointX="4.75" PointY="0.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="c1demoModel.Composite_Data_Types_IGeneratedTypeWhiteList_Unpublished" Width="1.5" PointX="4.75" PointY="3.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="c1demoModel.Composite_Data_Types_IHostnameBinding" Width="1.5" PointX="4.75" PointY="5.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="c1demoModel.Composite_Data_Types_IInlineFunction" Width="1.5" PointX="6.75" PointY="0.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="c1demoModel.Composite_Data_Types_IInlineFunctionAssemblyReference" Width="1.5" PointX="6.75" PointY="3.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="c1demoModel.Composite_Data_Types_ILockingInformation" Width="1.5" PointX="6.75" PointY="6.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="c1demoModel.Composite_Data_Types_IMediaFileData" Width="1.5" PointX="0.75" PointY="7.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="c1demoModel.Composite_Data_Types_IMediaFolderData" Width="1.5" PointX="8.75" PointY="0.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="c1demoModel.Composite_Data_Types_IMethodBasedFunctionInfo" Width="1.5" PointX="8.75" PointY="3.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="c1demoModel.Composite_Data_Types_INamedFunctionCall" Width="1.5" PointX="8.75" PointY="6.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="c1demoModel.Composite_Data_Types_IPackageServerSource" Width="1.5" PointX="2.75" PointY="9.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="c1demoModel.Composite_Data_Types_IPage_en_AU" Width="1.5" PointX="4.75" PointY="9.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="c1demoModel.Composite_Data_Types_IPage_km_KH" Width="1.5" PointX="6.75" PointY="9.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="c1demoModel.Composite_Data_Types_IPage_Unpublished_en_AU" Width="1.5" PointX="8.75" PointY="9.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="c1demoModel.Composite_Data_Types_IPage_Unpublished_km_KH" Width="1.5" PointX="10.75" PointY="0.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="c1demoModel.Composite_Data_Types_IPageFolderDefinition" Width="1.5" PointX="10.75" PointY="5.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="c1demoModel.Composite_Data_Types_IPageMetaDataDefinition" Width="1.5" PointX="10.75" PointY="8.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="c1demoModel.Composite_Data_Types_IPagePlaceholderContent_en_AU" Width="1.5" PointX="12.75" PointY="0.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="c1demoModel.Composite_Data_Types_IPagePlaceholderContent_km_KH" Width="1.5" PointX="0.75" PointY="12.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="c1demoModel.Composite_Data_Types_IPagePlaceholderContent_Unpublished_en_AU" Width="1.5" PointX="12.75" PointY="4.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="c1demoModel.Composite_Data_Types_IPagePlaceholderContent_Unpublished_km_KH" Width="1.5" PointX="12.75" PointY="8.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="c1demoModel.Composite_Data_Types_IPageStructure" Width="1.5" PointX="10.75" PointY="12.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="c1demoModel.Composite_Data_Types_IPageType" Width="1.5" PointX="12.75" PointY="12.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="c1demoModel.Composite_Data_Types_IPageTypeDataFolderTypeLink" Width="1.5" PointX="14.75" PointY="0.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="c1demoModel.Composite_Data_Types_IPageTypeDefaultPageContent" Width="1.5" PointX="2.75" PointY="14.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="c1demoModel.Composite_Data_Types_IPageTypeMetaDataTypeLink" Width="1.5" PointX="14.75" PointY="3.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="c1demoModel.Composite_Data_Types_IPageTypePageTemplateRestriction" Width="1.5" PointX="4.75" PointY="14.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="c1demoModel.Composite_Data_Types_IPageTypeParentRestriction" Width="1.5" PointX="14.75" PointY="6.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="c1demoModel.Composite_Data_Types_IPageTypeTreeLink" Width="1.5" PointX="6.75" PointY="14.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="c1demoModel.Composite_Data_Types_IParameter" Width="1.5" PointX="14.75" PointY="9.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="c1demoModel.Composite_Data_Types_IPublishSchedule_Unpublished" Width="1.5" PointX="14.75" PointY="13.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="c1demoModel.Composite_Data_Types_ISearchEngineOptimizationKeyword_en_AU" Width="1.5" PointX="8.75" PointY="15.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="c1demoModel.Composite_Data_Types_ISearchEngineOptimizationKeyword_km_KH" Width="1.5" PointX="16.75" PointY="0.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="c1demoModel.Composite_Data_Types_ISqlConnection" Width="1.5" PointX="16.75" PointY="3.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="c1demoModel.Composite_Data_Types_ISqlFunctionInfo" Width="1.5" PointX="16.75" PointY="6.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="c1demoModel.Composite_Data_Types_ISystemActiveLocale" Width="1.5" PointX="16.75" PointY="10.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="c1demoModel.Composite_Data_Types_ITaskItem" Width="1.5" PointX="10.75" PointY="16.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="c1demoModel.Composite_Data_Types_IUnpublishSchedule_Unpublished" Width="1.5" PointX="12.75" PointY="16.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="c1demoModel.Composite_Data_Types_IUrlConfiguration" Width="1.5" PointX="16.75" PointY="13.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="c1demoModel.Composite_Data_Types_IUser" Width="1.5" PointX="14.75" PointY="16.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="c1demoModel.Composite_Data_Types_IUserActiveLocale" Width="1.5" PointX="16.75" PointY="16.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="c1demoModel.Composite_Data_Types_IUserActivePerspective" Width="1.5" PointX="0.75" PointY="17.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="c1demoModel.Composite_Data_Types_IUserConsoleInformation" Width="1.5" PointX="2.75" PointY="17.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="c1demoModel.Composite_Data_Types_IUserDeveloperSettings" Width="1.5" PointX="4.75" PointY="17.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="c1demoModel.Composite_Data_Types_IUserFormLogin" Width="1.5" PointX="18.75" PointY="0.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="c1demoModel.Composite_Data_Types_IUserGroup" Width="1.5" PointX="18.75" PointY="4.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="c1demoModel.Composite_Data_Types_IUserGroupActivePerspective" Width="1.5" PointX="6.75" PointY="18.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="c1demoModel.Composite_Data_Types_IUserGroupPermissionDefinition" Width="1.5" PointX="18.75" PointY="7.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="c1demoModel.Composite_Data_Types_IUserGroupPermissionDefinitionPermissionType" Width="1.5" PointX="18.75" PointY="10.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="c1demoModel.Composite_Data_Types_IUserPasswordHistory" Width="1.5" PointX="18.75" PointY="13.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="c1demoModel.Composite_Data_Types_IUserPermissionDefinition" Width="1.5" PointX="18.75" PointY="16.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="c1demoModel.Composite_Data_Types_IUserPermissionDefinitionPermissionType" Width="1.5" PointX="8.75" PointY="19.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="c1demoModel.Composite_Data_Types_IUserSettings" Width="1.5" PointX="10.75" PointY="19.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="c1demoModel.Composite_Data_Types_IUserUserGroupRelation" Width="1.5" PointX="16.75" PointY="19.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="c1demoModel.Composite_Data_Types_IVisualFunction" Width="1.5" PointX="18.75" PointY="19.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="c1demoModel.Composite_Data_Types_IXmlPageTemplate" Width="1.5" PointX="20.75" PointY="0.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="c1demoModel.Composite_Data_Types_IXsltFunction" Width="1.5" PointX="0.75" PointY="20.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="c1demoModel.Composite_Plugins_WebClient_SessionStateProviders_DefaultSessionStateProvider_ISessionStateEntry_Unpublished" Width="1.5" PointX="2.75" PointY="20.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="c1demoModel.CompositeC1Contrib_Email_Data_Types_IBadMailMessage" Width="1.5" PointX="20.75" PointY="3.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="c1demoModel.CompositeC1Contrib_Email_Data_Types_IEventBasic" Width="1.5" PointX="20.75" PointY="6.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="c1demoModel.CompositeC1Contrib_Email_Data_Types_IEventClick" Width="1.5" PointX="20.75" PointY="9.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="c1demoModel.CompositeC1Contrib_Email_Data_Types_IEventError" Width="1.5" PointX="20.75" PointY="12.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="c1demoModel.CompositeC1Contrib_Email_Data_Types_IEventOpen" Width="1.5" PointX="12.75" PointY="20.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="c1demoModel.CompositeC1Contrib_Email_Data_Types_IMailTemplate" Width="1.5" PointX="20.75" PointY="15.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="c1demoModel.CompositeC1Contrib_Email_Data_Types_IMailTemplateContent_en_AU" Width="1.5" PointX="20.75" PointY="19.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="c1demoModel.CompositeC1Contrib_Email_Data_Types_IMailTemplateContent_km_KH" Width="1.5" PointX="4.75" PointY="21.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="c1demoModel.CompositeC1Contrib_Email_Data_Types_IQueuedMailMessage" Width="1.5" PointX="22.75" PointY="0.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="c1demoModel.CompositeC1Contrib_Email_Data_Types_ISentMailMessage" Width="1.5" PointX="22.75" PointY="3.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="c1demoModel.Content_ContentSpot" Width="1.5" PointX="22.75" PointY="6.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="c1demoModel.Content_ContentSpot_Unpublished" Width="1.5" PointX="6.75" PointY="22.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="c1demoModel.Demo_Country" Width="1.5" PointX="8.75" PointY="22.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="c1demoModel.Demo_Country_Unpublished" Width="1.5" PointX="22.75" PointY="9.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="c1demoModel.Demo_Ebook_FileUpload" Width="1.5" PointX="22.75" PointY="12.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="c1demoModel.Demo_Page_Data" Width="1.5" PointX="14.75" PointY="22.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="c1demoModel.Demo_Page_Data_Unpublished" Width="1.5" PointX="22.75" PointY="15.75" IsExpanded="true" />
+      </Diagram>
+    </edmx:Diagrams>
+  </edmx:Designer>
+</edmx:Edmx>
